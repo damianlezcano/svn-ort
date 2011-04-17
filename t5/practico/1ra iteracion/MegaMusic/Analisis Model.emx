@@ -202,7 +202,7 @@
             <children xmi:id="_i-5idmYfEeCZK9G1IGGOzA" type="Name"/>
             <children xmi:id="_i_CsYGYfEeCZK9G1IGGOzA" type="Parent"/>
             <children xmi:id="_i_CsYWYfEeCZK9G1IGGOzA" type="AttributeCompartment">
-              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_i_CsYmYfEeCZK9G1IGGOzA" collapsed="true"/>
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_i_CsYmYfEeCZK9G1IGGOzA"/>
             </children>
             <children xmi:id="_i_CsY2YfEeCZK9G1IGGOzA" type="OperationCompartment">
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_i_CsZGYfEeCZK9G1IGGOzA"/>
@@ -527,6 +527,9 @@
         <ownedAttribute xmi:id="_25mT4GkgEeCRiMOJ2dY-iQ" name="factura" visibility="private" type="_qlc7UGkYEeCRiMOJ2dY-iQ" association="_25lFwGkgEeCRiMOJ2dY-iQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_25m68WkgEeCRiMOJ2dY-iQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_25m68GkgEeCRiMOJ2dY-iQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_FNoA4GkmEeCuEObJjMYFTw" name="prueba" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
         <ownedOperation xmi:id="_p0GhcGkZEeCRiMOJ2dY-iQ" name="pagoConTarjeta"/>
         <ownedOperation xmi:id="_0xSOcGkeEeCRiMOJ2dY-iQ" name="pagoEnEfectivo"/>
