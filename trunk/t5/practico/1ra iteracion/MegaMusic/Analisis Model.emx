@@ -214,7 +214,7 @@
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_i_CsaGYfEeCZK9G1IGGOzA"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_i-5icWYfEeCZK9G1IGGOzA" showStereotype="Label"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i-5icmYfEeCZK9G1IGGOzA" x="2640" y="1902" height="2355"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i-5icmYfEeCZK9G1IGGOzA" x="2640" y="1320" height="2355"/>
           </children>
           <children xmi:id="_TseGgGkaEeCRiMOJ2dY-iQ" element="_qlc7UGkYEeCRiMOJ2dY-iQ">
             <children xmi:id="_TsetkGkaEeCRiMOJ2dY-iQ" type="ImageCompartment">
@@ -236,7 +236,7 @@
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_TsjmEWkaEeCRiMOJ2dY-iQ"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_TseGgWkaEeCRiMOJ2dY-iQ" fontName="Segoe UI" showStereotype="Label"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TseGgmkaEeCRiMOJ2dY-iQ" x="11088" y="2112"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TseGgmkaEeCRiMOJ2dY-iQ" x="11352" y="1452"/>
           </children>
           <children xmi:id="_Ug2w0GkaEeCRiMOJ2dY-iQ" element="_dNYjcGkXEeCRiMOJ2dY-iQ">
             <children xmi:id="_Ug3X4GkaEeCRiMOJ2dY-iQ" type="ImageCompartment">
@@ -298,7 +298,7 @@
               <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jaTfEWkfEeCRiMOJ2dY-iQ"/>
             </children>
             <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_jaQbwWkfEeCRiMOJ2dY-iQ" fontName="Segoe UI" showStereotype="Label" useClassifierShape="true"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jaQbwmkfEeCRiMOJ2dY-iQ" x="11748" y="5706"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jaQbwmkfEeCRiMOJ2dY-iQ" x="12144" y="5544"/>
           </children>
           <children xmi:id="_qEcmYGkgEeCRiMOJ2dY-iQ" element="_qEaxMGkgEeCRiMOJ2dY-iQ">
             <children xmi:id="_qEdNcGkgEeCRiMOJ2dY-iQ" type="ImageCompartment">
@@ -342,7 +342,7 @@
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_yzftQWk4EeCfPbOqaBMWWg"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_yzVVMWk4EeCfPbOqaBMWWg" fontName="Segoe UI" showStereotype="Label"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yzVVMmk4EeCfPbOqaBMWWg" x="18084" y="5676" width="2694" height="2195"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yzVVMmk4EeCfPbOqaBMWWg" x="20328" y="5676" width="2694" height="2195"/>
           </children>
           <children xmi:id="_0vjB4GlGEeCxZdOSJZ1GBA" element="_0vbGEGlGEeCxZdOSJZ1GBA">
             <children xmi:id="_0vleIGlGEeCxZdOSJZ1GBA" type="ImageCompartment">
@@ -733,6 +733,9 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PK2twWkgEeCRiMOJ2dY-iQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PK2twGkgEeCRiMOJ2dY-iQ"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_BS_pcGlJEeCxZdOSJZ1GBA" name="Estado" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
         <ownedOperation xmi:id="_uMoA4GkZEeCRiMOJ2dY-iQ" name="imprimirImporteTotal"/>
         <ownedOperation xmi:id="_D2LjQGkaEeCRiMOJ2dY-iQ" name="imprimirTiposDeTarjetas"/>
       </packagedElement>
@@ -875,9 +878,23 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fuaU8GlHEeCxZdOSJZ1GBA" value="1"/>
         </ownedEnd>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_t8uYUGlIEeCxZdOSJZ1GBA" name="FormularioDeVentas">
+        <ownedAttribute xmi:id="_ynQ00GlIEeCxZdOSJZ1GBA" name="Estado" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_23kMYGlIEeCxZdOSJZ1GBA" name="actualizaEstado">
+          <ownedParameter xmi:id="_5BFdoGlIEeCxZdOSJZ1GBA" name="Parámetro1" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_5ZWMoGlIEeCxZdOSJZ1GBA" name="getEstado">
+          <ownedParameter xmi:id="_7OZCsGlIEeCxZdOSJZ1GBA" name="Parámetro1" type="_7fjrMGlIEeCxZdOSJZ1GBA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_AElLAGlIEeCxZdOSJZ1GBA" name="PrimitiveTypes">
       <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_AEmZIGlIEeCxZdOSJZ1GBA" name="Date"/>
+      <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_7fjrMGlIEeCxZdOSJZ1GBA" name="Void"/>
     </packagedElement>
     <profileApplication xmi:id="_NxJyV2YfEeCZK9G1IGGOzA">
       <eAnnotations xmi:id="_NxJyWGYfEeCZK9G1IGGOzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
