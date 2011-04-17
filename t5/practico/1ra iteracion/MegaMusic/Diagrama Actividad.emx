@@ -1173,7 +1173,7 @@
     <node xmi:type="uml:DecisionNode" xmi:id="_gCZfMGkLEeCHCsGkL9dHgw" name="Hay Stock?" outgoing="_l9IYQGkLEeCHCsGkL9dHgw _3MDiYGkLEeCHCsGkL9dHgw" incoming="_rgwY4GkLEeCHCsGkL9dHgw" inPartition="_RDrdIGkLEeCHCsGkL9dHgw"/>
     <node xmi:type="uml:DecisionNode" xmi:id="_h-FIwGkLEeCHCsGkL9dHgw" name="Consulta productos relacionados'" outgoing="_s1XbYGkLEeCHCsGkL9dHgw _vqZu0GkLEeCHCsGkL9dHgw" incoming="_l9IYQGkLEeCHCsGkL9dHgw" inPartition="_RDrdIGkLEeCHCsGkL9dHgw"/>
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_uXnRQGkLEeCHCsGkL9dHgw" name="Fin" incoming="_vqZu0GkLEeCHCsGkL9dHgw"/>
-    <node xmi:type="uml:OpaqueAction" xmi:id="_zXHRIGkLEeCHCsGkL9dHgw" name="Generado el formulario de Venta" incoming="_3MDiYGkLEeCHCsGkL9dHgw" inPartition="_RDrdIGkLEeCHCsGkL9dHgw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_zXHRIGkLEeCHCsGkL9dHgw" name="Generando el formulario de Venta" incoming="_3MDiYGkLEeCHCsGkL9dHgw" inPartition="_RDrdIGkLEeCHCsGkL9dHgw"/>
     <node xmi:type="uml:InitialNode" xmi:id="_8R4MsGkLEeCHCsGkL9dHgw" name="Inicio" outgoing="_PD_n4GkMEeCHCsGkL9dHgw"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_9NJiIGkLEeCHCsGkL9dHgw" name="Generando el formulario de Venta" outgoing="_N6isgGkMEeCHCsGkL9dHgw" incoming="_PD_n4GkMEeCHCsGkL9dHgw" inPartition="_TcqGsGkLEeCHCsGkL9dHgw"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_BxIDoGkMEeCHCsGkL9dHgw" name="Generando Facura" outgoing="_RfBf4GkMEeCHCsGkL9dHgw" incoming="_N6isgGkMEeCHCsGkL9dHgw" inPartition="_TcqGsGkLEeCHCsGkL9dHgw"/>
