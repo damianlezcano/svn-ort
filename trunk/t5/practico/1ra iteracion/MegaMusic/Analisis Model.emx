@@ -615,7 +615,7 @@
                   <children xmi:id="_xYMnMGkoEeCuEObJjMYFTw" type="Name"/>
                   <children xmi:id="_xYNOQGkoEeCuEObJjMYFTw" type="Parent"/>
                   <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_xYI80WkoEeCuEObJjMYFTw" fontName="Segoe UI" showStereotype="Label"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xYI80mkoEeCuEObJjMYFTw"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xYI80mkoEeCuEObJjMYFTw" x="185" y="290" width="3307" height="9367"/>
                 </children>
                 <children xmi:id="_xYN1UGkoEeCuEObJjMYFTw" element="_xX0MsGkoEeCuEObJjMYFTw">
                   <eAnnotations xmi:id="_xYPDcGkoEeCuEObJjMYFTw" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
@@ -625,7 +625,7 @@
                   <children xmi:id="_xYPqgGkoEeCuEObJjMYFTw" type="Name"/>
                   <children xmi:id="_xYQRkGkoEeCuEObJjMYFTw" type="Parent"/>
                   <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_xYN1UWkoEeCuEObJjMYFTw" fontName="Segoe UI" showStereotype="Label"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xYN1UmkoEeCuEObJjMYFTw"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xYN1UmkoEeCuEObJjMYFTw" x="185" y="132" width="6957" height="10075"/>
                 </children>
                 <children xmi:id="_xYSGwGkoEeCuEObJjMYFTw" element="_xX0zwGkoEeCuEObJjMYFTw">
                   <eAnnotations xmi:id="_xYTU4GkoEeCuEObJjMYFTw" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
