@@ -193,7 +193,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_eVixsGYfEeCZK9G1IGGOzA" name="Class Diagram">
       <eAnnotations xmi:id="_eVixsWYfEeCZK9G1IGGOzA" source="uml2.diagrams">
-        <contents xmi:type="notation:Diagram" xmi:id="_f_UL4GYfEeCZK9G1IGGOzA" type="Class" name="DiagramaDeClases">
+        <contents xmi:type="notation:Diagram" xmi:id="_f_UL4GYfEeCZK9G1IGGOzA" type="Class" name="DC-Pagos">
           <children xmi:id="_i-5icGYfEeCZK9G1IGGOzA" element="_i-vxcGYfEeCZK9G1IGGOzA">
             <children xmi:id="_i-5ic2YfEeCZK9G1IGGOzA" type="ImageCompartment">
               <layoutConstraint xmi:type="notation:Size" xmi:id="_i-5idGYfEeCZK9G1IGGOzA" width="1320" height="1320"/>
@@ -322,7 +322,7 @@
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_qEebk2kgEeCRiMOJ2dY-iQ"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_qEcmYWkgEeCRiMOJ2dY-iQ" fontName="Segoe UI" showStereotype="Label"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qEcmYmkgEeCRiMOJ2dY-iQ" x="20988" y="7920" width="3512" height="1479"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qEcmYmkgEeCRiMOJ2dY-iQ" x="20988" y="8844" width="3512" height="1479"/>
           </children>
           <children xmi:id="_yzVVMGk4EeCfPbOqaBMWWg" element="_yzNZYGk4EeCfPbOqaBMWWg">
             <children xmi:id="_yzYYgGk4EeCfPbOqaBMWWg" type="ImageCompartment">
@@ -785,7 +785,8 @@
         </ownedAttribute>
         <interfaceRealization xmi:id="_ygfecGlIEeCyMsASsn1eOQ" supplier="_UVR5gGlHEeCyMsASsn1eOQ" client="_RqJI8GlHEeCyMsASsn1eOQ" contract="_UVR5gGlHEeCyMsASsn1eOQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_UVR5gGlHEeCyMsASsn1eOQ" name="IFacturador">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_UVR5gGlHEeCyMsASsn1eOQ" name="IFacturador" isAbstract="true">
+        <ownedAttribute xmi:id="_Wh9kwGlNEeCyMsASsn1eOQ" name="estado" visibility="private"/>
         <ownedOperation xmi:id="_yzUJQGlHEeCyMsASsn1eOQ" name="calcularImporte"/>
         <ownedOperation xmi:id="_4MhFwGlLEeCyMsASsn1eOQ" name="imprimir"/>
         <ownedOperation xmi:id="_cHDXQGlIEeCyMsASsn1eOQ" name="cobrar"/>
