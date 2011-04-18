@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Plataforma de modelado de Rational (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_5Leu0GYeEeCZK9G1IGGOzA" name="Use Case Model">
   <eAnnotations xmi:id="_5Leu0WYeEeCZK9G1IGGOzA" source="uml2.diagrams">
     <contents xmi:type="notation:Diagram" xmi:id="_CUgI0GYfEeCZK9G1IGGOzA" type="Usecase" name="DiagramaDeCasoDeUso1">
@@ -480,6 +480,82 @@
         <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XeAFUmlEEeCfPbOqaBMWWg" points="[20, 10, -269, -124]$[254, 152, -35, 18]"/>
       </edges>
     </contents>
+    <contents xmi:type="notation:Diagram" xmi:id="_rR6hcGlUEeCMndEzaRAKbw" type="Usecase" name="Verificando Stock de producto en cada sucursal">
+      <children xmi:id="_8FxgMGlUEeCMndEzaRAKbw" element="_8FelQGlUEeCMndEzaRAKbw">
+        <children xmi:id="_8FxgM2lUEeCMndEzaRAKbw" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_8FxgNGlUEeCMndEzaRAKbw" width="1455" height="2381"/>
+        </children>
+        <children xmi:id="_8FxgNWlUEeCMndEzaRAKbw" type="Stereotype"/>
+        <children xmi:id="_8FxgNmlUEeCMndEzaRAKbw" type="Name"/>
+        <children xmi:id="_8FxgN2lUEeCMndEzaRAKbw" type="Parent"/>
+        <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_8FxgMWlUEeCMndEzaRAKbw" fontName="Microsoft Sans Serif" showStereotype="Image"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8FxgMmlUEeCMndEzaRAKbw" x="3696" y="4092"/>
+      </children>
+      <children xmi:id="_-MofAGlUEeCMndEzaRAKbw" element="_-MeuAGlUEeCMndEzaRAKbw">
+        <children xmi:id="_-MofA2lUEeCMndEzaRAKbw" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_-MofBGlUEeCMndEzaRAKbw" width="2216" height="1322"/>
+        </children>
+        <children xmi:id="_-MofBWlUEeCMndEzaRAKbw" type="Stereotype"/>
+        <children xmi:id="_-MofBmlUEeCMndEzaRAKbw" type="Name"/>
+        <children xmi:id="_-MofB2lUEeCMndEzaRAKbw" type="Parent"/>
+        <children xmi:id="_-MofCGlUEeCMndEzaRAKbw" visible="false" type="Extension_Points">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-MofCWlUEeCMndEzaRAKbw"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_-MofAWlUEeCMndEzaRAKbw" fontName="Microsoft Sans Serif" showStereotype="Image"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-MofAmlUEeCMndEzaRAKbw" x="7392" y="4752"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_rR6hcWlUEeCMndEzaRAKbw"/>
+      <element xsi:nil="true"/>
+      <edges xmi:id="_-NOU4GlUEeCMndEzaRAKbw" element="_-M7Z8GlUEeCMndEzaRAKbw" source="_8FxgMGlUEeCMndEzaRAKbw" target="_-MofAGlUEeCMndEzaRAKbw">
+        <children xmi:id="_-NOU42lUEeCMndEzaRAKbw" type="NameLabel">
+          <children xmi:id="_-NOU5WlUEeCMndEzaRAKbw" type="Stereotype"/>
+          <children xmi:id="_-NOU5mlUEeCMndEzaRAKbw" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-NOU5GlUEeCMndEzaRAKbw" y="-186"/>
+        </children>
+        <children xmi:id="_-NOU52lUEeCMndEzaRAKbw" visible="false" type="ToMultiplicityLabel" element="_-M7Z9GlUEeCMndEzaRAKbw">
+          <children xmi:id="_-NYF4GlUEeCMndEzaRAKbw" type="ToMultiplicity"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-NOU6GlUEeCMndEzaRAKbw" y="396"/>
+        </children>
+        <children xmi:id="_-NYF4WlUEeCMndEzaRAKbw" visible="false" type="ToRoleLabel" element="_-M7Z9GlUEeCMndEzaRAKbw">
+          <children xmi:id="_-NYF42lUEeCMndEzaRAKbw" type="ToRole"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-NYF4mlUEeCMndEzaRAKbw" y="-397"/>
+        </children>
+        <children xmi:id="_-NYF5GlUEeCMndEzaRAKbw" visible="false" type="FromMultiplicityLabel" element="_-M7Z8WlUEeCMndEzaRAKbw">
+          <children xmi:id="_-NYF5mlUEeCMndEzaRAKbw" type="FromMultiplicity"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-NYF5WlUEeCMndEzaRAKbw" y="396"/>
+        </children>
+        <children xmi:id="_-NYF52lUEeCMndEzaRAKbw" visible="false" type="FromRoleLabel" element="_-M7Z8WlUEeCMndEzaRAKbw">
+          <children xmi:id="_-NYF6WlUEeCMndEzaRAKbw" type="FromRole"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-NYF6GlUEeCMndEzaRAKbw" y="-397"/>
+        </children>
+        <children xmi:id="_-NYF6mlUEeCMndEzaRAKbw" type="ToQualifierLabel" element="_-M7Z9GlUEeCMndEzaRAKbw">
+          <children xmi:id="_-NYF7GlUEeCMndEzaRAKbw" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-NYF7WlUEeCMndEzaRAKbw"/>
+          </children>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-NYF62lUEeCMndEzaRAKbw" y="-186"/>
+        </children>
+        <children xmi:id="_-NYF7mlUEeCMndEzaRAKbw" type="FromQualifierLabel" element="_-M7Z8WlUEeCMndEzaRAKbw">
+          <children xmi:id="_-NYF8GlUEeCMndEzaRAKbw" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-NYF8WlUEeCMndEzaRAKbw"/>
+          </children>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-NYF72lUEeCMndEzaRAKbw" y="-186"/>
+        </children>
+        <children xmi:id="_-NYF8mlUEeCMndEzaRAKbw" type="ToConstraintLabel" element="_-M7Z9GlUEeCMndEzaRAKbw">
+          <children xmi:id="_-NYF9GlUEeCMndEzaRAKbw" type="ToConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-NYF9WlUEeCMndEzaRAKbw"/>
+          </children>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-NYF82lUEeCMndEzaRAKbw" y="1058"/>
+        </children>
+        <children xmi:id="_-NYF9mlUEeCMndEzaRAKbw" type="FromConstraintLabel" element="_-M7Z8WlUEeCMndEzaRAKbw">
+          <children xmi:id="_-NYF-GlUEeCMndEzaRAKbw" type="FromConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_-NYF-WlUEeCMndEzaRAKbw"/>
+          </children>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-NYF92lUEeCMndEzaRAKbw" y="1058"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_-NOU4WlUEeCMndEzaRAKbw" fontName="Microsoft Sans Serif" lineWidth="1" showStereotype="Text"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-NOU4mlUEeCMndEzaRAKbw" points="[-8, -11, 172, 244]$[-180, -255, 0, 0]"/>
+      </edges>
+    </contents>
   </eAnnotations>
   <packageImport xmi:id="_5Leu1GYeEeCZK9G1IGGOzA">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -601,6 +677,18 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_G611AGlEEeCfPbOqaBMWWg" name="Selecciona tipo de tarjeta"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_L5ybQGlEEeCfPbOqaBMWWg" name="Ingresa datos de la tarjeta"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_VsgSgGlEEeCfPbOqaBMWWg" name="Selecciona plan"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_8FelQGlUEeCMndEzaRAKbw" name="Vendedor"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_-MeuAGlUEeCMndEzaRAKbw" name="Verificando Stock de producto en cada sucursal"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-M7Z8GlUEeCMndEzaRAKbw" memberEnd="_-M7Z8WlUEeCMndEzaRAKbw _-M7Z9GlUEeCMndEzaRAKbw" navigableOwnedEnd="_-M7Z8WlUEeCMndEzaRAKbw _-M7Z9GlUEeCMndEzaRAKbw">
+    <ownedEnd xmi:id="_-M7Z8WlUEeCMndEzaRAKbw" name="casodeutilización1" visibility="private" type="_-MeuAGlUEeCMndEzaRAKbw" association="_-M7Z8GlUEeCMndEzaRAKbw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-M7Z82lUEeCMndEzaRAKbw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-M7Z8mlUEeCMndEzaRAKbw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_-M7Z9GlUEeCMndEzaRAKbw" name="vendedor" visibility="private" type="_8FelQGlUEeCMndEzaRAKbw" association="_-M7Z8GlUEeCMndEzaRAKbw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-M7Z9mlUEeCMndEzaRAKbw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-M7Z9WlUEeCMndEzaRAKbw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
   <profileApplication xmi:id="_5Leu1WYeEeCZK9G1IGGOzA">
     <eAnnotations xmi:id="_5Leu1mYeEeCZK9G1IGGOzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
