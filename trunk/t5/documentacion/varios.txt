@@ -1,0 +1,41 @@
+SVN
+===
+
+redhat.damian.lezcano
+redh67
+
+//**
+//*************************************************************************************
+//*************************************************************************************
+//**
+
+						<a4j:commandButton 
+							id="grabarPedidoCartilla" 
+							value="Grabar" 
+							reRender="panelGralPedidoCartilla,modalPedidoCartillaOk,modalPedidoCartillaError"
+							oncomplete="if (#{empty facesContext.maximumSeverity}){ 
+											#{rich:component('modalPedidoCartillaOk')}.show();
+										}else{
+											if(#{facesMessages.getCurrentMessagesForControl('grabarPedidoCartilla').size() != 0})
+												#{rich:component('modalPedidoCartillaError')}.show();
+										}" 
+							action="#{pedidoCartillaPrestadoresAction.grabar()}"/>
+//**
+//*************************************************************************************
+//*************************************************************************************
+//**
+
+Se debe tomar en cuenta, principalmente en el Ingreso al formulario, la invocación del servicio por Rest y la respuesta generada, los servicios auxiliares (combos, listas, etc) y las validaciones..
+
+//**
+//*************************************************************************************
+//*************************************************************************************
+//**
+
+
+<!--			1 es Pendiente-->
+				<ui:include src="/view/common/ls_bandejaSimulada.xhtml" >
+					<ui:param name="_action" value="#{auditoriaProtesisAction}" />
+					<ui:param name="_idEstado" value="1" />
+					<ui:param name="_idModal" value="modalAuditoriaProtesis" />
+				</ui:include>	
