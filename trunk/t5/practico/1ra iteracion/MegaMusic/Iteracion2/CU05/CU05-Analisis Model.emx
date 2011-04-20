@@ -621,7 +621,7 @@
                 </children>
                 <children xmi:id="_JLiVFWrgEeCbUvWpVW5w5w" type="Name"/>
                 <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_JLiVFmrgEeCbUvWpVW5w5w" fontName="Segoe UI" showStereotype="Label"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JLiVF2rgEeCbUvWpVW5w5w" x="793" y="793"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JLiVF2rgEeCbUvWpVW5w5w" y="530" width="24288" height="27273"/>
               </children>
               <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_JLiVGGrgEeCbUvWpVW5w5w"/>
               <edges xmi:id="_jSz_8GrgEeCbUvWpVW5w5w" element="_jSpn4GrgEeCbUvWpVW5w5w" source="_X3tOkGrgEeCbUvWpVW5w5w" target="_X3tOkGrgEeCbUvWpVW5w5w">

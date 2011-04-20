@@ -87,7 +87,7 @@
                 </children>
                 <children xmi:id="_cEoXdWrfEeCbUvWpVW5w5w" type="Name"/>
                 <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_cEoXdmrfEeCbUvWpVW5w5w" fontName="Segoe UI" showStereotype="Label"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cEoXd2rfEeCbUvWpVW5w5w" x="793" y="793"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cEoXd2rfEeCbUvWpVW5w5w" y="530" width="17410" height="13542"/>
               </children>
               <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_cEoXeGrfEeCbUvWpVW5w5w"/>
               <edges xmi:id="_mmJOYGrfEeCbUvWpVW5w5w" element="_ml6k4GrfEeCbUvWpVW5w5w" source="_ibDuAGrfEeCbUvWpVW5w5w" target="_kAxHkGrfEeCbUvWpVW5w5w">
