@@ -16,7 +16,7 @@
         </eAnnotations>
         <ownedBehavior xmi:type="uml:Interaction" xmi:id="_hF63Y2osEeCF-aTGkk7e1w" name="Interacción1">
           <eAnnotations xmi:id="_hF63ZGosEeCF-aTGkk7e1w" source="uml2.diagrams">
-            <contents xmi:type="notation:Diagram" xmi:id="_44_RIG6kEeC49aNdlWhwyw" type="Sequence" element="_hF63Y2osEeCF-aTGkk7e1w" name="DiagramaDeSecuencia1" measurementUnit="Himetric">
+            <contents xmi:type="notation:Diagram" xmi:id="_44_RIG6kEeC49aNdlWhwyw" type="Sequence" element="_hF63Y2osEeCF-aTGkk7e1w" name="generandoFormularioDeVenta" measurementUnit="Himetric">
               <children xmi:id="_44_RIW6kEeC49aNdlWhwyw" element="_hF63Y2osEeCF-aTGkk7e1w">
                 <children xmi:id="_44_RIm6kEeC49aNdlWhwyw" type="interaction_compartment">
                   <children xmi:id="_fngwYG6lEeC49aNdlWhwyw" element="_fnXmcG6lEeC49aNdlWhwyw">
@@ -247,48 +247,6 @@
           <message xmi:id="_ZKVxQW6oEeC49aNdlWhwyw" name="EncolaFormVta" messageSort="reply" receiveEvent="_ZKWYUG6oEeC49aNdlWhwyw" sendEvent="_ZKVxQG6oEeC49aNdlWhwyw" connector="_5Rp94m6mEeC49aNdlWhwyw"/>
           <message xmi:id="_QW0QsG6pEeC49aNdlWhwyw" name="EnviarFormVta" receiveEvent="_QW03wW6pEeC49aNdlWhwyw" sendEvent="_QW03wG6pEeC49aNdlWhwyw" connector="_QW37EW6pEeC49aNdlWhwyw"/>
           <message xmi:id="_QW3UAW6pEeC49aNdlWhwyw" name="EnviarFormVta" messageSort="reply" receiveEvent="_QW37EG6pEeC49aNdlWhwyw" sendEvent="_QW3UAG6pEeC49aNdlWhwyw" connector="_QW37EW6pEeC49aNdlWhwyw"/>
-        </ownedBehavior>
-        <ownedBehavior xmi:type="uml:Interaction" xmi:id="_hF8FxWosEeCF-aTGkk7e1w" name="Interacción2">
-          <eAnnotations xmi:id="_hF8FxmosEeCF-aTGkk7e1w" source="uml2.diagrams"/>
-          <lifeline xmi:id="_hF8s2WosEeCF-aTGkk7e1w" name="interfaz Grafica" coveredBy="_hF8s3WosEeCF-aTGkk7e1w _hF8s3mosEeCF-aTGkk7e1w _hF8s32osEeCF-aTGkk7e1w _i8w4EGqLEeC4VKLc2DCfOA _i8xfIGqLEeC4VKLc2DCfOA _i8yGMGqLEeC4VKLc2DCfOA _lPUwkGqLEeC4VKLc2DCfOA _lPVXoGqLEeC4VKLc2DCfOA _lPV-sGqLEeC4VKLc2DCfOA"/>
-          <lifeline xmi:id="_hF8s2mosEeCF-aTGkk7e1w" name="cajero" coveredBy="_hF8s3GosEeCF-aTGkk7e1w _hF8s4GosEeCF-aTGkk7e1w _i8wRAGqLEeC4VKLc2DCfOA _i8zUUGqLEeC4VKLc2DCfOA _lPUJgGqLEeC4VKLc2DCfOA _lPWlwGqLEeC4VKLc2DCfOA _tR8jMGqLEeC4VKLc2DCfOA _tR_mgGqLEeC4VKLc2DCfOA"/>
-          <lifeline xmi:id="_sXXKQGqLEeC4VKLc2DCfOA" name="repostitorioVentas2" coveredBy="_tR9KQGqLEeC4VKLc2DCfOA _tR9xUGqLEeC4VKLc2DCfOA _tR-YYGqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_hF8s3GosEeCF-aTGkk7e1w" covered="_hF8s2mosEeCF-aTGkk7e1w" message="_hF9To2osEeCF-aTGkk7e1w">
-            <event xmi:type="uml:SendOperationEvent" href="../../Analisis%20Model.emx#_RpbKoGogEeCF-aTGkk7e1w?Analisis%20Model/Secuence%20Diagram/Eventodeoperacióndeenvío17?"/>
-          </fragment>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_hF8s3WosEeCF-aTGkk7e1w" covered="_hF8s2WosEeCF-aTGkk7e1w" message="_hF9To2osEeCF-aTGkk7e1w">
-            <event xmi:type="uml:ReceiveOperationEvent" href="../../Analisis%20Model.emx#_RpbxsGogEeCF-aTGkk7e1w?Analisis%20Model/Secuence%20Diagram/Eventodeoperaciónderecepción17?"/>
-          </fragment>
-          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_hF8s3mosEeCF-aTGkk7e1w" covered="_hF8s2WosEeCF-aTGkk7e1w" start="_hF8s3WosEeCF-aTGkk7e1w" finish="_hF8s32osEeCF-aTGkk7e1w"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_hF8s32osEeCF-aTGkk7e1w" covered="_hF8s2WosEeCF-aTGkk7e1w" message="_hF9TpGosEeCF-aTGkk7e1w">
-            <event xmi:type="uml:SendOperationEvent" href="../../Analisis%20Model.emx#_RpbKoGogEeCF-aTGkk7e1w?Analisis%20Model/Secuence%20Diagram/Eventodeoperacióndeenvío17?"/>
-          </fragment>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_hF8s4GosEeCF-aTGkk7e1w" covered="_hF8s2mosEeCF-aTGkk7e1w" message="_hF9TpGosEeCF-aTGkk7e1w">
-            <event xmi:type="uml:ReceiveOperationEvent" href="../../Analisis%20Model.emx#_RpbxsGogEeCF-aTGkk7e1w?Analisis%20Model/Secuence%20Diagram/Eventodeoperaciónderecepción17?"/>
-          </fragment>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_i8wRAGqLEeC4VKLc2DCfOA" covered="_hF8s2mosEeCF-aTGkk7e1w" event="_j6pcoGqLEeC4VKLc2DCfOA" message="_i8vp8GqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_i8w4EGqLEeC4VKLc2DCfOA" covered="_hF8s2WosEeCF-aTGkk7e1w" event="_j6qqwGqLEeC4VKLc2DCfOA" message="_i8vp8GqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_i8xfIGqLEeC4VKLc2DCfOA" covered="_hF8s2WosEeCF-aTGkk7e1w" start="_i8w4EGqLEeC4VKLc2DCfOA" finish="_i8yGMGqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_i8yGMGqLEeC4VKLc2DCfOA" covered="_hF8s2WosEeCF-aTGkk7e1w" event="_j6pcoGqLEeC4VKLc2DCfOA" message="_i8ytQGqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_i8zUUGqLEeC4VKLc2DCfOA" covered="_hF8s2mosEeCF-aTGkk7e1w" event="_j6qqwGqLEeC4VKLc2DCfOA" message="_i8ytQGqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lPUJgGqLEeC4VKLc2DCfOA" covered="_hF8s2mosEeCF-aTGkk7e1w" event="_m0U_gGqLEeC4VKLc2DCfOA" message="_lPS7YGqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lPUwkGqLEeC4VKLc2DCfOA" covered="_hF8s2WosEeCF-aTGkk7e1w" event="_m0VmkGqLEeC4VKLc2DCfOA" message="_lPS7YGqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_lPVXoGqLEeC4VKLc2DCfOA" covered="_hF8s2WosEeCF-aTGkk7e1w" start="_lPUwkGqLEeC4VKLc2DCfOA" finish="_lPV-sGqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lPV-sGqLEeC4VKLc2DCfOA" covered="_hF8s2WosEeCF-aTGkk7e1w" event="_m0U_gGqLEeC4VKLc2DCfOA" message="_lPV-sWqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lPWlwGqLEeC4VKLc2DCfOA" covered="_hF8s2mosEeCF-aTGkk7e1w" event="_m0VmkGqLEeC4VKLc2DCfOA" message="_lPV-sWqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tR8jMGqLEeC4VKLc2DCfOA" covered="_hF8s2mosEeCF-aTGkk7e1w" event="_tw8MUGqLEeC4VKLc2DCfOA" message="_tR78IGqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tR9KQGqLEeC4VKLc2DCfOA" covered="_sXXKQGqLEeC4VKLc2DCfOA" event="_tw8zYGqLEeC4VKLc2DCfOA" message="_tR78IGqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_tR9xUGqLEeC4VKLc2DCfOA" covered="_sXXKQGqLEeC4VKLc2DCfOA" start="_tR9KQGqLEeC4VKLc2DCfOA" finish="_tR-YYGqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tR-YYGqLEeC4VKLc2DCfOA" covered="_sXXKQGqLEeC4VKLc2DCfOA" event="_tw8MUGqLEeC4VKLc2DCfOA" message="_tR-_cGqLEeC4VKLc2DCfOA"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tR_mgGqLEeC4VKLc2DCfOA" covered="_hF8s2mosEeCF-aTGkk7e1w" event="_tw8zYGqLEeC4VKLc2DCfOA" message="_tR-_cGqLEeC4VKLc2DCfOA"/>
-          <message xmi:id="_hF9To2osEeCF-aTGkk7e1w" name="Ingresando datos de venta" receiveEvent="_hF8s3WosEeCF-aTGkk7e1w" sendEvent="_hF8s3GosEeCF-aTGkk7e1w"/>
-          <message xmi:id="_hF9TpGosEeCF-aTGkk7e1w" name="Ingresando datos de venta" messageSort="reply" receiveEvent="_hF8s4GosEeCF-aTGkk7e1w" sendEvent="_hF8s32osEeCF-aTGkk7e1w"/>
-          <message xmi:id="_i8vp8GqLEeC4VKLc2DCfOA" name="PagoConTarjeta()" receiveEvent="_i8w4EGqLEeC4VKLc2DCfOA" sendEvent="_i8wRAGqLEeC4VKLc2DCfOA"/>
-          <message xmi:id="_i8ytQGqLEeC4VKLc2DCfOA" name="PagoConTarjeta()" messageSort="reply" receiveEvent="_i8zUUGqLEeC4VKLc2DCfOA" sendEvent="_i8yGMGqLEeC4VKLc2DCfOA"/>
-          <message xmi:id="_lPS7YGqLEeC4VKLc2DCfOA" name="CancelarVenta()" receiveEvent="_lPUwkGqLEeC4VKLc2DCfOA" sendEvent="_lPUJgGqLEeC4VKLc2DCfOA"/>
-          <message xmi:id="_lPV-sWqLEeC4VKLc2DCfOA" name="CancelarVenta()" messageSort="reply" receiveEvent="_lPWlwGqLEeC4VKLc2DCfOA" sendEvent="_lPV-sGqLEeC4VKLc2DCfOA"/>
-          <message xmi:id="_tR78IGqLEeC4VKLc2DCfOA" name="AlmacenandoFormVta" receiveEvent="_tR9KQGqLEeC4VKLc2DCfOA" sendEvent="_tR8jMGqLEeC4VKLc2DCfOA"/>
-          <message xmi:id="_tR-_cGqLEeC4VKLc2DCfOA" name="AlmacenandoFormVta" messageSort="reply" receiveEvent="_tR_mgGqLEeC4VKLc2DCfOA" sendEvent="_tR-YYGqLEeC4VKLc2DCfOA"/>
         </ownedBehavior>
         <ownedAttribute xmi:id="_fnYNgG6lEeC49aNdlWhwyw" name="rol_Vendedor" type="_egk9gG6lEeC49aNdlWhwyw"/>
         <ownedAttribute xmi:id="_j4k88G6lEeC49aNdlWhwyw" name="interfaz Grafica" type="_WduTEGlPEeCxZdOSJZ1GBA"/>
