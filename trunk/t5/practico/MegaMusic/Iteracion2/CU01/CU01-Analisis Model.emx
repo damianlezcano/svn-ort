@@ -280,6 +280,20 @@
                     <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_RL73E2lUEeCMndEzaRAKbw" fontName="Microsoft Sans Serif" showStereotype="Label"/>
                     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RL73FGlUEeCMndEzaRAKbw" x="-10522" y="315" width="2169" height="9525"/>
                   </children>
+                  <children xmi:id="_wD8jEG6kEeC49aNdlWhwyw" element="_XZpWg2lUEeCMndEzaRAKbw">
+                    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_wD8jEW6kEeC49aNdlWhwyw" fontName="Segoe UI" showStereotype="Label"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wD8jEm6kEeC49aNdlWhwyw" x="-1" y="1401" height="1401"/>
+                  </children>
+                  <children xmi:id="_yhe8gG6kEeC49aNdlWhwyw" element="_yhSIMG6kEeC49aNdlWhwyw">
+                    <eAnnotations xmi:id="_yhgKoG6kEeC49aNdlWhwyw" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
+                      <details xmi:id="_yhgKoW6kEeC49aNdlWhwyw" key="LifelineLabelStyle" value="Represents Name and Type Name"/>
+                    </eAnnotations>
+                    <children xmi:id="_yhgKom6kEeC49aNdlWhwyw" type="Stereotype"/>
+                    <children xmi:id="_yhgKo26kEeC49aNdlWhwyw" type="Name"/>
+                    <children xmi:id="_yhgxsG6kEeC49aNdlWhwyw" type="Parent"/>
+                    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_yhe8gW6kEeC49aNdlWhwyw" fontName="Segoe UI" showStereotype="Label"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yhe8gm6kEeC49aNdlWhwyw" x="264" y="4894"/>
+                  </children>
                   <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_5ECC9GlTEeCMndEzaRAKbw"/>
                 </children>
                 <children xmi:id="_5ECC9WlTEeCMndEzaRAKbw" type="Name"/>
@@ -306,6 +320,7 @@
           </ownedConnector>
           <lifeline xmi:id="_RL73EGlUEeCMndEzaRAKbw" name="GUI" represents="_RL73EWlUEeCMndEzaRAKbw" coveredBy="_XZpWgWlUEeCMndEzaRAKbw _XZpWhmlUEeCMndEzaRAKbw"/>
           <lifeline xmi:id="_UgILsGlUEeCMndEzaRAKbw" name="manager de Productos" represents="_UgILsWlUEeCMndEzaRAKbw" coveredBy="_XZpWgmlUEeCMndEzaRAKbw _XZpWg2lUEeCMndEzaRAKbw _XZpWhGlUEeCMndEzaRAKbw"/>
+          <lifeline xmi:id="_yhSIMG6kEeC49aNdlWhwyw" name="producto" represents="_yhVLgG6kEeC49aNdlWhwyw"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XZpWgWlUEeCMndEzaRAKbw" covered="_RL73EGlUEeCMndEzaRAKbw" event="_YgIdcWlUEeCMndEzaRAKbw" message="_XZpWgGlUEeCMndEzaRAKbw"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XZpWgmlUEeCMndEzaRAKbw" covered="_UgILsGlUEeCMndEzaRAKbw" event="_YgIdcmlUEeCMndEzaRAKbw" message="_XZpWgGlUEeCMndEzaRAKbw"/>
           <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_XZpWg2lUEeCMndEzaRAKbw" covered="_UgILsGlUEeCMndEzaRAKbw" start="_XZpWgmlUEeCMndEzaRAKbw" finish="_XZpWhGlUEeCMndEzaRAKbw"/>
@@ -316,6 +331,9 @@
         </ownedBehavior>
         <ownedAttribute xmi:id="_RL73EWlUEeCMndEzaRAKbw" name="GUI" type="_Q7PvsGlUEeCMndEzaRAKbw"/>
         <ownedAttribute xmi:id="_UgILsWlUEeCMndEzaRAKbw" name="manager de Productos" type="_TuWwgGlUEeCMndEzaRAKbw"/>
+        <ownedAttribute xmi:id="_yhVLgG6kEeC49aNdlWhwyw" name="producto">
+          <type xmi:type="uml:Class" href="../CU05/CU05-Analisis%20Model.emx#_dNYjcGkXEeCRiMOJ2dY-iQ?CU05-Analisis%20Model/Class%20Diagram/Producto?"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_LdOAwGlUEeCMndEzaRAKbw" name="Manager Productos"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_Q7PvsGlUEeCMndEzaRAKbw" name="GUI"/>
@@ -1055,7 +1073,12 @@
         <ownedOperation xmi:id="_99jkYGlYEeCfPbOqaBMWWg" name="SeleccionarPlan"/>
         <ownedOperation xmi:id="_kdKBYGlaEeCfPbOqaBMWWg" name="Imprimir"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_F5YhkGlQEeCxZdOSJZ1GBA" name="FormulariosDeVentas"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_F5YhkGlQEeCxZdOSJZ1GBA" name="FormulariosDeVentas">
+        <ownedOperation xmi:id="_25dXcG6mEeC49aNdlWhwyw" name="NuevoFormVta()"/>
+        <ownedOperation xmi:id="_7XXtMG6mEeC49aNdlWhwyw" name="ingresaDatosFormVta"/>
+        <ownedOperation xmi:id="_VkPCsG6nEeC49aNdlWhwyw" name="Valida_Y_Autocompleta"/>
+        <ownedOperation xmi:id="_bAjsAG6oEeC49aNdlWhwyw" name="EncolaFormVta"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_rBnYcGlQEeCxZdOSJZ1GBA" name="Producto"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_wH2ScGlQEeCxZdOSJZ1GBA" name="Item"/>
     </packagedElement>
