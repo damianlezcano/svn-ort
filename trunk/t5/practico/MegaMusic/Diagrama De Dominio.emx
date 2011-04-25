@@ -75,7 +75,7 @@
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_qc5ow26pEeCP4_z1IaVXqg"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_qc2lc26pEeCP4_z1IaVXqg" fontName="Segoe UI" showStereotype="Label"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qc2ldG6pEeCP4_z1IaVXqg" x="660" y="660"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qc2ldG6pEeCP4_z1IaVXqg" x="660" y="1056"/>
           </children>
           <children xmi:id="_qc6P0G6pEeCP4_z1IaVXqg" element="_-BzBMG6oEeCP4_z1IaVXqg">
             <children xmi:id="_qc624G6pEeCP4_z1IaVXqg" type="ImageCompartment">
@@ -897,6 +897,10 @@
           <ownedParameter xmi:id="_kx42oG69EeCIfcRLLbkQVQ" name="Parámetro1" type="_XJ_dkG69EeCIfcRLLbkQVQ" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:id="_mbgwwG7GEeCIfcRLLbkQVQ" name="crearFormularioVenta"/>
+        <ownedOperation xmi:id="_uefRQG7dEeC49aNdlWhwyw" name="AgregarItem">
+          <ownedParameter xmi:id="_0CgTcG7dEeC49aNdlWhwyw" name="IdProducto"/>
+          <ownedParameter xmi:id="_0Cg6gG7dEeC49aNdlWhwyw" name="cantidad"/>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_-B02YG6oEeCP4_z1IaVXqg" name="Tarjeta" clientDependency="_-B02ZG6oEeCP4_z1IaVXqg _hwAUoG6qEeCP4_z1IaVXqg _67PjIG6sEeCP4_z1IaVXqg">
         <ownedAttribute xmi:id="_-B02YW6oEeCP4_z1IaVXqg" name="producto" visibility="private" type="_-B2EgG6oEeCP4_z1IaVXqg" aggregation="composite" association="_-CEG9G6oEeCP4_z1IaVXqg">
@@ -936,6 +940,7 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qCuLMG7KEeCIfcRLLbkQVQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qCtkIG7KEeCIfcRLLbkQVQ" value="1"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_5uAJkG7QEeC49aNdlWhwyw" name="IdProducto" visibility="private"/>
         <interfaceRealization xmi:id="_-B2EgW6oEeCP4_z1IaVXqg" supplier="_-B3SoG6oEeCP4_z1IaVXqg" client="_-B2EgG6oEeCP4_z1IaVXqg" contract="_-B3SoG6oEeCP4_z1IaVXqg"/>
         <interfaceRealization xmi:id="_tJ5TIG6sEeCP4_z1IaVXqg" supplier="_-B1dcG6oEeCP4_z1IaVXqg" client="_-B2EgG6oEeCP4_z1IaVXqg" contract="_-B1dcG6oEeCP4_z1IaVXqg"/>
         <interfaceRealization xmi:id="_yoPVsG6tEeCP4_z1IaVXqg" supplier="_-B3SoG6oEeCP4_z1IaVXqg" client="_-B2EgG6oEeCP4_z1IaVXqg" contract="_-B3SoG6oEeCP4_z1IaVXqg"/>
@@ -1141,6 +1146,16 @@
         <ownedOperation xmi:id="_00GxgG7HEeCIfcRLLbkQVQ" name="calcularSubTotal">
           <ownedParameter xmi:id="_3EeRoG7HEeCIfcRLLbkQVQ" name="Parámetro1" type="_cUDDcG7EEeCIfcRLLbkQVQ" direction="return"/>
         </ownedOperation>
+        <ownedOperation xmi:id="_l8JIoG7QEeC49aNdlWhwyw" name="AgregarItem">
+          <ownedParameter xmi:id="_w2CqYG7QEeC49aNdlWhwyw" name="idProducto"/>
+          <ownedParameter xmi:id="_w2DRcG7QEeC49aNdlWhwyw" name="cantidad"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ObB_AG7hEeC49aNdlWhwyw" name="grabarFormulario">
+          <ownedParameter xmi:id="_Q1nyIG7hEeC49aNdlWhwyw" name="FormularioVenta"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_nWuLEG7iEeC49aNdlWhwyw" name="Validar">
+          <ownedParameter xmi:id="_pRvtUG7iEeC49aNdlWhwyw" name="FormularioVenta"/>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_opyYcG7BEeCIfcRLLbkQVQ" name="Item" clientDependency="_CCj-kG7CEeCIfcRLLbkQVQ">
         <ownedAttribute xmi:id="_p5fFwG7BEeCIfcRLLbkQVQ" name="cantidad" visibility="private">
@@ -1200,6 +1215,10 @@
         <ownedOperation xmi:id="_G2WO8G7IEeCIfcRLLbkQVQ" name="grabarElFormulario"/>
         <ownedOperation xmi:id="_JZxGkG7LEeCIfcRLLbkQVQ" name="buscardisponibilidadProducto">
           <ownedParameter xmi:id="_QQPPIG7LEeCIfcRLLbkQVQ" name="descripcion"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_YxE1gG7QEeC49aNdlWhwyw" name="AgregarItem">
+          <ownedParameter xmi:id="_rhQ-EG7QEeC49aNdlWhwyw" name="IdProducto"/>
+          <ownedParameter xmi:id="_rhkgEG7QEeC49aNdlWhwyw" name="cantidad"/>
         </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_bVznoG7GEeCIfcRLLbkQVQ" memberEnd="_bV3SAG7GEeCIfcRLLbkQVQ _bV8xkG7GEeCIfcRLLbkQVQ"/>
