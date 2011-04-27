@@ -5,93 +5,6 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
   <uml:Package xmi:id="_5Leu0GYeEeCZK9G1IGGOzA" name="CU06-Use Case Model">
     <eAnnotations xmi:id="_5Leu0WYeEeCZK9G1IGGOzA" source="uml2.diagrams">
-      <contents xmi:type="notation:Diagram" xmi:id="_GH3P0XBeEeCjKNYTriXfaQ" type="Usecase" name="Verificando Stock de producto en cada sucursal">
-        <children xmi:id="_GH324HBeEeCjKNYTriXfaQ">
-          <children xmi:id="_GH324XBeEeCjKNYTriXfaQ" type="ImageCompartment">
-            <layoutConstraint xmi:type="notation:Size" xmi:id="_GH324nBeEeCjKNYTriXfaQ" width="1455" height="2381"/>
-          </children>
-          <children xmi:id="_GH3243BeEeCjKNYTriXfaQ" type="Stereotype"/>
-          <children xmi:id="_GH325HBeEeCjKNYTriXfaQ" type="Name"/>
-          <children xmi:id="_GH325XBeEeCjKNYTriXfaQ" type="Parent"/>
-          <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_GH325nBeEeCjKNYTriXfaQ" fontName="Microsoft Sans Serif" showStereotype="Image"/>
-          <element xmi:type="uml:Actor" href="../CU05/CU05-Use%20Case%20Model.emx#_GH3P0HBeEeCjKNYTriXfaQ?CU05-Use%20Case%20Model/Use%20case/Vendedor?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GH3253BeEeCjKNYTriXfaQ" x="3696" y="4092"/>
-        </children>
-        <children xmi:id="_GH326HBeEeCjKNYTriXfaQ">
-          <children xmi:id="_GH326XBeEeCjKNYTriXfaQ" type="ImageCompartment">
-            <layoutConstraint xmi:type="notation:Size" xmi:id="_GH326nBeEeCjKNYTriXfaQ" width="2216" height="1322"/>
-          </children>
-          <children xmi:id="_GH3263BeEeCjKNYTriXfaQ" type="Stereotype"/>
-          <children xmi:id="_GH327HBeEeCjKNYTriXfaQ" type="Name"/>
-          <children xmi:id="_GH327XBeEeCjKNYTriXfaQ" type="Parent"/>
-          <children xmi:id="_GH327nBeEeCjKNYTriXfaQ" visible="false" type="Extension_Points">
-            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GH3273BeEeCjKNYTriXfaQ"/>
-          </children>
-          <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_GH328HBeEeCjKNYTriXfaQ" fontName="Microsoft Sans Serif" showStereotype="Image"/>
-          <element xmi:type="uml:UseCase" href="../CU05/CU05-Use%20Case%20Model.emx#_GIBn4HBeEeCjKNYTriXfaQ?CU05-Use%20Case%20Model/Use%20case/Verificando%20Stock%20de%20producto%20en%20cada%20sucursal?"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GH328XBeEeCjKNYTriXfaQ" x="7392" y="4752"/>
-        </children>
-        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_GH328nBeEeCjKNYTriXfaQ"/>
-        <element xsi:nil="true"/>
-        <edges xmi:id="_GH3283BeEeCjKNYTriXfaQ" source="_GH324HBeEeCjKNYTriXfaQ" target="_GH326HBeEeCjKNYTriXfaQ">
-          <children xmi:id="_GH329HBeEeCjKNYTriXfaQ" type="NameLabel">
-            <children xmi:id="_GH329XBeEeCjKNYTriXfaQ" type="Stereotype"/>
-            <children xmi:id="_GH329nBeEeCjKNYTriXfaQ" type="Name"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GH3293BeEeCjKNYTriXfaQ" y="-186"/>
-          </children>
-          <children xmi:id="_GH32-HBeEeCjKNYTriXfaQ" visible="false" type="ToMultiplicityLabel">
-            <children xmi:id="_GH32-XBeEeCjKNYTriXfaQ" type="ToMultiplicity"/>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_-M7Z9GlUEeCMndEzaRAKbw?Use%20Case%20Model/%3CAssociation%3E/vendedor?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH32-nBeEeCjKNYTriXfaQ" y="396"/>
-          </children>
-          <children xmi:id="_GH32-3BeEeCjKNYTriXfaQ" visible="false" type="ToRoleLabel">
-            <children xmi:id="_GH32_HBeEeCjKNYTriXfaQ" type="ToRole"/>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_-M7Z9GlUEeCMndEzaRAKbw?Use%20Case%20Model/%3CAssociation%3E/vendedor?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH32_XBeEeCjKNYTriXfaQ" y="-397"/>
-          </children>
-          <children xmi:id="_GH32_nBeEeCjKNYTriXfaQ" visible="false" type="FromMultiplicityLabel">
-            <children xmi:id="_GH32_3BeEeCjKNYTriXfaQ" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_-M7Z8WlUEeCMndEzaRAKbw?Use%20Case%20Model/%3CAssociation%3E/casodeutilización1?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH33AHBeEeCjKNYTriXfaQ" y="396"/>
-          </children>
-          <children xmi:id="_GH33AXBeEeCjKNYTriXfaQ" visible="false" type="FromRoleLabel">
-            <children xmi:id="_GH33AnBeEeCjKNYTriXfaQ" type="FromRole"/>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_-M7Z8WlUEeCMndEzaRAKbw?Use%20Case%20Model/%3CAssociation%3E/casodeutilización1?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH33A3BeEeCjKNYTriXfaQ" y="-397"/>
-          </children>
-          <children xmi:id="_GH33BHBeEeCjKNYTriXfaQ" type="ToQualifierLabel">
-            <children xmi:id="_GH33BXBeEeCjKNYTriXfaQ" type="QualifierCompartment">
-              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GH33BnBeEeCjKNYTriXfaQ"/>
-            </children>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_-M7Z9GlUEeCMndEzaRAKbw?Use%20Case%20Model/%3CAssociation%3E/vendedor?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH33B3BeEeCjKNYTriXfaQ" y="-186"/>
-          </children>
-          <children xmi:id="_GH33CHBeEeCjKNYTriXfaQ" type="FromQualifierLabel">
-            <children xmi:id="_GH33CXBeEeCjKNYTriXfaQ" type="QualifierCompartment">
-              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GH33CnBeEeCjKNYTriXfaQ"/>
-            </children>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_-M7Z8WlUEeCMndEzaRAKbw?Use%20Case%20Model/%3CAssociation%3E/casodeutilización1?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH33C3BeEeCjKNYTriXfaQ" y="-186"/>
-          </children>
-          <children xmi:id="_GH33DHBeEeCjKNYTriXfaQ" type="ToConstraintLabel">
-            <children xmi:id="_GH33DXBeEeCjKNYTriXfaQ" type="ToConstraintCompartment">
-              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GH33DnBeEeCjKNYTriXfaQ"/>
-            </children>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_-M7Z9GlUEeCMndEzaRAKbw?Use%20Case%20Model/%3CAssociation%3E/vendedor?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH33D3BeEeCjKNYTriXfaQ" y="1058"/>
-          </children>
-          <children xmi:id="_GH33EHBeEeCjKNYTriXfaQ" type="FromConstraintLabel">
-            <children xmi:id="_GH33EXBeEeCjKNYTriXfaQ" type="FromConstraintCompartment">
-              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GH33EnBeEeCjKNYTriXfaQ"/>
-            </children>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_-M7Z8WlUEeCMndEzaRAKbw?Use%20Case%20Model/%3CAssociation%3E/casodeutilización1?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH33E3BeEeCjKNYTriXfaQ" y="1058"/>
-          </children>
-          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_GH33FHBeEeCjKNYTriXfaQ" fontName="Microsoft Sans Serif" lineWidth="1" showStereotype="Text"/>
-          <element xmi:type="uml:Association" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_-M7Z8GlUEeCMndEzaRAKbw?Use%20Case%20Model/%3CAssociation%3E?"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GH33FXBeEeCjKNYTriXfaQ" points="[-8, -11, 172, 244]$[-180, -255, 0, 0]"/>
-        </edges>
-      </contents>
       <contents xmi:type="notation:Diagram" xmi:id="_GH8vYHBeEeCjKNYTriXfaQ" type="Usecase" name="Realizando pago de venta en Efectivo">
         <children xmi:id="_GH8vYXBeEeCjKNYTriXfaQ">
           <children xmi:id="_GH8vYnBeEeCjKNYTriXfaQ" type="ImageCompartment">
@@ -134,121 +47,121 @@
         </children>
         <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_GH8vfXBeEeCjKNYTriXfaQ"/>
         <element xsi:nil="true"/>
-        <edges xmi:id="_GH8vfnBeEeCjKNYTriXfaQ" source="_GH8vYXBeEeCjKNYTriXfaQ" target="_GH8vaXBeEeCjKNYTriXfaQ">
-          <children xmi:id="_GH8vf3BeEeCjKNYTriXfaQ" type="NameLabel">
-            <children xmi:id="_GH8vgHBeEeCjKNYTriXfaQ" type="Stereotype"/>
-            <children xmi:id="_GH8vgXBeEeCjKNYTriXfaQ" type="Name"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GH8vgnBeEeCjKNYTriXfaQ" y="-186"/>
+        <edges xmi:id="_uX82MHBjEeCjKNYTriXfaQ" source="_GH8vYXBeEeCjKNYTriXfaQ" target="_GH8vc3BeEeCjKNYTriXfaQ">
+          <children xmi:id="_uX82M3BjEeCjKNYTriXfaQ" type="NameLabel">
+            <children xmi:id="_uX82NXBjEeCjKNYTriXfaQ" type="Stereotype"/>
+            <children xmi:id="_uX82NnBjEeCjKNYTriXfaQ" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uX82NHBjEeCjKNYTriXfaQ" y="-186"/>
           </children>
-          <children xmi:id="_GH8vg3BeEeCjKNYTriXfaQ" visible="false" type="ToMultiplicityLabel">
-            <children xmi:id="_GH8vhHBeEeCjKNYTriXfaQ" type="ToMultiplicity"/>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_aXhsoGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH8vhXBeEeCjKNYTriXfaQ" y="396"/>
+          <children xmi:id="_uX82N3BjEeCjKNYTriXfaQ" visible="false" type="ToMultiplicityLabel">
+            <children xmi:id="_uX82OXBjEeCjKNYTriXfaQ" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_uXSH0nBjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_uX82OHBjEeCjKNYTriXfaQ" y="396"/>
           </children>
-          <children xmi:id="_GH8vhnBeEeCjKNYTriXfaQ" visible="false" type="ToRoleLabel">
-            <children xmi:id="_GH8vh3BeEeCjKNYTriXfaQ" type="ToRole"/>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_aXhsoGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH8viHBeEeCjKNYTriXfaQ" y="-397"/>
+          <children xmi:id="_uX82OnBjEeCjKNYTriXfaQ" visible="false" type="ToRoleLabel">
+            <children xmi:id="_uX82PHBjEeCjKNYTriXfaQ" type="ToRole"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_uXSH0nBjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_uX82O3BjEeCjKNYTriXfaQ" y="-397"/>
           </children>
-          <children xmi:id="_GH9WcHBeEeCjKNYTriXfaQ" visible="false" type="FromMultiplicityLabel">
-            <children xmi:id="_GH9WcXBeEeCjKNYTriXfaQ" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_aXdbMGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/selecciona%20forma%20de%20pago%20en%20efectivo?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH9WcnBeEeCjKNYTriXfaQ" y="396"/>
+          <children xmi:id="_uX82PXBjEeCjKNYTriXfaQ" visible="false" type="FromMultiplicityLabel">
+            <children xmi:id="_uX82P3BjEeCjKNYTriXfaQ" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_uXMBMXBjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/realiza%20Pago?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_uX82PnBjEeCjKNYTriXfaQ" y="396"/>
           </children>
-          <children xmi:id="_GH9Wc3BeEeCjKNYTriXfaQ" visible="false" type="FromRoleLabel">
-            <children xmi:id="_GH9WdHBeEeCjKNYTriXfaQ" type="FromRole"/>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_aXdbMGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/selecciona%20forma%20de%20pago%20en%20efectivo?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH9WdXBeEeCjKNYTriXfaQ" y="-397"/>
+          <children xmi:id="_uX82QHBjEeCjKNYTriXfaQ" visible="false" type="FromRoleLabel">
+            <children xmi:id="_uYC80HBjEeCjKNYTriXfaQ" type="FromRole"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_uXMBMXBjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/realiza%20Pago?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_uX82QXBjEeCjKNYTriXfaQ" y="-397"/>
           </children>
-          <children xmi:id="_GH9WdnBeEeCjKNYTriXfaQ" type="ToQualifierLabel">
-            <children xmi:id="_GH9Wd3BeEeCjKNYTriXfaQ" type="QualifierCompartment">
-              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GH9WeHBeEeCjKNYTriXfaQ"/>
+          <children xmi:id="_uYC80XBjEeCjKNYTriXfaQ" type="ToQualifierLabel">
+            <children xmi:id="_uYC803BjEeCjKNYTriXfaQ" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uYC81HBjEeCjKNYTriXfaQ"/>
             </children>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_aXhsoGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH9WeXBeEeCjKNYTriXfaQ" y="-186"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_uXSH0nBjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_uYC80nBjEeCjKNYTriXfaQ" y="-186"/>
           </children>
-          <children xmi:id="_GH9WenBeEeCjKNYTriXfaQ" type="FromQualifierLabel">
-            <children xmi:id="_GH9We3BeEeCjKNYTriXfaQ" type="QualifierCompartment">
-              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GH9WfHBeEeCjKNYTriXfaQ"/>
+          <children xmi:id="_uYC81XBjEeCjKNYTriXfaQ" type="FromQualifierLabel">
+            <children xmi:id="_uYC813BjEeCjKNYTriXfaQ" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uYC82HBjEeCjKNYTriXfaQ"/>
             </children>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_aXdbMGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/selecciona%20forma%20de%20pago%20en%20efectivo?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH9WfXBeEeCjKNYTriXfaQ" y="-186"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_uXMBMXBjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/realiza%20Pago?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_uYC81nBjEeCjKNYTriXfaQ" y="-186"/>
           </children>
-          <children xmi:id="_GH9WfnBeEeCjKNYTriXfaQ" type="ToConstraintLabel">
-            <children xmi:id="_GH9Wf3BeEeCjKNYTriXfaQ" type="ToConstraintCompartment">
-              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GH9WgHBeEeCjKNYTriXfaQ"/>
+          <children xmi:id="_uYC82XBjEeCjKNYTriXfaQ" type="ToConstraintLabel">
+            <children xmi:id="_uYC823BjEeCjKNYTriXfaQ" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uYC83HBjEeCjKNYTriXfaQ"/>
             </children>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_aXhsoGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH9WgXBeEeCjKNYTriXfaQ" y="1058"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_uXSH0nBjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_uYC82nBjEeCjKNYTriXfaQ" y="1058"/>
           </children>
-          <children xmi:id="_GH9WgnBeEeCjKNYTriXfaQ" type="FromConstraintLabel">
-            <children xmi:id="_GH9Wg3BeEeCjKNYTriXfaQ" type="FromConstraintCompartment">
-              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GH9WhHBeEeCjKNYTriXfaQ"/>
+          <children xmi:id="_uYC83XBjEeCjKNYTriXfaQ" type="FromConstraintLabel">
+            <children xmi:id="_uYC833BjEeCjKNYTriXfaQ" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uYC84HBjEeCjKNYTriXfaQ"/>
             </children>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_aXdbMGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/selecciona%20forma%20de%20pago%20en%20efectivo?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH9WhXBeEeCjKNYTriXfaQ" y="1058"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_uXMBMXBjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/realiza%20Pago?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_uYC83nBjEeCjKNYTriXfaQ" y="1058"/>
           </children>
-          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_GH9WhnBeEeCjKNYTriXfaQ" fontName="Segoe UI" lineWidth="1" showStereotype="Text"/>
-          <element xmi:type="uml:Association" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_aXaX4GlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E?"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GH9Wh3BeEeCjKNYTriXfaQ" points="[27, -5, -291, 52]$[246, -55, -72, 2]"/>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_uX82MXBjEeCjKNYTriXfaQ" fontName="Segoe UI" lineWidth="1" showStereotype="Text"/>
+          <element xmi:type="uml:Association" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_uXMBMHBjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uX82MnBjEeCjKNYTriXfaQ" points="[27, 7, -324, -69]$[306, 81, -45, 5]"/>
         </edges>
-        <edges xmi:id="_GH9WiHBeEeCjKNYTriXfaQ" source="_GH8vYXBeEeCjKNYTriXfaQ" target="_GH8vc3BeEeCjKNYTriXfaQ">
-          <children xmi:id="_GH9WiXBeEeCjKNYTriXfaQ" type="NameLabel">
-            <children xmi:id="_GH9WinBeEeCjKNYTriXfaQ" type="Stereotype"/>
-            <children xmi:id="_GH9Wi3BeEeCjKNYTriXfaQ" type="Name"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GH9WjHBeEeCjKNYTriXfaQ" y="-186"/>
+        <edges xmi:id="_wEc0QHBjEeCjKNYTriXfaQ" source="_GH8vYXBeEeCjKNYTriXfaQ" target="_GH8vaXBeEeCjKNYTriXfaQ">
+          <children xmi:id="_wEc0Q3BjEeCjKNYTriXfaQ" type="NameLabel">
+            <children xmi:id="_wEc0RXBjEeCjKNYTriXfaQ" type="Stereotype"/>
+            <children xmi:id="_wEc0RnBjEeCjKNYTriXfaQ" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wEc0RHBjEeCjKNYTriXfaQ" y="-186"/>
           </children>
-          <children xmi:id="_GH9WjXBeEeCjKNYTriXfaQ" visible="false" type="ToMultiplicityLabel">
-            <children xmi:id="_GH9WjnBeEeCjKNYTriXfaQ" type="ToMultiplicity"/>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_lJgBcGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH9Wj3BeEeCjKNYTriXfaQ" y="396"/>
+          <children xmi:id="_wEc0R3BjEeCjKNYTriXfaQ" visible="false" type="ToMultiplicityLabel">
+            <children xmi:id="_wEc0SXBjEeCjKNYTriXfaQ" type="ToMultiplicity"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_wEKgY3BjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wEc0SHBjEeCjKNYTriXfaQ" y="396"/>
           </children>
-          <children xmi:id="_GH9WkHBeEeCjKNYTriXfaQ" visible="false" type="ToRoleLabel">
-            <children xmi:id="_GH9WkXBeEeCjKNYTriXfaQ" type="ToRole"/>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_lJgBcGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH9WknBeEeCjKNYTriXfaQ" y="-397"/>
+          <children xmi:id="_wEc0SnBjEeCjKNYTriXfaQ" visible="false" type="ToRoleLabel">
+            <children xmi:id="_wEc0THBjEeCjKNYTriXfaQ" type="ToRole"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_wEKgY3BjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wEc0S3BjEeCjKNYTriXfaQ" y="-397"/>
           </children>
-          <children xmi:id="_GH9Wk3BeEeCjKNYTriXfaQ" visible="false" type="FromMultiplicityLabel">
-            <children xmi:id="_GH99gHBeEeCjKNYTriXfaQ" type="FromMultiplicity"/>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_lJc-IGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/realiza%20Pago?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH99gXBeEeCjKNYTriXfaQ" y="396"/>
+          <children xmi:id="_wEc0TXBjEeCjKNYTriXfaQ" visible="false" type="FromMultiplicityLabel">
+            <children xmi:id="_wEi64HBjEeCjKNYTriXfaQ" type="FromMultiplicity"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_wEKgYHBjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/selecciona%20forma%20de%20pago%20en%20efectivo?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wEc0TnBjEeCjKNYTriXfaQ" y="396"/>
           </children>
-          <children xmi:id="_GH99gnBeEeCjKNYTriXfaQ" visible="false" type="FromRoleLabel">
-            <children xmi:id="_GH99g3BeEeCjKNYTriXfaQ" type="FromRole"/>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_lJc-IGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/realiza%20Pago?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH99hHBeEeCjKNYTriXfaQ" y="-397"/>
+          <children xmi:id="_wEi64XBjEeCjKNYTriXfaQ" visible="false" type="FromRoleLabel">
+            <children xmi:id="_wEi643BjEeCjKNYTriXfaQ" type="FromRole"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_wEKgYHBjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/selecciona%20forma%20de%20pago%20en%20efectivo?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wEi64nBjEeCjKNYTriXfaQ" y="-397"/>
           </children>
-          <children xmi:id="_GH99hXBeEeCjKNYTriXfaQ" type="ToQualifierLabel">
-            <children xmi:id="_GH99hnBeEeCjKNYTriXfaQ" type="QualifierCompartment">
-              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GH99h3BeEeCjKNYTriXfaQ"/>
+          <children xmi:id="_wEi65HBjEeCjKNYTriXfaQ" type="ToQualifierLabel">
+            <children xmi:id="_wEi65nBjEeCjKNYTriXfaQ" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wEi653BjEeCjKNYTriXfaQ"/>
             </children>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_lJgBcGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH99iHBeEeCjKNYTriXfaQ" y="-186"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_wEKgY3BjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wEi65XBjEeCjKNYTriXfaQ" y="-186"/>
           </children>
-          <children xmi:id="_GH99iXBeEeCjKNYTriXfaQ" type="FromQualifierLabel">
-            <children xmi:id="_GH99inBeEeCjKNYTriXfaQ" type="QualifierCompartment">
-              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GH99i3BeEeCjKNYTriXfaQ"/>
+          <children xmi:id="_wEi66HBjEeCjKNYTriXfaQ" type="FromQualifierLabel">
+            <children xmi:id="_wEi66nBjEeCjKNYTriXfaQ" type="QualifierCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wEi663BjEeCjKNYTriXfaQ"/>
             </children>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_lJc-IGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/realiza%20Pago?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH99jHBeEeCjKNYTriXfaQ" y="-186"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_wEKgYHBjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/selecciona%20forma%20de%20pago%20en%20efectivo?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wEi66XBjEeCjKNYTriXfaQ" y="-186"/>
           </children>
-          <children xmi:id="_GH99jXBeEeCjKNYTriXfaQ" type="ToConstraintLabel">
-            <children xmi:id="_GH99jnBeEeCjKNYTriXfaQ" type="ToConstraintCompartment">
-              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GH99j3BeEeCjKNYTriXfaQ"/>
+          <children xmi:id="_wEi67HBjEeCjKNYTriXfaQ" type="ToConstraintLabel">
+            <children xmi:id="_wEi67nBjEeCjKNYTriXfaQ" type="ToConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wEi673BjEeCjKNYTriXfaQ"/>
             </children>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_lJgBcGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH99kHBeEeCjKNYTriXfaQ" y="1058"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_wEKgY3BjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/cajero?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wEi67XBjEeCjKNYTriXfaQ" y="1058"/>
           </children>
-          <children xmi:id="_GH99kXBeEeCjKNYTriXfaQ" type="FromConstraintLabel">
-            <children xmi:id="_GH99knBeEeCjKNYTriXfaQ" type="FromConstraintCompartment">
-              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_GH99k3BeEeCjKNYTriXfaQ"/>
+          <children xmi:id="_wEi68HBjEeCjKNYTriXfaQ" type="FromConstraintLabel">
+            <children xmi:id="_wEi68nBjEeCjKNYTriXfaQ" type="FromConstraintCompartment">
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wEi683BjEeCjKNYTriXfaQ"/>
             </children>
-            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_lJc-IGlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E/realiza%20Pago?"/>
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_GH99lHBeEeCjKNYTriXfaQ" y="1058"/>
+            <element xmi:type="uml:Property" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_wEKgYHBjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E/selecciona%20forma%20de%20pago%20en%20efectivo?"/>
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wEi68XBjEeCjKNYTriXfaQ" y="1058"/>
           </children>
-          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_GH99lXBeEeCjKNYTriXfaQ" fontName="Segoe UI" lineWidth="1" showStereotype="Text"/>
-          <element xmi:type="uml:Association" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_lJah4GlDEeCfPbOqaBMWWg?Use%20Case%20Model/Actores/%3CAssociation%3E?"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GH99lnBeEeCjKNYTriXfaQ" points="[27, 5, -324, -71]$[324, 57, -27, -19]"/>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wEc0QXBjEeCjKNYTriXfaQ" fontName="Segoe UI" lineWidth="1" showStereotype="Text"/>
+          <element xmi:type="uml:Association" href="platform:/resource/VVieja/USe%20Case%20Model.emx#_wEEZwHBjEeCjKNYTriXfaQ?Use%20Case%20Model/Actores/%3CAssociation%3E?"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wEc0QnBjEeCjKNYTriXfaQ" points="[27, -7, -291, 50]$[246, -59, -72, -2]"/>
         </edges>
       </contents>
     </eAnnotations>
@@ -297,6 +210,19 @@
         </eAnnotations>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hmjcwHBiEeCjKNYTriXfaQ" name="Selecciona forma de pago en efectivo">
+      <extensionPoint xmi:id="_hmjcwXBiEeCjKNYTriXfaQ" name="ExtensionPoint1"/>
+      <extensionPoint xmi:id="_hmjcwnBiEeCjKNYTriXfaQ" name="ExtensionPoint2"/>
+      <extensionPoint xmi:id="_hmjcw3BiEeCjKNYTriXfaQ" name="ExtensionPoint3"/>
+      <extensionPoint xmi:id="_hmjcxHBiEeCjKNYTriXfaQ" name="ExtensionPoint4"/>
+      <extensionPoint xmi:id="_hmjcxXBiEeCjKNYTriXfaQ" name="ExtensionPoint5"/>
+      <extensionPoint xmi:id="_hmjcxnBiEeCjKNYTriXfaQ" name="ExtensionPoint6"/>
+      <extensionPoint xmi:id="_hmjcx3BiEeCjKNYTriXfaQ" name="ExtensionPoint7"/>
+      <extensionPoint xmi:id="_hmkD0HBiEeCjKNYTriXfaQ" name="ExtensionPoint8"/>
+      <extensionPoint xmi:id="_hmkD0XBiEeCjKNYTriXfaQ" name="ExtensionPoint9"/>
+      <extensionPoint xmi:id="_hmkD0nBiEeCjKNYTriXfaQ" name="ExtensionPoint10"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hml5AXBiEeCjKNYTriXfaQ" name="Realiza Pago"/>
     <profileApplication xmi:id="_5Leu1WYeEeCZK9G1IGGOzA">
       <eAnnotations xmi:id="_5Leu1mYeEeCZK9G1IGGOzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
