@@ -247,7 +247,7 @@
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_UFVqsG7GEeCIfcRLLbkQVQ"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_UFO9AW7GEeCIfcRLLbkQVQ" fontName="Segoe UI" showStereotype="Label"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UFO9Am7GEeCIfcRLLbkQVQ" x="1716" y="22176"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UFO9Am7GEeCIfcRLLbkQVQ" x="792" y="22176"/>
           </children>
           <children xmi:id="_2upWIG7IEeCIfcRLLbkQVQ" element="_2ugzQG7IEeCIfcRLLbkQVQ">
             <children xmi:id="_2uqkQG7IEeCIfcRLLbkQVQ" type="ImageCompartment">
