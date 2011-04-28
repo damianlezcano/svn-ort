@@ -269,7 +269,7 @@
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_2ux5AW7IEeCIfcRLLbkQVQ"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_2upWIW7IEeCIfcRLLbkQVQ" fontName="Segoe UI" showStereotype="Label"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2upWIm7IEeCIfcRLLbkQVQ" x="17952" y="19140"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2upWIm7IEeCIfcRLLbkQVQ" x="18612" y="19272"/>
           </children>
           <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_liBDIW6pEeCP4_z1IaVXqg"/>
           <element xsi:nil="true"/>
@@ -898,10 +898,6 @@
           <ownedParameter xmi:id="_kx42oG69EeCIfcRLLbkQVQ" name="Parámetro1" type="_XJ_dkG69EeCIfcRLLbkQVQ" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:id="_mbgwwG7GEeCIfcRLLbkQVQ" name="crearFormularioVenta"/>
-        <ownedOperation xmi:id="_uefRQG7dEeC49aNdlWhwyw" name="agregarItem">
-          <ownedParameter xmi:id="_0CgTcG7dEeC49aNdlWhwyw" name="IdProducto"/>
-          <ownedParameter xmi:id="_0Cg6gG7dEeC49aNdlWhwyw" name="cantidad"/>
-        </ownedOperation>
         <ownedOperation xmi:id="_kVXhcHEoEeCZVJblGP03vg" name="ingresarDatosDeTarjeta">
           <ownedParameter xmi:id="_q7YMIHEoEeCZVJblGP03vg" name="tarjeta" type="_-B02YG6oEeCP4_z1IaVXqg"/>
         </ownedOperation>
@@ -926,7 +922,6 @@
         <ownedOperation xmi:id="_-B1ddW6oEeCP4_z1IaVXqg" name="SetPlan"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_-B2EgG6oEeCP4_z1IaVXqg" name="Producto" clientDependency="_-B2EgW6oEeCP4_z1IaVXqg _tJ5TIG6sEeCP4_z1IaVXqg _yoPVsG6tEeCP4_z1IaVXqg">
-        <ownedAttribute xmi:id="_hkrMYG7AEeCIfcRLLbkQVQ" name="cantidad" visibility="private"/>
         <ownedAttribute xmi:id="_iPZkYG7AEeCIfcRLLbkQVQ" name="descripcion" visibility="private"/>
         <ownedAttribute xmi:id="_9bcpgG7BEeCIfcRLLbkQVQ" name="item" visibility="private" type="_opyYcG7BEeCIfcRLLbkQVQ" association="_9anjEG7BEeCIfcRLLbkQVQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9biwIG7BEeCIfcRLLbkQVQ" value="1"/>
@@ -935,9 +930,6 @@
         <ownedAttribute xmi:id="_GWw-sG7CEeCIfcRLLbkQVQ" name="plan" visibility="private">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KN8EkG7CEeCIfcRLLbkQVQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KN7dgG7CEeCIfcRLLbkQVQ"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_WDSvsG7HEeCIfcRLLbkQVQ" name="ubicacion" visibility="private">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_nfKJoG7HEeCIfcRLLbkQVQ" name="precio" visibility="private" type="_cUDDcG7EEeCIfcRLLbkQVQ"/>
         <ownedAttribute xmi:id="_qCru8G7KEeCIfcRLLbkQVQ" name="stock" visibility="private" type="_2ugzQG7IEeCIfcRLLbkQVQ" association="_qCmPYG7KEeCIfcRLLbkQVQ">
@@ -1221,12 +1213,13 @@
         </ownedAttribute>
         <ownedOperation xmi:id="_o56F0G7GEeCIfcRLLbkQVQ" name="crearFormularioVenta"/>
         <ownedOperation xmi:id="_G2WO8G7IEeCIfcRLLbkQVQ" name="grabarElFormulario"/>
-        <ownedOperation xmi:id="_JZxGkG7LEeCIfcRLLbkQVQ" name="buscarDisponibilidadProducto">
-          <ownedParameter xmi:id="_QQPPIG7LEeCIfcRLLbkQVQ" name="descripcion"/>
-        </ownedOperation>
-        <ownedOperation xmi:id="_YxE1gG7QEeC49aNdlWhwyw" name="AgregarItem">
-          <ownedParameter xmi:id="_rhQ-EG7QEeC49aNdlWhwyw" name="IdProducto"/>
-          <ownedParameter xmi:id="_rhkgEG7QEeC49aNdlWhwyw" name="cantidad"/>
+        <ownedOperation xmi:id="_JJ8xoHErEeCZVJblGP03vg" name="buscarProducto">
+          <ownedParameter xmi:id="_OW2UUHErEeCZVJblGP03vg" name="idProducto">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_OW2UUXErEeCZVJblGP03vg" name="descripcion">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
         </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_bVznoG7GEeCIfcRLLbkQVQ" memberEnd="_bV3SAG7GEeCIfcRLLbkQVQ _bV8xkG7GEeCIfcRLLbkQVQ"/>
@@ -1244,16 +1237,22 @@
         </ownedAttribute>
         <ownedAttribute xmi:id="_Indx0G7JEeCIfcRLLbkQVQ" name="fechaDesde" visibility="private" type="_Z9HL0G7FEeCIfcRLLbkQVQ"/>
         <ownedAttribute xmi:id="_OQX7EG7JEeCIfcRLLbkQVQ" name="fechaHasta" visibility="private" type="_Z9HL0G7FEeCIfcRLLbkQVQ"/>
-        <ownedAttribute xmi:id="_lQS-AG7KEeCIfcRLLbkQVQ" name="disponibilidad" visibility="private">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_qCzqwG7KEeCIfcRLLbkQVQ" name="producto" visibility="private" type="_-B2EgG6oEeCP4_z1IaVXqg" association="_qCmPYG7KEeCIfcRLLbkQVQ">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qC3VIG7KEeCIfcRLLbkQVQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qC2uEG7KEeCIfcRLLbkQVQ" value="1"/>
         </ownedAttribute>
-        <ownedOperation xmi:id="_5DOA0G7IEeCIfcRLLbkQVQ" name="buscar">
-          <ownedParameter xmi:id="_67fxEG7IEeCIfcRLLbkQVQ" name="descripcion"/>
-        </ownedOperation>
+        <ownedAttribute xmi:id="_jD5q0HEuEeCZVJblGP03vg" name="cantidadSalon" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_neb8cHEuEeCZVJblGP03vg" name="cantidadDeposito" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_tbdUgHEuEeCZVJblGP03vg" name="ubicacionDeposito" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_FAEOUHEvEeCZVJblGP03vg" name="ubicacionSalon" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
         <ownedOperation xmi:id="_a7C24G7JEeCIfcRLLbkQVQ" name="ingresarCantidad"/>
         <ownedOperation xmi:id="_bQV8AG7KEeCIfcRLLbkQVQ" name="egresos">
           <ownedParameter xmi:id="_fzk2oG7KEeCIfcRLLbkQVQ" name="Parámetro1" direction="return">
@@ -1265,7 +1264,11 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedParameter>
         </ownedOperation>
-        <ownedOperation xmi:id="_u2aHMG7LEeCIfcRLLbkQVQ" name="ListarProductoDisponibilidad"/>
+        <ownedOperation xmi:id="_vkQNAHEuEeCZVJblGP03vg" name="getUbicacion">
+          <ownedParameter xmi:id="_ww178HEuEeCZVJblGP03vg" name="Parámetro1" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_qCmPYG7KEeCIfcRLLbkQVQ" memberEnd="_qCru8G7KEeCIfcRLLbkQVQ _qCzqwG7KEeCIfcRLLbkQVQ"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_-olb8G7KEeCIfcRLLbkQVQ" memberEnd="_-optYG7KEeCIfcRLLbkQVQ _-o0FcG7KEeCIfcRLLbkQVQ"/>
