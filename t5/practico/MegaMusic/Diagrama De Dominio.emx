@@ -247,7 +247,7 @@
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_UFVqsG7GEeCIfcRLLbkQVQ"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_UFO9AW7GEeCIfcRLLbkQVQ" fontName="Segoe UI" showStereotype="Label"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UFO9Am7GEeCIfcRLLbkQVQ" x="792" y="22176"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UFO9Am7GEeCIfcRLLbkQVQ" x="1584" y="23628"/>
           </children>
           <children xmi:id="_2upWIG7IEeCIfcRLLbkQVQ" element="_2ugzQG7IEeCIfcRLLbkQVQ">
             <children xmi:id="_2uqkQG7IEeCIfcRLLbkQVQ" type="ImageCompartment">
@@ -269,7 +269,7 @@
               <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_2ux5AW7IEeCIfcRLLbkQVQ"/>
             </children>
             <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_2upWIW7IEeCIfcRLLbkQVQ" fontName="Segoe UI" showStereotype="Label"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2upWIm7IEeCIfcRLLbkQVQ" x="17028" y="19008"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2upWIm7IEeCIfcRLLbkQVQ" x="17952" y="19140"/>
           </children>
           <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_liBDIW6pEeCP4_z1IaVXqg"/>
           <element xsi:nil="true"/>
@@ -397,6 +397,7 @@
             </children>
             <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_sg8K0W6uEeCP4_z1IaVXqg" fontName="Segoe UI" lineWidth="1" showStereotype="Text"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sg8K0m6uEeCP4_z1IaVXqg" points="[68, 2, -308, 3]$[286, 24, -90, 25]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c3okkHEoEeCZVJblGP03vg" id="(0.9792143,0.35116565)"/>
           </edges>
           <edges xmi:id="_1i-MAG6uEeCP4_z1IaVXqg" element="_1i1CEG6uEeCP4_z1IaVXqg" source="_qc6P0G6pEeCP4_z1IaVXqg" target="_qc96Mm6pEeCP4_z1IaVXqg">
             <children xmi:id="_1i-MA26uEeCP4_z1IaVXqg" type="NameLabel">
@@ -791,7 +792,7 @@
             <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_qDQ9wG7KEeCIfcRLLbkQVQ" fontName="Segoe UI" lineWidth="1" showStereotype="Text"/>
             <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qDQ9wW7KEeCIfcRLLbkQVQ" points="[18, 92, 12, -143]$[29, 143, 23, -92]"/>
           </edges>
-          <edges xmi:id="_-pOVIG7KEeCIfcRLLbkQVQ" element="_-olb8G7KEeCIfcRLLbkQVQ" source="_UFO9AG7GEeCIfcRLLbkQVQ" target="_2upWIG7IEeCIfcRLLbkQVQ">
+          <edges xmi:id="_-pOVIG7KEeCIfcRLLbkQVQ" element="_-olb8G7KEeCIfcRLLbkQVQ" source="_UFO9AG7GEeCIfcRLLbkQVQ" target="_qc96Mm6pEeCP4_z1IaVXqg">
             <children xmi:id="_-pPjQG7KEeCIfcRLLbkQVQ" type="NameLabel">
               <children xmi:id="_-pQKUG7KEeCIfcRLLbkQVQ" type="Stereotype"/>
               <children xmi:id="_-pQxYG7KEeCIfcRLLbkQVQ" type="Name"/>
@@ -838,8 +839,8 @@
               <layoutConstraint xmi:type="notation:Location" xmi:id="_-pc-oW7KEeCIfcRLLbkQVQ" y="1058"/>
             </children>
             <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_-pOVIW7KEeCIfcRLLbkQVQ" fontName="Segoe UI" lineWidth="1" showStereotype="Text"/>
-            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-pOVIm7KEeCIfcRLLbkQVQ" points="[2579, -395, -10429, 1598]$[12998, -1991, -10, 2]"/>
-            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AXa8UG7LEeCIfcRLLbkQVQ" id="(0.002049562,0.7222126)"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-pOVIm7KEeCIfcRLLbkQVQ" points="[2777, 0, -11355, 9498]$[11435, 0, -2697, 9498]$[11435, -9498, -2697, 0]$[14119, -9498, -13, 0]"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AXa8UG7LEeCIfcRLLbkQVQ" id="(0.003152443,0.64857787)"/>
           </edges>
         </contents>
       </eAnnotations>
@@ -897,9 +898,12 @@
           <ownedParameter xmi:id="_kx42oG69EeCIfcRLLbkQVQ" name="Parámetro1" type="_XJ_dkG69EeCIfcRLLbkQVQ" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:id="_mbgwwG7GEeCIfcRLLbkQVQ" name="crearFormularioVenta"/>
-        <ownedOperation xmi:id="_uefRQG7dEeC49aNdlWhwyw" name="AgregarItem">
+        <ownedOperation xmi:id="_uefRQG7dEeC49aNdlWhwyw" name="agregarItem">
           <ownedParameter xmi:id="_0CgTcG7dEeC49aNdlWhwyw" name="IdProducto"/>
           <ownedParameter xmi:id="_0Cg6gG7dEeC49aNdlWhwyw" name="cantidad"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_kVXhcHEoEeCZVJblGP03vg" name="ingresarDatosDeTarjeta">
+          <ownedParameter xmi:id="_q7YMIHEoEeCZVJblGP03vg" name="tarjeta" type="_-B02YG6oEeCP4_z1IaVXqg"/>
         </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_-B02YG6oEeCP4_z1IaVXqg" name="Tarjeta" clientDependency="_-B02ZG6oEeCP4_z1IaVXqg _hwAUoG6qEeCP4_z1IaVXqg _67PjIG6sEeCP4_z1IaVXqg">
@@ -932,7 +936,7 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KN8EkG7CEeCIfcRLLbkQVQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KN7dgG7CEeCIfcRLLbkQVQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_WDSvsG7HEeCIfcRLLbkQVQ" name="ubicacionEnGondola" visibility="private">
+        <ownedAttribute xmi:id="_WDSvsG7HEeCIfcRLLbkQVQ" name="ubicacion" visibility="private">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_nfKJoG7HEeCIfcRLLbkQVQ" name="precio" visibility="private" type="_cUDDcG7EEeCIfcRLLbkQVQ"/>
@@ -940,7 +944,11 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qCuLMG7KEeCIfcRLLbkQVQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qCtkIG7KEeCIfcRLLbkQVQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_5uAJkG7QEeC49aNdlWhwyw" name="IdProducto" visibility="private"/>
+        <ownedAttribute xmi:id="_5uAJkG7QEeC49aNdlWhwyw" name="Id" visibility="private"/>
+        <ownedAttribute xmi:id="_-o0FcG7KEeCIfcRLLbkQVQ" name="interfaz Grafica VENDEDOR" visibility="private" type="_UFHBMG7GEeCIfcRLLbkQVQ" association="_-olb8G7KEeCIfcRLLbkQVQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-o2hsG7KEeCIfcRLLbkQVQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-o16oG7KEeCIfcRLLbkQVQ" value="1"/>
+        </ownedAttribute>
         <interfaceRealization xmi:id="_-B2EgW6oEeCP4_z1IaVXqg" supplier="_-B3SoG6oEeCP4_z1IaVXqg" client="_-B2EgG6oEeCP4_z1IaVXqg" contract="_-B3SoG6oEeCP4_z1IaVXqg"/>
         <interfaceRealization xmi:id="_tJ5TIG6sEeCP4_z1IaVXqg" supplier="_-B1dcG6oEeCP4_z1IaVXqg" client="_-B2EgG6oEeCP4_z1IaVXqg" contract="_-B1dcG6oEeCP4_z1IaVXqg"/>
         <interfaceRealization xmi:id="_yoPVsG6tEeCP4_z1IaVXqg" supplier="_-B3SoG6oEeCP4_z1IaVXqg" client="_-B2EgG6oEeCP4_z1IaVXqg" contract="_-B3SoG6oEeCP4_z1IaVXqg"/>
@@ -1207,13 +1215,13 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_impYAG7GEeCIfcRLLbkQVQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_immUsG7GEeCIfcRLLbkQVQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_-optYG7KEeCIfcRLLbkQVQ" name="stock" visibility="private" type="_2ugzQG7IEeCIfcRLLbkQVQ" association="_-olb8G7KEeCIfcRLLbkQVQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-owbEG7KEeCIfcRLLbkQVQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-ov0AG7KEeCIfcRLLbkQVQ" value="1"/>
+        <ownedAttribute xmi:id="_-optYG7KEeCIfcRLLbkQVQ" name="productos" visibility="private" type="_-B2EgG6oEeCP4_z1IaVXqg" association="_-olb8G7KEeCIfcRLLbkQVQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-owbEG7KEeCIfcRLLbkQVQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-ov0AG7KEeCIfcRLLbkQVQ"/>
         </ownedAttribute>
         <ownedOperation xmi:id="_o56F0G7GEeCIfcRLLbkQVQ" name="crearFormularioVenta"/>
         <ownedOperation xmi:id="_G2WO8G7IEeCIfcRLLbkQVQ" name="grabarElFormulario"/>
-        <ownedOperation xmi:id="_JZxGkG7LEeCIfcRLLbkQVQ" name="buscardisponibilidadProducto">
+        <ownedOperation xmi:id="_JZxGkG7LEeCIfcRLLbkQVQ" name="buscarDisponibilidadProducto">
           <ownedParameter xmi:id="_QQPPIG7LEeCIfcRLLbkQVQ" name="descripcion"/>
         </ownedOperation>
         <ownedOperation xmi:id="_YxE1gG7QEeC49aNdlWhwyw" name="AgregarItem">
@@ -1243,10 +1251,6 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qC3VIG7KEeCIfcRLLbkQVQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qC2uEG7KEeCIfcRLLbkQVQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_-o0FcG7KEeCIfcRLLbkQVQ" name="interfaz Grafica VENDEDOR" visibility="private" type="_UFHBMG7GEeCIfcRLLbkQVQ" association="_-olb8G7KEeCIfcRLLbkQVQ">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-o2hsG7KEeCIfcRLLbkQVQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-o16oG7KEeCIfcRLLbkQVQ" value="1"/>
-        </ownedAttribute>
         <ownedOperation xmi:id="_5DOA0G7IEeCIfcRLLbkQVQ" name="buscar">
           <ownedParameter xmi:id="_67fxEG7IEeCIfcRLLbkQVQ" name="descripcion"/>
         </ownedOperation>
@@ -1256,7 +1260,6 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedParameter>
         </ownedOperation>
-        <ownedOperation xmi:id="_ijyUcG7KEeCIfcRLLbkQVQ" name="get"/>
         <ownedOperation xmi:id="_v2NMwG7KEeCIfcRLLbkQVQ" name="getDisponibilidad">
           <ownedParameter xmi:id="_xtQN8G7KEeCIfcRLLbkQVQ" name="Parámetro1" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
