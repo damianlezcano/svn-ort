@@ -3,7 +3,7 @@
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Plataforma de modelado de Rational (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:XSDProfile="http:///schemas/XSDProfile/100" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/XSDProfile/100 pathmap://XSD_PROFILES/XSDProfile.epx#_vvGR0PDPEdq5wKwOrH0SmA?XSDProfile/XSDProfile?">
-  <uml:Package xmi:id="_NxJyUmYfEeCZK9G1IGGOzA" name="Diagrama de Clases">
+  <uml:Package xmi:id="_NxJyUmYfEeCZK9G1IGGOzA" name="Diagrama de Dominio">
     <eAnnotations xmi:id="_NxJyU2YfEeCZK9G1IGGOzA" source="uml2.diagrams"/>
     <packageImport xmi:id="_NxJyVmYfEeCZK9G1IGGOzA">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -1224,8 +1224,7 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_bVznoG7GEeCIfcRLLbkQVQ" memberEnd="_bV3SAG7GEeCIfcRLLbkQVQ _bV8xkG7GEeCIfcRLLbkQVQ"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_imfnAG7GEeCIfcRLLbkQVQ" memberEnd="_imkfgG7GEeCIfcRLLbkQVQ _imuQgG7GEeCIfcRLLbkQVQ"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_J9EvUG7IEeCIfcRLLbkQVQ" name="Clase1"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_2ugzQG7IEeCIfcRLLbkQVQ" name="stock">
+      <packagedElement xmi:type="uml:Class" xmi:id="_2ugzQG7IEeCIfcRLLbkQVQ" name="Stock">
         <ownedAttribute xmi:id="_7hMfIG7IEeCIfcRLLbkQVQ" name="stockInicial" visibility="private">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedAttribute>
