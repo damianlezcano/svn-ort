@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Plataforma de modelado de Rational (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
-<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_NxJyUmYfEeCZK9G1IGGOzA" name="CU04-Analisis Model">
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_NxJyUmYfEeCZK9G1IGGOzA" name="CU04-Generando Facturacion de Productos">
   <eAnnotations xmi:id="_NxJyU2YfEeCZK9G1IGGOzA" source="uml2.diagrams"/>
   <packageImport xmi:id="_NxJyVmYfEeCZK9G1IGGOzA">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -934,10 +934,10 @@
       <operation href="../../Diagrama%20De%20Dominio.emx#_IFNtEISFEeC7dZ4H4Et6lg?Diagrama%20de%20Dominio/Class%20Diagram/AdapterManagerDeProductoCajero/actualizarStockPorVta?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_6mYCAISHEeC7dZ4H4Et6lg" name="Eventodeoperacióndeenvío23">
-      <operation href="../../Diagrama%20De%20Dominio.emx#_uUNNIISEEeC7dZ4H4Et6lg?Diagrama%20de%20Dominio/Class%20Diagram/ManagerDeProducto/actualizarStockPorVta?"/>
+      <operation href="../../Diagrama%20De%20Dominio.emx#_uUNNIISEEeC7dZ4H4Et6lg?Diagrama%20de%20Dominio/Class%20Diagram/ManagerDeProducto/actualizarStock?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_6mYCAYSHEeC7dZ4H4Et6lg" name="Eventodeoperaciónderecepción23">
-      <operation href="../../Diagrama%20De%20Dominio.emx#_uUNNIISEEeC7dZ4H4Et6lg?Diagrama%20de%20Dominio/Class%20Diagram/ManagerDeProducto/actualizarStockPorVta?"/>
+      <operation href="../../Diagrama%20De%20Dominio.emx#_uUNNIISEEeC7dZ4H4Et6lg?Diagrama%20de%20Dominio/Class%20Diagram/ManagerDeProducto/actualizarStock?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_PvmegISIEeC7dZ4H4Et6lg" name="Eventodeoperacióndeenvío24">
       <operation href="../../Diagrama%20De%20Dominio.emx#_jtoakISFEeC7dZ4H4Et6lg?Diagrama%20de%20Dominio/Class%20Diagram/Producto/actualizarStock?"/>
