@@ -117,7 +117,7 @@
               </children>
               <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_0gQkUYQDEeCU59NEsSMwLg" fontName="Microsoft Sans Serif" lineWidth="1" showStereotype="Text"/>
               <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0gQkUoQDEeCU59NEsSMwLg" points="[0, 0, 0, -264]$[795, 0, 795, -264]$[795, 264, 795, 0]$[0, 264, 0, 0]"/>
-              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0gQkV4QDEeCU59NEsSMwLg" id="1985:4471"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0gQkV4QDEeCU59NEsSMwLg" id="1985:2037"/>
               <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0gQkWIQDEeCU59NEsSMwLg" id="1986:264"/>
             </edges>
             <edges xmi:id="_6RN2UIQDEeCU59NEsSMwLg" element="_6Q6UUIQDEeCU59NEsSMwLg" source="_vIv70IP9EeCU59NEsSMwLg" target="_vZoBsYQDEeCU59NEsSMwLg">
@@ -152,6 +152,17 @@
               <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cDhTMoQEEeCU59NEsSMwLg" points="[0, 0, -607, 0]$[607, 0, 0, 0]"/>
               <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cDhTN4QEEeCU59NEsSMwLg" id="2232:317"/>
               <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cDhTOIQEEeCU59NEsSMwLg" id="2250:0"/>
+            </edges>
+            <edges xmi:id="_scwAcIR9EeC7dZ4H4Et6lg" element="_cDOYQ4QEEeCU59NEsSMwLg" source="_WiD1wYQEEeCU59NEsSMwLg" target="_YYZpIYQAEeCU59NEsSMwLg">
+              <children xmi:id="_scxOkIR9EeC7dZ4H4Et6lg" type="MessageNameLabel">
+                <children xmi:id="_sczDwIR9EeC7dZ4H4Et6lg" type="Stereotype"/>
+                <children xmi:id="_sczDwYR9EeC7dZ4H4Et6lg" type="Name"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_scxOkYR9EeC7dZ4H4Et6lg" y="476"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_scwAcYR9EeC7dZ4H4Et6lg" fontName="Segoe UI" lineWidth="1" showStereotype="Text"/>
+              <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_scwAcoR9EeC7dZ4H4Et6lg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+              <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sczq0IR9EeC7dZ4H4Et6lg" id="14:1322"/>
+              <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sczq0YR9EeC7dZ4H4Et6lg" id="15:0"/>
             </edges>
           </contents>
         </eAnnotations>
@@ -450,24 +461,6 @@
     <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_3-JVwGlPEeCyMsASsn1eOQ" name="Eventodeoperaciónderecepción14"/>
     <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_YgIdcWlUEeCMndEzaRAKbw" name="Eventodeoperacióndeenvío15"/>
     <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_YgIdcmlUEeCMndEzaRAKbw" name="Eventodeoperaciónderecepción15"/>
-    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_j6pcoGqLEeC4VKLc2DCfOA" name="Eventodeoperacióndeenvío16">
-      <operation href="../../Analisis%20Model.emx#_JGwDMGlVEeCfPbOqaBMWWg?Analisis%20Model/Class%20Diagram/Interfaz%20Grafica/PagoConTarjeta()?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_j6qqwGqLEeC4VKLc2DCfOA" name="Eventodeoperaciónderecepción16">
-      <operation href="../../Analisis%20Model.emx#_JGwDMGlVEeCfPbOqaBMWWg?Analisis%20Model/Class%20Diagram/Interfaz%20Grafica/PagoConTarjeta()?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_m0U_gGqLEeC4VKLc2DCfOA" name="Eventodeoperacióndeenvío17">
-      <operation href="../../Analisis%20Model.emx#_m0TKUGqLEeC4VKLc2DCfOA?Analisis%20Model/Class%20Diagram/Interfaz%20Grafica/CancelarVenta()?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_m0VmkGqLEeC4VKLc2DCfOA" name="Eventodeoperaciónderecepción17">
-      <operation href="../../Analisis%20Model.emx#_m0TKUGqLEeC4VKLc2DCfOA?Analisis%20Model/Class%20Diagram/Interfaz%20Grafica/CancelarVenta()?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_tw8MUGqLEeC4VKLc2DCfOA" name="Eventodeoperacióndeenvío18">
-      <operation href="../../Analisis%20Model.emx#_7__uoGogEeCF-aTGkk7e1w?Analisis%20Model/Secuence%20Diagram/RepostitorioVentas/AlmacenandoFormVta?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_tw8zYGqLEeC4VKLc2DCfOA" name="Eventodeoperaciónderecepción18">
-      <operation href="../../Analisis%20Model.emx#_7__uoGogEeCF-aTGkk7e1w?Analisis%20Model/Secuence%20Diagram/RepostitorioVentas/AlmacenandoFormVta?"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_0D-_IG6mEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío19">
       <operation href="../CU03/CU03-Analisis%20Model.emx#_0D9xAG6mEeC49aNdlWhwyw?CU03-Analisis%20Model/Class%20Diagram/Interfaz%20Grafica/solicitaFormularioNuevo()?"/>
     </packagedElement>
@@ -476,32 +469,10 @@
     </packagedElement>
     <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_0-yagG6mEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío20"/>
     <packagedElement xmi:type="uml:CreationEvent" xmi:id="_0-zBkG6mEeC49aNdlWhwyw" name="Eventodecreación1"/>
-    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_25d-gG6mEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío21">
-      <operation href="../CU01/CU01-Analisis%20Model.emx#_25dXcG6mEeC49aNdlWhwyw?CU01-Analisis%20Model/Class%20Diagram/FormulariosDeVentas/NuevoFormVta()?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_7XXtMW6mEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío22">
-      <operation href="../CU01/CU01-Analisis%20Model.emx#_7XXtMG6mEeC49aNdlWhwyw?CU01-Analisis%20Model/Class%20Diagram/FormulariosDeVentas/ingresaDatosFormVta?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_7XYUQG6mEeC49aNdlWhwyw" name="Eventodeoperaciónderecepción20">
-      <operation href="../CU01/CU01-Analisis%20Model.emx#_7XXtMG6mEeC49aNdlWhwyw?CU01-Analisis%20Model/Class%20Diagram/FormulariosDeVentas/ingresaDatosFormVta?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_VkPpwG6nEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío23">
-      <operation href="../CU01/CU01-Analisis%20Model.emx#_VkPCsG6nEeC49aNdlWhwyw?CU01-Analisis%20Model/Class%20Diagram/FormulariosDeVentas/Valida_Y_Autocompleta?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_VkPpwW6nEeC49aNdlWhwyw" name="Eventodeoperaciónderecepción21">
-      <operation href="../CU01/CU01-Analisis%20Model.emx#_VkPCsG6nEeC49aNdlWhwyw?CU01-Analisis%20Model/Class%20Diagram/FormulariosDeVentas/Valida_Y_Autocompleta?"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_dayIMG6nEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío24"/>
     <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_dayvQG6nEeC49aNdlWhwyw" name="Eventodeoperaciónderecepción22"/>
     <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_vokuUW6nEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío25"/>
     <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_volVYG6nEeC49aNdlWhwyw" name="Eventodeoperaciónderecepción23"/>
-    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_bAkTEG6oEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío26">
-      <operation href="../CU01/CU01-Analisis%20Model.emx#_bAjsAG6oEeC49aNdlWhwyw?CU01-Analisis%20Model/Class%20Diagram/FormulariosDeVentas/EncolaFormVta?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_bAkTEW6oEeC49aNdlWhwyw" name="Eventodeoperaciónderecepción24">
-      <operation href="../CU01/CU01-Analisis%20Model.emx#_bAjsAG6oEeC49aNdlWhwyw?CU01-Analisis%20Model/Class%20Diagram/FormulariosDeVentas/EncolaFormVta?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_Sma70G6pEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío27"/>
     <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_Sma70W6pEeC49aNdlWhwyw" name="Eventodeoperaciónderecepción25"/>
     <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_g2ccUG7fEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío28"/>
     <packagedElement xmi:type="uml:CreationEvent" xmi:id="_g2dDYW7fEeC49aNdlWhwyw" name="Eventodecreación2"/>
@@ -521,12 +492,8 @@
     </packagedElement>
     <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_Ev5L4G7gEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío33"/>
     <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_Ev5y8G7gEeC49aNdlWhwyw" name="Eventodeoperaciónderecepción27"/>
-    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_GU1JYG7gEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío34">
-      <operation href="../../Diagrama%20De%20Dominio.emx#_-B3So26oEeCP4_z1IaVXqg?Diagrama%20de%20Dominio/Class%20Diagram/IFacturable/getPrecio?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_GU1wcG7gEeC49aNdlWhwyw" name="Eventodeoperaciónderecepción28">
-      <operation href="../../Diagrama%20De%20Dominio.emx#_-B3So26oEeCP4_z1IaVXqg?Diagrama%20de%20Dominio/Class%20Diagram/IFacturable/getPrecio?"/>
-    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_GU1JYG7gEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío34"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_GU1wcG7gEeC49aNdlWhwyw" name="Eventodeoperaciónderecepción28"/>
     <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_I9GzMG7gEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío35">
       <operation href="../../Diagrama%20De%20Dominio.emx#_v2NMwG7KEeCIfcRLLbkQVQ?Diagrama%20de%20Dominio/Class%20Diagram/Stock/getDisponibilidad?"/>
     </packagedElement>
@@ -547,12 +514,8 @@
     <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_YV00MG7hEeC49aNdlWhwyw" name="Eventodeoperaciónderecepción32">
       <operation href="../../Diagrama%20De%20Dominio.emx#_ObB_AG7hEeC49aNdlWhwyw?Diagrama%20de%20Dominio/Class%20Diagram/FormularioVenta/grabarFormulario?"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_weavYG7iEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío39">
-      <operation href="../../Diagrama%20De%20Dominio.emx#_nWuLEG7iEeC49aNdlWhwyw?Diagrama%20de%20Dominio/Class%20Diagram/FormularioVenta/validar?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_webWcG7iEeC49aNdlWhwyw" name="Eventodeoperaciónderecepción33">
-      <operation href="../../Diagrama%20De%20Dominio.emx#_nWuLEG7iEeC49aNdlWhwyw?Diagrama%20de%20Dominio/Class%20Diagram/FormularioVenta/validar?"/>
-    </packagedElement>
+    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_weavYG7iEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío39"/>
+    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_webWcG7iEeC49aNdlWhwyw" name="Eventodeoperaciónderecepción33"/>
     <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_0V8ZcIP9EeCU59NEsSMwLg" name="Eventodeoperacióndeenvío40">
       <operation href="../../Diagrama%20De%20Dominio.emx#_ZZZc0IPkEeCU59NEsSMwLg?Diagrama%20de%20Dominio/Class%20Diagram/Interfaz%20Grafica/crearFormularioVta?"/>
     </packagedElement>
