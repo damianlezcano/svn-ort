@@ -461,12 +461,6 @@
     <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_3-JVwGlPEeCyMsASsn1eOQ" name="Eventodeoperaciónderecepción14"/>
     <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_YgIdcWlUEeCMndEzaRAKbw" name="Eventodeoperacióndeenvío15"/>
     <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_YgIdcmlUEeCMndEzaRAKbw" name="Eventodeoperaciónderecepción15"/>
-    <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_0D-_IG6mEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío19">
-      <operation href="../CU03/CU03-Analisis%20Model.emx#_0D9xAG6mEeC49aNdlWhwyw?CU03-Analisis%20Model/Class%20Diagram/Interfaz%20Grafica/solicitaFormularioNuevo()?"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_0D_mMG6mEeC49aNdlWhwyw" name="Eventodeoperaciónderecepción19">
-      <operation href="../CU03/CU03-Analisis%20Model.emx#_0D9xAG6mEeC49aNdlWhwyw?CU03-Analisis%20Model/Class%20Diagram/Interfaz%20Grafica/solicitaFormularioNuevo()?"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_0-yagG6mEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío20"/>
     <packagedElement xmi:type="uml:CreationEvent" xmi:id="_0-zBkG6mEeC49aNdlWhwyw" name="Eventodecreación1"/>
     <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_dayIMG6nEeC49aNdlWhwyw" name="Eventodeoperacióndeenvío24"/>
