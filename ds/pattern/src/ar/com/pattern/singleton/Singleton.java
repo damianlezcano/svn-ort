@@ -1,5 +1,8 @@
 package ar.com.pattern.singleton;
 
+/**
+ * <li>Define una operacion Intancia....
+ */
 public class Singleton {
 
 	// declaracion de la variable objeto singleto 
