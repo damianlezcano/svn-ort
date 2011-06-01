@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
-<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Plataforma de modelado de Rational (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/Default/1 pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?">
   <uml:Package xmi:id="_NxJyUmYfEeCZK9G1IGGOzA" name="CU20-Verificar ventas diarias">
     <eAnnotations xmi:id="_NxJyU2YfEeCZK9G1IGGOzA" source="uml2.diagrams"/>
@@ -22,6 +22,26 @@
             <contents xmi:type="notation:Diagram" xmi:id="_JLiVEWrgEeCbUvWpVW5w5w" type="Sequence" element="_JLgf4GrgEeCbUvWpVW5w5w" name="DiagramaDeSecuencia" measurementUnit="Himetric">
               <children xmi:id="_JLiVEmrgEeCbUvWpVW5w5w" element="_JLgf4GrgEeCbUvWpVW5w5w">
                 <children xmi:id="_JLiVE2rgEeCbUvWpVW5w5w" type="interaction_compartment">
+                  <children xmi:id="_E49sQIpTEeCir_nyfit8jw" element="_E41wcIpTEeCir_nyfit8jw">
+                    <eAnnotations xmi:id="_E4-6YIpTEeCir_nyfit8jw" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
+                      <details xmi:id="_E4-6YYpTEeCir_nyfit8jw" key="LifelineLabelStyle" value="Represents Name and Type Name"/>
+                    </eAnnotations>
+                    <children xmi:id="_E4-6YopTEeCir_nyfit8jw" type="Stereotype"/>
+                    <children xmi:id="_E5AIgIpTEeCir_nyfit8jw" type="Name"/>
+                    <children xmi:id="_E5AIgYpTEeCir_nyfit8jw" type="Parent"/>
+                    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_E49sQYpTEeCir_nyfit8jw" fontName="Segoe UI" showStereotype="Label"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E49sQopTEeCir_nyfit8jw" x="264" y="6401"/>
+                  </children>
+                  <children xmi:id="_mFSuQIpTEeCir_nyfit8jw" element="_mFMAkIpTEeCir_nyfit8jw">
+                    <eAnnotations xmi:id="_mFTVUIpTEeCir_nyfit8jw" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
+                      <details xmi:id="_mFT8YIpTEeCir_nyfit8jw" key="LifelineLabelStyle" value="Represents Name and Type Name"/>
+                    </eAnnotations>
+                    <children xmi:id="_mFT8YYpTEeCir_nyfit8jw" type="Stereotype"/>
+                    <children xmi:id="_mFUjcIpTEeCir_nyfit8jw" type="Name"/>
+                    <children xmi:id="_mFVKgIpTEeCir_nyfit8jw" type="Parent"/>
+                    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_mFSuQYpTEeCir_nyfit8jw" fontName="Segoe UI" showStereotype="Label"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mFSuQopTEeCir_nyfit8jw" x="264" y="6401"/>
+                  </children>
                   <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_JLiVFGrgEeCbUvWpVW5w5w"/>
                 </children>
                 <children xmi:id="_JLiVFWrgEeCbUvWpVW5w5w" type="Name"/>
@@ -31,7 +51,15 @@
               <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_JLiVGGrgEeCbUvWpVW5w5w"/>
             </contents>
           </eAnnotations>
+          <lifeline xmi:id="_E41wcIpTEeCir_nyfit8jw" name="interfaz Grafica ENCARGADO" represents="_E42XgIpTEeCir_nyfit8jw"/>
+          <lifeline xmi:id="_mFMAkIpTEeCir_nyfit8jw" name="almacenDeFormularioDeVentas" represents="_mFMnoIpTEeCir_nyfit8jw"/>
         </ownedBehavior>
+        <ownedAttribute xmi:id="_E42XgIpTEeCir_nyfit8jw" name="interfaz Grafica ENCARGADO">
+          <type xmi:type="uml:Class" href="../../Diagrama%20De%20Dominio.emx#_kgMEoISgEeC7dZ4H4Et6lg?Diagrama%20de%20Dominio/Class%20Diagram/Interfaz%20Grafica%20ENCARGADO?"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mFMnoIpTEeCir_nyfit8jw" name="almacenDeFormularioDeVentas">
+          <type xmi:type="uml:Class" href="../../Diagrama%20De%20Dominio.emx#_g_gm4IGlEeCWBJBxlGyh7w?Diagrama%20de%20Dominio/Class%20Diagram/AlmacenDeFormularioDeVentas?"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_mIgXoGlUEeCfPbOqaBMWWg" name="SendOperationEvent1"/>
       <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_mIhlwGlUEeCfPbOqaBMWWg" name="ReceiveOperationEvent1"/>
