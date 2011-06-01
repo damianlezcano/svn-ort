@@ -1,6 +1,9 @@
-package ar.com.pattern.command;
+package ar.com.pattern.comportamiento.command.calculadora;
 
-/* The Invoker class */
+/**
+ * PARTICIPANTE: Invocador o Invoker (ElementoDeMenu)
+ * <li> Le pide a la orden que ejecute la peticion
+ */
 public class Invoker {
 	private Command sumarCommand;
 	private Command restarCommand;

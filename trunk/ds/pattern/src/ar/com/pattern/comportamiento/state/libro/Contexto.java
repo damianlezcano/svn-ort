@@ -1,4 +1,4 @@
-package ar.com.pattern.state;
+package ar.com.pattern.comportamiento.state.libro;
 
 public class Contexto {
 	private Estado state;
