@@ -1,4 +1,4 @@
-package ar.com.pattern.state.tamagochi;
+package ar.com.pattern.comportamiento.state.tamagochi;
 
 public class EstadoContento implements Estado {
 

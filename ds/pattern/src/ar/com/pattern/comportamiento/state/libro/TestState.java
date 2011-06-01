@@ -1,4 +1,4 @@
-package ar.com.pattern.state;
+package ar.com.pattern.comportamiento.state.libro;
 
 public class TestState {
 	public static void main(String arg[]) {
