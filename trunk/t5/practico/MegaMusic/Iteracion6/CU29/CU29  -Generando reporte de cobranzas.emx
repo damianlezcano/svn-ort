@@ -695,41 +695,41 @@
         <lifeline xmi:id="_EbnP1oWbEeCvWfAncG8fZQ" name="reporteDeCompra" represents="_K-BM4YWbEeCvWfAncG8fZQ" coveredBy="_EbnP4oWbEeCvWfAncG8fZQ _EbnP54WbEeCvWfAncG8fZQ _EbnP6IWbEeCvWfAncG8fZQ _EbnP6YWbEeCvWfAncG8fZQ _EbnP7IWbEeCvWfAncG8fZQ _EbnP7YWbEeCvWfAncG8fZQ _EbnP7oWbEeCvWfAncG8fZQ _EbnP8YWbEeCvWfAncG8fZQ _EbnP8oWbEeCvWfAncG8fZQ _EbnP84WbEeCvWfAncG8fZQ _EbnP9oWbEeCvWfAncG8fZQ _EbnP94WbEeCvWfAncG8fZQ _EbnP-IWbEeCvWfAncG8fZQ _EbnP-4WbEeCvWfAncG8fZQ _EbnP_IWbEeCvWfAncG8fZQ _EbnP_YWbEeCvWfAncG8fZQ _EbnQAIWbEeCvWfAncG8fZQ _EbnQAYWbEeCvWfAncG8fZQ _EbnQAoWbEeCvWfAncG8fZQ _iy2UAIWbEeCvWfAncG8fZQ _iy27EIWbEeCvWfAncG8fZQ _iy27EYWbEeCvWfAncG8fZQ _lbDsYIWbEeCvWfAncG8fZQ _lbDsYYWbEeCvWfAncG8fZQ _lbDsYoWbEeCvWfAncG8fZQ _zE4YEYWbEeCvWfAncG8fZQ _zE4_IIWbEeCvWfAncG8fZQ _zE4_IYWbEeCvWfAncG8fZQ _v1MTgIWcEeCvWfAncG8fZQ _v1NhoYWcEeCvWfAncG8fZQ _30lzAYWcEeCvWfAncG8fZQ _30noMIWcEeCvWfAncG8fZQ _6eHaAIWcEeCvWfAncG8fZQ _6eIoIIWcEeCvWfAncG8fZQ _-WwfgIWcEeCvWfAncG8fZQ _-WyUsIWcEeCvWfAncG8fZQ _ASRJ8IWdEeCvWfAncG8fZQ _ASSYEYWdEeCvWfAncG8fZQ _ExqtcYWdEeCvWfAncG8fZQ _Exr7koWdEeCvWfAncG8fZQ _GDOb8YWdEeCvWfAncG8fZQ _GDQRIIWdEeCvWfAncG8fZQ _KFG9AIWdEeCvWfAncG8fZQ _KFILIoWdEeCvWfAncG8fZQ _Mp6cEIWdEeCvWfAncG8fZQ _Mp7qMYWdEeCvWfAncG8fZQ _N58gkYWdEeCvWfAncG8fZQ _N5-VwYWdEeCvWfAncG8fZQ"/>
         <lifeline xmi:id="_u74F4IWcEeCvWfAncG8fZQ" name="informacionComercialDeProducto" represents="_u74s8IWcEeCvWfAncG8fZQ" coveredBy="_v1MTgYWcEeCvWfAncG8fZQ _v1M6kIWcEeCvWfAncG8fZQ _v1M6kYWcEeCvWfAncG8fZQ _30maEIWcEeCvWfAncG8fZQ _30nBIIWcEeCvWfAncG8fZQ _30nBIYWcEeCvWfAncG8fZQ _6eHaAYWcEeCvWfAncG8fZQ _6eIBEIWcEeCvWfAncG8fZQ _6eIBEYWcEeCvWfAncG8fZQ _-WwfgYWcEeCvWfAncG8fZQ _-WxGkIWcEeCvWfAncG8fZQ _-WxtoIWcEeCvWfAncG8fZQ _ASRxAIWdEeCvWfAncG8fZQ _ASRxAYWdEeCvWfAncG8fZQ _ASRxAoWdEeCvWfAncG8fZQ _ExrUgIWdEeCvWfAncG8fZQ _ExrUgYWdEeCvWfAncG8fZQ _Exr7kIWdEeCvWfAncG8fZQ _GDPDAIWdEeCvWfAncG8fZQ _GDPDAYWdEeCvWfAncG8fZQ _GDPqEIWdEeCvWfAncG8fZQ _KFG9AYWdEeCvWfAncG8fZQ _KFHkEIWdEeCvWfAncG8fZQ _KFILIIWdEeCvWfAncG8fZQ _Mp6cEYWdEeCvWfAncG8fZQ _Mp7DIIWdEeCvWfAncG8fZQ _Mp7DIYWdEeCvWfAncG8fZQ _N59HoIWdEeCvWfAncG8fZQ _N59usIWdEeCvWfAncG8fZQ _N59usYWdEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP14WbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQBoWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_3pr80IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío9?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_3pr80IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío9?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP2IWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQBoWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_3psj4IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción9?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_3psj4IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción9?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_EbnP2YWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" start="_EbnP2IWbEeCvWfAncG8fZQ" finish="_EbnQBIWbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP2oWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQCIWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_5RRlsIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío10?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_5RRlsIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío10?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP24WbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQCIWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_5RSMwIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción10?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_5RSMwIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción10?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_EbnP3IWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" start="_EbnP24WbEeCvWfAncG8fZQ" finish="_EbnP3YWbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP3YWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQCYWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_5RRlsIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío10?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_5RRlsIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío10?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP3oWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" event="_YY6EsIWbEeCvWfAncG8fZQ" message="_EbnQCoWbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP34WbEeCvWfAncG8fZQ" covered="_EbnP1YWbEeCvWfAncG8fZQ" event="_YY6rwIWbEeCvWfAncG8fZQ" message="_EbnQCoWbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_EbnP4IWbEeCvWfAncG8fZQ" covered="_EbnP1YWbEeCvWfAncG8fZQ" start="_EbnP34WbEeCvWfAncG8fZQ" finish="_EbnP44WbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP4YWbEeCvWfAncG8fZQ" covered="_EbnP1YWbEeCvWfAncG8fZQ" message="_EbnQDIWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_CxMcwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío13?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_CxMcwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío13?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP4oWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" message="_EbnQDIWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:CreationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_AX9UgIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodecreación1?"/>
+          <event xmi:type="uml:CreationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_AX9UgIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodecreación1?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP44WbEeCvWfAncG8fZQ" covered="_EbnP1YWbEeCvWfAncG8fZQ" event="_YY6EsIWbEeCvWfAncG8fZQ" message="_EbnQC4WbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP5IWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" event="_YY6rwIWbEeCvWfAncG8fZQ" message="_EbnQC4WbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP5YWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQCYWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_5RSMwIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción10?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_5RSMwIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción10?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP5oWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQDYWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_MTYksIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío14?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_MTYksIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío14?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP54WbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" message="_EbnQDYWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_MTZLwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción12?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_MTZLwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción12?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_EbnP6IWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" start="_EbnP54WbEeCvWfAncG8fZQ" finish="_EbnP6YWbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_v1MTgIWcEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" event="_2rh5MIWcEeCvWfAncG8fZQ" message="_v1LscIWcEeCvWfAncG8fZQ"/>
@@ -738,16 +738,16 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_v1M6kYWcEeCvWfAncG8fZQ" covered="_u74F4IWcEeCvWfAncG8fZQ" event="_2rh5MIWcEeCvWfAncG8fZQ" message="_v1NhoIWcEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_v1NhoYWcEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" event="_2rigQIWcEeCvWfAncG8fZQ" message="_v1NhoIWcEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP6YWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" message="_EbnQDoWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_MTYksIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío14?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_MTYksIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío14?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP6oWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQDoWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_MTZLwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción12?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_MTZLwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción12?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP64WbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQD4WbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_NOb3sIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío15?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_NOb3sIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío15?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP7IWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" message="_EbnQD4WbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_NOcewIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción13?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_NOcewIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción13?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_EbnP7YWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" start="_EbnP7IWbEeCvWfAncG8fZQ" finish="_EbnP7oWbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_30lzAYWcEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" event="_2rh5MIWcEeCvWfAncG8fZQ" message="_30lzAIWcEeCvWfAncG8fZQ"/>
@@ -756,16 +756,16 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_30nBIYWcEeCvWfAncG8fZQ" covered="_u74F4IWcEeCvWfAncG8fZQ" event="_2rh5MIWcEeCvWfAncG8fZQ" message="_30nBIoWcEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_30noMIWcEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" event="_2rigQIWcEeCvWfAncG8fZQ" message="_30nBIoWcEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP7oWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" message="_EbnQEIWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_NOb3sIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío15?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_NOb3sIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío15?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP74WbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQEIWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_NOcewIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción13?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_NOcewIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción13?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP8IWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQEYWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_OgmqMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío16?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_OgmqMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío16?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP8YWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" message="_EbnQEYWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_OgnRQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción14?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_OgnRQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción14?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_EbnP8oWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" start="_EbnP8YWbEeCvWfAncG8fZQ" finish="_EbnP84WbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6eHaAIWcEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" event="_7RafMIWcEeCvWfAncG8fZQ" message="_6eGy8IWcEeCvWfAncG8fZQ"/>
@@ -774,16 +774,16 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6eIBEYWcEeCvWfAncG8fZQ" covered="_u74F4IWcEeCvWfAncG8fZQ" event="_7RafMIWcEeCvWfAncG8fZQ" message="_6eIBEoWcEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6eIoIIWcEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" event="_7RbGQIWcEeCvWfAncG8fZQ" message="_6eIBEoWcEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP84WbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" message="_EbnQEoWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_OgmqMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío16?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_OgmqMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío16?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP9IWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQEoWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_OgnRQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción14?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_OgnRQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción14?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP9YWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQE4WbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_Pj-LsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío17?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_Pj-LsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío17?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP9oWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" message="_EbnQE4WbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_Pj-ywIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción15?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_Pj-ywIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción15?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_EbnP94WbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" start="_EbnP9oWbEeCvWfAncG8fZQ" finish="_EbnP-IWbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-WwfgIWcEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" event="_2rh5MIWcEeCvWfAncG8fZQ" message="_-Wv4cIWcEeCvWfAncG8fZQ"/>
@@ -792,16 +792,16 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-WxtoIWcEeCvWfAncG8fZQ" covered="_u74F4IWcEeCvWfAncG8fZQ" event="_2rh5MIWcEeCvWfAncG8fZQ" message="_-WxtoYWcEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-WyUsIWcEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" event="_2rigQIWcEeCvWfAncG8fZQ" message="_-WxtoYWcEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP-IWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" message="_EbnQFIWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_Pj-LsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío17?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_Pj-LsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío17?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP-YWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQFIWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_Pj-ywIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción15?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_Pj-ywIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción15?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP-oWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQFYWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_RGixsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío18?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_RGixsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío18?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP-4WbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" message="_EbnQFYWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_RGjYwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción16?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_RGjYwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción16?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_EbnP_IWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" start="_EbnP-4WbEeCvWfAncG8fZQ" finish="_EbnP_YWbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ASRJ8IWdEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" event="_D67SsIWdEeCvWfAncG8fZQ" message="_ASQi4IWdEeCvWfAncG8fZQ"/>
@@ -810,16 +810,16 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ASRxAoWdEeCvWfAncG8fZQ" covered="_u74F4IWcEeCvWfAncG8fZQ" event="_D67SsIWdEeCvWfAncG8fZQ" message="_ASSYEIWdEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ASSYEYWdEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" event="_D675wIWdEeCvWfAncG8fZQ" message="_ASSYEIWdEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP_YWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" message="_EbnQFoWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_RGixsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío18?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_RGixsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío18?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP_oWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQFoWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_RGjYwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción16?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_RGjYwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción16?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnP_4WbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQF4WbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_SyzfMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío19?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_SyzfMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío19?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnQAIWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" message="_EbnQF4WbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_Sy0GQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción17?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_Sy0GQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción17?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_EbnQAYWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" start="_EbnQAIWbEeCvWfAncG8fZQ" finish="_EbnQAoWbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ExqtcYWdEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" event="_Fb5WMIWdEeCvWfAncG8fZQ" message="_ExqtcIWdEeCvWfAncG8fZQ"/>
@@ -838,10 +838,10 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_KFILIIWdEeCvWfAncG8fZQ" covered="_u74F4IWcEeCvWfAncG8fZQ" event="_D67SsIWdEeCvWfAncG8fZQ" message="_KFILIYWdEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_KFILIoWdEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" event="_D675wIWdEeCvWfAncG8fZQ" message="_KFILIYWdEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnQAoWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" message="_EbnQGIWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_SyzfMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío19?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_SyzfMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío19?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnQA4WbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQGIWbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_Sy0GQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción17?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_Sy0GQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción17?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_iy1s8YWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" event="_krposIWbEeCvWfAncG8fZQ" message="_iy1s8IWbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_iy2UAIWbEeCvWfAncG8fZQ" covered="_EbnP1oWbEeCvWfAncG8fZQ" event="_krqPwIWbEeCvWfAncG8fZQ" message="_iy1s8IWbEeCvWfAncG8fZQ"/>
@@ -874,10 +874,10 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_x8elkYWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" event="_yQBzsIWbEeCvWfAncG8fZQ" message="_x8fMoIWbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_x8fMoYWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" event="_yQCawIWbEeCvWfAncG8fZQ" message="_x8fMoIWbEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnQBIWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQB4WbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_3pr80IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío9?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_3pr80IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío9?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EbnQBYWbEeCvWfAncG8fZQ" covered="_EbnP1IWbEeCvWfAncG8fZQ" message="_EbnQB4WbEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_3psj4IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción9?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_3psj4IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción9?"/>
         </fragment>
         <message xmi:id="_EbnQBoWbEeCvWfAncG8fZQ" name="generarReporteCompras" receiveEvent="_EbnP2IWbEeCvWfAncG8fZQ" sendEvent="_EbnP14WbEeCvWfAncG8fZQ" connector="_EbmpjYWbEeCvWfAncG8fZQ"/>
         <message xmi:id="_EbnQB4WbEeCvWfAncG8fZQ" name="generarReporteCompras" messageSort="reply" receiveEvent="_EbnQBYWbEeCvWfAncG8fZQ" sendEvent="_EbnQBIWbEeCvWfAncG8fZQ" connector="_EbmpjYWbEeCvWfAncG8fZQ"/>
@@ -1560,41 +1560,41 @@
         <lifeline xmi:id="_GspXJ4WeEeCvWfAncG8fZQ" name="reporteDeCompra" represents="_K-BM4YWbEeCvWfAncG8fZQ" coveredBy="_GspXNIWeEeCvWfAncG8fZQ _GspXOYWeEeCvWfAncG8fZQ _GspXOoWeEeCvWfAncG8fZQ _GspXQIWeEeCvWfAncG8fZQ _GspXQ4WeEeCvWfAncG8fZQ _GspXRIWeEeCvWfAncG8fZQ _GspXSoWeEeCvWfAncG8fZQ _GspXTYWeEeCvWfAncG8fZQ _GspXToWeEeCvWfAncG8fZQ _GspXVIWeEeCvWfAncG8fZQ _GspXV4WeEeCvWfAncG8fZQ _GspXWIWeEeCvWfAncG8fZQ _GspXXoWeEeCvWfAncG8fZQ _GspXYYWeEeCvWfAncG8fZQ _GspXYoWeEeCvWfAncG8fZQ _GspXaIWeEeCvWfAncG8fZQ _GspXa4WeEeCvWfAncG8fZQ _GspXbIWeEeCvWfAncG8fZQ _GspXfIWeEeCvWfAncG8fZQ _GspXf4WeEeCvWfAncG8fZQ _GspXgIWeEeCvWfAncG8fZQ _GspXhoWeEeCvWfAncG8fZQ _GspXiYWeEeCvWfAncG8fZQ _GspXioWeEeCvWfAncG8fZQ _GspXkIWeEeCvWfAncG8fZQ _GspXloWeEeCvWfAncG8fZQ _GspXl4WeEeCvWfAncG8fZQ _GspXmIWeEeCvWfAncG8fZQ _GspXO4WeEeCvWfAncG8fZQ _GspXP4WeEeCvWfAncG8fZQ _GspXRYWeEeCvWfAncG8fZQ _GspXSYWeEeCvWfAncG8fZQ _GspXT4WeEeCvWfAncG8fZQ _GspXU4WeEeCvWfAncG8fZQ _GspXWYWeEeCvWfAncG8fZQ _GspXXYWeEeCvWfAncG8fZQ _GspXY4WeEeCvWfAncG8fZQ _GspXZ4WeEeCvWfAncG8fZQ _GspXbYWeEeCvWfAncG8fZQ _GspXcYWeEeCvWfAncG8fZQ _GspXcoWeEeCvWfAncG8fZQ _GspXdoWeEeCvWfAncG8fZQ _GspXd4WeEeCvWfAncG8fZQ _GspXe4WeEeCvWfAncG8fZQ _GspXgYWeEeCvWfAncG8fZQ _GspXhYWeEeCvWfAncG8fZQ _GspXi4WeEeCvWfAncG8fZQ _GspXj4WeEeCvWfAncG8fZQ"/>
         <lifeline xmi:id="_GspXKIWeEeCvWfAncG8fZQ" name="informacionComercialDeProducto" represents="_u74s8IWcEeCvWfAncG8fZQ" coveredBy="_GspXPIWeEeCvWfAncG8fZQ _GspXPYWeEeCvWfAncG8fZQ _GspXPoWeEeCvWfAncG8fZQ _GspXRoWeEeCvWfAncG8fZQ _GspXR4WeEeCvWfAncG8fZQ _GspXSIWeEeCvWfAncG8fZQ _GspXUIWeEeCvWfAncG8fZQ _GspXUYWeEeCvWfAncG8fZQ _GspXUoWeEeCvWfAncG8fZQ _GspXWoWeEeCvWfAncG8fZQ _GspXW4WeEeCvWfAncG8fZQ _GspXXIWeEeCvWfAncG8fZQ _GspXZIWeEeCvWfAncG8fZQ _GspXZYWeEeCvWfAncG8fZQ _GspXZoWeEeCvWfAncG8fZQ _GspXboWeEeCvWfAncG8fZQ _GspXb4WeEeCvWfAncG8fZQ _GspXcIWeEeCvWfAncG8fZQ _GspXc4WeEeCvWfAncG8fZQ _GspXdIWeEeCvWfAncG8fZQ _GspXdYWeEeCvWfAncG8fZQ _GspXeIWeEeCvWfAncG8fZQ _GspXeYWeEeCvWfAncG8fZQ _GspXeoWeEeCvWfAncG8fZQ _GspXgoWeEeCvWfAncG8fZQ _GspXg4WeEeCvWfAncG8fZQ _GspXhIWeEeCvWfAncG8fZQ _GspXjIWeEeCvWfAncG8fZQ _GspXjYWeEeCvWfAncG8fZQ _GspXjoWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXKYWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXnoWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_3pr80IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío9?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_3pr80IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío9?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXKoWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXnoWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_3psj4IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción9?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_3psj4IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción9?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_GspXK4WeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" start="_GspXKoWeEeCvWfAncG8fZQ" finish="_GspXnIWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXLIWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXoIWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_5RRlsIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío10?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_5RRlsIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío10?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXLYWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXoIWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_5RSMwIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción10?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_5RSMwIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción10?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_GspXLoWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" start="_GspXLYWeEeCvWfAncG8fZQ" finish="_GspXL4WeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXL4WeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXoYWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_5RRlsIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío10?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_5RRlsIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío10?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXMIWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" event="_RyEMMIWeEeCvWfAncG8fZQ" message="_GspXooWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXMYWeEeCvWfAncG8fZQ" covered="_GspXJoWeEeCvWfAncG8fZQ" event="_RyEzQIWeEeCvWfAncG8fZQ" message="_GspXooWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_GspXMoWeEeCvWfAncG8fZQ" covered="_GspXJoWeEeCvWfAncG8fZQ" start="_GspXMYWeEeCvWfAncG8fZQ" finish="_GspXNYWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXM4WeEeCvWfAncG8fZQ" covered="_GspXJoWeEeCvWfAncG8fZQ" message="_GspXpIWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_CxMcwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío13?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_CxMcwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío13?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXNIWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" message="_GspXpIWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:CreationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_AX9UgIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodecreación1?"/>
+          <event xmi:type="uml:CreationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_AX9UgIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodecreación1?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXNYWeEeCvWfAncG8fZQ" covered="_GspXJoWeEeCvWfAncG8fZQ" event="_RyEMMIWeEeCvWfAncG8fZQ" message="_GspXo4WeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXNoWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" event="_RyEzQIWeEeCvWfAncG8fZQ" message="_GspXo4WeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXN4WeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXoYWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_5RSMwIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción10?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_5RSMwIWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción10?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXOIWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXpYWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_MTYksIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío14?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_MTYksIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío14?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXOYWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" message="_GspXpYWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_MTZLwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción12?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_MTZLwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción12?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_GspXOoWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" start="_GspXOYWeEeCvWfAncG8fZQ" finish="_GspXQIWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXO4WeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" event="_2rh5MIWcEeCvWfAncG8fZQ" message="_GspXuYWeEeCvWfAncG8fZQ"/>
@@ -1603,16 +1603,16 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXPoWeEeCvWfAncG8fZQ" covered="_GspXKIWeEeCvWfAncG8fZQ" event="_2rh5MIWcEeCvWfAncG8fZQ" message="_GspXuoWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXP4WeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" event="_2rigQIWcEeCvWfAncG8fZQ" message="_GspXuoWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXQIWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" message="_GspXpoWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_MTYksIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío14?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_MTYksIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío14?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXQYWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXpoWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_MTZLwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción12?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_MTZLwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción12?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXQoWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXp4WeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_NOb3sIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío15?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_NOb3sIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío15?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXQ4WeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" message="_GspXp4WeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_NOcewIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción13?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_NOcewIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción13?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_GspXRIWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" start="_GspXQ4WeEeCvWfAncG8fZQ" finish="_GspXSoWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXRYWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" event="_2rh5MIWcEeCvWfAncG8fZQ" message="_Gsp-AIWeEeCvWfAncG8fZQ"/>
@@ -1621,16 +1621,16 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXSIWeEeCvWfAncG8fZQ" covered="_GspXKIWeEeCvWfAncG8fZQ" event="_2rh5MIWcEeCvWfAncG8fZQ" message="_Gsp-AYWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXSYWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" event="_2rigQIWcEeCvWfAncG8fZQ" message="_Gsp-AYWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXSoWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" message="_GspXqIWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_NOb3sIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío15?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_NOb3sIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío15?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXS4WeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXqIWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_NOcewIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción13?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_NOcewIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción13?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXTIWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXqYWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_OgmqMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío16?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_OgmqMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío16?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXTYWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" message="_GspXqYWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_OgnRQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción14?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_OgnRQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción14?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_GspXToWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" start="_GspXTYWeEeCvWfAncG8fZQ" finish="_GspXVIWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXT4WeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" event="_7RafMIWcEeCvWfAncG8fZQ" message="_Gsp-AoWeEeCvWfAncG8fZQ"/>
@@ -1639,16 +1639,16 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXUoWeEeCvWfAncG8fZQ" covered="_GspXKIWeEeCvWfAncG8fZQ" event="_7RafMIWcEeCvWfAncG8fZQ" message="_Gsp-A4WeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXU4WeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" event="_7RbGQIWcEeCvWfAncG8fZQ" message="_Gsp-A4WeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXVIWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" message="_GspXqoWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_OgmqMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío16?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_OgmqMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío16?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXVYWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXqoWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_OgnRQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción14?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_OgnRQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción14?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXVoWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXq4WeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_Pj-LsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío17?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_Pj-LsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío17?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXV4WeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" message="_GspXq4WeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_Pj-ywIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción15?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_Pj-ywIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción15?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_GspXWIWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" start="_GspXV4WeEeCvWfAncG8fZQ" finish="_GspXXoWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXWYWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" event="_2rh5MIWcEeCvWfAncG8fZQ" message="_Gsp-BIWeEeCvWfAncG8fZQ"/>
@@ -1657,16 +1657,16 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXXIWeEeCvWfAncG8fZQ" covered="_GspXKIWeEeCvWfAncG8fZQ" event="_2rh5MIWcEeCvWfAncG8fZQ" message="_Gsp-BYWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXXYWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" event="_2rigQIWcEeCvWfAncG8fZQ" message="_Gsp-BYWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXXoWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" message="_GspXrIWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_Pj-LsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío17?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_Pj-LsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío17?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXX4WeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXrIWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_Pj-ywIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción15?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_Pj-ywIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción15?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXYIWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXrYWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_RGixsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío18?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_RGixsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío18?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXYYWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" message="_GspXrYWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_RGjYwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción16?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_RGjYwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción16?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_GspXYoWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" start="_GspXYYWeEeCvWfAncG8fZQ" finish="_GspXaIWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXY4WeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" event="_D67SsIWdEeCvWfAncG8fZQ" message="_Gsp-BoWeEeCvWfAncG8fZQ"/>
@@ -1675,16 +1675,16 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXZoWeEeCvWfAncG8fZQ" covered="_GspXKIWeEeCvWfAncG8fZQ" event="_D67SsIWdEeCvWfAncG8fZQ" message="_Gsp-B4WeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXZ4WeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" event="_D675wIWdEeCvWfAncG8fZQ" message="_Gsp-B4WeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXaIWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" message="_GspXroWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_RGixsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío18?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_RGixsIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío18?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXaYWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXroWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_RGjYwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción16?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_RGjYwIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción16?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXaoWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXr4WeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_SyzfMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío19?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_SyzfMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío19?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXa4WeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" message="_GspXr4WeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_Sy0GQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción17?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_Sy0GQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción17?"/>
         </fragment>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_GspXbIWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" start="_GspXa4WeEeCvWfAncG8fZQ" finish="_GspXfIWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXbYWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" event="_Fb5WMIWdEeCvWfAncG8fZQ" message="_Gsp-CIWeEeCvWfAncG8fZQ"/>
@@ -1703,10 +1703,10 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXeoWeEeCvWfAncG8fZQ" covered="_GspXKIWeEeCvWfAncG8fZQ" event="_D67SsIWdEeCvWfAncG8fZQ" message="_Gsp-DYWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXe4WeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" event="_D675wIWdEeCvWfAncG8fZQ" message="_Gsp-DYWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXfIWeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" message="_GspXsIWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_SyzfMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío19?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_SyzfMIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío19?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXfYWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXsIWeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_Sy0GQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción17?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_Sy0GQIWYEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción17?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXfoWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" event="_krposIWbEeCvWfAncG8fZQ" message="_GspXsYWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXf4WeEeCvWfAncG8fZQ" covered="_GspXJ4WeEeCvWfAncG8fZQ" event="_krqPwIWbEeCvWfAncG8fZQ" message="_GspXsYWeEeCvWfAncG8fZQ"/>
@@ -1739,10 +1739,10 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXmoWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" event="_yQBzsIWbEeCvWfAncG8fZQ" message="_GspXtoWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXm4WeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" event="_yQCawIWbEeCvWfAncG8fZQ" message="_GspXtoWeEeCvWfAncG8fZQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXnIWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXn4WeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_3pr80IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío9?"/>
+          <event xmi:type="uml:SendOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_3pr80IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperacióndeenvío9?"/>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GspXnYWeEeCvWfAncG8fZQ" covered="_GspXJYWeEeCvWfAncG8fZQ" message="_GspXn4WeEeCvWfAncG8fZQ">
-          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28-Generar%20reporte%20de%20compras.emx#_3psj4IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción9?"/>
+          <event xmi:type="uml:ReceiveOperationEvent" href="../CU28/CU28%20-%20Generando%20Reporte%20de%20Compras.emx#_3psj4IWXEeCvWfAncG8fZQ?CU28-Generar%20reporte%20de%20compras/Secuence%20Diagram/Eventodeoperaciónderecepción9?"/>
         </fragment>
         <message xmi:id="_GspXnoWeEeCvWfAncG8fZQ" name="generarReporteCompras" receiveEvent="_GspXKoWeEeCvWfAncG8fZQ" sendEvent="_GspXKYWeEeCvWfAncG8fZQ" connector="_GspXGYWeEeCvWfAncG8fZQ"/>
         <message xmi:id="_GspXn4WeEeCvWfAncG8fZQ" name="generarReporteCompras" messageSort="reply" receiveEvent="_GspXnYWeEeCvWfAncG8fZQ" sendEvent="_GspXnIWeEeCvWfAncG8fZQ" connector="_GspXGYWeEeCvWfAncG8fZQ"/>
