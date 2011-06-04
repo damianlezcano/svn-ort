@@ -14,6 +14,7 @@ public class RestarCommand implements Command {
 	   }
 	 
 	   public void execute() {
+		  System.out.println("RestarCommand: Ejecuto metodo 'execute()'");
 	      calculadora.restar();
 	   }
 

@@ -14,10 +14,12 @@ public class Invoker {
 	}
 
 	public void sumarGenerico() {
+		System.out.println("Invoker: Ejecuto metodo 'sumarGenerico()'");
 		sumarCommand.execute();
 	}
 
 	public void restarGenerico() {
+		System.out.println("Invoker: Ejecuto metodo 'restarGenerico()'");
 		restarCommand.execute();
 	}
 }
