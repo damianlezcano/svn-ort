@@ -6,10 +6,14 @@ import javax.swing.JFrame;
 public class TestFactory{
     public static void main(String [] args){
     	//args has the type of the geometry that we want to create
-        CUIFactory factory = CUIFactory.getFactory(1);
+        CUIFactory factory = CUIFactory.getFactory(CUIFactory.PANEL_ROJO);
         JCUIPanel panel = factory.createPanel();
+        panel.initComponents();
+        
         JFrame frame = new JFrame();
-        frame.add(panel);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.setContentPane(panel);
+        frame.setSize(200, 200);
         frame.setVisible(true);
     }
 }
