@@ -6,20 +6,20 @@ public class TestMemento {
 		Conserje conserje = new Conserje();
 		Originator originador = new Originator();
 		
-		originador.set("State1");
+		originador.setEstado("State1");
 		conserje.addMemento(originador.saveToMemento());
 		
-		originador.set("State2");
+		originador.setEstado("State2");
 		conserje.addMemento(originador.saveToMemento());
 		
-		originador.set("State3");
+		originador.setEstado("State3");
 		conserje.addMemento(originador.saveToMemento());
 		
-		originador.set("State4");
+		originador.setEstado("State4");
 		conserje.addMemento(originador.saveToMemento());
 		
 		originador.restoreFromMemento(conserje.getMemento(1));
 		
-		System.out.println("El estado es: " + originador.get());
+		System.out.println("El estado es: " + originador.getEstado());
 	}
 }
