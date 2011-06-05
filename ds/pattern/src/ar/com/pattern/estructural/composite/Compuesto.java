@@ -11,7 +11,7 @@ public class Compuesto extends Componente {
 
 	public Compuesto(String name) {
 		super(name);
-		System.out.println("Se crea el componente " + name.toUpperCase());
+//		System.out.println("Se crea el componente " + name.toUpperCase());
 	}
 
 	@Override
