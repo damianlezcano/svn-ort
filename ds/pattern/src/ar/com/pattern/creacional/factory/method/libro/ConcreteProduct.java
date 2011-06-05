@@ -1,4 +1,4 @@
-package ar.com.pattern.creacional.factory.method;
+package ar.com.pattern.creacional.factory.method.libro;
 
 public class ConcreteProduct implements Product {
     public void operacion(){
