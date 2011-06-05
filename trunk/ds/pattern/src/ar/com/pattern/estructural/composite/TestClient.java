@@ -3,18 +3,16 @@ package ar.com.pattern.estructural.composite;
 public class TestClient {
 	public static void main(String[] args) {
 
-		Componente raiz = new Compuesto("root");
-		raiz.Anadir(new Hoja("hoja A1"));
-		Componente comp = new Compuesto("hoja A2");
-		raiz.Anadir(comp);
+		Componente nivel1 = new Compuesto("root nivel1");
+		nivel1.Anadir(new Hoja("hoja1 en nivel1"));
+
+		Componente nivel2 = new Compuesto("root nivel2");
+		nivel1.Anadir(nivel2);
 		
-		comp.Anadir(new Hoja("hoja A-B1"));
-		comp.Anadir(new Hoja("hoja A-B2"));
+		nivel2.Anadir(new Hoja("hoja1 nivel2"));
+		nivel2.Anadir(new Hoja("hoja2 nivel2"));
 		
-		raiz.Anadir(new Hoja("hoja C1"));
+		nivel1.Anadir(new Hoja("hoja2 nivel1"));
 		
-//		raiz.Anadir(l);
-//		raiz.Eliminar(l);
-//		raiz.ObtenerHijo(1);
 	}
 }
