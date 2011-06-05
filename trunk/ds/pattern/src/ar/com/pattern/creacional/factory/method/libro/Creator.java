@@ -1,4 +1,4 @@
-package ar.com.pattern.creacional.factory.method;
+package ar.com.pattern.creacional.factory.method.libro;
 
 //Definimos la clase abstracta constructora
 public abstract class Creator {
