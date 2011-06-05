@@ -6,9 +6,9 @@ import javax.swing.JFrame;
 public class TestFactory{
     public static void main(String [] args){
     	//args has the type of the geometry that we want to create
-        CUIFactory factory = CUIFactory.getFactory(CUIFactory.PANEL_ROJO);
+        CUIFactory factory = CUIFactory.getFactory(CUIFactory.PANEL_VERDE);
         JCUIPanel panel = factory.createPanel();
-        panel.initComponents();
+//        panel.initComponents();
         
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
