@@ -1,81 +1,47 @@
 <class-diagram version="1.0.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true">  
-  <class id="1" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.creacional.factory.method.ConcreteCreator" 
-    project="pattern" file="/pattern/src/ar/com/pattern/creacional/factory/method/ConcreteCreator.java" binary="false">    
-    <position x="557" y="239" width="-1" height="-1"/>    
-    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true"/>      
-      <operations public="true" package="true" protected="true" private="true"/>    
-    </display>  
-  </class>  
-  <class id="2" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.creacional.factory.method.ConcreteProduct" 
-    project="pattern" file="/pattern/src/ar/com/pattern/creacional/factory/method/ConcreteProduct.java" binary="false">    
-    <position x="343" y="239" width="-1" height="-1"/>    
-    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true"/>      
-      <operations public="true" package="true" protected="true" private="true"/>    
-    </display>  
-  </class>  
-  <class id="3" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.creacional.factory.method.Creator" 
-    project="pattern" file="/pattern/src/ar/com/pattern/creacional/factory/method/Creator.java" binary="false">    
-    <position x="557" y="108" width="-1" height="-1"/>    
-    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true"/>      
-      <operations public="true" package="true" protected="true" private="true"/>    
-    </display>  
-  </class>  
-  <interface id="4" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.creacional.factory.method.Product" 
-    project="pattern" file="/pattern/src/ar/com/pattern/creacional/factory/method/Product.java" binary="false">    
-    <position x="347" y="91" width="-1" height="-1"/>    
+  <interface id="1" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.creacional.factory.method.libro.Producto" 
+    project="pattern" file="/pattern/src/ar/com/pattern/creacional/factory/method/libro/Producto.java" binary="false">    
+    <position x="126" y="199" width="-1" height="-1"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </interface>  
-  <class id="5" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.creacional.factory.method.TestFactory" 
-    project="pattern" file="/pattern/src/ar/com/pattern/creacional/factory/method/TestFactory.java" binary="false">    
-    <position x="117" y="167" width="-1" height="-1"/>    
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.creacional.factory.method.libro.Creator" 
+    project="pattern" file="/pattern/src/ar/com/pattern/creacional/factory/method/libro/Creator.java" binary="false">    
+    <position x="379" y="68" width="-1" height="-1"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <dependency>    
-    <bendpoint x="117" y="302"/>    
-    <bendpoint x="561" y="302"/>    
+  <class id="3" corner="BOTTOM_RIGHT" language="java" 
+    name="ar.com.pattern.creacional.factory.method.libro.ConcreteCreator" project="pattern" 
+    file="/pattern/src/ar/com/pattern/creacional/factory/method/libro/ConcreteCreator.java" binary="false">    
+    <position x="379" y="199" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="5" corner="BOTTOM_RIGHT" language="java" 
+    name="ar.com.pattern.creacional.factory.method.libro.ConcreteProduct" project="pattern" 
+    file="/pattern/src/ar/com/pattern/creacional/factory/method/libro/ConcreteProduct.java" binary="false">    
+    <position x="126" y="68" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <generalization>    
+    <end type="SOURCE" nodeId="3"/>    
+    <end type="TARGET" nodeId="2"/>  
+  </generalization>  
+  <realization>    
     <end type="SOURCE" nodeId="5"/>    
     <end type="TARGET" nodeId="1"/>  
-  </dependency>  
-  <dependency>    
-    <end type="SOURCE" nodeId="1"/>    
-    <end type="TARGET" nodeId="2"/>  
-  </dependency>  
-  <dependency>    
-    <end type="SOURCE" nodeId="5"/>    
-    <end type="TARGET" nodeId="4"/>  
-  </dependency>  
-  <dependency>    
-    <end type="SOURCE" nodeId="1"/>    
-    <end type="TARGET" nodeId="4"/>  
-  </dependency>  
-  <realization>    
-    <end type="SOURCE" nodeId="2"/>    
-    <end type="TARGET" nodeId="4"/>  
   </realization>  
-  <generalization>    
-    <end type="SOURCE" nodeId="1"/>    
-    <end type="TARGET" nodeId="3"/>  
-  </generalization>  
-  <dependency>    
-    <end type="SOURCE" nodeId="3"/>    
-    <end type="TARGET" nodeId="4"/>  
-  </dependency>  
-  <dependency>    
-    <bendpoint x="116" y="27"/>    
-    <bendpoint x="556" y="26"/>    
-    <end type="SOURCE" nodeId="5"/>    
-    <end type="TARGET" nodeId="3"/>  
-  </dependency>  
   <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true"/>    
     <operations public="true" package="true" protected="true" private="true"/>  

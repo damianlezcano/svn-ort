@@ -1,0 +1,14 @@
+Estos patrones de diseño están relacionados con algoritmos y asignación de responsabilidades a los objetos. Los patrones de comportamiento 
+describen no sólamente patrones de objetos o clases sino también patrones de comunicación entre ellos. Nuevamente se pueden clasificar en 
+función de que trabajen con clases (Template Method, Interpreter) u objetos (Chain of Responsability, Command, Iterator, Mediator, Memento, Observer, 
+State, Strategy, Visitor).
+
+La variación de la encapsulación es la base de muchos patrones de comportamiento. Cuando un aspecto de un programa cambia frecuentemente, 
+estos patrones definen un objeto que encapsula dicho aspecto. Los patrones definen una clase abstracta que describe la encapsulación del objeto.
+
+[Clase]:
+=======
+o- 
+
+[Objeto]:
+========

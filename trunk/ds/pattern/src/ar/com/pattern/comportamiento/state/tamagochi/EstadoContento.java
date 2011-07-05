@@ -1,10 +1,13 @@
 package ar.com.pattern.comportamiento.state.tamagochi;
 
+/**
+ * Cada subclase implementa el comportamiento asociado con un estado del contexto.
+ */
 public class EstadoContento implements Estado {
 
 	@Override
 	public Estado comer() {
-		System.out.println("Contento: Se pone contento cuando come");
+		System.out.println("Contento: Se pone triste cuando come");
 		return new EstadoTriste();
 	}
 

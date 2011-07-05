@@ -3,77 +3,59 @@
   <class id="1" corner="BOTTOM_RIGHT" language="java" 
     name="ar.com.pattern.comportamiento.command.calculadora.TestClient" project="pattern" 
     file="/pattern/src/ar/com/pattern/comportamiento/command/calculadora/TestClient.java" binary="false">    
-    <position x="129" y="82" width="-1" height="-1"/>    
+    <position x="41" y="37" width="232" height="83"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false"/>      
-      <operations public="false" package="false" protected="false" private="false"/>    
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
   <interface id="2" corner="BOTTOM_RIGHT" language="java" 
     name="ar.com.pattern.comportamiento.command.calculadora.Command" project="pattern" 
     file="/pattern/src/ar/com/pattern/comportamiento/command/calculadora/Command.java" binary="false">    
-    <position x="744" y="85" width="-1" height="-1"/>    
+    <position x="704" y="91" width="-1" height="-1"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false"/>      
-      <operations public="false" package="false" protected="false" private="false"/>    
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </interface>  
   <class id="3" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.comportamiento.command.calculadora.Invoker" 
     project="pattern" file="/pattern/src/ar/com/pattern/comportamiento/command/calculadora/Invoker.java" binary="false">    
-    <position x="396" y="81" width="-1" height="-1"/>    
+    <position x="313" y="37" width="232" height="115"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false"/>      
-      <operations public="false" package="false" protected="false" private="false"/>    
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
   <class id="4" corner="BOTTOM_RIGHT" language="java" 
     name="ar.com.pattern.comportamiento.command.calculadora.SumarCommand" project="pattern" 
     file="/pattern/src/ar/com/pattern/comportamiento/command/calculadora/SumarCommand.java" binary="false">    
-    <position x="615" y="246" width="-1" height="-1"/>    
+    <position x="976" y="272" width="-1" height="-1"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false"/>      
-      <operations public="false" package="false" protected="false" private="false"/>    
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
   <class id="5" corner="BOTTOM_RIGHT" language="java" 
     name="ar.com.pattern.comportamiento.command.calculadora.RestarCommand" project="pattern" 
     file="/pattern/src/ar/com/pattern/comportamiento/command/calculadora/RestarCommand.java" binary="false">    
-    <position x="869" y="246" width="-1" height="-1"/>    
+    <position x="728" y="273" width="-1" height="-1"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false"/>      
-      <operations public="false" package="false" protected="false" private="false"/>    
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
   <class id="6" corner="BOTTOM_RIGHT" language="java" 
     name="ar.com.pattern.comportamiento.command.calculadora.Calculadora" project="pattern" 
     file="/pattern/src/ar/com/pattern/comportamiento/command/calculadora/Calculadora.java" binary="false">    
-    <position x="304" y="189" width="-1" height="-1"/>    
+    <position x="433" y="277" width="-1" height="-1"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
-      <attributes public="false" package="false" protected="false" private="false"/>      
-      <operations public="false" package="false" protected="false" private="false"/>    
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <realization>    
-    <end type="SOURCE" nodeId="4"/>    
-    <end type="TARGET" nodeId="2"/>  
-  </realization>  
   <association>    
-    <end type="SOURCE" nodeId="3" navigable="false">      
-      <attribute name="restarCommand"/>      
-      <multiplicity minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" nodeId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association>    
-    <end type="SOURCE" nodeId="5" navigable="false">      
-      <attribute name="calculadora"/>      
-      <multiplicity minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" nodeId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association>    
+    <bendpoint x="978" y="367"/>    
+    <bendpoint x="430" y="369"/>    
     <end type="SOURCE" nodeId="4" navigable="false">      
       <attribute name="calculadora"/>      
       <multiplicity minimum="0" maximum="1"/>    
@@ -87,15 +69,28 @@
   </realization>  
   <association>    
     <end type="SOURCE" nodeId="3" navigable="false">      
-      <attribute name="sumarCommand"/>      
+      <attribute name="restarCommand"/>      
       <multiplicity minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" nodeId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association>    
+    <bendpoint x="621" y="270"/>    
+    <end type="SOURCE" nodeId="5" navigable="false">      
+      <attribute name="calculadora"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization>    
+    <end type="SOURCE" nodeId="4"/>    
+    <end type="TARGET" nodeId="2"/>  
+  </realization>  
   <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
-    <attributes public="false" package="false" protected="false" private="false"/>    
-    <operations public="false" package="false" protected="false" private="false"/>  
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
   </classifier-display>  
   <association-display labels="true" multiplicity="true"/>
 </class-diagram>

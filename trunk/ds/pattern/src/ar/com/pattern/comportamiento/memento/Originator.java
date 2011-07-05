@@ -1,34 +1,37 @@
 package ar.com.pattern.comportamiento.memento;
 
+/**
+ * <li>Crea un objeto Memento conteniendo una fotografía (un instante) de su
+ * estado interno. <li>Usa a Memento para restaurar su estado interno.
+ */
 public class Originator {
+	
 	private String state;
-
-	/*
-	 * lots of memory consumptive private data that is not necessary to define
-	 * the state and should thus not be saved. Hence the small memento object.
-	 */
-	public void setEstado(String state) {
-		System.out.println("Originator: Setting state to " + state);
-		this.state = state;
-	}
-
-	public String getEstado(){
-		return state;
-	}
 	
 	/**
 	 * CrearMemento()
 	 */
-	public Memento saveToMemento() {
-		System.out.println("Originator: Saving to Memento.");
-		return new Memento(state);
+	public Memento crearMemento() {
+		Memento memento = new Memento();
+		memento.setState(state);
+		return memento;
 	}
 
 	/**
 	 * EstablecerMemento(Memento m)
 	 */
-	public void restoreFromMemento(Memento m) {
-		state = m.getSavedState();
+	public void restaurarAlMemento(Memento m) {
 		System.out.println("Originator: State after restoring from Memento: " + state);
+		state = m.getState();
+	}
+	
+	//*******************************************************************
+
+	public void setEstado(String state){
+		this.state = state;
+	}
+	
+	public String getEstado(){
+		return state;
 	}
 }

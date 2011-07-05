@@ -1,13 +1,5 @@
 <class-diagram version="1.0.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true">  
-  <class id="1" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.comportamiento.command.libro.TestClient" 
-    project="pattern" file="/pattern/src/ar/com/pattern/comportamiento/command/libro/TestClient.java" binary="false">    
-    <position x="304" y="37" width="202" height="83"/>    
-    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true"/>      
-      <operations public="true" package="true" protected="true" private="true"/>    
-    </display>  
-  </class>  
   <class id="2" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.comportamiento.command.libro.Receptor" 
     project="pattern" file="/pattern/src/ar/com/pattern/comportamiento/command/libro/Receptor.java" binary="false">    
     <position x="567" y="299" width="202" height="83"/>    
@@ -48,12 +40,6 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <dependency>    
-    <bendpoint x="271" y="168"/>    
-    <bendpoint x="271" y="231"/>    
-    <end type="SOURCE" nodeId="1"/>    
-    <end type="TARGET" nodeId="3"/>  
-  </dependency>  
   <association>    
     <end type="SOURCE" nodeId="4" navigable="false">      
       <attribute name="ordenB"/>      
@@ -66,12 +52,24 @@
     <end type="SOURCE" nodeId="5"/>    
     <end type="TARGET" nodeId="3"/>  
   </realization>  
+  <realization>    
+    <end type="SOURCE" nodeId="6"/>    
+    <end type="TARGET" nodeId="3"/>  
+  </realization>  
   <association>    
     <end type="SOURCE" nodeId="4" navigable="false">      
       <attribute name="ordenA"/>      
       <multiplicity minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" nodeId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <end type="SOURCE" nodeId="6" navigable="false">      
+      <attribute name="receptor"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" nodeId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association>    
@@ -82,36 +80,6 @@
     <end type="TARGET" nodeId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency>    
-    <end type="SOURCE" nodeId="1"/>    
-    <end type="TARGET" nodeId="4"/>  
-  </dependency>  
-  <realization>    
-    <end type="SOURCE" nodeId="6"/>    
-    <end type="TARGET" nodeId="3"/>  
-  </realization>  
-  <association>    
-    <end type="SOURCE" nodeId="6" navigable="false">      
-      <attribute name="receptor"/>      
-      <multiplicity minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" nodeId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency>    
-    <end type="SOURCE" nodeId="1"/>    
-    <end type="TARGET" nodeId="5"/>  
-  </dependency>  
-  <dependency>    
-    <bendpoint x="844" y="78"/>    
-    <bendpoint x="844" y="340"/>    
-    <end type="SOURCE" nodeId="1"/>    
-    <end type="TARGET" nodeId="2"/>  
-  </dependency>  
-  <dependency>    
-    <end type="SOURCE" nodeId="1"/>    
-    <end type="TARGET" nodeId="6"/>  
-  </dependency>  
   <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true"/>    
     <operations public="true" package="true" protected="true" private="true"/>  

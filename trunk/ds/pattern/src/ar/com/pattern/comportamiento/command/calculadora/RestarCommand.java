@@ -18,4 +18,9 @@ public class RestarCommand implements Command {
 	      calculadora.restar();
 	   }
 
+	@Override
+	public String nombreComando() {
+		return "Restado";
+	}
+
 }

@@ -2,13 +2,13 @@ package ar.com.pattern.creacional.factory.abstrac.Xwindows;
 
 class TestClient {
 	public static void main(String[] args) {
-		FabricaAbstracta factory = FabricaAbstracta.getFactory(FabricaAbstracta.WINDOWS);
+		FabricaAbstracta factory = FabricaAbstracta.getFactory(FabricaAbstracta.LINUX);
 		
 		Ventana ventana = factory.crearVentana();
-		ventana.paint();
+		ventana.dibujar();
 		
 		Boton boton = factory.crearBoton();
-		boton.paint();
+		boton.dibujar();
 	}
 }
 

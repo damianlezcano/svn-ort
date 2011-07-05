@@ -1,39 +1,26 @@
 package ar.com.pattern.comportamiento.strategy;
 
-
+/*
+ * PROPOSITO: Define una familia de algoritmos, encapsula cada uno de ellos y los hace intercambiables.
+ * Permite que un algoritmo varie independientemente de los clientes que lo usan.
+ */
 class TestStrategy {
 	 
     public static void main(String[] args) {
  
-        Context context;
+        Context context = new Context();
  
-        // Three contexts following different strategies
-        context = new Context(new ConcreteStrategyAdd());
-        int resultA = context.executeStrategy(3,4);
-        System.out.println("El resultado de la operacion es: " + resultA);
- 
-        context = new Context(new ConcreteStrategySubtract());
-        int resultB = context.executeStrategy(3,4);
-        System.out.println("El resultado de la operacion es: " + resultB);
- 
-        context = new Context(new ConcreteStrategyMultiply());
-        int resultC = context.executeStrategy(3,4);
-        System.out.println("El resultado de la operacion es: " + resultC);
+        context.establecerEstrategiaSumar();
+        context.ejecutar(3,4);
         
-        context = new Context(new ConcreteStrategyDividir());
-        int resultD = context.executeStrategy(3,4);
-        System.out.println("El resultado de la operacion es: " + resultD);
+        context.establecerEstrategiaRestar();
+        context.ejecutar(3,4);
+        
+        context.establecerEstrategiaMultiplicar();
+        context.ejecutar(3,4);
+        
+        context.establecerEstrategiaDividir();
+        context.ejecutar(3,4);
 
-//        List<Strategy> estrategias = new ArrayList<Strategy>();
-//        estrategias.add(new ConcreteStrategyAdd());
-//        estrategias.add(new ConcreteStrategySubtract());
-//        estrategias.add(new ConcreteStrategyMultiply());
-//        estrategias.add(new ConcreteStrategyDividir());
-//        
-//        for (Strategy estrategia : estrategias) {
-//			int resultado = estrategia.execute(3,4);
-//			System.out.println("El resultado de la operacion es: " + resultado);
-//		}
-        
     }
 }

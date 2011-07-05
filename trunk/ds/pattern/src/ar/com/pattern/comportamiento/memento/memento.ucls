@@ -1,8 +1,8 @@
-<class-diagram version="1.0.2" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+<class-diagram version="1.0.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true">  
   <class id="1" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.comportamiento.memento.TestMemento" 
     project="pattern" file="/pattern/src/ar/com/pattern/comportamiento/memento/TestMemento.java" binary="false">    
-    <position x="41" y="37" width="180" height="99"/>    
+    <position x="162" y="119" width="-1" height="-1"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
@@ -10,7 +10,7 @@
   </class>  
   <class id="2" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.comportamiento.memento.Originator" 
     project="pattern" file="/pattern/src/ar/com/pattern/comportamiento/memento/Originator.java" binary="false">    
-    <position x="481" y="37" width="199" height="147"/>    
+    <position x="466" y="120" width="-1" height="-1"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
@@ -18,7 +18,7 @@
   </class>  
   <class id="3" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.comportamiento.memento.Memento" 
     project="pattern" file="/pattern/src/ar/com/pattern/comportamiento/memento/Memento.java" binary="false">    
-    <position x="261" y="224" width="180" height="99"/>    
+    <position x="732" y="120" width="-1" height="-1"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
@@ -26,33 +26,27 @@
   </class>  
   <class id="4" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.comportamiento.memento.Conserje" 
     project="pattern" file="/pattern/src/ar/com/pattern/comportamiento/memento/Conserje.java" binary="false">    
-    <position x="261" y="37" width="180" height="99"/>    
+    <position x="1073" y="119" width="-1" height="-1"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
   <dependency>    
-    <end type="SOURCE" nodeId="2"/>    
-    <end type="TARGET" nodeId="3"/>  
-  </dependency>  
-  <dependency>    
-    <bendpoint x="131" y="21"/>    
-    <bendpoint x="580" y="21"/>    
     <end type="SOURCE" nodeId="1"/>    
     <end type="TARGET" nodeId="2"/>  
   </dependency>  
   <association>    
     <end type="SOURCE" nodeId="4" navigable="false">      
-      <attribute name="savedStates"/>      
+      <attribute name="listaDeMementos"/>      
       <multiplicity minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" nodeId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <dependency>    
-    <end type="SOURCE" nodeId="1"/>    
-    <end type="TARGET" nodeId="4"/>  
+    <end type="SOURCE" nodeId="2"/>    
+    <end type="TARGET" nodeId="3"/>  
   </dependency>  
   <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true"/>    

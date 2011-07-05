@@ -1,0 +1,17 @@
+Los patrones estructurales están relacionados con cómo las clases y los objetos se combinan para dar lugar a estructuras más complejas. 
+Puede hacerse aquí la misma distinción que haciamos en los patrones de creación y hablar de patrones estructurales asociados a clases (Adapter) y 
+asociados a objetos (Bridge, Composite, Decorator, Facade, Flyweight, Proxy), los primeros utilizarán la herencia, los segundos la composición.
+
+Los patrones estructurales asociados con objetos describen formas de componer los objetos para conseguir nueva funcionalidad. La flexibilidad de la composición de 
+objetos viene de la posibilidad de cambiar la composición en tiempo de ejecución, lo que es imposible con la composición estática de clases.
+
+[Clase]:
+=======
+o- Adapter
+
+[Objeto]:
+========
+o- Adapter
+o- Composite
+o- Facade
+o- Proxy
