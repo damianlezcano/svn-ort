@@ -2,15 +2,7 @@
   associations="true" dependencies="false" nesting-relationships="true">  
   <class id="1" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.comportamiento.observer.ConcreteObserver" 
     project="pattern" file="/pattern/src/ar/com/pattern/comportamiento/observer/ConcreteObserver.java" binary="false">    
-    <position x="581" y="296" width="-1" height="-1"/>    
-    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true"/>      
-      <operations public="true" package="true" protected="true" private="true"/>    
-    </display>  
-  </class>  
-  <class id="2" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.comportamiento.observer.TestObserver" 
-    project="pattern" file="/pattern/src/ar/com/pattern/comportamiento/observer/TestObserver.java" binary="false">    
-    <position x="110" y="122" width="-1" height="-1"/>    
+    <position x="373" y="244" width="-1" height="-1"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
@@ -18,15 +10,7 @@
   </class>  
   <class id="3" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.comportamiento.observer.Subject" 
     project="pattern" file="/pattern/src/ar/com/pattern/comportamiento/observer/Subject.java" binary="false">    
-    <position x="328" y="138" width="-1" height="-1"/>    
-    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true"/>      
-      <operations public="true" package="true" protected="true" private="true"/>    
-    </display>  
-  </class>  
-  <class id="4" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.comportamiento.observer.ConcreteSubject" 
-    project="pattern" file="/pattern/src/ar/com/pattern/comportamiento/observer/ConcreteSubject.java" binary="false">    
-    <position x="331" y="296" width="-1" height="-1"/>    
+    <position x="120" y="86" width="-1" height="-1"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
@@ -34,12 +18,20 @@
   </class>  
   <interface id="5" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.comportamiento.observer.Observer" 
     project="pattern" file="/pattern/src/ar/com/pattern/comportamiento/observer/Observer.java" binary="false">    
-    <position x="580" y="114" width="-1" height="-1"/>    
+    <position x="375" y="86" width="-1" height="-1"/>    
     <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true"/>      
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </interface>  
+  <class id="6" corner="BOTTOM_RIGHT" language="java" name="ar.com.pattern.comportamiento.observer.ConcreteSubject" 
+    project="pattern" file="/pattern/src/ar/com/pattern/comportamiento/observer/ConcreteSubject.java" binary="false">    
+    <position x="118" y="247" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
   <association>    
     <end type="SOURCE" nodeId="3" navigable="false">      
       <attribute name="observers"/>      
@@ -52,27 +44,18 @@
     <end type="SOURCE" nodeId="1"/>    
     <end type="TARGET" nodeId="5"/>  
   </realization>  
-  <dependency>    
-    <bendpoint x="112" y="391"/>    
-    <bendpoint x="334" y="391"/>    
-    <end type="SOURCE" nodeId="2"/>    
-    <end type="TARGET" nodeId="4"/>  
-  </dependency>  
-  <dependency>    
-    <bendpoint x="109" y="36"/>    
-    <bendpoint x="731" y="37"/>    
-    <bendpoint x="734" y="296"/>    
-    <end type="SOURCE" nodeId="2"/>    
-    <end type="TARGET" nodeId="1"/>  
-  </dependency>  
   <association>    
     <end type="SOURCE" nodeId="1" navigable="false">      
       <attribute name="subject"/>      
       <multiplicity minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" nodeId="4" navigable="true"/>    
+    <end type="TARGET" nodeId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <generalization>    
+    <end type="SOURCE" nodeId="6"/>    
+    <end type="TARGET" nodeId="3"/>  
+  </generalization>  
   <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true"/>    
     <operations public="true" package="true" protected="true" private="true"/>  

@@ -7,13 +7,13 @@ import java.util.ArrayList;
  * Nunca examina los contenidos del memento, ni opera sobre ellos.
  */
 public class Conserje {
-	private ArrayList<Memento> savedStates = new ArrayList<Memento>();
+	private ArrayList<Memento> listaDeMementos = new ArrayList<Memento>();
 
 	public void addMemento(Memento m) {
-		savedStates.add(m);
+		listaDeMementos.add(m);
 	}
 
-	public Memento getMemento(int index) {
-		return savedStates.get(index);
+	public Memento obtenerMemento(int index) {
+		return listaDeMementos.get(index);
 	}
 }

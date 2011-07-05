@@ -2,8 +2,7 @@ package ar.com.pattern.comportamiento.strategy;
 
 class ConcreteStrategyDividir implements Strategy {
 	 
-    public int execute(int a, int b) {
-        System.out.println("Called ConcreteStrategySubtract's execute()");
+    public int calcular(int a, int b) {
         return resolver(a,b);  // Do a subtraction with a and b
     }
     

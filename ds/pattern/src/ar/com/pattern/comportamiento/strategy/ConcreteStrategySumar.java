@@ -1,10 +1,9 @@
 package ar.com.pattern.comportamiento.strategy;
 
 //Implements the algorithm using the strategy interface
-class ConcreteStrategyAdd implements Strategy {
+class ConcreteStrategySumar implements Strategy {
  
-    public int execute(int a, int b) {
-        System.out.println("Called ConcreteStrategyAdd's execute()");
+    public int calcular(int a, int b) {
         return a + b;  // Do an addition with a and b
     }
 }

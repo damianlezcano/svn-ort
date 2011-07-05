@@ -13,7 +13,12 @@ public class SumarCommand implements Command {
 	   }
 	 
 	   public void execute(){
-		   System.out.println("SumarCommand: Ejecuto metodo 'execute()'");
+		  System.out.println("SumarCommand: Ejecuto metodo 'execute()'");
 	      calculadora.sumar();
 	   }
+
+	@Override
+	public String nombreComando() {
+		return "Sumar";
+	}
 }

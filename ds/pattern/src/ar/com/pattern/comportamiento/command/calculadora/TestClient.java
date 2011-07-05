@@ -33,7 +33,11 @@ public class TestClient {
 	       Invoker invoker = new Invoker(sumar,restar);
 	       
 	       invoker.sumarGenerico();
+	       System.out.println("---");
 	       invoker.restarGenerico();
+	       System.out.println("---");
+	       
+	       invoker.mostrarComandosEjecutados();
 
 	   }
 }

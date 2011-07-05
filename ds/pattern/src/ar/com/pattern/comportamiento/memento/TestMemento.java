@@ -1,24 +1,28 @@
 package ar.com.pattern.comportamiento.memento;
-
+/*
+ * Memento guarda parte o todo el estado interno de un objeto, para que este objeto pueda ser 
+ * restaurado más tarde al estado guardado por Memento. Esta operación debe ocurrir sin romper 
+ * el principio del encapsulamiento.
+ */
 public class TestMemento {
 	
 	public static void main(String[] args) {
-		Conserje conserje = new Conserje();
+		Conserje almacen = new Conserje();
 		Originator originador = new Originator();
 		
 		originador.setEstado("State1");
-		conserje.addMemento(originador.saveToMemento());
+		almacen.addMemento(originador.crearMemento());
 		
 		originador.setEstado("State2");
-		conserje.addMemento(originador.saveToMemento());
+		almacen.addMemento(originador.crearMemento());
 		
 		originador.setEstado("State3");
-		conserje.addMemento(originador.saveToMemento());
+		almacen.addMemento(originador.crearMemento());
 		
 		originador.setEstado("State4");
-		conserje.addMemento(originador.saveToMemento());
+		almacen.addMemento(originador.crearMemento());
 		
-		originador.restoreFromMemento(conserje.getMemento(1));
+		originador.restaurarAlMemento(almacen.obtenerMemento(1));
 		
 		System.out.println("El estado es: " + originador.getEstado());
 	}

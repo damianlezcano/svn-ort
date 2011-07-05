@@ -1,29 +1,15 @@
 package ar.com.pattern.comportamiento.state.tamagochi;
 
+/*
+ * PROPOSITO: Permite que un objeto modifique su comportamiento cada vez que cambie su estado interno. 
+ * Parecera que cambia la clase del objeto
+ */
 public class TestUsuario {
 
-	private Estado estado;
-	
-	TestUsuario(){
-		estado = new EstadoContento();
-	}
-	
-	public Estado getEstado(){
-		return estado;
-	}
-
-	public void setEstado(Estado estado){
-		this.estado = estado;
-	}
-	
 	public static void main(String[] args) {
-		TestUsuario usuario = new TestUsuario();
-		
-		//estado = estado.comer();
-		usuario.setEstado(usuario.getEstado().comer());
-		//estado = estado.comer();
-		usuario.setEstado(usuario.getEstado().comer());
-		//estado = estado.comer();
-		usuario.setEstado(usuario.getEstado().comer());		
+		Contexto contexto = new Contexto(new EstadoMuerto());
+		contexto.comer();
+		contexto.comer();
+		contexto.comer();	
 	}
 }

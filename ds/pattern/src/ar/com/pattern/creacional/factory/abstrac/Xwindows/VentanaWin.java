@@ -5,7 +5,7 @@ package ar.com.pattern.creacional.factory.abstrac.Xwindows;
 /// </summary>
 class VentanaWin extends Ventana {
 
-	void paint() {
+	void dibujar() {
 		System.out.println("ventana windows");
 	}
 

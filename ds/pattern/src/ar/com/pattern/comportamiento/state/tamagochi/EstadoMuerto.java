@@ -1,5 +1,8 @@
 package ar.com.pattern.comportamiento.state.tamagochi;
 
+/**
+ * Cada subclase implementa el comportamiento asociado con un estado del contexto.
+ */
 public class EstadoMuerto implements Estado {
 
 	@Override

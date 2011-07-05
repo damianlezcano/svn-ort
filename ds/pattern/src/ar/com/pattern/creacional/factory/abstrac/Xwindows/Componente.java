@@ -4,5 +4,5 @@ package ar.com.pattern.creacional.factory.abstrac.Xwindows;
 /// The 'Product' abstract class
 /// </summary>
 abstract class Componente {
-	abstract void paint();
+	abstract void dibujar();
 }

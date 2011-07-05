@@ -17,7 +17,8 @@ public class ConcreteObserver implements Observer {
 	
 	@Override
 	public void update() {
+		System.out.print("Avisando a " + name + " sobre el nuevo estado, que paso de " + observerState + " a ");
 		observerState = subject.getSubjectState();
-		System.out.println("Avisando a " + name + " sobre el nuevo estado: " + observerState);
+		System.out.println(observerState);
 	}
 }

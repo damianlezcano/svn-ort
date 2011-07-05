@@ -13,14 +13,12 @@ public class Calculadora {
 	}
 
 	public void sumar() {
-		System.out.println("Calculadora: Ejecuto metodo 'sumar()'");
 		result++;
-		System.out.println("El resultado es: " + result);
+		System.out.println("Calculadora: Ejecuto metodo 'sumar()' y el resultado es: " + result);
 	}
 
 	public void restar() {
-		System.out.println("Calculadora: Ejecuto metodo 'restar()'");
 		result--;
-		System.out.println("El resultado es: " + result);
+		System.out.println("Calculadora: Ejecuto metodo 'restar()' y el resultado es: " + result);
 	}
 }

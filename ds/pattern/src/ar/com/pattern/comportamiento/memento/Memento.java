@@ -8,11 +8,11 @@ package ar.com.pattern.comportamiento.memento;
 public class Memento {
 	private String state;
 
-	public Memento(String stateToSave) {
-		state = stateToSave;
+	public void setState(String state){
+		this.state = state;
 	}
-
-	public String getSavedState() {
+	
+	public String getState() {
 		return state;
 	}
 }
