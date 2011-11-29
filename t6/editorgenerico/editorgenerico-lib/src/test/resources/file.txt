@@ -1,0 +1,8 @@
+SPRING INTEGRATION COMES WITH BATTERIES INCLUDED
+Spring Integration supports many different use cases. Here are some common ones:
+Transform data: transformer endpoints might change the type of the payload from one class to another, or delete, add, or change the message headers.
+Route data: router endpoints provide custom routing logic – perhaps the data from the input channel should be delivered to multiple output channels?
+Filter data: perhaps input data isn't fit to proceed and should be weeded out. You use filter endpoints to conditionally stop the data from proceeding.
+Adapt different systems to Spring Integration: Adapters provide the ability for data to enter and exit the Spring Integration solution.
+Split data: when the payload is too big, or is intended to be partitioned into smaller pieces of data. An example might be a single file that should be split into rows.
+Aggregate data: this is the inverse of splitting functionality: an aggregator waits for messages to arrive, one by one, and collects them until some condition is met. Then, it sends all the aggregate messages as one message.
