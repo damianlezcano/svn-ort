@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="libs/junit-4.10.jar"/>
 	<classpathentry kind="lib" path="libs/log4j-1.2.16.jar"/>
 	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/chat-modelo"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/chat-exception"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
