@@ -1,7 +1,11 @@
 package ort.t6.chat.model;
 
-public class Contacto {
+import java.io.Serializable;
 
+public class Contacto implements Serializable{
+
+	private static final long serialVersionUID = -6783539509723025183L;
+	
 	private Boolean estado;
 	private String nick;
 	private String ip;
@@ -35,4 +39,13 @@ public class Contacto {
 	public void setIp(String ip) {
 		this.ip = ip;
 	}
+	
+//	@Override
+//    public boolean equals(Object obj) {
+//        if (obj != null && obj instanceof Contacto) {
+//        	Contacto contacto = (Contacto) obj;
+//            return (contacto.getNick().equals(this.getNick()));
+//        }
+//        return false;
+//    }
 }

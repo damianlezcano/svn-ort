@@ -12,4 +12,9 @@ public class Logout implements IMensaje {
 	public Contacto getContacto() {
 		return contacto;
 	}
+	
+	@Override
+	public String toString(){
+		return contacto.getNick() + " - " +contacto.getEstado().toString();
+	}
 }

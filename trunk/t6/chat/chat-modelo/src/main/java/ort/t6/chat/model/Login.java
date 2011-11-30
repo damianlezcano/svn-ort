@@ -15,6 +15,7 @@ public class Login implements IMensaje {
 	
 	@Override
 	public String toString(){
-		return contacto.getNick() + contacto.getEstado().toString();
+		return contacto.getNick() + " - " +contacto.getEstado().toString();
 	}
+	
 }
