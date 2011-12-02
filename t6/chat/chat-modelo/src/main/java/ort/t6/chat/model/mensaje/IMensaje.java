@@ -1,4 +1,4 @@
-package ort.t6.chat.model;
+package ort.t6.chat.model.mensaje;
 
 import java.io.Serializable;
 

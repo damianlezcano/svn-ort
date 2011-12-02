@@ -1,4 +1,5 @@
-package ort.t6.chat.model;
+package ort.t6.chat.model.mensaje;
+
 
 public class Error implements IMensaje {
 
@@ -16,7 +17,7 @@ public class Error implements IMensaje {
 	
 	@Override
 	public String toString(){
-		return "Esto es un error";
+		return excepcion.getMessage();
 	}
 	
 }

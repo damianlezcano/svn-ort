@@ -8,8 +8,11 @@ import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observable;
+import java.util.Observer;
 
 import javax.swing.Box;
 import javax.swing.JComboBox;
@@ -21,9 +24,10 @@ import javax.swing.UIManager;
 
 import org.apache.log4j.Logger;
 
+import ort.t6.chat.cliente.lib.Cliente;
 import ort.t6.chat.model.Contacto;
 
-public class Ventana extends JFrame {
+public class Ventana extends JFrame implements Observer {
 
 	private static final long serialVersionUID = -3345896499252067716L;
 	
@@ -35,8 +39,9 @@ public class Ventana extends JFrame {
 	
 	private JListWithImages registros;
 	private JComboBox combo;
+	private Cliente cliente;
 
-	public Ventana(){
+	public Ventana() throws IOException, ClassNotFoundException{
 		
 		cambiarLookAndFeel(LOOK_WINDOWS);
 		
@@ -45,7 +50,11 @@ public class Ventana extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		
-		mockRegistros();
+//		mockRegistros();
+		registros = new JListWithImages();
+		cliente = new Cliente();
+		cliente.addObserver(this);
+		cliente.login();
 		
 		setListener();
 		setLayout();
@@ -53,6 +62,7 @@ public class Ventana extends JFrame {
 		combo.addItem("Desconectado");
 		combo.addItem("Conectado");
 		
+
 	}
 
 	private void setListener() {
@@ -107,19 +117,30 @@ public class Ventana extends JFrame {
         }
 	}
 	
+	@Override
+	public void update(Observable who, Object what) {
+		Cliente cliente = (Cliente) who;
+		List<Registro> conectados = new ArrayList<Registro>();
+		for (Contacto conectado : cliente.getContactos()) {
+			conectados.add(new Registro(conectado));
+		}
+		registros = new JListWithImages(conectados);
+		registros.updateUI();
+	}
+	
 	// ************************************************
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		Ventana ventana = new Ventana();
 		ventana.setVisible(true);
 	}
 
-	private void mockRegistros() {
-		List<Registro> mocks = new ArrayList<Registro>();
-		mocks.add(new Registro(new Contacto(null, "Todos", "a todos los contactos")));
-		mocks.add(new Registro(new Contacto(true, "Pepe", "10.0.0.2")));
-		mocks.add(new Registro(new Contacto(true, "Pablo", "10.0.0.3")));
-		mocks.add(new Registro(new Contacto(false, "Ceci", "10.0.0.4")));
-		registros = new JListWithImages(mocks);
-	}
+//	private void mockRegistros() {
+//		List<Registro> mocks = new ArrayList<Registro>();
+//		mocks.add(new Registro(new Contacto(null, "Todos", "a todos los contactos")));
+//		mocks.add(new Registro(new Contacto(true, "Pepe", "10.0.0.2")));
+//		mocks.add(new Registro(new Contacto(true, "Pablo", "10.0.0.3")));
+//		mocks.add(new Registro(new Contacto(false, "Ceci", "10.0.0.4")));
+//		registros = new JListWithImages(mocks);
+//	}
 }
