@@ -5,18 +5,21 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
 
 import ort.t6.chat.exception.UsuarioExistenteException;
+import ort.t6.chat.exception.UsuarioInexistenteException;
 import ort.t6.chat.model.Contacto;
-import ort.t6.chat.model.Error;
-import ort.t6.chat.model.IMensaje;
-import ort.t6.chat.model.Lista;
-import ort.t6.chat.model.Login;
-import ort.t6.chat.model.Logout;
+import ort.t6.chat.model.mensaje.Error;
+import ort.t6.chat.model.mensaje.IMensaje;
+import ort.t6.chat.model.mensaje.Lista;
+import ort.t6.chat.model.mensaje.Login;
+import ort.t6.chat.model.mensaje.Logout;
+import ort.t6.chat.model.mensaje.Mensaje;
 
 /**
  * Servidor con hilos 
@@ -52,6 +55,8 @@ public class ServidorService {
 		log.info("Proceso finalizado");
 	}
 	
+	//******************************************************************
+	
 	//InnerClass para el manejo de conexiones
 	class AtencionCliente implements Runnable {
 		
@@ -70,10 +75,15 @@ public class ServidorService {
 				salida = new ObjectOutputStream(conexion.getOutputStream());
 				procesar((IMensaje) entrada.readObject());
 				log.info("Interpretando entrada...");
-				entrada.close();
-				conexion.close();
 			} catch (Exception e) {
-				e.printStackTrace();
+				try {
+					log.info("Cerrando conexion...");
+					entrada.close();
+					salida.close();
+					conexion.close();
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
 			}
 		}
 		
@@ -82,17 +92,17 @@ public class ServidorService {
 				procesar((Login) mensaje);
 			}else if(mensaje instanceof Logout){
 				procesar((Logout) mensaje);
-			}else if(mensaje instanceof Lista){
-				procesar((Lista) mensaje);
-			}else if(mensaje instanceof Error){
-				procesar((Error) mensaje);
+			}else if(mensaje instanceof Mensaje){
+				procesar((Mensaje) mensaje);
 			}
 		}
 		
 		/**
 		 * Agrego contacto a la lista
 		 */
+		@SuppressWarnings({ "rawtypes", "unchecked" })
 		private void procesar(Login mensaje) throws IOException{
+			log.info("Login:" + mensaje.toString());
 			Contacto contacto = mensaje.getContacto();
 			if(usuariosConectados.containsKey(contacto.getNick())){
 				Error error = new Error();
@@ -100,8 +110,10 @@ public class ServidorService {
 				salida.writeObject(error);
 				log.info("Login error: usuario " + mensaje.toString() + " ya existe");
 			}else{
+				Lista conectados = new Lista();
+				conectados.setUsuarios(new ArrayList(usuariosConectados.values()));
+				salida.writeObject(conectados);
 				usuariosConectados.put(contacto.getNick(), contacto);
-				log.info("Login:" + mensaje.toString());
 				log.info("usuarios conectados:" + usuariosConectados.size());
 			}
 		}
@@ -109,19 +121,29 @@ public class ServidorService {
 		/**
 		 * Quito contacto de la lista
 		 */
-		private void procesar(Logout mensaje){
-			Contacto contacto = mensaje.getContacto();
-			usuariosConectados.remove(contacto.getNick());
+		private void procesar(Logout mensaje) throws IOException{
 			log.info("Logout:" + mensaje.toString());
-			log.info("usuarios conectados:" + usuariosConectados.size());
+			Contacto contacto = mensaje.getContacto();
+			if(usuariosConectados.containsKey(contacto.getNick())){
+				usuariosConectados.remove(contacto.getNick());
+				log.info("usuarios conectados:" + usuariosConectados.size());
+			}else{
+				Error error = new Error();
+				error.setExcepcion(new UsuarioInexistenteException());
+				salida.writeObject(error);
+				log.info("Login error: usuario " + mensaje.toString() + " no existe");
+			}
 		}
-		
-		private void procesar(Lista mensaje){
-			log.info("Lista:" + mensaje.toString());
-		}
-		
-		private void procesar(Error mensaje){
-			log.info("Error:" + mensaje.toString());
+
+		private void procesar(Mensaje mensaje){
+			log.info("Mensaje:" + mensaje.toString());
+			if(mensaje.getDestinos() != null && !mensaje.getDestinos().isEmpty()){
+				for (Contacto destino : mensaje.getDestinos()) {
+					log.info("Enviar mensaje: " + mensaje.getTexto() + " - a usuario: " + destino.getNick());
+				}
+			}else{
+				log.info("Enviar mensaje a toda la lista de contactos conectados");
+			}
 		}
 	}
 }

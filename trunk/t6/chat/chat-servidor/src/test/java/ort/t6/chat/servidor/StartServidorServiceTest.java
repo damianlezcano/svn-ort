@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-public class ConexionServidorServiceTest {
+public class StartServidorServiceTest {
 
 	@Test
 	public void init() throws IOException{

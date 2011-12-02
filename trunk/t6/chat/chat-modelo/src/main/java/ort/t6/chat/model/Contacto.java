@@ -10,6 +10,10 @@ public class Contacto implements Serializable{
 	private String nick;
 	private String ip;
 
+	public Contacto(){
+		estado = false;
+	}
+	
 	public Contacto(Boolean estado, String nombre, String ip) {
 		this.estado = estado;
 		this.nick = nombre;
@@ -40,12 +44,12 @@ public class Contacto implements Serializable{
 		this.ip = ip;
 	}
 	
-//	@Override
-//    public boolean equals(Object obj) {
-//        if (obj != null && obj instanceof Contacto) {
-//        	Contacto contacto = (Contacto) obj;
-//            return (contacto.getNick().equals(this.getNick()));
-//        }
-//        return false;
-//    }
+	@Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Contacto) {
+        	Contacto contacto = (Contacto) obj;
+            return (contacto.getNick().equals(this.getNick()));
+        }
+        return false;
+    }
 }

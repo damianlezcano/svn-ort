@@ -1,8 +1,10 @@
-package ort.t6.chat.model;
+package ort.t6.chat.model.mensaje;
 
-public class Login implements IMensaje {
+import ort.t6.chat.model.Contacto;
 
-	private static final long serialVersionUID = 9149836013154774216L;
+public class Logout implements IMensaje {
+
+	private static final long serialVersionUID = 7078535860133189652L;
 	private Contacto contacto; //origen
 	
 	public void setContacto(Contacto contacto) {
@@ -17,5 +19,4 @@ public class Login implements IMensaje {
 	public String toString(){
 		return contacto.getNick() + " - " +contacto.getEstado().toString();
 	}
-	
 }
