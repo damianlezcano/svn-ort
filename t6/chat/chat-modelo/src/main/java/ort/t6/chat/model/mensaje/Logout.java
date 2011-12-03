@@ -17,6 +17,6 @@ public class Logout implements IMensaje {
 	
 	@Override
 	public String toString(){
-		return contacto.getNick() + " - " +contacto.getEstado().toString();
+		return "user: " + contacto.getNick() + " ip: " + contacto.getIp();
 	}
 }

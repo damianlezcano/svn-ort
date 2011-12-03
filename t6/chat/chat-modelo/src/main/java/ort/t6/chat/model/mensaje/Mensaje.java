@@ -35,5 +35,10 @@ public class Mensaje implements IMensaje {
 	public void setDestinos(List<Contacto> destinos) {
 		this.destinos = destinos;
 	}
+	
+	@Override
+	public String toString(){
+		return texto; 
+	}
 
 }

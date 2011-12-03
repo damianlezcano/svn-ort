@@ -52,4 +52,9 @@ public class Contacto implements Serializable{
         }
         return false;
     }
+	
+	@Override
+	public int hashCode(){
+		return 0;
+	}
 }
