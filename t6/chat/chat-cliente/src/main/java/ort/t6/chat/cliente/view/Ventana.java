@@ -11,6 +11,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.IOException;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
@@ -60,16 +61,28 @@ public class Ventana extends JFrame implements Observer {
 		cliente = new Cliente();
 		cliente.addObserver(this);
 		
-//		cliente.login();
+		login();
 		
 		setListener();
 		setLayout();
 		
-		combo.addItem("Conectado a 192.168.105.112)");
+		combo.addItem("Conectado a 192.168.105.112");
 		combo.addItem("Desconectar");
 
 	}
 
+	private void login(){
+		try {
+			cliente.login();
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	private void setListener() {
 		registros.addMouseListener(new MouseAdapter() {
 		    public void mouseClicked(MouseEvent evt) {
