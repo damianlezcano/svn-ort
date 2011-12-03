@@ -7,12 +7,12 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
 
 import ort.t6.chat.exception.UsuarioExistenteException;
-import ort.t6.chat.exception.UsuarioInexistenteException;
 import ort.t6.chat.model.Contacto;
 import ort.t6.chat.model.mensaje.Error;
 import ort.t6.chat.model.mensaje.IMensaje;
@@ -29,10 +29,10 @@ public class ServidorService {
 	
 	private final static Logger log = Logger.getLogger(ServidorService.class);
 	private ServerSocket socket;
-	private Map<String, Contacto> usuariosConectados;
+	private Map<Contacto, ObjectOutputStream> usuariosConectados;
 	
 	public ServidorService(){
-		usuariosConectados = new HashMap<String, Contacto>();
+		usuariosConectados = new HashMap<Contacto, ObjectOutputStream>();
 	}
 	
 	public void execute(int port) throws IOException {
@@ -60,30 +60,33 @@ public class ServidorService {
 	//InnerClass para el manejo de conexiones
 	class AtencionCliente implements Runnable {
 		
+		private Contacto key;
 		private Socket conexion;
 		private ObjectInputStream entrada;
 		private ObjectOutputStream salida;
 		
 		public AtencionCliente(Socket cnx) {
-			this.conexion = cnx;
+			try {
+				conexion = cnx;
+				entrada = new ObjectInputStream(conexion.getInputStream());
+				salida = new ObjectOutputStream(conexion.getOutputStream());
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 		
 		public void run() {
 			log.info("Atendiendo la conexion...");
 			try {
-				entrada = new ObjectInputStream(conexion.getInputStream());
-				salida = new ObjectOutputStream(conexion.getOutputStream());
-				procesar((IMensaje) entrada.readObject());
-				log.info("Interpretando entrada...");
+	            while (true){
+					Object mensaje = entrada.readObject();
+					procesar((IMensaje) mensaje);
+					log.info("despues de procesar la entrada...");
+	            }
 			} catch (Exception e) {
-				try {
-					log.info("Cerrando conexion...");
-					entrada.close();
-					salida.close();
-					conexion.close();
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
+				log.info("Error: desconectando usuario " + key.getNick());
+				usuariosConectados.remove(key);
+				closeAll();
 			}
 		}
 		
@@ -103,8 +106,7 @@ public class ServidorService {
 		@SuppressWarnings({ "rawtypes", "unchecked" })
 		private void procesar(Login mensaje) throws IOException{
 			log.info("Login:" + mensaje.toString());
-			Contacto contacto = mensaje.getContacto();
-			if(usuariosConectados.containsKey(contacto.getNick())){
+			if(usuariosConectados.containsKey(mensaje.getContacto())){
 				Error error = new Error();
 				error.setExcepcion(new UsuarioExistenteException());
 				salida.writeObject(error);
@@ -113,7 +115,10 @@ public class ServidorService {
 				Lista conectados = new Lista();
 				conectados.setUsuarios(new ArrayList(usuariosConectados.values()));
 				salida.writeObject(conectados);
-				usuariosConectados.put(contacto.getNick(), contacto);
+				
+				//Lo guardamos en la lista de usuarios conectados
+				key = mensaje.getContacto();
+				usuariosConectados.put(key, salida);
 				log.info("usuarios conectados:" + usuariosConectados.size());
 			}
 		}
@@ -123,27 +128,58 @@ public class ServidorService {
 		 */
 		private void procesar(Logout mensaje) throws IOException{
 			log.info("Logout:" + mensaje.toString());
-			Contacto contacto = mensaje.getContacto();
-			if(usuariosConectados.containsKey(contacto.getNick())){
-				usuariosConectados.remove(contacto.getNick());
+			if(usuariosConectados.containsKey(mensaje.getContacto())){
+				usuariosConectados.remove(mensaje.getContacto());
 				log.info("usuarios conectados:" + usuariosConectados.size());
+				closeAll();
 			}else{
-				Error error = new Error();
-				error.setExcepcion(new UsuarioInexistenteException());
-				salida.writeObject(error);
 				log.info("Login error: usuario " + mensaje.toString() + " no existe");
 			}
 		}
 
+		@SuppressWarnings("unchecked")
 		private void procesar(Mensaje mensaje){
 			log.info("Mensaje:" + mensaje.toString());
+			
+			List<Contacto> destinos = null;
+			
 			if(mensaje.getDestinos() != null && !mensaje.getDestinos().isEmpty()){
-				for (Contacto destino : mensaje.getDestinos()) {
-					log.info("Enviar mensaje: " + mensaje.getTexto() + " - a usuario: " + destino.getNick());
-				}
-			}else{
-				log.info("Enviar mensaje a toda la lista de contactos conectados");
+				destinos = mensaje.getDestinos();
+			} else{
+				destinos = (List<Contacto>) usuariosConectados.keySet();
 			}
+			
+			for (Contacto destino : destinos) {
+				log.info("Enviar mensaje: " + mensaje.getTexto() + " - a usuario: " + destino.getNick());
+				ObjectOutputStream salidaDestino = usuariosConectados.get(destino);
+				try {
+					salidaDestino.writeObject(mensaje);
+				} catch (IOException e) {
+					log.info("Error al enviar el mensaje a " + destino.getNick());
+					e.printStackTrace();
+				}
+			}
+			
+		}
+		
+		private void closeAll(){
+			log.info("Cerrando todas las conexiones");
+			try {
+				conexion.close();
+				entrada.close();
+				salida.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		ServidorService servidor = new ServidorService();
+		try {
+			servidor.execute(4000);
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 }

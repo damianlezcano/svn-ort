@@ -8,6 +8,8 @@ import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +43,11 @@ public class Ventana extends JFrame implements Observer {
 	private JComboBox combo;
 	private Cliente cliente;
 
-	public Ventana() throws IOException, ClassNotFoundException{
+	private JLabel userLogin;
+	private JLabel serverHost;
+	private JLabel serverPort;
+	
+	public Ventana(){
 		
 		cambiarLookAndFeel(LOOK_WINDOWS);
 		
@@ -50,18 +56,17 @@ public class Ventana extends JFrame implements Observer {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		
-//		mockRegistros();
 		registros = new JListWithImages();
 		cliente = new Cliente();
 		cliente.addObserver(this);
-		cliente.login();
+		
+//		cliente.login();
 		
 		setListener();
 		setLayout();
 		
-		combo.addItem("Desconectado");
-		combo.addItem("Conectado");
-		
+		combo.addItem("Conectado a 192.168.105.112)");
+		combo.addItem("Desconectar");
 
 	}
 
@@ -71,8 +76,23 @@ public class Ventana extends JFrame implements Observer {
 		        doubleClickJList(evt);
 		    }
 		});
+		
+		this.addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent arg0) {
+				cerrar();
+			}
+		});
 	}
 
+	private void cerrar() {
+		try {
+			cliente.logout();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	private void cambiarLookAndFeel(String look) {
 		try {
 			UIManager.setLookAndFeel(look);
@@ -87,8 +107,15 @@ public class Ventana extends JFrame implements Observer {
 	}
 
 	private void setLayout() {
-		Container principal = getContentPane();
-		principal.setLayout(new BorderLayout());
+		
+		JPanel superior = new JPanel(new BorderLayout());
+		JLabel host = new JLabel("user:");
+		superior.add(host,BorderLayout.NORTH);
+		JLabel servidor = new JLabel("host:");
+		superior.add(servidor,BorderLayout.SOUTH);
+		
+		JPanel inferior = new JPanel(new BorderLayout());
+		inferior.setLayout(new BorderLayout());
 		
 		JPanel norte = new JPanel();
 		norte.setBackground(Color.WHITE);
@@ -98,12 +125,15 @@ public class Ventana extends JFrame implements Observer {
 		tituloLista.setFont(newLabelFont);
 		norte.add(Box.createRigidArea(new Dimension(4,0)));
 		norte.add(tituloLista);
-		principal.add(norte,BorderLayout.NORTH);
-		
-		principal.add(registros, BorderLayout.CENTER);
+		inferior.add(norte,BorderLayout.NORTH);
+		inferior.add(registros, BorderLayout.CENTER);
 		
 		combo = new JComboBox();
-		principal.add(combo, BorderLayout.SOUTH);
+		inferior.add(combo, BorderLayout.SOUTH);
+		
+		Container principal = getContentPane();
+		principal.add(superior, BorderLayout.NORTH);
+		principal.add(inferior, BorderLayout.CENTER);
 	}
 
 	public void doubleClickJList(MouseEvent evt) {
@@ -119,13 +149,13 @@ public class Ventana extends JFrame implements Observer {
 	
 	@Override
 	public void update(Observable who, Object what) {
-		Cliente cliente = (Cliente) who;
-		List<Registro> conectados = new ArrayList<Registro>();
-		for (Contacto conectado : cliente.getContactos()) {
-			conectados.add(new Registro(conectado));
-		}
-		registros = new JListWithImages(conectados);
-		registros.updateUI();
+//		Cliente cliente = (Cliente) who;
+//		List<Registro> conectados = new ArrayList<Registro>();
+//		for (Contacto conectado : cliente.getContactos()) {
+//			conectados.add(new Registro(conectado));
+//		}
+//		registros = new JListWithImages(conectados);
+//		registros.repaint();
 	}
 	
 	// ************************************************
