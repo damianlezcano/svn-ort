@@ -47,12 +47,11 @@ public class ServidorService {
 				Thread hilo = new Thread(atcli);
 				hilo.start();//inicial el nuevo hilo en forma asincronica
 			}
-			catch (Exception ex) {
-				ex.printStackTrace();
+			catch (Exception e) {
 				break; 
 			}
 		}
-		log.info("Proceso finalizado");
+		log.info("Servidor finalizado");
 	}
 	
 	//******************************************************************
@@ -84,9 +83,15 @@ public class ServidorService {
 					log.info("despues de procesar la entrada...");
 	            }
 			} catch (Exception e) {
-				log.info("Error: desconectando usuario " + key.getNick());
+				log.info("Error: desconectando usuario ");
+				
 				usuariosConectados.remove(key);
 				closeAll();
+				
+				log.info("Avisamos a todos el usuario que se desconecto");
+				List<Contacto> destinos = usuariosConectados();
+				Lista listaConectados = new Lista(destinos);
+				sendAll(destinos, listaConectados);
 			}
 		}
 		
@@ -103,7 +108,6 @@ public class ServidorService {
 		/**
 		 * Agrego contacto a la lista
 		 */
-		@SuppressWarnings({ "rawtypes", "unchecked" })
 		private void procesar(Login mensaje) throws IOException{
 			log.info("Login:" + mensaje.toString());
 			if(usuariosConectados.containsKey(mensaje.getContacto())){
@@ -112,14 +116,14 @@ public class ServidorService {
 				salida.writeObject(error);
 				log.info("Login error: usuario " + mensaje.toString() + " ya existe");
 			}else{
-				Lista conectados = new Lista();
-				conectados.setUsuarios(new ArrayList(usuariosConectados.values()));
-				salida.writeObject(conectados);
-				
-				//Lo guardamos en la lista de usuarios conectados
+				log.info("Login: Guardamos el usuario: " + mensaje.getContacto().getNick() + " en la lista de usuarios conectados");
 				key = mensaje.getContacto();
 				usuariosConectados.put(key, salida);
-				log.info("usuarios conectados:" + usuariosConectados.size());
+				
+				log.info("Login: Avisamos a todos que el usuario: " + mensaje.getContacto().getNick() + " se conecto");
+				List<Contacto> destinos = usuariosConectados();
+				Lista listaConectados = new Lista(destinos);
+				sendAll(destinos, listaConectados);
 			}
 		}
 		
@@ -129,15 +133,21 @@ public class ServidorService {
 		private void procesar(Logout mensaje) throws IOException{
 			log.info("Logout:" + mensaje.toString());
 			if(usuariosConectados.containsKey(mensaje.getContacto())){
+				log.info("Logout: Quitamos el usuario: " + mensaje.getContacto().getNick() + " en la lista de usuarios conectados");
 				usuariosConectados.remove(mensaje.getContacto());
-				log.info("usuarios conectados:" + usuariosConectados.size());
 				closeAll();
+				
+				log.info("Logout: Avisamos a todos que el usuario: " + mensaje.getContacto().getNick() + " se desconecto");
+				List<Contacto> destinos = usuariosConectados();
+				Lista listaConectados = new Lista(destinos);
+				sendAll(destinos, listaConectados);
+
+				log.info("Logout: Usuarios conectados:" + usuariosConectados.size());
 			}else{
-				log.info("Login error: usuario " + mensaje.toString() + " no existe");
+				log.info("Logout error: usuario " + mensaje.toString() + " no existe");
 			}
 		}
 
-		@SuppressWarnings("unchecked")
 		private void procesar(Mensaje mensaje){
 			log.info("Mensaje:" + mensaje.toString());
 			
@@ -146,30 +156,41 @@ public class ServidorService {
 			if(mensaje.getDestinos() != null && !mensaje.getDestinos().isEmpty()){
 				destinos = mensaje.getDestinos();
 			} else{
-				destinos = (List<Contacto>) usuariosConectados.keySet();
+				destinos = usuariosConectados();
 			}
 			
+			sendAll(destinos, mensaje);
+		}
+		
+		private void sendAll(List<Contacto> destinos, IMensaje mensaje){
+			log.info("sendAll: antes de enviar los mensajes");
 			for (Contacto destino : destinos) {
-				log.info("Enviar mensaje: " + mensaje.getTexto() + " - a usuario: " + destino.getNick());
+				log.info("sendAll: Enviando mensajes a " + destino.getNick());
 				ObjectOutputStream salidaDestino = usuariosConectados.get(destino);
 				try {
 					salidaDestino.writeObject(mensaje);
-				} catch (IOException e) {
-					log.info("Error al enviar el mensaje a " + destino.getNick());
-					e.printStackTrace();
+				} catch (Exception e) {
+					log.info("sendAll: Error al enviar el mensaje");
 				}
 			}
-			
+		}
+		
+		private List<Contacto> usuariosConectados(){
+			List<Contacto> resultado = new ArrayList<Contacto>();
+			for (Contacto contacto : usuariosConectados.keySet()) {
+				resultado.add(contacto);
+			}
+			return resultado;
 		}
 		
 		private void closeAll(){
-			log.info("Cerrando todas las conexiones");
+			log.info("closeAll: Cerrando todas las conexiones del usuario");
 			try {
 				conexion.close();
 				entrada.close();
 				salida.close();
 			} catch (IOException e) {
-				e.printStackTrace();
+				log.info("closeAll: Error cerrando las conexiones del usuario");
 			}
 		}
 	}
