@@ -6,6 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
+import java.util.List;
 
 import javax.swing.JButton;
 import javax.swing.JDialog;
@@ -15,7 +17,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
+import ort.t6.chat.cliente.lib.Cliente;
 import ort.t6.chat.model.Contacto;
+import ort.t6.chat.model.mensaje.Mensaje;
 
 public class Conversacion extends JDialog {
 	
@@ -23,11 +27,16 @@ public class Conversacion extends JDialog {
 	private JTextArea mensajes;
 	private JTextField texto;
 	
+	private Contacto contacto;
+	private Cliente cliente;
+	
 	private final static String newline = "\n";
 	
-	public Conversacion(JFrame parent, Contacto contacto) {
+	public Conversacion(JFrame parent, Contacto contacto, Cliente cliente) {
 		
 		super(parent, "Conversando con " + contacto.getNick(), false);
+		this.contacto = contacto;
+		this.cliente = cliente;
 		
 		JPanel container = (JPanel) getContentPane();
 		setBounds(0, 0, 300, 200);
@@ -41,7 +50,6 @@ public class Conversacion extends JDialog {
 		}else{
 			mensajes.setBackground(new Color(253,255,221));
 		}
-		
 		
 		JScrollPane scroll = new JScrollPane(mensajes);
 		container.add(scroll, BorderLayout.CENTER);
@@ -71,14 +79,37 @@ public class Conversacion extends JDialog {
 		
 		container.add(panelEnvio,BorderLayout.SOUTH);
 		
+		refrescarHistorial();
+		
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-		setVisible(true);
+//		setVisible(true);
 	}
 	
 	private void enviar(){
-		mensajes.append("Yo: " + texto.getText() + newline);
-		texto.setText(null);
+		try {
+			Mensaje mensaje = new Mensaje();
+			mensaje.setTexto(texto.getText());
+			mensaje.addDestino(contacto);
+			
+			cliente.send(contacto, mensaje);
+			refrescarHistorial();
+//			mensajes.append(texto.getText() + newline);
+			texto.setText(null);
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void refrescarHistorial(){
+		mensajes.setText(null);
+		List<Mensaje> historico = cliente.mensajesDelContacto(contacto);
+		for (Mensaje mensaje : historico) {
+			mensaje.setLeido(true);
+			mensajes.append(mensaje.getTexto() + newline);
+		}
 	}
 
 }

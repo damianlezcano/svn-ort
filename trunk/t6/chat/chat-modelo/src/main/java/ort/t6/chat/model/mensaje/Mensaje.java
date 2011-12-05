@@ -1,5 +1,6 @@
 package ort.t6.chat.model.mensaje;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import ort.t6.chat.model.Contacto;
@@ -11,7 +12,13 @@ public class Mensaje implements IMensaje {
 	private Contacto contacto; // origen
 	private String texto;
 	private List<Contacto> destinos; // Si no se seleccion
-
+	private Boolean leido;
+	
+	public Mensaje(){
+		destinos = new ArrayList<Contacto>();
+		leido = false;
+	}
+	
 	public void setContacto(Contacto contacto) {
 		this.contacto = contacto;
 	}
@@ -39,6 +46,18 @@ public class Mensaje implements IMensaje {
 	@Override
 	public String toString(){
 		return texto; 
+	}
+
+	public Boolean getLeido() {
+		return leido;
+	}
+
+	public void setLeido(Boolean leido) {
+		this.leido = leido;
+	}
+
+	public void addDestino(Contacto contacto) {
+		destinos.add(contacto);
 	}
 
 }

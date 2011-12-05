@@ -25,13 +25,10 @@ import ort.t6.chat.model.mensaje.Logout;
 import ort.t6.chat.model.mensaje.Mensaje;
 
 public class Cliente extends Observable {
-
 	
 	private final static Logger log = Logger.getLogger(Cliente.class);
 	
-	private static final String CONNECTION_FILE = "/connection.properties";
 	private static final String USERS_FILE = "/users.properties";
-	private Properties connectionConfiguration;
 	private Properties usersConfiguration;
 	
 	private Socket conexion;
@@ -39,41 +36,32 @@ public class Cliente extends Observable {
 	private ObjectOutputStream salida;
 	
 	private Contacto userLogin;
-	private String serverHost;
-	private Integer serverPort;
-	
-	private Map<Contacto,List<String>> allContacts;
+	private Map<Contacto,List<Mensaje>> usuariosConectados;
 	
 	public Cliente() {
 		PropertyConfigurator.configure("./src/main/resources/log4j.properties");
-		connectionConfiguration = new Properties();
 		usersConfiguration = new Properties();
-		allContacts = new HashMap<Contacto,List<String>>();
+		usuariosConectados = new HashMap<Contacto,List<Mensaje>>();
 		try {
-			connectionConfiguration.load(getClass().getResourceAsStream(CONNECTION_FILE));
 			usersConfiguration.load(getClass().getResourceAsStream(USERS_FILE));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 	
-	public void login() throws UnknownHostException, IOException, ClassNotFoundException {
-		serverHost = connectionConfiguration.getProperty("serverip");
-		serverPort = Integer.valueOf(connectionConfiguration.getProperty("serverport"));
-		conexion = new Socket(serverHost, serverPort);
-		salida = new ObjectOutputStream(conexion.getOutputStream());
-		entrada = new ObjectInputStream(conexion.getInputStream());
+	public void login(String userName, String serverIp, Integer serverPort) throws UnknownHostException, IOException, ClassNotFoundException {
+		conexion = new Socket(serverIp, serverPort);
 		
-		InetAddress thisIp =InetAddress.getLocalHost();
-		String ip = thisIp.getHostAddress();
-		String username = connectionConfiguration.getProperty("userlogin");
-		userLogin = new Contacto(false, username,ip);
+		String userIp = InetAddress.getLocalHost().getHostAddress();
+		userLogin = new Contacto(false, userName,userIp);
 
+		AtencionServidor atsrv = new AtencionServidor(conexion);
+		Thread hilo = new Thread(atsrv);
+		hilo.start();//inicial el nuevo hilo en forma asincronica		
+		
 		Login mensaje = new Login();
 		mensaje.setContacto(userLogin);
 		salida.writeObject(mensaje);
-		
-		procesar((IMensaje) entrada.readObject());
 	}
 	
 	public void logout() throws IOException{
@@ -83,47 +71,41 @@ public class Cliente extends Observable {
 		entrada.close();
 		salida.close();
 		conexion.close();
+		notificar();
 	}
 	
-	private void procesar(IMensaje mensaje) throws IOException{
-		if(mensaje instanceof Mensaje){
-			procesar((Mensaje) mensaje);
-		} else if(mensaje instanceof Lista){
-			procesar((Lista) mensaje);
-		} else if(mensaje instanceof Error){
-			procesar((Error) mensaje);
-		}	
-	}
-	
-	private void procesar(Mensaje mensaje){
-		log.info("Mensaje:" + mensaje.toString());
-	}
-
-	private void procesar(Lista mensaje){
-		log.info("Lista:" + mensaje.toString());
-		Map<Contacto,List<String>> nuevaLista = new HashMap<Contacto,List<String>>();
-		List<Contacto> conectados = mensaje.getUsuarios();
-
-		for (Contacto contacto : conectados) {
-			if (allContacts.containsKey(contacto)){
-				log.info("Lista: " + contacto.getNick() + " existe, se converva los mensajes");
-				nuevaLista.put(contacto,nuevaLista.get(contacto));
-			}else{
-				log.info("Lista: " + contacto.getNick() + " no existe, se agrega a la lista");
-				nuevaLista.put(contacto,new ArrayList<String>());
-			}
-		}
+	public void send(List<Contacto> destinatarios, Mensaje mensaje) throws IOException, ClassNotFoundException{
+		mensaje.setDestinos(destinatarios);
+		salida.writeObject(mensaje);
 		
-//		notificar();
 	}
 	
-	private void procesar(Error mensaje){
-		log.info("Error:" + mensaje.toString());
+	public void send(Contacto destinatario, Mensaje mensaje) throws IOException, ClassNotFoundException{
+		mensaje.setContacto(userLogin);
+		List<Contacto> destinatarios = new ArrayList<Contacto>();
+		destinatarios.add(destinatario);
+		mensaje.setDestinos(destinatarios);
+		salida.writeObject(mensaje);
+		mensaje.setTexto("Yo: " + mensaje.getTexto());
+		guardarHistorialMensaje(destinatario, mensaje);
+//		guardarHistorialMensaje(destinatario,"Yo: " + texto);
 	}
 	
-	@SuppressWarnings({ "unchecked", "unused" })
 	public List<Contacto> contactosConectados(){
-		return (List<Contacto>) allContacts.keySet();
+		List<Contacto> resultado = new ArrayList<Contacto>();
+		for (Contacto contacto : usuariosConectados.keySet()) {
+			resultado.add(contacto);
+		}
+		return resultado;
+	}
+
+	public List<Mensaje> mensajesDelContacto(Contacto contacto){
+		return usuariosConectados.get(contacto);
+	}
+	
+	private void guardarHistorialMensaje(Contacto contacto, Mensaje mensaje){
+		List<Mensaje> historico = mensajesDelContacto(contacto);
+		historico.add(mensaje);
 	}
 	
 	private void notificar(){
@@ -131,38 +113,73 @@ public class Cliente extends Observable {
 		this.notifyObservers();
 	}
 	
+	//******************************************************************
 	
-	//**********************************************************
+	//InnerClass para el manejo de conexiones
+	class AtencionServidor implements Runnable {
+		
+		public AtencionServidor(Socket cnx) {
+			try {
+				conexion = cnx;
+				salida = new ObjectOutputStream(conexion.getOutputStream());
+				entrada = new ObjectInputStream(conexion.getInputStream());
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		public void run() {
+			log.info("Atendiendo la conexion del servidor...");
+			try {
+	            while (true){
+					Object mensaje = entrada.readObject();
+					procesar((IMensaje) mensaje);
+	            }
+			} catch (Exception e) {
+				log.info("Error: desconectando servidor ");
+				e.printStackTrace();
+			}
+		}
+		
+		private void procesar(IMensaje mensaje) throws IOException{
+			if(mensaje instanceof Mensaje){
+				procesar((Mensaje) mensaje);
+			} else if(mensaje instanceof Lista){
+				procesar((Lista) mensaje);
+			} else if(mensaje instanceof Error){
+				procesar((Error) mensaje);
+			}	
+		}
+		
+		private void procesar(Mensaje mensaje){
+			log.info("Mensaje:" + mensaje.getTexto());
+//			guardarHistorialMensaje(mensaje.getContacto(),mensaje.getContacto().getNick() + ": " + mensaje.getTexto());
+			mensaje.setTexto(mensaje.getContacto().getNick() + ": " + mensaje.getTexto());
+			guardarHistorialMensaje(mensaje.getContacto(),mensaje);
+			notificar();
+		}
 
-	public Contacto getUserLogin() {
-		return userLogin;
-	}
-
-	public void setUserLogin(Contacto userLogin) {
-		this.userLogin = userLogin;
-	}
-
-	public String getServerHost() {
-		return serverHost;
-	}
-
-	public void setServerHost(String serverHost) {
-		this.serverHost = serverHost;
-	}
-
-	public Integer getServerPort() {
-		return serverPort;
-	}
-
-	public void setServerPort(Integer serverPort) {
-		this.serverPort = serverPort;
-	}
-
-	public Map<Contacto,List<String>> getAllContacts() {
-		return allContacts;
-	}
-
-	public void setAllContacts(Map<Contacto,List<String>> allContacts) {
-		this.allContacts = allContacts;
+		private void procesar(Lista mensaje){
+			log.info("Lista:" + mensaje.toString());
+			Map<Contacto,List<Mensaje>> nuevaLista = new HashMap<Contacto,List<Mensaje>>();
+			for (Contacto contacto : mensaje.getUsuarios()) {
+				if(!userLogin.getNick().equalsIgnoreCase(contacto.getNick())){
+					if (usuariosConectados.containsKey(contacto)){
+						log.info("Lista: " + contacto.getNick() + " existe, se conserva los mensajes");
+						nuevaLista.put(contacto,mensajesDelContacto(contacto));
+					}else{
+						log.info("Lista: " + contacto.getNick() + " no existe, se agrega a la lista");
+						nuevaLista.put(contacto,new ArrayList<Mensaje>());
+					}
+				}
+			}
+			usuariosConectados = nuevaLista;
+			notificar();
+		}
+		
+		private void procesar(Error mensaje){
+			log.info("Error:" + mensaje.toString());
+			notificar();
+		}
 	}
 }
