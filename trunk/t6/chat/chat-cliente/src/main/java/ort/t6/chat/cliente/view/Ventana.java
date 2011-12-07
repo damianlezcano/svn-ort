@@ -1,16 +1,21 @@
 package ort.t6.chat.cliente.view;
 
 import java.awt.BorderLayout;
+import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.IOException;
+import java.net.ConnectException;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -23,11 +28,14 @@ import java.util.Observer;
 import java.util.Random;
 
 import javax.swing.Box;
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 import javax.swing.UIManager;
 
 import org.apache.log4j.Logger;
@@ -47,12 +55,17 @@ public class Ventana extends JFrame implements Observer {
 	private static final String LOOK_NIMBUS = "com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel";
 	
 	private static String USER_NAME = "desktop2";
-	private static final String SERVER_IP = "localhost";
-	private static final Integer SERVER_PORT = 4000;
+	private static String SERVER_IP = "localhost";
+	private static Integer SERVER_PORT = 4000;
 	
 	private JList listadoRegistros;
 	private JComboBox combo;
 	private Cliente cliente;
+	
+	private JTextField userLogin;
+	private JTextField serverIp;
+	private JTextField serverPort;
+	private JButton botonConectar;
 	
 	private Map<Contacto,Conversacion> conversacionesAbiertas;
 	
@@ -82,23 +95,15 @@ public class Ventana extends JFrame implements Observer {
 		combo = new JComboBox();
 		listadoRegistros = new JList();
 		conversacionesAbiertas = new HashMap<Contacto, Conversacion>();
+		userLogin = new JTextField();
+		serverIp = new JTextField();
+		serverPort = new JTextField();
+		botonConectar = new JButton("Conectar");
 	}
 	
 	private void cargarComboEstados(){
 		combo.addItem("Conectado a " + SERVER_IP + ":" + SERVER_PORT);
 		combo.addItem("Desconectar");
-	}
-	
-	private void login(){
-		try {
-			cliente.login(USER_NAME,SERVER_IP,SERVER_PORT);
-		} catch (UnknownHostException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
 	}
 	
 	private void setListener() {
@@ -127,15 +132,32 @@ public class Ventana extends JFrame implements Observer {
 //                }
             }
         });
+        
+		botonConectar.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				conectar();
+			}
+		});
 		
 	}
 
 	private void setLayout() {
-		JPanel superior = new JPanel(new BorderLayout());
+		//Panel 1 para la conexion
+		JPanel panel1 = new JPanel(new BorderLayout());
+		JPanel superior = new JPanel(new GridLayout(3, 2, 0, 0));
+		superior.add(new JLabel("Nombre de Usuario"));
+		superior.add(userLogin);
+		superior.add(new JLabel("IP del Servidor"));
+		superior.add(serverIp);
+		superior.add(new JLabel("Puerto"));
+		superior.add(serverPort);
+		panel1.add(superior, BorderLayout.CENTER);
+		panel1.add(botonConectar, BorderLayout.SOUTH);		
 		
-		JPanel inferior = new JPanel(new BorderLayout());
-		inferior.setLayout(new BorderLayout());
-		
+		//Panel 2 para la lista de conectados
+		JPanel panel2 = new JPanel(new BorderLayout());
+		panel2.setLayout(new BorderLayout());
 		JPanel norte = new JPanel();
 		norte.setBackground(Color.WHITE);
 		norte.setLayout(new FlowLayout(FlowLayout.LEFT));
@@ -144,14 +166,14 @@ public class Ventana extends JFrame implements Observer {
 		tituloLista.setFont(newLabelFont);
 		norte.add(Box.createRigidArea(new Dimension(4,0)));
 		norte.add(tituloLista);
-		inferior.add(norte,BorderLayout.NORTH);
-		inferior.add(listadoRegistros, BorderLayout.CENTER);
+		panel2.add(norte,BorderLayout.NORTH);
+		panel2.add(listadoRegistros, BorderLayout.CENTER);
+		panel2.add(combo, BorderLayout.SOUTH);
 		
-		inferior.add(combo, BorderLayout.SOUTH);
-		
-		Container principal = getContentPane();
-		principal.add(superior, BorderLayout.NORTH);
-		principal.add(inferior, BorderLayout.CENTER);
+		Container container = getContentPane();
+		container.setLayout(new CardLayout());
+		container.add("login",panel1);
+		container.add("listado",panel2);
 	}
 
 	private void cerrar() {
@@ -229,12 +251,30 @@ public class Ventana extends JFrame implements Observer {
 		listadoRegistros.setCellRenderer(new CustomCellRenderer());
 	}
 	
+	private void conectar(){
+		String name = userLogin.getText();
+		String ip = serverIp.getText();
+		Integer port = Integer.valueOf(serverPort.getText());
+		CardLayout layout = (CardLayout) getContentPane().getLayout();
+		try {
+			cliente.login(name,ip,port);
+			layout.next(getContentPane());
+		} catch (UnknownHostException e) {
+			JOptionPane.showMessageDialog(this,"El servidor no esta disponible");
+		} catch (ConnectException e){
+			JOptionPane.showMessageDialog(this,"El servidor no esta disponible");
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	// ************************************************
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		Ventana ventana = new Ventana();
 		ventana.setVisible(true);
-		ventana.login();
 	}
 
 }
