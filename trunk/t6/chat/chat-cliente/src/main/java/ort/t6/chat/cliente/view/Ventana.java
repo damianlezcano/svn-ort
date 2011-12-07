@@ -210,8 +210,13 @@ public class Ventana extends JFrame implements Observer {
 	
 	@Override
 	public void update(Observable who, Object what) {
-		recargarListaDeContactos();
-		recibirMensajesNuevos();
+		if(!cliente.getEstadoConexion()){
+			recargarListaDeContactos();
+			recibirMensajesNuevos();
+		}else{
+			CardLayout layout = (CardLayout) getContentPane().getLayout();
+			layout.previous(getContentPane());
+		}
 	}
 
 	private void recibirMensajesNuevos(){

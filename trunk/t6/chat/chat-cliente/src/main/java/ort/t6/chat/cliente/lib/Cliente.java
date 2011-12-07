@@ -52,7 +52,7 @@ public class Cliente extends Observable {
 	public void login(String userName, String serverIp, Integer serverPort) throws UnknownHostException, ClassNotFoundException, Exception {
 		conexion = new Socket(serverIp, serverPort);
 		
-		String userIp = InetAddress.getLocalHost().getHostAddress();
+		String userIp = conexion.getLocalAddress().getLocalHost().getLocalHost().getHostAddress();
 		userLogin = new Contacto(false, userName,userIp);
 
 		AtencionServidor atsrv = new AtencionServidor(conexion);
@@ -84,9 +84,7 @@ public class Cliente extends Observable {
 	
 	public void send(Contacto destinatario, Mensaje mensaje) throws IOException, ClassNotFoundException{
 		mensaje.setContacto(userLogin);
-		List<Contacto> destinatarios = new ArrayList<Contacto>();
-		destinatarios.add(destinatario);
-		mensaje.setDestinos(destinatarios);
+		mensaje.addDestino(destinatario);
 		salida.writeObject(mensaje);
 		mensaje.setTexto("Yo: " + mensaje.getTexto());
 		guardarHistorialMensaje(destinatario, mensaje);
@@ -101,12 +99,20 @@ public class Cliente extends Observable {
 	}
 
 	public List<Mensaje> mensajesDelContacto(Contacto contacto){
-		return usuariosConectados.get(contacto);
+		if(usuariosConectados.containsKey(contacto)){
+			return usuariosConectados.get(contacto);
+		}else{
+			return new ArrayList<Mensaje>();
+		}
 	}
 	
 	private void guardarHistorialMensaje(Contacto contacto, Mensaje mensaje){
 		List<Mensaje> historico = mensajesDelContacto(contacto);
 		historico.add(mensaje);
+	}
+	
+	public Boolean getEstadoConexion(){
+		return conexion.isClosed();
 	}
 	
 	private void notificar(){
@@ -176,7 +182,7 @@ public class Cliente extends Observable {
 		public void run() {
 			log.info("Atendiendo la conexion del servidor...");
 			try {
-	            while (true){
+	            while (!getEstadoConexion()){
 					Object mensaje = entrada.readObject();
 					procesar((IMensaje) mensaje);
 	            }
@@ -184,7 +190,9 @@ public class Cliente extends Observable {
 				log.info("Error: desconectando del servidor ");
 				try {
 					logout();
-				} catch (IOException e1) {}
+				} catch (IOException e1) {
+					notificar();
+				}
 			}
 		}
 

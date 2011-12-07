@@ -83,18 +83,15 @@ public class Conversacion extends JDialog {
 		
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-//		setVisible(true);
 	}
 	
 	private void enviar(){
 		try {
 			Mensaje mensaje = new Mensaje();
 			mensaje.setTexto(texto.getText());
-			mensaje.addDestino(contacto);
-			
-			cliente.send(contacto, mensaje);
+			Contacto destino = contacto.getEstado() == null ? null : contacto;
+			cliente.send(destino, mensaje);
 			refrescarHistorial();
-//			mensajes.append(texto.getText() + newline);
 			texto.setText(null);
 		} catch (IOException e) {
 			e.printStackTrace();
