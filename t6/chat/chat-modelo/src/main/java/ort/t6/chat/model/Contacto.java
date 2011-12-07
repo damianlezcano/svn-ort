@@ -11,7 +11,7 @@ public class Contacto implements Serializable{
 	private String ip;
 
 	public Contacto(){
-		estado = false;
+		estado = true;
 	}
 	
 	public Contacto(Boolean estado, String nombre, String ip) {

@@ -1,14 +1,9 @@
 package ort.t6.chat.cliente.lib;
 
-import java.io.IOException;
 import java.net.UnknownHostException;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import ort.t6.chat.model.Contacto;
 
 public class ClienteTest {
 
@@ -21,9 +16,9 @@ public class ClienteTest {
 			cliente.login("desktop5","localhost",4000);
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}

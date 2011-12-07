@@ -49,7 +49,7 @@ public class Cliente extends Observable {
 		}
 	}
 	
-	public void login(String userName, String serverIp, Integer serverPort) throws UnknownHostException, IOException, ClassNotFoundException {
+	public void login(String userName, String serverIp, Integer serverPort) throws UnknownHostException, ClassNotFoundException, Exception {
 		conexion = new Socket(serverIp, serverPort);
 		
 		String userIp = InetAddress.getLocalHost().getHostAddress();
@@ -57,27 +57,29 @@ public class Cliente extends Observable {
 
 		AtencionServidor atsrv = new AtencionServidor(conexion);
 		Thread hilo = new Thread(atsrv);
-		hilo.start();//inicial el nuevo hilo en forma asincronica		
 		
 		Login mensaje = new Login();
 		mensaje.setContacto(userLogin);
 		salida.writeObject(mensaje);
+		procesar((IMensaje) entrada.readObject());
+
+		hilo.start();//inicial el nuevo hilo en forma asincronica		
 	}
 	
 	public void logout() throws IOException{
 		log.info("logout");
 		Logout mensaje = new Logout();
 		salida.writeObject(mensaje);
-		entrada.close();
 		salida.close();
+		entrada.close();
 		conexion.close();
+		usuariosConectados.clear();
 		notificar();
 	}
 	
 	public void send(List<Contacto> destinatarios, Mensaje mensaje) throws IOException, ClassNotFoundException{
 		mensaje.setDestinos(destinatarios);
 		salida.writeObject(mensaje);
-		
 	}
 	
 	public void send(Contacto destinatario, Mensaje mensaje) throws IOException, ClassNotFoundException{
@@ -88,7 +90,6 @@ public class Cliente extends Observable {
 		salida.writeObject(mensaje);
 		mensaje.setTexto("Yo: " + mensaje.getTexto());
 		guardarHistorialMensaje(destinatario, mensaje);
-//		guardarHistorialMensaje(destinatario,"Yo: " + texto);
 	}
 	
 	public List<Contacto> contactosConectados(){
@@ -111,6 +112,50 @@ public class Cliente extends Observable {
 	private void notificar(){
 		this.setChanged();
 		this.notifyObservers();
+	}
+	
+	//*********************************************
+	// Procesar mensajes
+	//*********************************************
+	
+	private void procesar(IMensaje mensaje) throws Exception{
+		if(mensaje instanceof Mensaje){
+			procesar((Mensaje) mensaje);
+		} else if(mensaje instanceof Lista){
+			procesar((Lista) mensaje);
+		} else if(mensaje instanceof Error){
+			procesar((Error) mensaje);
+		}	
+	}
+	
+	private void procesar(Mensaje mensaje){
+		log.info("Mensaje:" + mensaje.getTexto());
+		mensaje.setTexto(mensaje.getContacto().getNick() + ": " + mensaje.getTexto());
+		guardarHistorialMensaje(mensaje.getContacto(),mensaje);
+		notificar();
+	}
+
+	private void procesar(Lista mensaje){
+		log.info("Lista:" + mensaje.toString());
+		Map<Contacto,List<Mensaje>> nuevaLista = new HashMap<Contacto,List<Mensaje>>();
+		for (Contacto contacto : mensaje.getUsuarios()) {
+			if(!userLogin.getNick().equalsIgnoreCase(contacto.getNick())){
+				if (usuariosConectados.containsKey(contacto)){
+					log.info("Lista: " + contacto.getNick() + " existe, se conserva los mensajes");
+					nuevaLista.put(contacto,mensajesDelContacto(contacto));
+				}else{
+					log.info("Lista: " + contacto.getNick() + " no existe, se agrega a la lista");
+					nuevaLista.put(contacto,new ArrayList<Mensaje>());
+				}
+			}
+		}
+		usuariosConectados = nuevaLista;
+		notificar();
+	}
+	
+	private void procesar(Error mensaje) throws Exception{
+		log.info("******Error:" + mensaje.toString());
+		throw mensaje.getExcepcion();
 	}
 	
 	//******************************************************************
@@ -136,50 +181,12 @@ public class Cliente extends Observable {
 					procesar((IMensaje) mensaje);
 	            }
 			} catch (Exception e) {
-				log.info("Error: desconectando servidor ");
-				e.printStackTrace();
+				log.info("Error: desconectando del servidor ");
+				try {
+					logout();
+				} catch (IOException e1) {}
 			}
-		}
-		
-		private void procesar(IMensaje mensaje) throws IOException{
-			if(mensaje instanceof Mensaje){
-				procesar((Mensaje) mensaje);
-			} else if(mensaje instanceof Lista){
-				procesar((Lista) mensaje);
-			} else if(mensaje instanceof Error){
-				procesar((Error) mensaje);
-			}	
-		}
-		
-		private void procesar(Mensaje mensaje){
-			log.info("Mensaje:" + mensaje.getTexto());
-//			guardarHistorialMensaje(mensaje.getContacto(),mensaje.getContacto().getNick() + ": " + mensaje.getTexto());
-			mensaje.setTexto(mensaje.getContacto().getNick() + ": " + mensaje.getTexto());
-			guardarHistorialMensaje(mensaje.getContacto(),mensaje);
-			notificar();
 		}
 
-		private void procesar(Lista mensaje){
-			log.info("Lista:" + mensaje.toString());
-			Map<Contacto,List<Mensaje>> nuevaLista = new HashMap<Contacto,List<Mensaje>>();
-			for (Contacto contacto : mensaje.getUsuarios()) {
-				if(!userLogin.getNick().equalsIgnoreCase(contacto.getNick())){
-					if (usuariosConectados.containsKey(contacto)){
-						log.info("Lista: " + contacto.getNick() + " existe, se conserva los mensajes");
-						nuevaLista.put(contacto,mensajesDelContacto(contacto));
-					}else{
-						log.info("Lista: " + contacto.getNick() + " no existe, se agrega a la lista");
-						nuevaLista.put(contacto,new ArrayList<Mensaje>());
-					}
-				}
-			}
-			usuariosConectados = nuevaLista;
-			notificar();
-		}
-		
-		private void procesar(Error mensaje){
-			log.info("Error:" + mensaje.toString());
-			notificar();
-		}
 	}
 }
