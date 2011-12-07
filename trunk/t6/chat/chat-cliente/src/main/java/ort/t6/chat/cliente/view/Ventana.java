@@ -16,18 +16,15 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.IOException;
 import java.net.ConnectException;
-import java.net.UnknownHostException;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Observable;
 import java.util.Observer;
-import java.util.Random;
 
 import javax.swing.Box;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -41,6 +38,7 @@ import javax.swing.UIManager;
 import org.apache.log4j.Logger;
 
 import ort.t6.chat.cliente.lib.Cliente;
+import ort.t6.chat.exception.UsuarioExistenteException;
 import ort.t6.chat.model.Contacto;
 import ort.t6.chat.model.mensaje.Mensaje;
 
@@ -54,10 +52,6 @@ public class Ventana extends JFrame implements Observer {
 	private static final String LOOK_WINDOWS = "java.awt.swing.plaf.windows.WindowsLookAndFeel";
 	private static final String LOOK_NIMBUS = "com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel";
 	
-	private static String USER_NAME = "desktop2";
-	private static String SERVER_IP = "localhost";
-	private static Integer SERVER_PORT = 4000;
-	
 	private JList listadoRegistros;
 	private JComboBox combo;
 	private Cliente cliente;
@@ -70,28 +64,18 @@ public class Ventana extends JFrame implements Observer {
 	private Map<Contacto,Conversacion> conversacionesAbiertas;
 	
 	public Ventana(){
-		Random r=new Random();
-		r.setSeed(123456789);
-		USER_NAME = "Usuario " + new GregorianCalendar().get(Calendar.SECOND);
-		
+		init();
 		cambiarLookAndFeel(LOOK_NIMBUS);
-		
-		setTitle("Cliente: " + USER_NAME);
+		setListener();
+		setLayout();
+	}
+
+	public void init(){
+		setTitle("Cliente");
 		setBounds(10, 10, 250, 400);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		
-		init();
-		setListener();
-		setLayout();
-		
-		cliente = new Cliente();
-		cliente.addObserver(this);
-		
-		cargarComboEstados();
-	}
-
-	public void init(){
 		combo = new JComboBox();
 		listadoRegistros = new JList();
 		conversacionesAbiertas = new HashMap<Contacto, Conversacion>();
@@ -99,11 +83,26 @@ public class Ventana extends JFrame implements Observer {
 		serverIp = new JTextField();
 		serverPort = new JTextField();
 		botonConectar = new JButton("Conectar");
+		
+		userLogin.setText("pepe");
+		serverIp.setText("localhost");
+		serverPort.setText("4000");
+		
+		cliente = new Cliente();
+		cliente.addObserver(this);
 	}
 	
-	private void cargarComboEstados(){
-		combo.addItem("Conectado a " + SERVER_IP + ":" + SERVER_PORT);
-		combo.addItem("Desconectar");
+	private void cambiarLookAndFeel(String look) {
+		try {
+			UIManager.setLookAndFeel(look);
+		} catch (Exception b) {
+			try {
+				log.info("Error al cambiar look and feel");
+				UIManager.setLookAndFeel(LOOK_NIMBUS);
+			} catch (Exception c) {
+				log.info("Error al cambiar look nimbus");
+			}
+		}
 	}
 	
 	private void setListener() {
@@ -116,20 +115,15 @@ public class Ventana extends JFrame implements Observer {
 		this.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent arg0) {
-				cerrar();
+				salir();
 			}
 		});
 		
         combo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-//            	JComboBox combo = (JComboBox) evt.getSource();
-//            	String seleccion = (String) combo.getSelectedItem();
-//            	log.info("Cambio el combo de estado a " + seleccion);
-//                if(!seleccion.contentEquals("Desconectar")){
-//                	login();
-//                }else{
-//                	cerrar();
-//                }
+            	JComboBox combo = (JComboBox) evt.getSource();
+            	String seleccion = (String) combo.getSelectedItem();
+            	if(seleccion != null) cambiarEstado(seleccion);
             }
         });
         
@@ -145,13 +139,14 @@ public class Ventana extends JFrame implements Observer {
 	private void setLayout() {
 		//Panel 1 para la conexion
 		JPanel panel1 = new JPanel(new BorderLayout());
-		JPanel superior = new JPanel(new GridLayout(3, 2, 0, 0));
+		JPanel superior = new JPanel(new GridLayout(3, 2, 10, 0));
 		superior.add(new JLabel("Nombre de Usuario"));
 		superior.add(userLogin);
 		superior.add(new JLabel("IP del Servidor"));
 		superior.add(serverIp);
 		superior.add(new JLabel("Puerto"));
 		superior.add(serverPort);
+		panel1.add(new JLabel(new ImageIcon("./src/main/resources/img/login.png")), BorderLayout.NORTH);
 		panel1.add(superior, BorderLayout.CENTER);
 		panel1.add(botonConectar, BorderLayout.SOUTH);		
 		
@@ -176,25 +171,22 @@ public class Ventana extends JFrame implements Observer {
 		container.add("listado",panel2);
 	}
 
-	private void cerrar() {
-		try {
-			cliente.logout();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+	//********************************************************
+	// Listeners
+	//********************************************************
 	
-	private void cambiarLookAndFeel(String look) {
-		try {
-			UIManager.setLookAndFeel(look);
-		} catch (Exception b) {
-			try {
-				log.info("Error al cambiar look and feel");
-				UIManager.setLookAndFeel(LOOK_NIMBUS);
-			} catch (Exception c) {
-				log.info("Error al cambiar look nimbus");
+	private void cambiarEstado(String seleccion){
+    	log.info("Cambio el combo de estado a " + seleccion);
+        if(seleccion.equalsIgnoreCase("Desconectar")){
+        	try {
+				cliente.logout();
+				CardLayout layout = (CardLayout) getContentPane().getLayout();
+				layout.previous(getContentPane());
+			} catch (IOException e) {
+				log.info("Error al cambiar de estado - Desconectar");
+				e.printStackTrace();
 			}
-		}
+        }
 	}
 	
 	private void doubleClickJList(MouseEvent evt) {
@@ -218,7 +210,6 @@ public class Ventana extends JFrame implements Observer {
 	
 	@Override
 	public void update(Observable who, Object what) {
-		System.out.println("*** " + USER_NAME + " - size: " + cliente.contactosConectados().size());
 		recargarListaDeContactos();
 		recibirMensajesNuevos();
 	}
@@ -241,10 +232,16 @@ public class Ventana extends JFrame implements Observer {
 		
 	}
 	
+	private void cargarComboEstados(){
+		combo.removeAllItems();
+		combo.addItem("Conectado a " + serverIp.getText() + " : " + serverPort.getText());
+		combo.addItem("Desconectar");
+	}
+	
 	private void recargarListaDeContactos(){
 		List<Registro> registros = new ArrayList<Registro>();
+		registros.add(new Registro(new Contacto(null,"Todos los contactos",serverIp.getText())));
 		for (Contacto contacto : cliente.contactosConectados()) {
-			contacto.setEstado(true);
 			registros.add(new Registro(contacto));
 		}
 		listadoRegistros.setListData(registros.toArray());
@@ -258,16 +255,30 @@ public class Ventana extends JFrame implements Observer {
 		CardLayout layout = (CardLayout) getContentPane().getLayout();
 		try {
 			cliente.login(name,ip,port);
+			cargarComboEstados();
+			setTitle("Usuario: " + name);
 			layout.next(getContentPane());
-		} catch (UnknownHostException e) {
-			JOptionPane.showMessageDialog(this,"El servidor no esta disponible");
 		} catch (ConnectException e){
-			JOptionPane.showMessageDialog(this,"El servidor no esta disponible");
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
+			aviso("El servidor no esta disponible");
+		} catch (UsuarioExistenteException e){
+			aviso(e.getMessage());
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	private void salir() {
+		try {
+			cliente.logout();
+		} catch (IOException e) {
+			log.info("Error al salir de la aplicacion");
+		} finally {
+			System.exit(0);//Se indica a maquina virtual que finalice la aplicacion
+		}
+	}
+	
+	private void aviso(String mensaje){
+		JOptionPane.showMessageDialog(this,mensaje);
 	}
 	
 	// ************************************************

@@ -70,21 +70,21 @@ public class ServidorService {
 				entrada = new ObjectInputStream(conexion.getInputStream());
 				salida = new ObjectOutputStream(conexion.getOutputStream());
 			} catch (IOException e) {
-				e.printStackTrace();
+				log.info("Error al crear el objeto AtencionCliente");
 			}
 		}
 		
 		public void run() {
 			log.info("Atendiendo la conexion...");
 			try {
-	            while (true){
+	            while (!conexion.isClosed()){
 					Object mensaje = entrada.readObject();
 					procesar((IMensaje) mensaje);
 					log.info("despues de procesar la entrada...");
 	            }
 			} catch (Exception e) {
+				//Esta excepcion se puede dar cuando el usuario se desconecta
 				log.info("Error: desconectando usuario ");
-				
 				usuariosConectados.remove(key);
 				closeAll();
 				
@@ -115,14 +115,17 @@ public class ServidorService {
 				error.setExcepcion(new UsuarioExistenteException());
 				salida.writeObject(error);
 				log.info("Login error: usuario " + mensaje.toString() + " ya existe");
+				closeAll();
 			}else{
 				log.info("Login: Guardamos el usuario: " + mensaje.getContacto().getNick() + " en la lista de usuarios conectados");
 				key = mensaje.getContacto();
+				key.setEstado(true);
 				usuariosConectados.put(key, salida);
 				
 				log.info("Login: Avisamos a todos que el usuario: " + mensaje.getContacto().getNick() + " se conecto");
 				List<Contacto> destinos = usuariosConectados();
 				Lista listaConectados = new Lista(destinos);
+//				listaConectados.getUsuarios().add(new Contacto(null,"Todos los contactos",socket.getInetAddress().getHostAddress()));
 				sendAll(destinos, listaConectados);
 			}
 		}

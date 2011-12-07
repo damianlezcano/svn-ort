@@ -62,9 +62,9 @@ public class Registro extends JPanel {
 		add(Box.createRigidArea(new Dimension(0,35))); //agrego elemento invisible para separar en alto
 		
 		if(contacto.getEstado() == null){
-			icono = new JLabel(new ImageIcon("src/all.png"));
+			icono = new JLabel(new ImageIcon("./src/main/resources/img/all.png"));
 		}else{
-			icono = new JLabel(new ImageIcon("src/person.png"));
+			icono = new JLabel(new ImageIcon("./src/main/resources/img/person.png"));
 		}
 		add(icono);
 		
