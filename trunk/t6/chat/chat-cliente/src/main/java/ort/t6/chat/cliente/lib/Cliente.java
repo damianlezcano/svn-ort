@@ -68,18 +68,29 @@ public class Cliente extends Observable {
 	
 	public void logout() throws IOException{
 		log.info("logout");
-		Logout mensaje = new Logout();
-		salida.writeObject(mensaje);
-		salida.close();
-		entrada.close();
-		conexion.close();
+		try {
+			Logout mensaje = new Logout();
+			salida.writeObject(mensaje);
+		} catch (Exception e) {
+			conexion.close();
+			try {
+				salida.close();
+				entrada.close();
+			} catch (Exception e2) {
+			}
+		}
 		usuariosConectados.clear();
 		notificar();
 	}
 	
 	public void send(List<Contacto> destinatarios, Mensaje mensaje) throws IOException, ClassNotFoundException{
+		mensaje.setContacto(userLogin);
 		mensaje.setDestinos(destinatarios);
 		salida.writeObject(mensaje);
+		mensaje.setTexto("Yo: " + mensaje.getTexto());
+		for (Contacto contacto : destinatarios) {
+			guardarHistorialMensaje(contacto, mensaje);
+		}
 	}
 	
 	public void send(Contacto destinatario, Mensaje mensaje) throws IOException, ClassNotFoundException{
@@ -191,7 +202,7 @@ public class Cliente extends Observable {
 				try {
 					logout();
 				} catch (IOException e1) {
-					notificar();
+					log.info("Error: en el logout");
 				}
 			}
 		}

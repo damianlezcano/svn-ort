@@ -17,6 +17,7 @@ import java.awt.event.WindowEvent;
 import java.io.IOException;
 import java.net.ConnectException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -30,8 +31,10 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
+import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JPopupMenu;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
 
@@ -61,6 +64,9 @@ public class Ventana extends JFrame implements Observer {
 	private JTextField serverPort;
 	private JButton botonConectar;
 	
+	private JPopupMenu menu;
+	private JMenuItem menuItem;
+	
 	private Map<Contacto,Conversacion> conversacionesAbiertas;
 	
 	public Ventana(){
@@ -88,6 +94,10 @@ public class Ventana extends JFrame implements Observer {
 		serverIp.setText("localhost");
 		serverPort.setText("4000");
 		
+		menu = new JPopupMenu();
+		menuItem = new JMenuItem("Mandar mensaje al grupo");
+		menu.add(menuItem);
+		
 		cliente = new Cliente();
 		cliente.addObserver(this);
 	}
@@ -108,7 +118,7 @@ public class Ventana extends JFrame implements Observer {
 	private void setListener() {
 		listadoRegistros.addMouseListener(new MouseAdapter() {
 		    public void mouseClicked(MouseEvent evt) {
-		        doubleClickJList(evt);
+		        conversarConContacto(evt);
 		    }
 		});
 		
@@ -134,6 +144,20 @@ public class Ventana extends JFrame implements Observer {
 			}
 		});
 		
+		menuItem.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+//				for (Object obj : listadoRegistros.getSelectedValues()) {
+//					System.out.println("Elemento: " + ((String)obj));
+//				}
+				conversarConGrupo(e);
+			}
+		});
+
+		listadoRegistros.addMouseListener(new MouseAdapter() {
+			public void mousePressed(MouseEvent e) {
+				mostrarMenu(e);
+			}
+		});
 	}
 
 	private void setLayout() {
@@ -172,8 +196,17 @@ public class Ventana extends JFrame implements Observer {
 	}
 
 	//********************************************************
-	// Listeners
+	// 
 	//********************************************************
+	
+	private void mostrarMenu(MouseEvent e) {
+		Integer size = listadoRegistros.getSelectedValues().length;
+		if (size > 1) {
+			if (e.getButton() == e.BUTTON3) {
+				menu.show(e.getComponent(), e.getX(), e.getY());
+			}
+		}
+	}
 	
 	private void cambiarEstado(String seleccion){
     	log.info("Cambio el combo de estado a " + seleccion);
@@ -184,12 +217,11 @@ public class Ventana extends JFrame implements Observer {
 				layout.previous(getContentPane());
 			} catch (IOException e) {
 				log.info("Error al cambiar de estado - Desconectar");
-				e.printStackTrace();
 			}
         }
 	}
 	
-	private void doubleClickJList(MouseEvent evt) {
+	private void conversarConContacto(MouseEvent evt) {
 		JList list = (JList)evt.getSource();
         if (evt.getClickCount() == 2) { // Double-click
         	Registro registro = (Registro)list.getSelectedValue();
@@ -206,6 +238,16 @@ public class Ventana extends JFrame implements Observer {
         		conversacion.setVisible(true);
         	}
         }
+	}
+	
+	private void conversarConGrupo(ActionEvent e){
+		List<Contacto> destinatarios = new ArrayList<Contacto>();
+		List registrosSeleccionados = Arrays.asList(listadoRegistros.getSelectedValues());
+		for (Object obj : registrosSeleccionados) {
+			destinatarios.add(((Registro)obj).getContacto());
+		}
+		Conversacion conversacion = new Conversacion(this, destinatarios, cliente);
+		conversacion.setVisible(true);
 	}
 	
 	@Override
