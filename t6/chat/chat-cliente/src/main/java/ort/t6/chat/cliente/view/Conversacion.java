@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.JButton;
@@ -27,15 +28,32 @@ public class Conversacion extends JDialog {
 	private JTextArea mensajes;
 	private JTextField texto;
 	
-	private Contacto contacto;
+	private List<Contacto> destinatarios;
 	private Cliente cliente;
 	
 	private final static String newline = "\n";
 	
+	public Conversacion(JFrame parent, List<Contacto> contactos, Cliente cliente) {
+		super(parent, "Conversando con el grupo", false);
+		init(cliente);
+
+		this.destinatarios = contactos;
+		mensajes.setBackground(new Color(249,225,225));
+	}
+	
 	public Conversacion(JFrame parent, Contacto contacto, Cliente cliente) {
-		
 		super(parent, "Conversando con " + contacto.getNick(), false);
-		this.contacto = contacto;
+		init(cliente);
+
+		List<Contacto> destinatario = new ArrayList<Contacto>();
+		if(contacto.getEstado() != null){
+			destinatario.add(contacto);
+		}
+		this.destinatarios = destinatario;
+		mensajes.setBackground(new Color(253,255,221));
+	}
+
+	private void init(Cliente cliente){
 		this.cliente = cliente;
 		
 		JPanel container = (JPanel) getContentPane();
@@ -44,12 +62,6 @@ public class Conversacion extends JDialog {
 		container.setLayout(new BorderLayout());
 		mensajes = new JTextArea();
 		mensajes.setFocusable(false);
-		
-		if(contacto.getEstado() == null){
-			mensajes.setBackground(new Color(249,225,225));
-		}else{
-			mensajes.setBackground(new Color(253,255,221));
-		}
 		
 		JScrollPane scroll = new JScrollPane(mensajes);
 		container.add(scroll, BorderLayout.CENTER);
@@ -76,11 +88,7 @@ public class Conversacion extends JDialog {
 			}
 		});
 		panelEnvio.add(envio, BorderLayout.EAST);
-		
 		container.add(panelEnvio,BorderLayout.SOUTH);
-		
-		refrescarHistorial();
-		
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 	}
@@ -89,8 +97,7 @@ public class Conversacion extends JDialog {
 		try {
 			Mensaje mensaje = new Mensaje();
 			mensaje.setTexto(texto.getText());
-			Contacto destino = contacto.getEstado() == null ? null : contacto;
-			cliente.send(destino, mensaje);
+			cliente.send(destinatarios, mensaje);
 			refrescarHistorial();
 			texto.setText(null);
 		} catch (IOException e) {
@@ -101,11 +108,13 @@ public class Conversacion extends JDialog {
 	}
 	
 	public void refrescarHistorial(){
-		mensajes.setText(null);
-		List<Mensaje> historico = cliente.mensajesDelContacto(contacto);
-		for (Mensaje mensaje : historico) {
-			mensaje.setLeido(true);
-			mensajes.append(mensaje.getTexto() + newline);
+		if(destinatarios.size() == 1){
+			mensajes.setText(null);
+			List<Mensaje> historico = cliente.mensajesDelContacto(destinatarios.get(0));
+			for (Mensaje mensaje : historico) {
+				mensaje.setLeido(true);
+				mensajes.append(mensaje.getTexto() + newline);
+			}
 		}
 	}
 
