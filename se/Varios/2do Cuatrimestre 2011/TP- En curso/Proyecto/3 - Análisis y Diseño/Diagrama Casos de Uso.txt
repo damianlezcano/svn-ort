@@ -1,0 +1,51 @@
+//GENERAR EN http://yuml.me/diagram/usecase/draw2
+
+[Usuario]-(AS00.01 Iniciando sesion al sistema)
+[Usuario]-(AS00.02 Exportando Datos)
+[Vendedor]^[Usuario]
+[Lider de Ventas]^[Vendedor]
+[Operador de Deposito]^[Usuario]
+[Supervisor de Deposito]^[Operador de Deposito]
+[Lider de Marketing]^[Usuario]
+[Analista Estrategico]^[Usuario]
+[Lider de Compras]^[Usuario]
+[Sistema]-(AS01.02 Enviando alerta semanal por faltante de producto)
+[Sistema]-(AS02.03 Generando alternativas de reubicacion de producto)
+[Sistema]-(AS05.01 Revisando estado de cotizaciones)
+[Sistema]-(AS06.03 Enviando Historial de Alertas de Combo)
+[Sistema]
+[Vendedor]-(AS04.01 Ingresando Cotizacion)
+(AS04.01 Ingresando Cotizacion)<(AS01.01 Alertando por faltante de producto)
+(AS04.01 Ingresando Cotizacion)<(AS06.01 Validando combo contra cotizacion)
+[Vendedor]-(AS04.02 Actualizando Cotizacion)
+(AS04.02 Actualizando Cotizacion)<(AS01.01 Alertando por faltante de producto)
+(AS04.02 Actualizando Cotizacion)<(AS06.01 Validando combo contra cotizacion)
+[Operador de Deposito]-(AS03.01 Consultando pedidos pendientes)
+(AS03.01 Consultando pedidos pendientes)<(AS03.02 Localizando productos en deposito)
+[Supervisor de Deposito]-(AS02.01 Parametrizando sectores)
+[Supervisor de Deposito]-(AS02.02 Relacionando sectores con producto)
+[Lider de Ventas]-(AS06.01 Parametrizando combos de producto)
+[Lider de Ventas]-(AS07.01 Parametrizando scorecard de cliente)
+[Lider de Ventas]-(AS07.02 Consultando cliente por Puntaje)
+[Lider de Marketing]-(AS07.01 Parametrizando scorecard de cliente)
+[Lider de Marketing]-(AS07.02 Consultando cliente por Puntaje)
+[Asesor de Cobranza]-(AS07.01 Parametrizando scorecard de cliente)
+[Asesor de Cobranza]-(AS07.02 Consultando cliente por Puntaje)
+[Director]-(AS08.02 Generando Informa de Avance de Sucursal)
+[Lider de Compras]-(AS09.01 Consultando la Planificacion de la Demanda)
+[Lider de Compras]-(AS10.01 Planificando la demanda por Proveedor)
+[Director]-(AS11.01 Consultando planificacion potencial de compra)
+[Lider de Marketing]-(AS12.01 Parametrizando inversion de marketing)
+[Lider de Marketing]-(AS12.02 Consultando retorno de inversion por cliente)
+[Director]-(AS12.02 Consultando retorno de inversion por cliente)
+[Director]-(AS13.01 Consultando simulacion de crecimiento)
+[Analista estrategico]-(AS08.01 Parametrizando niveles de rendimiento maximo)
+[Analista estrategico]-(AS14.01 Generando mapa de clientes por localidad)
+[Analista estrategico]-(AS14.02 Asignando vendedores a localidades)
+[Director]-(AS15.01 Generando informe de Objetivos de Facturacion)
+[Director]-(AS15.02 Parametrizando objetivos de Facturacion)
+[Lider de Ventas]-(AS16.01. Consultando resultado de fuerza de venta)
+[Lider de Compras]-(AS17.01. Evaluando Calidad de Proveedores)
+[Analista de Compras]-(AS18.01. Registrando Reclamo)
+[Analista de Compras]-(AS18.02. Consultando Reclamo)
+[Analista de Compras]-(AS18.03. Editando Reclamo)

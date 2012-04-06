@@ -1,0 +1,13 @@
+<mockup version="1.0" skin="sketch" measuredW="968" measuredH="459" mockupW="650" mockupH="385">
+  <controls>
+    <control controlID="0" controlTypeID="__group__" x="318" y="74" w="650" h="385" measuredW="650" measuredH="385" zOrder="0" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="0" y="0" w="650" h="385" measuredW="200" measuredH="204" zOrder="0" locked="false" isInGroup="0">
+          <controlProperties>
+            <text>Home%0AClientes%0ACotizacion%0ADep%F3sito%0AEstrat%E9gico</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>

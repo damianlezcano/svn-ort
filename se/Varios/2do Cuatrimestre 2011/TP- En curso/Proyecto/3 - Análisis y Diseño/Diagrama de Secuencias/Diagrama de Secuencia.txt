@@ -1,0 +1,726 @@
+//AD-TF-AS00.01.IniciandoSesion
+GUI->UsuarioDAO: findByNombre(nombre)
+UsuarioDAO-->GUI: usuario
+GUI->Usuario: getClave()
+GUI->Usuario: getRol()
+
+
+//AD-TF-AS.01.01.Alertando por faltante de producto
+GUI->ItemCotizacion: setArticulo(articulo)
+GUI->ItemCotizacion: setCantidad(cantidad)
+GUI->BO: validarItem(item)
+BO->ArticuloDAO: find(id)
+BO->Articulo: getStock()
+loop for each Stock
+    BO->Stock: getCantidad()
+end
+BO->CompraDAO: findAllPendiente()
+loop for each Compra
+    BO->Compra: getItems()
+    loop for each Item
+        BO->ItemCompra: getArticulo()
+        alt if itemcompra.articulo = articulo
+            BO->ItemCompra: getCantidad()
+        end
+    end
+end
+BO->Alerta: setTipoAlerta(tipo)
+BO->Alerta: setFecha(fecha)
+BO->Alerta: setHora(hora)
+BO->Alerta: setMensaje(mensaje)
+BO->Alerta: setUsuario(usuario)
+BO->AlertaDAO: put(alerta)
+BO->GUI: alerta(alerta)
+
+
+//AD-TF-AS.01.02.Enviando alerta semanal por faltante de producto
+BO->AlertaDAO: findAllporSemana()
+AlertaDAO-->BO: alertas[]
+BO->BO: enviarAlertas()
+
+
+//AD-TF-AS.02.01.Parametrizando sectores
+GUI->BO: findAllDepositos()
+BO->DepositoDAO: findAll()
+
+GUI->GUI: dibujar()
+
+GUI->Sector: setCodigo(codigo)
+GUI->Sector: setPosicion(x,y)
+GUI->Sector: setPosicionX(x)
+GUI->Sector: setPosicionY(x)
+GUI->Sector: setAncho(w)
+GUI->Sector: setAlto(h)
+GUI->BO: putSector(sector)
+BO->SectorDAO: put(sector)
+
+
+//AD-TF-AS.02.02.Relacionando sectores con productos
+GUI->BO: findAllDepositos()
+BO->DepositoDAO: findAll()
+GUI->BO: findAllArticulos()
+BO->ArticuloDAO: findAll()
+
+GUI->GUI: dibujar()
+
+GUI->Deposito: getSectores()
+loop for each Sector
+    GUI->Sector: getPosicionX()
+    GUI->Sector: getPosicionY()
+    GUI->Sector: getAncho()
+    GUI->Sector: getAlto()
+end
+
+GUI->GUI: dibujar()
+
+loop for Each Articulo
+    GUI->Sector: addArticulo(Articulo)
+end
+
+GUI->SectorDAO: putSector()
+
+
+//AD-TF-AS.02.03.Generando alternativas de reubicación de productos
+GUI->BO: findAllArticulos()
+BO->ArticuloDAO: findAll()
+GUI->BO: findAllCotizacionesConfirmadas()
+BO->CotizacionDAO: findAllComfirmadas()
+
+loop for each Cotizacion
+    GUI->Cotizacion: getItemsCotizacion()
+    GUI->ItemCotizacion: getArticulo()
+end
+    
+GUI->GUI: sort()
+	
+loop for each Articulo
+    GUI->Articulo: setSector(Sector)
+end
+
+GUI->GUI: enviarReubicacionArt()
+
+
+//AD-TF-AS.03.01.Consultando pedidos pendientes
+GUI->BO: findAllCotizacionesConfirmadas()
+BO->CotizacionDAO: findAllConfirmadas()
+
+GUI->GUI: dibujar()
+
+
+//AD-TF-AS.03.02.Localizando productos en depósito
+GUI->BO: localizarCotizacion(cotizacion)
+BO->Cotizacion: getItemsCotizacion()
+
+loop for each Item
+    Cotizacion->ItemCotizacion: getArticulo()
+    ItemCotizacion->Articulo: getSectores()
+end
+
+BO-->GUI: sectores
+GUI->GUI: dibujar()
+
+
+//AD-TF-AS04.01 Ingresando COtizaciones. 
+GUI->BO: findAllClientes()
+BO->ClienteDAO: findAll()
+GUI->BO: findAllArticulos()
+GUI->Articulo:findAll()
+
+GUI->GUI:dibujar()
+
+GUI->Cliente:getScoreCard()
+
+GUI->Cotizacion: new()
+GUI->Cotizacion: setEstado('Pendiente')	
+GUI->Cotizacion: setCliente(cliente)
+GUI->Cotizacion: setMedioPago(medio_pago)
+GUI->Cotizacion: setTipo(tipo)
+GUI->Cotizacion: setFechaEntrega(fecha_entrega)
+GUI->Cotizacion: setMoneda(moneda)
+
+loop for each Item
+    GUI->Articulo:getStock()
+
+    GUI->ItemCotizacion: new()
+    GUI->ItemCotizacion: setArticulo(articulo)
+    GUI->ItemCotizacion: setCantidad(cantidad)
+    GUI->ItemCotizacion: setBonificacion(bonificacion)
+    GUI->Cotizacion: addItem(item)
+end 
+
+GUI->BO: putCotizacion(cotizacion)
+BO->CotizacionDAO: put(cotizacion)
+
+
+
+//4.2 Actualizando Cotizacion
+GUI -> BO: find (cotizacion)
+BO->CotizacionDAO:find(cotizacion)
+CotizacionDAO-->BO:Cotizacion
+BO-->GUI:Cotizacion 
+GUI->GUI:dibujar()
+
+GUI->Cotizacion: new()
+GUI->Cotizacion: setEstado('Pendiente')	
+GUI->Cotizacion: setCliente(cliente)
+GUI->Cotizacion: setMedioPago(medio_pago)
+GUI->Cotizacion: setTipo(tipo)
+GUI->Cotizacion: setFechaEntrega(fecha_entrega)
+GUI->Cotizacion: setMoneda(moneda)
+GUI->BO:put(cotizacion)
+BO->CotizacionDAO:put(cotizacion)
+
+
+
+//05.01 Revizando estado de cotizacion. 
+BO->CotizacionDAO:findAll()
+CotizacionDAO-->BO:Cotizaciones
+
+loop for each Cotizacion
+    alt fechaIngreso > fechaActual -7 días &&   estado='Pendiente'
+         BO->Cotizacion:getVendedor()
+    end
+end
+BO->BO:enviarAlerta()
+
+BO->SucursalDAO:findAll()
+SucursalDAO-->BO:Sucursales
+loop for each Sucursal
+    alt Cotizacion.estado='Confirmado'&& fechaEstEntrega>=FechaActual
+        BO->Sucursal:getUsuario()
+    end
+    BO->BO:enviarAlerta()
+
+    alt Cotizacion.fechaEstEsnt<= fecha actual&&  Cotizacion.Estado='Preparado'
+        BO->Sucursal:getUsuario()
+    end 
+    BO->BO:enviarAlerta()
+end
+BO->AlertasDAO:getAllUltimaSemana()
+loop for each Alerta
+    BO->Sucursal:getUsuario()
+end
+BO->BO:enviarAlerta()
+
+-------------------------------------------------------
+//06.01 
+
+GUI->BO: findAllProductos()
+BO->ProductoDAO: findAll()
+
+GUI->GUI: dibujar()
+
+GUI->Combo: setNombre(nombre)
+loop for each item
+    GUI->ItemCombo: setArticulo(articulo)
+    GUI->ItemCombo: setcantidad(cantidad)
+    GUI->Combo: addItem(item)
+end
+
+GUI->BO: putCombo(combo)
+BO->ComboDAO: put(combo)
+
+
+-----------------------------------------------------
+//06.02
+GUI->BO: compararConCombo(cotizacion)
+BO->ComboDAO: findAll()
+loop for each Combo
+    BO->Combo: getPuntajeSimilitud(cotizacion)
+    Combo-->BO: puntaje
+end
+
+BO-->GUI: combo
+
+GUI->BO: ajustarACombo(cotizacion, combo)
+
+loop for each ItemCombo
+    loop for each ItemCotizacion
+        alt if combo.producto = item.producto
+            BO->ItemCotizacion: setCantidad(diferencia)
+        end
+    end
+    alt if combo.producto NOT IN cotizacion.item
+        BO->ItemCotizacion: setProducto(producto)
+        BO->ItemCotizacion: setCantidad(cantidad)
+        BO->ItemCotizacion: setCotizacion(cotizacion)
+        BO->Cotizacion: addItem(item)
+    end
+end
+    
+BO->AlertaCombo: setFechaHora(ahora)
+BO->AlertaCombo: setCombo(combo)
+BO->AlertaCombo: setCotizacion(cotizacion)
+BO->AlertaCombo: setAceptado(aceptado)
+BO->AlertaComboDAO: put(alerta)
+
+-------------------------------------------------------
+//06.03
+
+BO->AlertaComboDAO: findAllSemana()
+AlertaComboDAO-->BO: alertas
+loop for each Alerta
+    BO->AlertaCombo: getFechaHora(ahora)
+    BO->AlertaCombo: getCombo(combo)
+    BO->AlertaCombo: getCotizacion(cotizacion)
+    BO->AlertaCombo: getAceptado(aceptado)
+end
+
+--------------------------------------------------------
+//07.01
+GUI->Scorecard: setPuntajeInicial(pi)
+GUI->Scorecard: setPenalidadAtrasado(pa)
+GUI->Scorecard: setPenalidadVencido(pv)
+GUI->BO: putScorecard(scorecard)
+BO->ScorecardDAO: put(scorecard)
+
+--------------------------------------------------------
+//AD-TF AS07-02 Mostrando Clientes por Puntaje
+
+GUI->BO: findAllClientes()
+BO->ClienteDAO: findAll()
+
+loop for each Cliente
+    GUI->BO: getPuntajeCliente(cliente)
+
+    BO->Cliente: getScorecard()
+    BO->Scorecard: getPuntajeInicial()
+
+    BO->Cliente: getCotizaciones()
+    loop for each Cotizacion
+        alt if cotizacion.estado == "pendiente" && cotizacion.fecha > 2 semanas
+            BO->Scorecard: getPenalidadAtrazo()
+        end
+    end
+
+    BO->Cliente: getPagos()
+    loop for each Pago
+        alt if pago.vencimiento < hoy
+            BO->Scorecard: getPenalidadVencido()
+        end
+    end
+end
+
+GUI->GUI: dibujar()
+
+//AD-TF-AS08.01.Ingresando niveles de rendimiento máximo en sucursales
+
+GUI->NivelRendimiento:setIndClientesConf(indClientesConf)
+GUI->NivelRendimiento:setIndPedConfFVta(indPedConfFVta)
+GUI->NivelRendimiento:setIndCotSinConf(indCotSinConf)
+GUI->NivelRendimiento:setIndContConfVdor(indContConfVdor)
+GUI->NivelRendimiento:setFechaNivRendimiento(date)
+GUI->BO: putNivelRendimiento(nivelrendimiento)
+GUI->NivelRendimientoDAO: put(sucursal)
+
+//AD-TF-AS08.02.Generando informe de avance de sucursales
+GUI->BO: getAvanceSucursal(desde, hasta)
+
+BO->DAOSucursal:findAll()
+SucursalDAO-->BO:Sucursales
+
+BO->Sucursal:getNivelRendimiento()
+BO->NivelRendimiento:getIndClientesConf()
+BO->NivelRendimiento:getIndoutOfSale()
+BO->NivelRendimiento:getIndCotSinConf()
+BO->NivelRendimiento:getIndCotConf()
+
+loop for each Sucursal
+    BO->Sucursal:getClientes()
+    
+    loop for each Cliente
+        Sucursal->Cliente: getEstado(estado)
+
+        alt estadoCliente == 'Conflictivo'
+            BO->NivelRendimiento:getIndClientesConf()
+        end
+    end
+    
+    BO->Sucursal:getCotizaciones()
+    
+    loop for each Cotizacion
+        alt outOfSale==True
+            BO->NivelRendimiento:setIndoutOfSale(integer)
+        end
+        alt estado=="SinConfirmar"
+            BO->NivelRendimiento:setIndCotSinConf(integer)
+        end
+        alt estado == "Confirmadas"
+            BO->NivelRendimiento:setIndCotConf(integer)
+        end
+    end
+end
+
+BO-->GUI: resultados
+GUI->GUI:dibujar()
+
+//AD-TF-AS09.01. Mostrando Planificacion de la Demanda
+
+GUI->BO: findAllCombos()
+BO->ComboDAO: findAll()
+
+GUI->BO: mostrarPlanificacion(combo, fecha)
+
+BO->Combo: getItems()
+Combo-->BO: itemsCombo
+
+loop for each ItemCombo
+    BO->ItemCombo: getArticulo()
+    BO->Articulo: getStocks()
+    
+    loop for each Stock
+        BO->Stock: getMovimientosStock()
+        
+        loop for each MovimientoStock
+            BO->MovimientoStock: getFecha()
+            BO->MovimientoStock: getCantidad()
+            BO->MovimientoStock: getTipo()
+        end
+    end
+end
+
+BO-->GUI: resultados
+GUI->GUI: dibujar()
+    
+//AD-TF-AS10.01. Ingresando a Planificacion de la Demanda
+
+GUI->BO: findAllProveedores
+BO->ProveedorDAO: findAll()
+
+GUI->BO: findAllCombos()
+BO->ComboDAO: findAll()
+
+GUI->BO: mostrarPlanificacionProveedor(proveedor, combo, fecha)
+
+BO->Combo: getItems()
+Combo-->BO: itemsCombo
+
+loop for each ItemCombo
+    BO->ItemCombo: getArticulo()
+    BO->Articulo: getStocks()
+    
+    loop for each Stock
+        BO->Stock: getMovimientosStock()
+        
+        loop for each MovimientoStock
+            BO->MovimientoStock: getFecha()
+            BO->MovimientoStock: getCantidad()
+            BO->MovimientoStock: getTipo()
+        end
+    end
+end
+
+BO-->GUI: resultados
+GUI->GUI: dibujar()    
+
+//AD-TF-AS.11.01.Mostrando planificación de potencial de compra
+
+GUI->BO: findAllCombos()
+BO->ComboDAO: findAll()
+
+GUI->BO: findPlanificationPotencialCompra(combo, fecha)
+
+BO->Combo: getItems()
+Combo-->BO: itemsCombo
+
+loop for each ItemCombo
+    BO->ItemCombo: getArticulo()
+    BO->Articulo: getStocks()
+    
+    loop for each Stock
+        BO->Stock: getMovimientosStock()
+        
+        loop for each MovimientoStock
+            BO->MovimientoStock: getFecha()
+            BO->MovimientoStock: getCantidad()
+            BO->MovimientoStock: getTipo()
+        end
+    end
+end
+
+BO->CotizacionesDAO: findAll()
+loop for each Cotizacion
+    BO->Cotizacion: getPrecio()
+    BO->Cotizacion: getFecha()
+end
+
+BO->ComprasDAO: findAll()
+loop for each Compra
+    BO->Compra: getPrecio()
+    BO->Compra: getFecha()
+end
+
+BO-->GUI: resultados
+GUI->GUI:dibujar()
+
+
+//AD-TF-AS12.01. Ingresando Inversion de Marketing de Cliente
+
+GUI->BO: findAllClientes
+BO->ClienteDAO: findAll()
+
+GUI->Inversion: setFecha(fecha)
+GUI->Inversion: setAnio(anio)
+GUI->Inversion: setImporte(importe)
+GUI->Inversion: setCliente(cliente)
+
+GUI->BO: putInversion(inversion)
+BO->InversionDAO: put(inversion)
+    
+
+//AD-TF-AS12.02.Mostrando retorno de inversión por cliente
+
+GUI->BO: findAllClientes()
+BO->ClienteDAO: findAll()
+
+GUI->GUI: dibujar()
+GUI->BO: mostrarROI(cliente)
+
+BO->Cliente: getInversiones()
+Cliente-->BO: inversiones
+
+loop for each Inversion
+    BO->Inversion: getAnio()
+    BO->Inversion: getImporte()
+end
+
+BO->Cliente: getCotizaciones()
+Cliente-->BO: cotizaciones
+loop for each Cotizacion
+    BO->Cotizacion: getFecha()
+    BO->Cotizacion: getTotal()
+end
+
+BO-->GUI: resultados
+GUI->GUI: dibujar()
+
+
+//AD-TF-AS14.01. Generando mapa de clientes por localidad
+
+	GUI->BO:findAllClientes()
+	
+BO->ClienteDAO:findAll()
+	
+
+Cliente-->GUI:clientes
+		
+
+loop for each Cliente
+    
+			GUI->Cliente: getCotizaciones()
+    
+			Cliente->GUI: cotizaciones
+    
+    
+			loop for each Cotizacion
+        
+				alt Cotizaciones: estado == "CONFIRMADO" and Localidad==NombreLocalidad
+            
+					GUI->GUI: dibujarMapa(cotizacion)
+            
+					GUI->Cotizacion: getLocalidad()
+            
+					GUI->Localidad: getLatitud()
+            
+					GUI->Localidad: getLongitud()
+        
+				end
+    
+			end
+
+		end
+	
+GUI->GUI: dibujar()
+
+
+//AD-TF-AS14.02.Asignando Vendedores a Localidad
+
+	GUI->BO:findAllVendedores()
+	
+BO->VendedorDAO:findAll()
+	
+VendedorDAO-->GUI: vendedores
+	
+
+GUI->BO: findAllLocalidades()
+
+	BO->LocalidadDAO:findAll()
+	
+LocalidadDAO-->GUI: localidades
+
+
+	loop for each Vendedor
+    
+		GUI->Vendedor: setLocalidad(localidad)
+
+    
+		GUI->BO: putVendedor(vendedor)
+    
+		BO->VendedorDAO: put(vendedor)
+
+	end
+	
+
+GUI->GUI: dibujar()
+
+    
+//AD-TF-AS15.01.Generando informe de objetivos de facturación
+
+	GUI->BO: findAllSucursales()
+	
+BO->SucursalDAO: findAll()
+	
+
+SucursalDAO-->GUI: sucursales
+    
+	
+loop for each Sucursal
+   
+		GUI->Sucursal: getObjetivosFacturacion()
+   
+		Sucursal-->GUI: objetivosFacturacion
+        
+   
+		loop for each ObjetivoFacturacion
+      
+			GUI->Sucursal: getCotizaciones()
+      
+			Sucursal-->GUI: cotizaciones
+            
+      
+			loop for each Cotizacion
+         
+				alt if YEAR(cotizacion.fecha) ==  objetivoFacturacion.anio
+            
+					GUI->Cotizacion: getTotal()
+         
+				end
+      
+			end
+   
+		end
+	
+end
+	
+
+GUI->GUI: dibujar()
+    
+    
+//AD-TF-AS15.02.Ingresando objetivos de facturación
+
+	GUI->BO: findSucursal(id)
+	
+
+
+BO->SucursalDAO:find(id)
+
+	SucursalDAO-->GUI: sucursal
+    
+	
+GUI->ObjetivoFacturacion: setAnio(anio)
+	
+GUI->ObjetivoFacturacion: setFecha(fecha)
+	
+GUI->ObjetivoFacturacion: setImporte(importe)
+	
+GUI->ObjetivoFacturacion: setSucursal(sucursal)
+	
+GUI->BO: putObjetivoFacturacion(objetivoFacturacion)
+
+	BO->ObjetivoFacturacionDAO: put(objetivoFacturacion)
+    
+
+//AD-TF-AS16.01.Visualizando Resultado de Fza Vta.
+
+	GUI->BO: findAllLocalidades()
+	
+BO->LocalidadDAO: findAll()
+	
+
+LocalidadDAO-->GUI: localidades
+
+	
+loop for each Localidad
+    
+		GUI->Localidad: getVendedores() 
+    
+		loop for each Vendedor
+        
+			GUI->Vendedor: getUltimaAsignacion()
+        
+			GUI->Vendedor: getCotizaciones()
+ 
+		        loop for each Cotizacion
+            
+				alt cotizacion.fecha >= vendedor.ultima_asignacion && cotizacion.localidad = vendedor.localidad
+                
+					GUI->Cotizacion: getImporte()
+           
+			 	end  
+        
+			end 
+    
+		end
+	
+end
+	
+GUI->GUI:dibujar()
+
+
+//AD-TF-AS.17.01.Visualizando Calidad de Proveedores
+
+
+GUI->BO: findAllProveedor()
+
+BO->ProveedorDAO: findAll()
+
+ReclamoDAO-->GUI: reclamos
+
+loop for each Proveedor
+    GUI->Proveedor: getCompras()
+    Proveedor-->GUI: compras
+    
+    loop for each Compra
+        GUI->Compra: getFechaEmision()
+        GUI->Compra: getFechaEntregaPrometida()
+        GUI->Compra: getFechaEntregaReal()
+    end
+    
+    loop for each Reclamo
+        GUI->Reclamo: getFecha()
+        GUI->Reclamo: getFechaFin()
+        GUI->Reclamo: getResolucion()
+        GUI->Reclamo: getItemsReclamo()
+        loop for each ItemReclamo
+            GUI->ItemReclamo: getItemCotizacion()
+            GUI->ItemCotizacion: getArticulo()
+            GUI->Articulo: getProveedores()
+        end
+    end
+end
+
+GUI->GUI: dibujar()
+
+
+//18.1. Ingresando Reclamo
+
+    GUI->BO: findAllCotizaciones()
+    BO->ClienteDAO: findAll()
+    
+    GUI->GUI: dibujar()
+    
+	GUI->Reclamo: setDate(date)
+	GUI->Reclamo: setDescripcion(desc)
+	GUI->Reclamo: setCategoría(tipo)
+	GUI->Reclamo: setEstado("Creada")
+	GUI->Reclamo: setCotizacion(cotizacion)
+    
+	loop for each ItemsCotizacion
+	  GUI->ItemReclamo: setItemCotizacion(itemCotizacion)
+	  GUI->ItemReclamo: setCantidad()
+	  GUI->Reclamo: addItem(item)
+	end
+    
+    GUI->BO: putReclamo(reclamo)
+	BO->ReclamoDAO:put(reclamo)
+
