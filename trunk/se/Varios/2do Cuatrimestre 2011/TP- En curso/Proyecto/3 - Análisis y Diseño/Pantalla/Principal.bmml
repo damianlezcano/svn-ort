@@ -1,0 +1,19 @@
+<mockup version="1.0" skin="sketch" measuredW="1459" measuredH="621" mockupW="1136" mockupH="621">
+  <controls>
+    <control controlID="6" controlTypeID="__group__" x="331" y="94" w="1125" h="490" measuredW="1125" measuredH="490" zOrder="1" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="0" y="0" w="1125" h="490" measuredW="200" measuredH="204" zOrder="0" locked="false" isInGroup="6">
+          <controlProperties>
+            <text>Home%0AClientes%0ACotizacion%0ADep%F3sito%0AEstrat%E9gico</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="323" y="0" w="1136" h="621" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <markup>true</markup>
+        <text>RainShow%0Ahttps%3A//Rainshow.com</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

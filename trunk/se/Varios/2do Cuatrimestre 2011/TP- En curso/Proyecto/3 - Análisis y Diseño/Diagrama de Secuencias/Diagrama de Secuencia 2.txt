@@ -1,0 +1,928 @@
+/////////////////////////////////////////////////////////////////////////////////
+//AS 00.01 
+InicioGUI->UsuarioDAO: findByNombre(nombre)
+UsuarioDAO-->InicioGUI: usuario
+UsuarioCtrl->Usuario: getClave()
+UsuarioCtrl->Usuario: getRol()
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 01.01
+
+CotizacionGUI->CotizacionCtrl: validarRenglon(sucursal, articulo, cantidad)
+CotizacionCtrl->Articulo: getStock()
+
+loop for each Stock
+    CotizacionCtrl->Stock: getSucursal()
+
+    alt if stock.sucursal = sucursal
+        CotizacionCtrl->Stock: isCritico(cantidad)
+
+        Stock->CotizacionDAO: findAll()
+        loop for each Cotizacion
+            Stock->Cotizacion: isPendiente()
+            alt es_pendiente
+                Stock->Cotizacion : getItemsCotizacion()
+                loop for each ItemCotizacion
+                    Stock->ItemCotizacion: getArticulo()
+                    alt if item.articulo = articulo
+                        Stock->ItemCotizacion: getCantidad()
+                    end
+                end
+            end
+        end
+        
+        Stock->CompraDAO: findAll()
+        loop for each Compra
+            Stock->Compra: isPendiente()
+            alt es_pendiente
+                Stock->Compra: getItemsCompra()
+                loop for each ItemCompra
+                    Stock->ItemCompra: getArticulo()
+                    alt if item.articulo = articulo
+                        Stock->ItemCompra: getCantidad()
+                    end
+                end
+            end
+        end
+        
+        alt if (cantidad - cotiz + compra) < cantidadMinima
+            Stock->AlertaStock: new()
+            Stock->AlertaStock: setFecha(ahora)
+            Stock->AlertaStock: setStock(this)
+            Stock->AlertaStock: enviar()
+            Stock->AlertaDAO: put(alerta)
+        end
+        
+        Stock-->CotizacionCtrl: es_critico
+    end
+end
+
+CotizacionCtrl-->CotizacionGUI: es_critico
+
+alt if es_critico 
+    CotizacionGUI->CotizacionGUI: mostrarAlerta()
+end
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 01.02
+
+AlertaCtrl->AlertaDAO: findAllStockSemana()
+loop for each Alerta
+    AlertaCtrl->AlertaStock: getFecha()
+    AlertaCtrl->AlertaStock: getStock()
+end
+
+AlertaCtrl->AlertaCtrl: enviar()
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 02.01
+
+// carga el combo
+SectorGUI->SucursalCtrl: findAll()
+SucursalCtrl->SucursalDAO: findAll()
+
+// dibuja el mapa
+SectorGUI->Sucursal: getMapa()
+
+//crea el sector
+SectorGUI->Sector: new()
+SectorGUI->Sector: setSucursal(sucursal)
+SectorGUI->Sector: setCodigo(codigo)
+SectorGUI->Sector: setPosicionX(x)
+SectorGUI->Sector: setPosicionY(y)
+SectorGUI->Sector: setAlto(alto)
+SectorGUI->Sector: setAncho(ancho)
+SectorGUI->SectorCtrl: put(sector)
+SectorCtrl->SectorDAO: put(sector)
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 02.02
+
+// carga el combo
+SectorGUI->SucursalCtrl: findAll()
+SucursalCtrl->SucursalDAO: findAll()
+
+// dibuja el mapa
+SectorGUI->Sucursal: getMapa()
+// dibuja los sectores
+SectorGUI->Sucursal: getSectores()
+loop for each Sector
+    SectorGUI->Sector: getCodigo()
+    SectorGUI->Sector: getPosicionX()
+    SectorGUI->Sector: getPosicionY()
+    SectorGUI->Sector: getAlto()
+    SectorGUI->Sector: getAncho()
+end
+
+//los articulos del sector
+SectorGUI->Sector: getArticulos()
+loop for each Articulo
+    SectorGUI->Articulo: getCodigo()
+    SectorGUI->Articulo: getDescripcion()
+end
+
+//el combo de articulos
+SectorGUI->ArticuloCtrl: findAll()
+ArticuloCtrl->ArticuloDAO: findAll()
+loop for each Articulo
+    SectorGUI->Articulo: getCodigo()
+    SectorGUI->Articulo: getDescripcion()
+end
+
+//asigna articulos al sector
+loop for each Articulo
+    SectorGUI->Sector: addArticulo(articulo)
+end
+SectorGUI->SectorCtrl: put(sector)
+SectorCtrl->SectorDAO: put(sector)
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 03.01
+
+DepositoGUI->CotizacionCtrl: findAllConfirmadas()
+CotizacionCtrl->Coti	BfFzacionDAO: findAllConfirmadas()
+
+Note right of Cotizacion: obtiene de la DB
+
+CotizacionDAO->CotizacionDAO: findAll()
+loop for each Cotizacion
+    CotizacionDAO->Cotizacion: isConfirmada()
+end
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 03.02
+
+//dibuja el mapa de la sucursal de la cotizacion
+DepositoGUI->Cotizacion: getSucursal()
+DepositoGUI->Sucursal: getMapa()
+
+//obtiene los sectores de la cotizacion
+DepositoGUI->CotizacionCtrl: getSectores(cotizacion)
+CotizacionCtrl->Cotizacion: getSectores()
+loop for each ItemCotizacion
+    Cotizacion->ItemCotizacion: getSector(sucursal)
+    ItemCotizacion->Articulo: getSector(sucursal)
+end
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 04.01
+
+CotizacionGUI->ClienteCtrl: findAll()
+ClienteCtrl->ClienteDAO: findAll()
+
+CotizacionGUI->ArticuloCtrl: findAll()
+ArticuloCtrl->ArticuloDAO: findAll()
+
+CotizacionGUI->CotizacionGUI: dibujar()
+
+//obtiene el puntaje del cliente
+CotizacionGUI->ClienteCtrl: validarCliente(cliente)
+ClienteCtrl->Cliente: getPuntaje()
+TODO: Agregar funcionalidad de puntaje de cliente...
+
+//valida contra combo
+CotizacionGUI->ComboCtrl: validarCotizacion(cotizacion)
+
+CotizacionGUI->Cotizacion: new()
+CotizacionGUI->Cotizacion: setCliente(cliente)
+CotizacionGUI->Cotizacion: setMedioPago(medio)
+CotizacionGUI->Cotizacion: setTipo(tipo)
+CotizacionGUI->Cotizacion: setFechaEntrega(entrega)
+CotizacionGUI->Cotizacion: setMoneda(moneda)
+
+loop for each renglon
+    CotizacionGUI->CotizacionCtrl: validarRenglon(sucursal, articulo, cantidad)
+    
+    CotizacionGUI->ItemCotizacion: new()
+    CotizacionGUI->ItemCotizacion: setArticulo(articulo)
+    CotizacionGUI->ItemCotizacion: setCantidad(cantidad)
+    CotizacionGUI->ItemCotizacion: setBonificacion(bon)
+    CotizacionGUI->Cotizacion: addItem(item)
+end
+
+CotizacionGUI->CotizacionCtrl: put(cotizacion)
+CotizacionCtrl->CotizacionDAO: put(cotizacion)
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 04.02
+
+CotizacionModGUI->CotizacionModGUI: dibujar()
+
+CotizacionModGUI->CotizacionCtrl: find(numero)
+CotizacionCtrl->CotizacionDAO: find(numero)
+
+CotizacionModGUI->CotizacionModGUI: dibujar()
+
+//obtiene el puntaje del cliente
+CotizacionModGUI->ClienteCtrl: validarCliente(cliente)
+ClienteCtrl->Cliente: getPuntaje()
+
+//valida contra combo
+CotizacionGUI->ComboCtrl: validarCotizacion(cotizacion)
+
+CotizacionModGUI->Cotizacion: setCliente(cliente)
+CotizacionModGUI->Cotizacion: setMedioPago(medio)
+CotizacionModGUI->Cotizacion: setTipo(tipo)
+CotizacionModGUI->Cotizacion: setFechaEntrega(entrega)
+CotizacionModGUI->Cotizacion: setMoneda(moneda)
+
+loop for each renglon
+    CotizacionModGUI->CotizacionCtrl: validarRenglon(sucursal, articulo, cantidad)
+    
+    CotizacionModGUI->ItemCotizacion: setArticulo(articulo)
+    CotizacionModGUI->ItemCotizacion: setCantidad(cantidad)
+    CotizacionModGUI->ItemCotizacion: setBonificacion(bon)
+    CotizacionModGUI->Cotizacion: addItem(item)
+end
+
+CotizacionModGUI->CotizacionCtrl: put(cotizacion)
+CotizacionCtrl->CotizacionDAO: put(cotizacion)
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 05.01
+
+AlertaController->CotizacionDAO: findAll()
+
+AlertaController->AlertaCotizacion: new()
+
+loop for each Cotizacion
+    AlertaController->Cotizacion: isPendienteAtrasado()
+    alt if es_pendiente_atrasado
+        Cotizacion->AlertaCotizacion: addPendienteAtrasado(cotizacion)
+    end
+    
+    AlertaController->Cotizacion: isConfirmadoAtrasado()
+    alt if es_confirmado_atrasado
+        Cotizacion->AlertaCotizacion: addConfirmadoAtrasado(cotizacion)
+    end
+
+    AlertaController->Cotizacion: isPreparadoAtrasado()
+    alt if es_Preparado_atrasado
+        Cotizacion->AlertaCotizacion: addPreparadoAtrasado(cotizacion)
+    end
+end
+
+AlertaController->AlertaCotizacion: enviar()
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 06.01
+
+ComboGUI->ArticuloCtrl: findAll()
+ArticuloCtrl->ArticuloDAO: findAll()
+
+ComboGUI->ComboGUI: dibujar()
+
+ComboGUI->Combo: new()
+ComboGUI->Combo: setNombre(nombre)
+loop for each Item
+    ComboGUI->ItemCombo: new()
+    ComboGUI->ItemCombo: setArticulo(articulo)
+    ComboGUI->ItemCombo: setCantidad(cantidad)
+    ComboGUI->Combo: addItemCombo(item)
+end
+
+ComboGUI->ComboCtrl: put(combo)
+ComboCtrl->ComboDAO: put(combo)
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 06.02
+
+CotizacionGUI->ComboCtrl: validarCotizacion(cotizacion)
+ComboCtrl->Cotizacion: getComboSimilar()
+
+Cotizacion->ComboDAO: findAll()
+loop for each Combo
+    Cotizacion->Combo: getPuntajeSimilitud(this)
+    
+    alt if puntaje BETWEEN 0.8 AND 0.99
+        Combo->AlertaCombo: new()
+        Combo->AlertaCombo: setFecha(ahora)
+        Combo->AlertaCombo: setCombo(combo)
+        Combo->AlertaCombo: setCotizacion(cotizacion)
+        Combo->AlertaComboDAO: put(alerta)
+        
+        Combo->Cotizacion: setFueraCombo(true)
+    end
+end
+
+ComboCtrl-->CotizacionGUI: combo
+
+CotizacionGUI->ComboCtrl: completarCotizacion(cotizacion, combo)
+ComboCtrl->Combo: completarCotizacion(cotizacion)
+
+loop for each ItemCombo
+    loop for each ItemCotizacion
+        alt if combo.articulo = item.articulo
+            Combo->ItemCotizacion: setCantidad(diferencia)
+        end
+    end
+    alt if combo.articulo NOT IN cotizacion.item
+        Combo->ItemCotizacion: setArticulo(articulo)
+        Combo->ItemCotizacion: setCantidad(cantidad)
+        Combo->ItemCotizacion: setCotizacion(cotizacion)
+        Combo->Cotizacion: addItemCotizacion(item)
+    end
+end
+    
+Combo->Cotizacion: setFueraCombo(false)
+Combo->AlertaCombo: setAceptado(true)
+Combo->AlertaComboDAO: put(alerta)
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 06.03
+
+AlertaCtrl->AlertaDAO: findAllComboSemana()
+loop for each Alerta
+    AlertaCtrl->AlertaCombo: getArticulo()
+    AlertaCtrl->AlertaCombo: getCombo()
+    AlertaCtrl->AlertaCombo: getFecha()
+    AlertaCtrl->AlertaCombo: getAceptado()
+end
+
+AlertaCtrl->AlertaCtrl: enviar()
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 07.01
+
+ScorecardClienteGUI->ScorecardCtrl: getScorecardClientes()
+ScorecardCtrl->ScorecardDAO: find("cliente")
+ScorecardClienteGUI->ScorecardCliente: setPuntajeMaximo(max)
+ScorecardClienteGUI->ScorecardCliente: setPenalidadAtraso(pa)
+ScorecardClienteGUI->ScorecardCliente: setPenalidadVencido(pv)
+ScorecardClienteGUI->ScorecardCtrl: put(scorecard)
+ScorecardCtrl->ScorecardDAO: put(scorecard)
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 07.02
+
+ClienteGUI->ScorecardCtrl: getPuntajeClientes()
+
+ScorecardCtrl->ClienteDAO: findAll()
+loop for each Cliente
+    ScorecardCtrl->Cliente: getPuntaje()
+    
+    Cliente->ScorecardCliente: calcularPuntaje(this)
+    ScorecardCliente->Cliente: getCotizaciones()
+    loop for each Cotizacion
+        ScorecardCliente->Cotizacion: isPendienteAtrasado()
+    end
+    
+    ScorecardCliente->Cliente: getPagos()
+    loop for each Pago
+        ScorecardCliente->Pago: isVencido()
+    end
+end
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 08.01
+
+SucursalGUI->ScorecardCtrl: getScorecardSucursales()
+ScorecardCtrl->ScorecardDAO: find("sucursal")
+
+ScorecardSucursalGUI->ScorecardSucursal: setPenClienteConflict(indClientesConf)
+ScorecardSucursalGUI->ScorecardSucursal: setPenPedidoFuera(indPedConfFVta)
+ScorecardSucursalGUI->ScorecardSucursal: setPenPedidoPendAtrasado(indCotSinConf)
+ScorecardSucursalGUI->ScorecardSucursal: setPunPedidoConfirmado(indContConfVdor)
+
+ScorecardSucursalGUI->ScorecardCtrl: put(scorecard)
+ScorecardCtrl->Scorecard: put(scorecard)
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 08.02
+
+InformeSucursalGUI->SucursalCtrl: findAll()
+SucursalCtrl->SucursalDAO: findAll()
+
+InformeSucursalGUI->ScorecardCtrl: getPuntajeSucursales(sucursales, desde, hasta)
+
+loop for each Sucursal
+    ScorecardCtrl->Sucursal: getPuntaje(desde, hasta)
+    
+        Sucursal->ScorecardSucursal: calClientesConflict(desde, hasta)
+        ScorecardSucursal->Sucursal: getClientes()
+        loop for each Cliente
+            ScorecardSucursal->Cliente: isConflictivo()
+            Cliente->Cliente: getPuntaje()
+        end
+        
+        
+        Sucursal->ScorecardSucursal: calPedidosFuera(desde, hasta)
+        ScorecardSucursal->Sucursal: getCotizaciones()
+        loop for each Cotizacion
+            alt if sucursal.fecha BETWEEN desde AND hasta
+                ScorecardSucursal->Cotizacion: isFueraCombo()
+            end
+        end
+        
+        Sucursal->ScorecardSucursal: calPedidosPendAtrasados(desde, hasta)
+        ScorecardSucursal->Sucursal: getCotizaciones()
+        loop for each Cotizacion
+            alt if sucursal.fecha BETWEEN desde AND hasta
+                ScorecardSucursal->Cotizacion: isPendienteAtrasado()
+            end
+        end
+        
+        Sucursal->ScorecardSucursal: calPedidosConfirmados(desde, hasta)
+        ScorecardSucursal->Sucursal: getCotizaciones()
+        loop for each Cotizacion
+            alt if sucursal.fecha BETWEEN desde AND hasta
+                ScorecardSucursal->Cotizacion: isConfirmado()
+                ScorecardSucursal->Cotizacion: getVendedor()
+            end
+        end
+end
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 09.01
+
+DemandaGUI->ComboCtrl: findAll()
+ComboCtrl->ComboDAO: findAll()
+
+DemandaGUI->PlanificadorStockCtrl: getPlanificacionStock(combo, fecha)
+PlanificadorStockCtrl->PlanificadorStock: getPlanificacionStock(combo, fecha)
+
+PlanificadorStock->Combo: getItemsCombo()
+loop for each ItemCombo
+    PlanificadorStock->ItemCombo: getArticulo()
+    PlanificadorStock->Articulo: getMovimienosStock()
+    
+    loop for each Movimiento
+        PlanificadorStock->MovimientoStock: getFecha()
+        PlanificadorStock->MovimientoStock: getCantidad()
+        PlanificadorStock->MovimientoStock: getTipo()
+    end
+end
+
+DemandaGUI->DemandaGUI: dibujar()
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 10.01
+
+DemandaProveedorGUI->ProveedorCtrl: findAll()
+ProveedorCtrl->DemandaProveedorGUI: findAll()
+
+DemandaProveedorGUI->ComboCtrl: findAll()
+ComboCtrl->DemandaProveedorGUI: findAll()
+
+DemandaProveedorGUI->PlanificadorStockCtrl: getPlanificacionProveedor(proveedor, combo, fecha)
+PlanificadorStockCtrl->PlanificadorStock: getPlanificacionProveedor(proveedor, combo, fecha)
+
+PlanificadorStock->Combo: getItemsCombo()
+loop for each ItemCombo
+    PlanificadorStock->ItemCombo: getArticulo()
+    PlanifificadorStock->Proveedor: hasArticulo(articulo)
+
+    alt if vende_articulo 
+        PlanificadorStock->Articulo: getMovimientosStock()
+        
+        loop for each Movimiento
+            PlanificadorStock->MovimientoStock: getFecha()
+            PlanificadorStock->MovimientoStock: getCantidad()
+            PlanificadorStock->MovimientoStock: getTipo()
+        end
+    end
+end
+
+DemandaProveedorGUI->DemandaProveedorGUI: dibujar()
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 11.01
+
+PotencialCompraGUI->ComboCtrl: findAll()
+ComboCtrl->ComboDAO: findAll()
+
+PotencialCompraGUI->PotencialCompraCtrl: getPotencialCompra(combo, fecha)
+PotencialCompraCtrl->PlanificadorCompra: getPotencialCompra(combo, fecha)
+
+PlanificadorCompra->PlanificadorStock: getPlanificacionStock(combo, fecha)
+
+PlanificadorCompra->Sucursal: getMovimientosSaldo()
+loop for each MovimientoSaldo
+    PlanificadorStock->MovimientoSaldo: getFecha()
+    PlanificadorStock->MovimientoSaldo: getImporte()
+    PlanificadorStock->MovimientoSaldo: getTipo()
+end
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 12.01
+
+ROIAltaGUI->ClienteCtrl: findAll()
+ClienteDAO->ClienteDAO: findAll()
+
+ROIAltaGUI->Inversion: new()
+ROIAltaGUI->Inversion: setFecha(fecha)
+ROIAltaGUI->Inversion: setImporte(importe)
+ROIAltaGUI->Inversion: setCliente(cliente)
+
+ROIAltaGUI->ROICtrl: put(inversion)
+ROICtrl->InversionDAO: put(inversion)
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 12.02
+
+ROIListadoGUI->ClienteCtrl: findAll()
+ClienteDAO->ClienteDAO: findAll()
+
+ROIListaGUI->ROICtrl: getROI(cliente)
+ROICtrl->Cliente: getROI()
+
+Cliente->Cliente: getInversiones()
+loop for each Inversion
+    Cliente->Inversion: getFecha()
+    Cliente->Inversion: getImporte()
+end
+
+Cliente->Cliente: getCotizaciones()
+loop for each Cotizacion
+    Cliente->Cotizacion: isConfirmada()
+    alt if is_confirmada
+        Cliente->Cotizacion: getFecha()
+        Cliente->Cotizacion: getImporte()
+    end
+end
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 13.01
+
+//promedio cotizaciones por dia
+SimuladorCrecimientoGUI->SimuladorCrecimientoCtrl: getPromedioCotizacionesDiarias(sucursal)
+SimuladorCrecimientoCtrl->Sucursal: getPromedioCotizacionesDiarias()
+Sucursal->Sucursal: getCotizaciones()
+loop for each Cotizacion()
+    Sucursal->Cotizacion: getFecha()
+end
+
+//promedio cotizaciones aprobadas por dia
+SimuladorCrecimientoGUI->SimuladorCrecimientoCtrl: getPromedioCotizacionesAprobadas(sucursal)
+SimuladorCrecimientoCtrl->Sucursal: getPromedioCotizacionesAprobadas()
+Sucursal->Sucursal: getCotizaciones()
+loop for each Cotizacion()
+    Sucursal->Cotizacion: isConfirmada()
+    alt if is_confirmada
+        Sucursal->Cotizacion: getFecha()
+    end
+end
+
+//promedio tiempo de entrega de cotizaciones
+SimuladorCrecimientoGUI->SimuladorCrecimientoCtrl: getPromedioEntregaCotizaciones(sucursal)
+SimuladorCrecimientoCtrl->Sucursal: getPromedioTiempoEntrega()
+Sucursal->Sucursal: getCotizaciones()
+loop for each Cotizacion()
+    Sucursal->Cotizacion: isEntregada()
+    alt if is_entregada
+        Sucursal->Cotizacion: getFecha()
+        Sucursal->Cotizacion: getFechaEntrega()
+    end
+end
+
+//factor extra de cotizaciones en temporada
+SimuladorCrecimientoGUI->SimuladorCrecimientoCtrl: getFactorTemporada(sucursal)
+SimuladorCrecimientoCtrl->Sucursal: getFactorTemporada()
+Sucursal->Sucursal: getCotizaciones()
+loop for each Cotizacion()
+    Sucursal->Cotizacion: getFecha()
+end
+
+SimuladorCrecimientoGUI->SimuladorCrecimientoGUI: dibujar()
+
+SimuladorCrecimientoGUI->SimuladorCrecimiento: new()
+SimuladorCrecimientoGUI->SimuladorCrecimiento: setPreparacionDia(v1)
+SimuladorCrecimientoGUI->SimuladorCrecimiento: setCotizacionesDia(v2)
+SimuladorCrecimientoGUI->SimuladorCrecimiento: setTiempoReposicion(v3)
+SimuladorCrecimientoGUI->SimuladorCrecimiento: setCrecimiento(v4)
+SimuladorCrecimientoGUI->SimuladorCrecimiento: setCostoOperativo(v5)
+SimuladorCrecimientoGUI->SimuladorCrecimiento: setVentasPorOperador(v6)
+SimuladorCrecimientoGUI->SimuladorCrecimiento: setTiempoEntrega(v7)
+SimuladorCrecimientoGUI->SimuladorCrecimiento: setFactorTemporada(v8)
+
+//simulador de personal requerido
+SimuladorCrecimientoGUI->SimuladorCrecimientoCtrl: simularPersonal(simulador)
+SimuladorCrecimientoCtrl->SimuladorCrecimiento: simularPersonal()
+loop for each anio_simulacion
+    SimuladorCrecimiento->SimuladorCrecimiento: getCotizacionesDia()
+    SimuladorCrecimiento->SimuladorCrecimiento: getPreparacionDia()
+    SimuladorCrecimiento->SimuladorCrecimiento: getVentasPorOperador()
+    SimuladorCrecimiento->SimuladorCrecimiento: getCrecimiento()
+end
+
+//simulador de ROI
+SimuladorCrecimientoGUI->SimuladorCrecimientoCtrl: simularROI(simulador)
+SimuladorCrecimientoCtrl->SimuladorCrecimiento: simularROI()
+loop for each anio
+    SimuladorCrecimiento->SimuladorCrecimiento: getCotizacionesDia()
+    SimuladorCrecimiento->SimuladorCrecimiento: getPreparacionDia()
+    SimuladorCrecimiento->SimuladorCrecimiento: getVentasPorOperador()
+    SimuladorCrecimiento->SimuladorCrecimiento: getCrecimiento()
+end
+
+//simulador de stock necesario
+SimuladorCrecimientoGUI->SimuladorCrecimientoCtrl: simularStock(simulador)
+SimuladorCrecimientoCtrl->SimuladorCrecimiento: simularStock()
+loop for each anio
+    SimuladorCrecimiento->SimuladorCrecimiento: getCotizacionesDia()
+    SimuladorCrecimiento->SimuladorCrecimiento: getTiempoReposicion()
+    SimuladorCrecimiento->SimuladorCrecimiento: getCrecimiento()
+    SimuladorCrecimiento->SimuladorCrecimiento: getTiempoEntrega()
+    SimuladorCrecimiento->SimuladorCrecimiento: getFactorTemporada()
+end
+
+SimuladorCrecimientoGUI->SimuladorCrecimientoGUI: dibujar()
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 14.01
+
+
+MapaClientesGUI->LocalidadCtrl: getVentasLocalidades(desde, hasta)
+LocalidadCtrl->LocalidadDAO: findAll()
+
+loop for each Localidad
+	LocalidadCtrl->Localidad: getVentas()
+	
+	LocalidadCtrl->Localidad: getMapa()
+	Localidad->Localidad: getLatitud()
+	Localidad->Localidad: getLongitud()
+	
+	loop for each Cotizacion
+		Localidad->Cotizacion: isConfirmada()
+		alt if is_confirmada
+			Localidad->Cotizacion: getFecha()
+		end
+	end
+end
+
+MapaClientesGUI->MapaClientesGUI: dibujar()
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 14.02
+
+
+AsignacionVendedoresGUI->LocalidadCtrl: findAll()
+LocalidadCtrl->LocalidadDAO: findAll()
+
+AsignacionVendedoresGUI->VendedorCtrl: findAll()
+VendedorCtrl->VendedorDAO: findAll()
+
+AsignacionVendedoresGUI->LocalidadCtrl: asignar(localidad, vendedores)
+LocalidadCtrl->Localidad: asignarVendedores(vendedores)
+
+loop for each Vendedor
+	Localidad->Localidad: addVendedor(vendedor)
+	Localidad->Localidad: notificar(vendedor)
+end
+
+Localidad->LocalidadDAO: put(this)
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 15.01
+
+
+ObjetivosFactGUI->SucursalCtrl: findSucursal(id)
+SucursalCtrl->SucursalDAO: find(id)	
+SucursalDAO-->ObjetivosFactGUI: sucursal   	   	
+ObjetivosFactGUI->ObjetivoFactCtrl: getReporte(año)   
+ObjetivoFactCtrl->SucursalDAO: find(id)
+ObjetivoFactCtrl->Sucursal: getReporteObjetivos()	
+loop for each ObjetivoFacturacion     		
+	Sucursal->ObjetivoFacturacion: getAnio()
+	Sucursal->ObjetivoFacturacion: getImporte()     
+	loop for each cotizacion
+		Sucursal->Cotizacion: isConfirmada()
+		alt if isConfirmada
+			Sucursal->Cotizacion: getAnio()
+			Sucursal->Cotizacion: getImporte()
+		end
+	end
+ObjetivosFactGUI->ObjetivosFactGUI: dibujar()
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 15.02
+
+ObjetivoFactGUI->SucursalCtrl: findSucursal(id)
+	
+
+SucursalCtrl->SucursalDAO:find(id)
+
+
+SucursalDAO-->ObjetivoFactGUI: sucursal
+    
+
+ObjetivoFactGUI->ObjetivoFacturacion: new()
+	
+
+ObjetivoFactGUI->ObjetivoFacturacion: setAnio(anio)
+	
+
+ObjetivoFactGUI->ObjetivoFacturacion: setFecha(fecha)
+	
+
+ObjetivoFactGUI->ObjetivoFacturacion: setImporte(importe)
+	
+
+ObjetivoFactGUI->ObjetivoFacturacion: setSucursal(sucursal)
+	
+
+ObjetivoFactGUI->ObjetivoCtrl: put(objetivoFacturacion)
+
+
+ObjetivoCtrl->ObjetivoFacturacionDAO: put(objetivoFacturacion)    
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 16.01
+
+FuerzaDeVentaGUI->LocalidadCtrl: findAll()
+LocalidadCtrl->LocalidadDAO: findAll()
+
+FuerzaDeVentaGUI->LocalidadCtrl: getFuerzaVenta(Localidad)
+LocalidadCtrl->Localidad: getFuerzaVenta()
+
+loop for each Cotizacion
+	Localidad->Cotizacion: isConfirmada()
+	alt if isConfirmada
+		Localidad->Cotizacion: getFecha()
+		Localidad->Cotizacion: getImporte()
+		Localidad->Cotizacion: getVendedor()
+	end
+end
+
+FuerzaDeVentaGUI->FuerzaDeVentaGUI: dibujar()
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 17.01
+CalidadProveedorGUI->CalidadProveedorCtrl:findAll()
+CalidadProveedorCtrl->ProveedorDAO:findAll()
+
+CalidadProveedorGUI->CalidadProveedorCtrl:getCalidadProveedor(Proveedores,fDesde,fHasta)
+
+loop for each Proveedor
+CalidadProveedorCtrl->Proveedor:getCalidadProveedor(Proveedor,fDesde,fHasta)
+
+loop for each Compra
+	Proveedor->Compra: getFecha()
+	alt if fecha BETWEEN fDesde AND fHasta
+		//calcula tiempo promedio de Entrega Estimado por Compra. 
+		Proveedor->Compra: getFechaEstimadaEntrega()
+	
+		//calcula tiempo promedio de retraso por Compra.
+		Proveedor->Compra:calTiempoRetraso()
+		loop for each MovimientoStock
+			Compra->MovimientoStock:getFecha()
+			Compra->MovimientoStock:isIngreso()
+			alt if isIngreso
+				Compra-->Proveedor:tiempoRetraso
+			end
+		end
+		Compra-->Proveedor:promRetraso
+	end
+end
+
+loop for each Reclamo
+	Proveedor->Reclamo: getFecha()
+	alt if fecha BETWEEN fDesde AND fHasta
+		//Calcula tiempo Respuesta de proveedo
+		Proveedor->Reclamo: isCerrada()
+		alt if is_cerrada
+			Proveedor->Reclamo:calTiempoResol()
+			Reclamo-->Proveedor:tiempoRespuesta
+		end
+		
+		//calcula cantidad de reclamos por falla de producto
+		Proveedor->Reclamo: sumItemsReclamo(fecha, categoria)
+		loop for each ItemReclamo
+			Reclamo->ItemReclamo:getCategoria()
+			alt if categoria = itemReclamo.categoria
+				Reclamo->ItemReclamo:getCantidad()
+			end
+		end			
+		Reclamo-->Proveedor:productosConFalla
+		
+		//Calcula cantidad de reclamos por Reemplazo
+		loop for each ItemReclamo
+			Reclamo->ItemReclamo:getCategoria()
+			alt if categoria = itemReclamo.categoria
+				Reclamo->ItemReclamo:getCantidad()
+			end
+		end 	
+		Reclamo-->Proveedor:productosConReemplazo
+	end
+end
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 18.01
+
+ReclamoGUI->CotizacionCtrl: findAll()
+CotizacionCtrl->CotizacionDAO:findAll()
+
+ReclamoGUI->ProveedorCtrl: findAll()
+ProveedorCtrl->ProveedorDAO:findAll()
+
+ReclamoGUI->ReclamoGUI:dibujar()
+
+//Busca el detalle de la cotizacion y habilita en pantalla. 
+ReclamoGUI->CotizacionCtrl:find(cotizacion)
+CotizacionCtrl->Cotizacion:getItemsCotizacion():
+Cotizacion-->CotizacionCtrl: ItemsCotizacion
+CotizacionCtrl-->ReclamoGUI: ItemsCotizacion
+ReclamoGUI->ReclamoGUI:dibuja()	
+
+//Deshabilita los renglones que no vende el proveedor seleccionado
+loop for each ItemCotizacion
+	ReclamoGUI->ProveedorCtrl: vendeArticulo(proveedor, articulo)
+	ProveedorCtrl->Proveedor: hasArticulo(articulo)
+	loop for each Articulo
+		alt if articulo = articulo_proveedor
+			Proveedor->ProveedorCtrl-->true
+		end
+	end
+end
+
+ReclamoGUI->Reclamo: new()
+ReclamoGUI->Reclamo: setFecha(fechs)
+ReclamoGUI->Reclamo: setCotizacion(Cotizacion)
+ReclamoGUI->Reclamo: setfEsperado(fEsperado)
+ReclamoGUI->Reclamo: setEstado("pendiente")
+ReclamoGUI->Reclamo: setProveedor(proveedor)
+
+loop for each renglon detalle
+    ReclamoGUI->ItemReclamo: new()
+    ReclamoGUI->ItemReclamo: setArticulo(articulo)
+	ReclamoGUI->ItemReclamo: setCantidad(cantidad)
+	ReclamoGUI->ItemReclamo: setCategoría(categoria)
+    ReclamoGUI->ItemReclamo: addItem(item)
+end
+ReclamoGUI->ReclamoCtrl: put(Reclamo)
+ReclamoCtrl->ReclamoDAO: put(Reclamo)
+ReclamoCtrl->Reclamo: alertar()
+
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 18.02
+ConsultaReclamoGUI->ReclamoCtrl:findAll()
+ReclamoCtrl->ReclamoDAO:findAll()
+
+ConsultaReclamoGUI->ProveedorCtrl:findAll()
+ProveedorCtrl->ProveedorDAO:findAll()
+ConsultaReclamoGUI->ConsultaReclamoGUI:dibujar()
+
+ConsultaReclamoGUI->ReclamoCtrl: buscar(reclamo,proveedor,categoria,fdesde,fhasta)
+
+alt if reclamo == null
+	ReclamoCtrl->ReclamoDAO: buscar(reclamo,proveedor,categoria,fdesde,fhasta)
+	ReclamoDAO->ReclamoDAO: findAll()
+
+	loop for each Reclamo
+		ReclamoDAO->Reclamo: getFecha()
+		alt if Reclamo.fecha BETWEEN fDesde AND fHasta
+			ReclamoDAO->ReclamoDAO: agregar(reclamo)
+		end
+		ReclamoDAO->Reclamo: getProveedor()
+		alt if Reclamo.proveedor == proveedor
+			ReclamoDAO->ReclamoDAO: agregar(reclamo)
+		end
+		
+		ReclamoDAO->Reclamo: hasCategoria(categoria)
+		loop for each ItemReclamo
+			alt if ItemReclamo.categoria == categoria
+				ItemReclamo-->Reclamo: true
+			end			
+		end
+		alt if has_categoria
+			ReclamoDAO->ReclamoDAO: agregar(reclamo)
+		end
+	end
+else
+    ReclamoCtrl->ReclamoDAO: find(reclamo)
+end
+
+ConsultaReclamoGUI	->ConsultaReclamoGUI:dibujar()
+
+/////////////////////////////////////////////////////////////////////////////////
+//AS 18.03
+
+
+EditaReclamoGUI->WorkflowReclamo:getProximosEstados(reclamo)
+WorkflowReclamo-->EditaReclamoGUI:estados
+EditaReclamoGUI->EditaReclamoGUI:dibujar()
+
+EditaReclamoGUI->Reclamo:setEstado()
+alt if Reclamo.Estado == Resuelto
+	EditaReclamoGUI->Reclamo:setfResuelto()
+end
+alt if Reclamo.Estado == En proceso
+	EditaReclamoGUI->Reclamo:setFEsperado()
+end
+alt if Reclamo.Estado == Aprobado
+	EditaReclamoGUI->Reclamo:setFAprobado()
+end
+EditaReclamoGUI->ReclamoCtrl: put(Reclamo)
+ReclamoCtrl->ReclamoDAO: put(Reclamo)
+

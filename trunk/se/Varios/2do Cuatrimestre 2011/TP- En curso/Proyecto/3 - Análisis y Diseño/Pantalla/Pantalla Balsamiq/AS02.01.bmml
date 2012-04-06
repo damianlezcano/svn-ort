@@ -1,0 +1,79 @@
+<mockup version="1.0" skin="sketch" measuredW="718" measuredH="481" mockupW="718" mockupH="478">
+  <controls>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Canvas" x="531" y="180" w="117" h="42" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.75</backgroundAlpha>
+        <borderColor>3355443</borderColor>
+        <borderStyle>square</borderStyle>
+        <color>16777215</color>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="__group__" x="0" y="3" w="718" h="478" measuredW="718" measuredH="478" zOrder="0" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="0" w="718" h="478" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="26">
+          <controlProperties>
+            <markup>true</markup>
+            <text>RainShow%0Ahttps%3A//Rainshow.com</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="__group__" x="5" y="72" w="711" h="377" measuredW="711" measuredH="377" zOrder="1" locked="false" isInGroup="26">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="0" y="0" w="711" h="377" measuredW="200" measuredH="204" zOrder="0" locked="false" isInGroup="1">
+              <controlProperties>
+                <text>Home%0AClientes%0ACotizacion%0ADep%F3sito%0AEstrat%E9gico</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Button" x="10" y="185" w="-1" h="-1" measuredW="79" measuredH="28" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Deposito</text>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Canvas" x="88" y="74" w="624" h="373" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::FieldSet" x="96" y="93" w="451" h="350" measuredW="200" measuredH="170" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Deposito%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::ComboBox" x="549" y="114" w="130" h="-1" measuredW="98" measuredH="22" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Deposito%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="__group__" x="106" y="105" w="429" h="322" measuredW="429" measuredH="322" zOrder="5" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="429" h="322" measuredW="482" measuredH="697" zOrder="0" locked="false" isInGroup="39">
+          <controlProperties>
+            <src>../../../3%2520-%2520An%E1lisis%2520y%2520Dise%F1o/Pantalla/deposito_rainshow.png</src>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="263" y="90" w="66" h="-1" measuredW="53" measuredH="26" zOrder="1" locked="false" isInGroup="39">
+          <controlProperties>
+            <backgroundAlpha>0.75</backgroundAlpha>
+            <text>Codigo</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Button" x="329" y="89" w="41" h="24" measuredW="41" measuredH="28" zOrder="2" locked="false" isInGroup="39">
+          <controlProperties>
+            <text>Ok</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Label" x="550" y="91" w="112" h="22" measuredW="106" measuredH="22" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Mostrar%20deposito%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Link" x="550" y="139" w="-1" h="-1" measuredW="92" measuredH="22" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Agregar%20Sector</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

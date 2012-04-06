@@ -1,0 +1,25 @@
+Arquitectura: --NK
+	- Agregar Componentes o la comunicacion con otros productos que se incluiran como WBO
+	- - Agregar comunicacion con Google Maps API
+	- - Agregar comunicacion con ExtJS para la generacion de reportes
+	- Revisar organizacion de los servidores/componentes del cliente
+	- Ver riesgos de tecnologia
+	- - Si se cae Tango
+	- - Si se cae la conexion con los servicios externos (Google Maps API, comunicacion de Proveedores con la Aplicacion)
+	
+Casos de Uso (DV)
+	- Reestructurar Flujo Alternativo. Poner en forma de Pasos--> LISTO!
+	- Hacer Documento de acceso a Datos. 
+	- Hacer CU del nuevo alcance. 
+	
+Requerimientos no Funcionales: (DV)
+	- Agregar compatibilidad con todos los Browsers. -->Listo!
+
+Planificacion (GB)
+	-Actualizar plannificacion  -->Listo!
+	-Actualizar Plan de Iteraciones -->Listo!
+SOlucion (DV)
+	- Revisar Resumen de Fases. (fechas desfasadas) --Listo!
+	
+	
+	

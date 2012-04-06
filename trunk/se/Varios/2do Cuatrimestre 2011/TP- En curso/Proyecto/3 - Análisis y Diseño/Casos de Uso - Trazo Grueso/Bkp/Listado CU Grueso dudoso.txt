@@ -1,0 +1,78 @@
+
+SEG.01.Ingresando al sistema
+AS01.01.Enviando alerta de stock crítico
+AS01.02.Consultando pedidos para su preparación
+AS01.03.Informando ubicación de productos en pedidos
+AS01.04.Visualizando mapa de localización de stock
+AS01.05.Enviando informe de ubicación de producto
+AS01.06.Enviando alerta de retraso en entrega de pedido
+AS02.01.Sugiriendo reubicación de stock (periódicamente)
+AS02.02.Aceptando reubicación de stock
+AS03.01
+AS04.01.Ingresando cotización
+AS04.02.Verificando cotización (contra combos de productos)
+AS04.03.Verificando crédito disponible del cliente
+AS04.04.Informando faltante de producto/s
+AS04.05.Enviando informe de faltantes en combos
+AS04.06.Verificando stock ( centralizado )
+AS04.07.Confirmando cotización
+AS04.08.Generando pedido
+AS05.01.Enviando alerta de retraso en entrega de pedido
+AS05.02.Enviando alerta de retraso en confirmación de cotización
+AS05.03.Registrando alertas para reporte a Gte de Operaciones
+AS06.01.Validando combos de cotizaciones
+AS07.01.Generando indicador de eficiencia de cliente
+AS07.02.Calculando saldos cuenta corriente del cliente
+AS07.03.Calculando  cantidad de compras del cliente
+AS07.04.Calculando tiempo promedio de pago de deudas anteriores
+AS08.01.Generando informe de avance de sucursales
+AS08.02.Calculando cantidad de clientes conflictivos por sucursal
+AS08.03.Calculando cantidad de pedidos por sucursal que no cumplen con comportamiento de venta  
+AS08.04.Calculando cantidad de cotizaciones confirmadas por sucursal
+AS08.05.Calculando cantidad de cotizaciones confirmadas por vendedor
+
+Ingresando al sistema
+Ingresando cotización
+Verificando producto contra combo
+Generando alerta de faltante de producto/s
+Enviando informe de faltantes en combos
+Verificando cuenta de cliente
+Informando deuda de cliente
+Verificando stock centralizado (Conexión al Tango??? Como???)
+Enviando alerta por faltante de stock
+Confirmando cotización
+Generando pedido  
+Enviando alerta de retraso en entrega de pedido
+Enviando alerta de retraso en confirmación de cotización
+Validando combos de Cotizaciones
+Registrando Alertas para reporte a Gerente Operaciones 
+Sugiriendo reubicación de stock (periódicamente) 
+Aceptando reubicación de stock
+Enviando alerta de stock crítico
+Mostrando pedidos para su preparación
+Mostrando ubicación de  producto en pedidos
+	Mostrando ubicación de stock
+Visualizando  mapa de localización de stock
+Enviando informe de ubicación de producto
+Enviando alerta de retraso en entrega de pedido
+Generando eficiencia de cliente
+	Verificando Saldos Cta Cte de clientes
+	Verificando cantidad de compras del cliente
+Verificando tiempo promedio de pago de deudas anteriores
+GP-AS-08 Avance de Sucursales
+	Generando informe de avance de sucursales
+		Calculando clientes conflictivos por sucursal
+Calculando pedidos por sucursal que no cumplen con comportamiento de venta
+Calculando cotizaciones confirmadas por sucursal
+Calculando cotizaciones confirmadas por vendedor
+GP-AS-09 Planificación de la Demanda
+
+Mostrando proyección de demanda esperada (Rainshow)
+		Calculando cotizaciones confirmadas por período 
+		Calculando cotizaciones sin confirmar por período
+GP-AS-10 Interfaz de planificación de la demanda a Proveedores
+Mostrando proyección de demanda (Proveedor)
+Generando reporte de comparación de clientes
+Generando reporte de morosidad de clientes (conducta de pago)
+Consultando facturación vs. Cobranzas
+

@@ -1,0 +1,38 @@
+<mockup version="1.0" skin="sketch" measuredW="686" measuredH="373" mockupW="571" mockupH="369">
+  <controls>
+    <control controlID="6" controlTypeID="__group__" x="115" y="4" w="571" h="119" measuredW="571" measuredH="119" zOrder="4" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="571" h="119" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="6">
+          <controlProperties>
+            <text>Cotizaciones%20Pendientes%20-%20Vendedor%3A%20Gonzalez%20Sebastian</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::DataGrid" x="119" y="34" w="-1" h="-1" measuredW="562" measuredH="85" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cotizacion%20N%B0%2C%20Cliente%2C%20CUIT%2C%20Fecha%20Alta%20%2C%20Fecha%20Entrega%2C%20Tipo%0A872346%2C%20Juan%20Perez%2C%2023345687921%2C10/11/2011%2C%2013/11/2011%2C%20Tecnica%0A843224%2C%20Pedro%20GOnzalez%2C%2033234765421%2C%2001/11/2011%2C10/11/2011%2CComercial</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::DataGrid" x="120" y="153" w="-1" h="-1" measuredW="563" measuredH="85" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cotizacion%20N%B0%2C%20Cliente%2C%20CUIT%2C%20Fecha%20Alta%20%2C%20Fecha%20Entrega%2C%20Tipo%0A283465%2C%20Nestor%20Kirchnner%2C%2022345687921%2C10/11/2011%2C%2013/11/2011%2C%20Tecnica%0A335624%2C%20Gabriel%20Sosa%2C%2010234765421%2C%2001/11/2011%2C10/11/2011%2CComercial</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::FieldSet" x="115" y="123" w="571" h="119" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pedidos%20Pendientes%20de%20Preparacion%20-%20Sup.Dep%3A%20Lorenzo%20Marcelo</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::FieldSet" x="120" y="254" w="551" h="119" measuredW="200" measuredH="170" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pedidos%20Pendientes%20de%20Entrega%20-%20Sup.Dep%3A%20Lorenzo%20Marcelo</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::DataGrid" x="125" y="282" w="-1" h="-1" measuredW="540" measuredH="85" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cotizacion%20N%B0%2C%20Cliente%2C%20CUIT%2C%20Fecha%20Alta%20%2C%20Fecha%20Entrega%2C%20Tipo%0A183465%2C%20Peron%20Viva%2C%2022345687921%2C10/11/2011%2C%2013/11/2011%2C%20Tecnica%0A123624%2C%20Marta%20Ca%F1as%2C%2010234765421%2C%2001/11/2011%2C10/11/2011%2CComercial</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

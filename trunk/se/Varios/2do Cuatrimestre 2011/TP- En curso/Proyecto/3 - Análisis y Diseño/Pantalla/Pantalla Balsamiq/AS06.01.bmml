@@ -1,0 +1,80 @@
+<mockup version="1.0" skin="sketch" measuredW="971" measuredH="490" mockupW="656" mockupH="482">
+  <controls>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Menu" x="330" y="246" w="119" h="-1" measuredW="150" measuredH="91" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20%20%20%20....%0A%20%20%20%20%0A%09%09Combo%3E%0A%20%20%0A---%0AExit%2CCTRL+Q</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Label" x="669" y="246" w="86" h="22" measuredW="68" measuredH="22" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Aspersor%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Label" x="564" y="160" w="54" h="22" measuredW="50" measuredH="22" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Nombre</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="315" y="8" w="656" h="482" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <markup>true</markup>
+        <text>RainShow%0Ahttps%3A//Rainshow.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="__group__" x="319" y="81" w="650" h="380" measuredW="650" measuredH="380" zOrder="1" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="0" y="0" w="650" h="380" measuredW="200" measuredH="204" zOrder="0" locked="false" isInGroup="43">
+          <controlProperties>
+            <text>Home%0AClientes%0ACotizacion%0ADep%F3sito%0AEstrat%E9gico</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::TitleWindow" x="461" y="113" w="503" h="340" measuredW="450" measuredH="400" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>46</bottomheight>
+        <text>Nuevo%20Combo</text>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="__group__" x="489" y="225" w="408" h="168" measuredW="408" measuredH="168" zOrder="6" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::DataGrid" x="0" y="0" w="408" h="168" measuredW="212" measuredH="25" zOrder="0" locked="false" isInGroup="45">
+          <controlProperties>
+            <text>Articulo%2C%20Descripcion%2C%20Cantidad</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::ComboBox" x="0" y="21" w="107" h="-1" measuredW="71" measuredH="22" zOrder="1" locked="false" isInGroup="45">
+          <controlProperties>
+            <text>RS001</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::TextInput" x="355" y="19" w="45" h="-1" measuredW="20" measuredH="26" zOrder="2" locked="false" isInGroup="45">
+          <controlProperties>
+            <align>right</align>
+            <text>1</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::TextInput" x="603" y="160" w="287" h="-1" measuredW="158" measuredH="26" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Sistema%20de%20Riego%20Hunter</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::Button" x="854" y="417" w="110" h="28" measuredW="87" measuredH="28" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Confirmar</text>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Button" x="851" y="190" w="73" h="28" measuredW="79" measuredH="28" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Agregar%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::Label" x="614" y="245" w="57" h="23" measuredW="57" measuredH="22" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Aspersor</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
