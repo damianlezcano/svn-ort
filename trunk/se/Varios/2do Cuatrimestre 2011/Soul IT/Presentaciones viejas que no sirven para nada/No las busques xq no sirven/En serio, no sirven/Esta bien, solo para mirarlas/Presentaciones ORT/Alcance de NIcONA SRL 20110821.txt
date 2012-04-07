@@ -1,0 +1,111 @@
+20110820
+PROBLEMATICA 1
+Actualmente el gerente de producciòn administra una planilla excel donde almacena toda la informaciòn del negocio, como ser: 
+proveedores
+clientes
+vencimientos
+telas,etc
+esta planilla està sobrecargada de informaciòn, genera lentitud al proceso, no le ayuda a tomar decisiones respecto de los vencimientos, pedidos, entregas, devoluciones y cancelaciones de productos, seguimiento de proveedores.
+
+
+PROBLEMATICA 2
+Contar con información concreta, actualizada e historica de ventas, compras y movimientos de productos manufacturados.
+
+PROBLEMÀTICA 3
+Definición de alarmas durante los distintos procesos(corte, estampado y planchado) de producciòn de las prendas.
+
+PROBLEMATICA 4
+Actualmente la comunicaciòn es telefonica, desde el proveedor o clientes a la central. Omision, Falta, Inexacta, Erronea, No oportuna,  Evitar el uso de comunicaciones telefonicas para actualizar la planilla excel que actualmente usan, para 
+No queda documentada.
+
+
+Actualmente el proceso de corte es
+Exiten proveedores predefinidos. 
+Su propia fabrica tiene herramientas para planchado.
+Las telas se compran a proveedores
+Tela es provista por el cliente, a la fabrica ingresan telas-vencimiento-pedido (cantidad,medidas,etc)
+Proveedores fijos de la zona del Once.
+Ademàs de fabricar prendas para clientes externos, esta empresa se dedica a fabricar su propia marca.
+Sede Central es la fabrica.
+Sucursales en distintos locales de la calle Avellaneda.
+
+Nuestra central es un dropbox
+Parte de los proveedores, son los clientes que se conectan al dropbox
+Pedidos de clientes
+Pedidos de proveedores
+Se actualiza la base de datos, 
+se hacen reportes para consiguen los proveedores mas confiables
+para conocer el producto que mas se vendio , via cierre de caja del local, se actualiza la base de datos
+determinar los talles mas vendidos
+Necesidad de conectar a una red 
+
+Fuera del alcance, todo tema relacionado con dinero en cuestiones, de quien paga la tela, cuanto cuesta el kilo, cuanto cuesta la prenda puesta en stock.
+
+
+Còmo esta compuesta la empresa, cantidad de personas, funciones.
+Què dias trabajan y que horario, 
+para entregar las telas a los proveedores (tizadores, cortadores, estampadores, planchadores) ida y vuelta.
+Si algunos de estos proveedores les surgiera algun tipo de atraso, se lo comunican a casa central via telefonica.
+para conocer el rango de vencimiento. Lunes a Sàbado 8 a 15 hs.
+
+La tela se transporta en fletes contratados por Nikona, para ese fin.
+
+
+Riesgo de proponer un ISP como servidor web, es que si se cae el ISP que es el punto de unico de falla, y se quedan sin sistema.
+
+Solucion para que no se tengan que llamar por telefono
+Repositorios en locales
+Repositorios de los proveedores
+Sincronizaciòn
+Obtención de reportes
+
+Facturacion Estacional - Mensual no es fija -
+Las altas ventas ayudan al resto del año.
+--------------------------------------------
+SOLUCION
+Evitar el uso de comunicaciones telefonicas para actualizar la planilla excel que actualmente usan, para  QUE QUEDE DOCUMENTADA
+
+Facturacion Estacional - Mensual no es fija -
+Las altas ventas ayudan al resto del año.
+
+Actualmente el proceso de corte es
+Existen proveedores predefinidos. 
+Su propia fabrica tiene herramientas para planchado.
+Las telas se compran a proveedores
+Tela es provista por el cliente, a la fabrica ingresan telas-vencimiento-pedido (cantidad,medidas,etc)
+Proveedores fijos de la zona del Once.
+Ademàs de fabricar prendas para clientes externos, esta empresa se dedica a fabricar su propia marca.
+Sede Central es la fabrica.
+Sucursales en distintos locales de la calle Avellaneda.
+
+Nuestra central es un dropbox
+Parte de los proveedores, son los clientes que se conectan al dropbox
+Pedidos de clientes
+Pedidos de proveedores
+Se actualiza la base de datos, 
+se hacen reportes para consiguen los proveedores mas confiables
+para conocer el producto que mas se vendio , via cierre de caja del local, se actualiza la base de datos
+determinar los talles mas vendidos
+Necesidad de conectar a una red 
+
+Fuera del alcance, todo tema relacionado con dinero en cuestiones, de quien paga la tela, cuanto cuesta el kilo, cuanto cuesta la prenda puesta en stock.
+
+Còmo esta compuesta la empresa, cantidad de personas, funciones.
+Què dias trabajan y que horario, 
+para entregar las telas a los proveedores (tizadores, cortadores, estampadores, planchadores) ida y vuelta.
+Si algunos de estos proveedores les surgiera algun tipo de atraso, se lo comunican a casa central via telefonica.
+para conocer el rango de vencimiento. Lunes a Sàbado 8 a 15 hs.
+
+La tela se transporta en fletes contratados por Nikona, para ese fin.
+
+Riesgo de proponer un ISP como servidor web, es que si se cae el ISP que es el punto de unico de falla, y se quedan sin sistema.
+
+Solucion para que no se tengan que llamar por telefono
+Repositorios en locales
+Repositorios de los proveedores
+Sincronizaciòn
+Obtención de reportes
+
+Facturacion Estacional - Mensual no es fija -
+Las altas ventas ayudan al resto del año.
+
