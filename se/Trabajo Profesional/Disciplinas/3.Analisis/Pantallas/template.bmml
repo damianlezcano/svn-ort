@@ -1,0 +1,114 @@
+<mockup version="1.0" skin="sketch" measuredW="1493" measuredH="773" mockupW="1024" mockupH="768">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="469" y="5" w="1024" h="768" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>http%3A//buddytraining.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::MenuBar" x="484" y="93" w="994" h="29" measuredW="520" measuredH="29" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>File%2C%20Edit%2C%20Athlete%2C%20TrainingPlan%2C%20TrainerAssistance%2C%20Resources%2C%20Help</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Canvas" x="484" y="122" w="994" h="111" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::IconLabel" x="499" y="142" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>User</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::IconLabel" x="562" y="142" w="-1" h="-1" measuredW="56" measuredH="69" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Calendar</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::IconLabel" x="633" y="142" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Goals</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::IconLabel" x="696" y="142" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Graphs</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::IconLabel" x="759" y="142" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Media</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::IconLabel" x="822" y="141" w="-1" h="-1" measuredW="65" measuredH="69" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Assistance</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::IconLabel" x="902" y="140" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Sync</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Canvas" x="484" y="241" w="275" h="491" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="32" controlTypeID="__group__" x="484" y="241" w="275" h="171" measuredW="275" measuredH="171" zOrder="11" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="0" w="275" h="171" measuredW="275" measuredH="171" zOrder="0" locked="false" isInGroup="32">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="275" h="171" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0">
+              <controlProperties>
+                <borderStyle>roundedSolid</borderStyle>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="1" controlTypeID="__group__" x="17" y="21" w="77" h="130" measuredW="77" measuredH="130" zOrder="1" locked="false" isInGroup="32">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="77" h="130" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="1">
+              <controlProperties>
+                <text>User</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="109" y="21" w="-1" h="-1" measuredW="59" measuredH="21" zOrder="2" locked="false" isInGroup="32">
+          <controlProperties>
+            <text>Welcome</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="109" y="57" w="-1" h="-1" measuredW="57" measuredH="21" zOrder="3" locked="false" isInGroup="32">
+          <controlProperties>
+            <text>Message</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="109" y="93" w="-1" h="-1" measuredW="82" measuredH="21" zOrder="4" locked="false" isInGroup="32">
+          <controlProperties>
+            <text>Task%20Pending</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="202" y="20" w="-1" h="-1" measuredW="68" measuredH="21" zOrder="5" locked="false" isInGroup="32">
+          <controlProperties>
+            <text>User%20name</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="212" y="56" w="-1" h="-1" measuredW="49" measuredH="21" zOrder="6" locked="false" isInGroup="32">
+          <controlProperties>
+            <text>number</text>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="212" y="92" w="-1" h="-1" measuredW="49" measuredH="21" zOrder="7" locked="false" isInGroup="32">
+          <controlProperties>
+            <text>number</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::TextArea" x="490" y="416" w="262" h="316" measuredW="200" measuredH="140" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Calendar%3AToday%0A%20%0ATask%20Pending</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Canvas" x="767" y="241" w="711" h="497" measuredW="100" measuredH="70" zOrder="13" locked="false" isInGroup="-1"/>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Arrow" x="782" y="256" w="680" h="467" measuredW="150" measuredH="100" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Working%20Area</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
