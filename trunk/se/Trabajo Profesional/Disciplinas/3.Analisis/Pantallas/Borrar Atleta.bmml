@@ -26,22 +26,22 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="1241" y="687" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="1241" y="687" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>
     </control>
-    <control controlID="47" controlTypeID="com.balsamiq.mockups::TitleWindow" x="908" y="261.3333333333333" w="-1" h="-1" measuredW="450" measuredH="400" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::TitleWindow" x="908" y="265" w="-1" h="-1" measuredW="450" measuredH="400" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>New%20Athlete</text>
+        <text>Athlete%20Name</text>
       </controlProperties>
     </control>
-    <control controlID="48" controlTypeID="com.balsamiq.mockups::Button" x="1304" y="640" w="54" h="25" measuredW="54" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Button" x="1304" y="640" w="54" h="25" measuredW="54" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Save</text>
       </controlProperties>
     </control>
-    <control controlID="54" controlTypeID="__group__" x="996" y="314" w="69" h="165" measuredW="69" measuredH="165" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="54" controlTypeID="__group__" x="1007" y="319" w="69" h="165" measuredW="69" measuredH="165" zOrder="11" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
         <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="0" w="-1" h="-1" measuredW="40" measuredH="21" zOrder="0" locked="false" isInGroup="54">
           <controlProperties>
@@ -70,12 +70,12 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="55" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="920" y="299" w="423" h="333" measuredW="200" measuredH="157" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="914" y="291" w="423" h="333" measuredW="200" measuredH="157" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Personal%0APhysical%0AMedical</text>
       </controlProperties>
     </control>
-    <control controlID="56" controlTypeID="com.balsamiq.mockups::Button" x="1228" y="638" w="-1" h="-1" measuredW="63" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::Button" x="1228" y="638" w="-1" h="-1" measuredW="63" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Delete</text>
       </controlProperties>
