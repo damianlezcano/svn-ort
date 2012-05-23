@@ -16,7 +16,7 @@
         <text>New%20Athlete%0ADelete%20Athlete%0AModify%20Athlete</text>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="312" y="164" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="312" y="164" w="-1" h="-1" measuredW="39" measuredH="43" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
@@ -70,9 +70,9 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="55" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="920" y="299" w="423" h="333" measuredW="200" measuredH="157" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="920" y="299" w="423" h="333" measuredW="200" measuredH="178" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Personal%0APhysical%0AMedical</text>
+        <text>Personal%0APhysical%0AMedical%0AObjetives</text>
       </controlProperties>
     </control>
   </controls>
