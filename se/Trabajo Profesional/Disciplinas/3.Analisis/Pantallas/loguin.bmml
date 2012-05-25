@@ -44,5 +44,10 @@
         <text>Insert%20Captcha</text>
       </controlProperties>
     </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Link" x="1005" y="500" w="-1" h="-1" measuredW="52" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>register</text>
+      </controlProperties>
+    </control>
   </controls>
 </mockup>
