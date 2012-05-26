@@ -5,7 +5,7 @@
         <src>./assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="312" y="87" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="312" y="87" w="-1" h="-1" measuredW="37" measuredH="43" zOrder="1" locked="false" isInGroup="-1"/>
     <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="349" y="101" w="302" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
@@ -16,7 +16,7 @@
         <text>New%20Athlete%0ADelete%20Athlete%0AModify%20Athlete</text>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="312" y="164" w="-1" h="-1" measuredW="39" measuredH="43" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="312" y="164" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
@@ -66,7 +66,7 @@
         <text>Delete%20Objetives</text>
       </controlProperties>
     </control>
-    <control controlID="60" controlTypeID="com.balsamiq.mockups::CallOut" x="1017.3333333333334" y="196" w="-1" h="-1" measuredW="39" measuredH="43" zOrder="14" locked="false" isInGroup="-1">
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::CallOut" x="1017" y="196" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="14" locked="false" isInGroup="-1">
       <controlProperties>
         <text>4</text>
       </controlProperties>
@@ -99,10 +99,10 @@
     </control>
     <control controlID="70" controlTypeID="com.balsamiq.mockups::ComboBox" x="1153" y="481" w="91" h="-1" measuredW="70" measuredH="94" zOrder="21" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Speed%0AResistance%0Aweight%0Amuscle%0Aelasticity</text>
+        <text>Speed%0AResistance%0Aweight%0Amuscle%0Aforce</text>
       </controlProperties>
     </control>
-    <control controlID="71" controlTypeID="com.balsamiq.mockups::CallOut" x="1293" y="459" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="22" locked="false" isInGroup="-1">
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::CallOut" x="1380" y="485" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="22" locked="false" isInGroup="-1">
       <controlProperties>
         <text>5</text>
       </controlProperties>
@@ -112,9 +112,24 @@
         <text>6</text>
       </controlProperties>
     </control>
-    <control controlID="73" controlTypeID="com.balsamiq.mockups::VCurly" x="1257" y="384" w="36" h="191" measuredW="180" measuredH="140" zOrder="24" locked="false" isInGroup="-1">
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::VCurly" x="1322" y="379" w="36" h="253" measuredW="180" measuredH="140" zOrder="24" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
+      </controlProperties>
+    </control>
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::Label" x="1069" y="592" w="-1" h="-1" measuredW="37" measuredH="21" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Value</text>
+      </controlProperties>
+    </control>
+    <control controlID="75" controlTypeID="com.balsamiq.mockups::TextInput" x="1150" y="590" w="43" h="-1" measuredW="79" measuredH="27" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="76" controlTypeID="com.balsamiq.mockups::ComboBox" x="1214" y="592" w="91" h="-1" measuredW="61" measuredH="94" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>km/h%0Ap/m%20-%20HR%0Akg%0Acm%0Akg%20</text>
       </controlProperties>
     </control>
   </controls>
