@@ -1,0 +1,105 @@
+de un modo teórico algo tal que así, pero es eso teórico... un metabolismo elevado gastará mas, la intesisdad de l ejericio depende de cada uno etc etc
+ 
+
+
+
+
+
+Originalmente publicado por ivanppolaino
+
+Costo de la actividad del ejercicio 
+Valores de actividades comunes: 
+Aeróbicos de alto impacto 7 
+Aeróbicos de bajo impacto 5 
+Ciclismo de alta intensidad 12 
+Ciclismo de baja intensidad 3 
+Caminata de alta intensidad 6,5 
+Caminata de baja intensidad 2,5 
+Correr alta intensidad 18 
+Correr baja intensidad 7 
+Tipo de entrenamiento de circuito 8 
+Levantamiento de pesas con pesos libres (intenso) 6 
+Entrenamiento moderado con maquinas 3 
+Aquí la formula: 
+Costo de actividad = Peso Corporal x Duración (en horas) x valor act. 
+Costo de actividad = 80 x 1 x 6 = 480 calorías 
+
+Así que el gasto energético hasta ahora es 
+3193 + 480 = 3673 calorías 
+
+
+Además os djunto otra tabla de costes:
+ 
+
+
+
+
+Tabla 21.1: Costo energético de distintos tipos de ejercicio físico en Kcal/h 
+(Salas-Salvadó, 2000) 
+
+Actividad Peso 60kg Peso 90kg 
+Marcha
+ Caminar a 3 km/h 175 285 
+Caminar a 5 km/h 260 425 
+Subir escaleras 870 1420 
+Bajar escaleras 335 545 
+
+Carrera 
+7.5 km/h llano 535 890 
+9.5 km/h llano 650 1140 
+12.5 km/h llano 780 1270
+ 16.5 terreno llano 985 1610
+ 12.5 pendiente 2.5% 910 1480
+ 12.5 pendiente 4.5% 960 1565
+ 
+Baloncesto
+ Intensidad moderada 350 575 
+Intensidad elevada 495 810 
+
+
+Patinaje
+ Intensidad moderada 285 465
+ Intensidad elevada 510 835
+
+ Ciclismo
+ 8 km/h 250 410 
+18 km/h 535 875 
+
+Esquí 
+Alpino 485 790
+ Fondo 7 km/h 585 956
+ 
+Piragüismo
+ 5.5 km/h 350 565 
+
+Squash 520 850
+ 
+Montar a caballo 
+Al paso 165 270 
+Al trote 340 550 
+
+Remo 
+Recreación 250 410 
+Competición 685 1115 
+
+Natación 
+Braza (Pecho) 18 m/min 240 390 
+Braza (Pecho) 36 m/min 480 785
+ Mariposa 585 955
+ Crawl 18 m/min 240 390
+ Crawl 45 m/min 532 870
+ Espalda 18 m/min 195 315
+ 
+
+
+Alpinismo 500 820 
+
+Fútbol 450 730 Tenis 
+
+Balonmano intenso 490 800 
+Intensidad moderada 345 565
+ 
+Lucha, judo, karate 645 1050 
+Intensidad elevada 470 800
+ 
+Rugby 415 680 
