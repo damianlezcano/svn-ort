@@ -5,7 +5,7 @@ import com.budytraining.model.User;
 import com.budytraining.service.UserServiceBean;
 
 /**
- * CU2: Dando de Baja un Atleta
+ * CU2: Dando de Baja un Deportista
  */
 public class RemoveSportmanController {
 

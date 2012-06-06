@@ -8,7 +8,7 @@ import com.budytraining.model.User;
 import com.budytraining.service.UserServiceBean;
 
 /**
- * CU4: Consultando Atleta
+ * CU4: Consultando Deportista
  */
 public class ConsultationSportmanController {
 
