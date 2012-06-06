@@ -5,7 +5,7 @@ import com.budytraining.model.User;
 import com.budytraining.service.UserServiceBean;
 
 /**
- * CU3: Modificando Atleta
+ * CU3: Modificando Deportista
  */
 public class UpdateSportmanController {
 
@@ -19,7 +19,7 @@ public class UpdateSportmanController {
 	private Sportsman sportsmanSelected;
 	
 	public void update(){
-		//Removemos el atleta al equipo del entrenador
+		//Removemos el deportista al equipo del entrenador
 		userServiceBean.update(sportsmanSelected);
 	}
 	
