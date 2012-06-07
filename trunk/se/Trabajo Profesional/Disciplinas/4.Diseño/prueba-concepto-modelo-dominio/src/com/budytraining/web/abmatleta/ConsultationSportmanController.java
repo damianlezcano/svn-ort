@@ -6,6 +6,7 @@ import com.budytraining.model.Coach;
 import com.budytraining.model.Sportsman;
 import com.budytraining.model.User;
 import com.budytraining.service.UserServiceBean;
+import com.budytraining.web.SmookUtil;
 
 /**
  * CU4: Consultando Deportista
@@ -31,7 +32,7 @@ public class ConsultationSportmanController {
 	 * Busqueda de atletas del equpo perteneciente al entrenador logeado
 	 */
 	public List<Sportsman> find(){
-		return null;
+		return (List<Sportsman>) SmookUtil.call("userServiceBean","find");
 	}
 	
 	public void selected(Sportsman item){

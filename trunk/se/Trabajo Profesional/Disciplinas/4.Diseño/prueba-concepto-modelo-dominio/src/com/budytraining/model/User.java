@@ -16,6 +16,11 @@ public abstract class User {
 	private Boolean active;
 	
 	/**
+	 * El rol del usuario
+	 */
+	private Role role;
+	
+	/**
 	 * Direccion de correo electronico del usuario
 	 */
 	private String email;
@@ -33,14 +38,6 @@ public abstract class User {
 		this.name = name;
 	}
 
-	public Boolean getActive() {
-		return active;
-	}
-
-	public void setActive(Boolean active) {
-		this.active = active;
-	}
-
 	public String getEmail() {
 		return email;
 	}
@@ -49,4 +46,20 @@ public abstract class User {
 		this.email = email;
 	}
 
+	public Role getRole() {
+		return role;
+	}
+
+	public void setRole(Role role) {
+		this.role = role;
+	}
+
+	public Boolean getActive() {
+		return active;
+	}
+
+	public void setActive(Boolean active) {
+		this.active = active;
+	}
+	
 }
