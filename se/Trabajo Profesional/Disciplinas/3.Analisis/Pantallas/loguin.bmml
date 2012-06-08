@@ -28,7 +28,7 @@
         <text>Send</text>
       </controlProperties>
     </control>
-    <control controlID="7" controlTypeID="com.balsamiq.mockups::Link" x="900" y="501" w="-1" h="-1" measuredW="90" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Link" x="838" y="503" w="-1" h="-1" measuredW="90" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <text>lost%20password%3F</text>
       </controlProperties>
@@ -44,9 +44,14 @@
         <text>Insert%20Captcha</text>
       </controlProperties>
     </control>
-    <control controlID="11" controlTypeID="com.balsamiq.mockups::Link" x="1005" y="500" w="-1" h="-1" measuredW="52" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Link" x="1062" y="502" w="-1" h="-1" measuredW="52" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <text>register</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Link" x="942" y="502" w="-1" h="-1" measuredW="105" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>change%20password</text>
       </controlProperties>
     </control>
   </controls>
