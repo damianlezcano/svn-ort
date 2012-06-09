@@ -21,7 +21,7 @@ public class RemoveSportmanController {
 	
 	public void remove(){
 		//Removemos el atleta al equipo del entrenador
-		userServiceBean.remove(sportsmanSelected);
+//		userServiceBean.remove(sportsmanSelected);
 	}
 	
 }

@@ -1,8 +1,6 @@
 package web;
 
 
-import model.Coach;
-import model.Sportsman;
 import model.User;
 
 /**
@@ -14,14 +12,14 @@ public class RegistrerController {
 	
 	//Se elije el tipo de usuario a registrar
 	public void actionUserTypeListener(UserType type){
-		switch (type) {
-		case SPORTSMAN:
-			user = new Sportsman();
-			break;
-		case COACH:
-			user = new Coach();
-			break;
-		}
+//		switch (type) {
+//		case SPORTSMAN:
+//			user = new Sportsman();
+//			break;
+//		case COACH:
+//			user = new Coach();
+//			break;
+//		}
 	}
 	
 	/**

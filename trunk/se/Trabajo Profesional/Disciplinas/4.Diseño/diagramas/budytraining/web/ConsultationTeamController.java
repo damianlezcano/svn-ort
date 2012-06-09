@@ -3,7 +3,7 @@ package web;
 
 import java.util.List;
 
-import model.Team;
+import model.Group;
 import model.User;
 import service.UserServiceBean;
 
@@ -19,17 +19,17 @@ public class ConsultationTeamController {
 	private User user;
 	
 	// Datos para la busqueda
-	private Team team;
+	private Group team;
 	
 	// Equipo seleccionado para la Modificacion o Eliminacion
-	private Team teamSelected;
+	private Group teamSelected;
 	
 	// Busco los equipos pertenecientes al entrenador
-	public List<Team> find(){
+	public List<Group> find(){
 		return null;
 	}
 	
-	public void selected(Team team){
+	public void selected(Group team){
 		teamSelected = team;
 	}
 	

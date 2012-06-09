@@ -21,7 +21,7 @@ public class UpdateSportmanController {
 	
 	public void update(){
 		//Removemos el deportista al equipo del entrenador
-		userServiceBean.update(sportsmanSelected);
+//		userServiceBean.update(sportsmanSelected);
 	}
 	
 }

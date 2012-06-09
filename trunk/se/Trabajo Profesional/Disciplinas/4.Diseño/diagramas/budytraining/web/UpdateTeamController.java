@@ -1,7 +1,7 @@
 package web;
 
 
-import model.Team;
+import model.Group;
 import model.User;
 import service.UserServiceBean;
 
@@ -17,7 +17,7 @@ public class UpdateTeamController {
 	private User user;
 	
 	// Equipo elejido para actualizar en la pagina de consulta
-	private Team teamSelected;
+	private Group teamSelected;
 	
 	public void update(){
 		//Actualizamos el equipo del entrenador
