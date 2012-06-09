@@ -1,8 +1,7 @@
 package web;
 
 
-import model.Coach;
-import model.Team;
+import model.Group;
 import model.User;
 import service.UserServiceBean;
 
@@ -18,13 +17,13 @@ public class RemoveTeamController {
 	private User user;
 	
 	// Equipo elejido para eliminar en la pagina de consulta
-	private Team teamSelected;
+	private Group teamSelected;
 	
 	public void remove(){
 		//Removemos el equipo (se hace por referencia)
-		Coach coach = (Coach) user;
-		coach.getTeams().remove(teamSelected);
-		userServiceBean.update(user);
+//		Coach coach = (Coach) user;
+//		coach.getTeams().remove(teamSelected);
+//		userServiceBean.update(user);
 	}
 	
 }

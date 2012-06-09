@@ -1,65 +1,20 @@
 package model;
 
+import java.util.List;
 
 
 /**
  * Deportista
  */
-public class Sportsman extends User {
+public class Sportsman implements ITrainable {
 	
-	/**
-	 * Objetivo actual, es el que se esta ejecutando
-	 */
-	private Objetive estimated;
+	private List<TrainingPlan> trainingPlans;
 	
-	/**
-	 * Objetivo actual, es el que se esta ejecutando
-	 */
-	private Objetive completed;	
+	private SportsmanAttribute sportsmanAttribute;
 	
-	/**
-	 * Descripcion (Opcional)
-	 */
-	private String description;
-
-	//-------------------------------
-
-	public Objetive getEstimated() {
-		return estimated;
+	public TrainingPlan getActualTrainingPlan(){
+		return null;
 	}
 
-	public void setEstimated(Objetive estimated) {
-		this.estimated = estimated;
-	}
-
-	public Objetive getCompleted() {
-		return completed;
-	}
-
-	public void setCompleted(Objetive completed) {
-		this.completed = completed;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-//	/**
-//	 * El historial de los Objetivos (son los objetivos finalizados)
-//	 */
-//	private List<Objetive> historyObjetives;
-	
-	//---------------------------------------
-	
-//	public void addHistoryObjective(Objetive element){
-//		if(historyObjetives == null){
-//			historyObjetives = new ArrayList<Objetive>();
-//		}
-//		historyObjetives.add(element);
-//	}
 
 }

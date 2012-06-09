@@ -3,7 +3,6 @@ package web;
 
 import java.util.List;
 
-import model.Coach;
 import model.Sportsman;
 import model.User;
 import service.UserServiceBean;
@@ -17,7 +16,7 @@ public class ConsultationSportmanController {
 	private UserServiceBean userServiceBean;
 	
 	// Usuario logeado en el sistema, en este caso de tipo entrenador
-	private Coach user;
+//	private Coach user;
 	
 	// Datos para la busqueda
 	private Sportsman sportman;
