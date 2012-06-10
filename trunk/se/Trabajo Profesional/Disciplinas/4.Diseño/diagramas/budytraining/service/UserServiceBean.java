@@ -3,7 +3,8 @@ package service;
 
 import java.util.List;
 
-import model.EntityManager;
+import persistence.EntityManager;
+
 import model.User;
 
 public class UserServiceBean {
