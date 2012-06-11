@@ -27,8 +27,12 @@ public abstract class User {
 
 	//------------------------------
 	
-	public void metodoParaEsteban(){
-		
+	
+	public void metodoQueAgregoDamian(){
+		//este lo agrege desde tu maquina
 	}
 	
+	public void metodoParaEsteban(){
+		//este lo agrege yo desde aca
+	}
 }
