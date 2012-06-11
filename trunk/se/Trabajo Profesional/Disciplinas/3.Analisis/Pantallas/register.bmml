@@ -1,6 +1,6 @@
-<mockup version="1.0" skin="sketch" measuredW="1413" measuredH="772" mockupW="1024" mockupH="768">
+<mockup version="1.0" skin="sketch" measuredW="1413" measuredH="772" mockupW="1022" mockupH="768">
   <controls>
-    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="389" y="4" w="1024" h="768" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="391" y="4" w="1022" h="768" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
       </controlProperties>
@@ -23,7 +23,7 @@
       </controlProperties>
     </control>
     <control controlID="4" controlTypeID="com.balsamiq.mockups::TextInput" x="844" y="522" w="183" h="-1" measuredW="79" measuredH="27" zOrder="4" locked="false" isInGroup="-1"/>
-    <control controlID="6" controlTypeID="com.balsamiq.mockups::Button" x="1042" y="521" w="-1" h="-1" measuredW="54" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Button" x="973" y="564" w="-1" h="-1" measuredW="54" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Send</text>
       </controlProperties>
@@ -43,7 +43,7 @@
         <text>Insert%20valid%20email</text>
       </controlProperties>
     </control>
-    <control controlID="18" controlTypeID="com.balsamiq.mockups::Label" x="543" y="564" w="742" h="21" measuredW="716" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Label" x="542" y="616" w="742" h="21" measuredW="716" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Our%20sales%20team%20will%20contact%20you%20by%20email%20and%20explain%20the%20steps%20to%20pay%20the%20license.%20Thank%20you%20for%20choosing%20%20@BUDDYTRAINING</text>
       </controlProperties>

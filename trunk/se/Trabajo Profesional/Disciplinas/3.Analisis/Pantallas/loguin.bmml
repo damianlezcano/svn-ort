@@ -21,52 +21,32 @@
         <text>Password</text>
       </controlProperties>
     </control>
-    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextInput" x="942" y="425" w="-1" h="-1" measuredW="79" measuredH="27" zOrder="4" locked="false" isInGroup="-1"/>
-    <control controlID="5" controlTypeID="com.balsamiq.mockups::TextInput" x="942" y="461" w="-1" h="-1" measuredW="79" measuredH="27" zOrder="5" locked="false" isInGroup="-1"/>
-    <control controlID="6" controlTypeID="com.balsamiq.mockups::Button" x="1036" y="681" w="-1" h="-1" measuredW="54" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextInput" x="957" y="426" w="-1" h="-1" measuredW="79" measuredH="27" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::TextInput" x="957" y="462" w="-1" h="-1" measuredW="79" measuredH="27" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Button" x="1036" y="689" w="-1" h="-1" measuredW="54" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Send</text>
       </controlProperties>
     </control>
-    <control controlID="7" controlTypeID="com.balsamiq.mockups::Link" x="838" y="503" w="-1" h="-1" measuredW="90" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Link" x="874" y="511" w="-1" h="-1" measuredW="90" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <text>lost%20password%3F</text>
       </controlProperties>
     </control>
-    <control controlID="8" controlTypeID="com.balsamiq.mockups::Canvas" x="867" y="537" w="223" h="108" measuredW="100" measuredH="70" zOrder="8" locked="false" isInGroup="-1"/>
-    <control controlID="9" controlTypeID="com.balsamiq.mockups::Image" x="874" y="543" w="210" h="55" measuredW="77" measuredH="79" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Canvas" x="867" y="549" w="223" h="108" measuredW="100" measuredH="70" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Image" x="874" y="557" w="210" h="55" measuredW="77" measuredH="79" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="10" controlTypeID="com.balsamiq.mockups::TextInput" x="874" y="603" w="210" h="-1" measuredW="100" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::TextInput" x="874" y="621" w="210" h="-1" measuredW="100" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Insert%20Captcha</text>
       </controlProperties>
     </control>
-    <control controlID="11" controlTypeID="com.balsamiq.mockups::Link" x="1062" y="502" w="-1" h="-1" measuredW="52" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Link" x="1032" y="511" w="-1" h="-1" measuredW="52" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <text>register</text>
-      </controlProperties>
-    </control>
-    <control controlID="12" controlTypeID="com.balsamiq.mockups::Link" x="942" y="502" w="-1" h="-1" measuredW="105" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>change%20password</text>
-      </controlProperties>
-    </control>
-    <control controlID="14" controlTypeID="com.balsamiq.mockups::CallOut" x="586" y="485" w="36" h="39" measuredW="40" measuredH="39" zOrder="13" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>1.</text>
-      </controlProperties>
-    </control>
-    <control controlID="16" controlTypeID="com.balsamiq.mockups::Arrow" x="625" y="503" w="437" h="11" measuredW="150" measuredH="100" zOrder="14" locked="false" isInGroup="-1">
-      <controlProperties>
-        <backgroundAlpha>1</backgroundAlpha>
-        <curvature>0</curvature>
-        <direction>top</direction>
-        <leftArrow>true</leftArrow>
-        <rightArrow>false</rightArrow>
-        <text/>
       </controlProperties>
     </control>
   </controls>
