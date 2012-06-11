@@ -27,4 +27,8 @@ public abstract class User {
 
 	//------------------------------
 	
+	public void metodoParaEsteban(){
+		
+	}
+	
 }
