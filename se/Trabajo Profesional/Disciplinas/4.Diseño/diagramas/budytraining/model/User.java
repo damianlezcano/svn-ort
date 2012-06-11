@@ -26,13 +26,4 @@ public abstract class User {
 	private String email;
 
 	//------------------------------
-	
-	
-	public void metodoQueAgregoDamian(){
-		//este lo agrege desde tu maquina
-	}
-	
-	public void metodoParaEsteban(){
-		//este lo agrege yo desde aca
-	}
 }
