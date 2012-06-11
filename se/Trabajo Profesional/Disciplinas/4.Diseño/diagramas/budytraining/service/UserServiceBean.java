@@ -40,4 +40,11 @@ public class UserServiceBean {
 		return (User) entityManager.find(name, password).getSingleResult();
 	}
 	
+	public boolean isRegistred(String email){
+		return true;
+	}
+	
+	public String generateNewPassword(){
+		return null;
+	}
 }

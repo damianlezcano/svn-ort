@@ -7,16 +7,13 @@ package web;
  */
 public class LoginController {
 
-	private String name;
-	private String password;
-	
-	public void authenticated(String name, String password){
-		SmookUtil.call("UserServiceBean", "isRegistred", name, password);
+	public void authenticated(String email, String password){
 	}
 
-	
-	private boolean validateMail(String email){
-		return true;
+	public void rememberMail(String email){
 	}
-
+	
+	public boolean isRegistred(String email){
+		return false;
+	}
 }
