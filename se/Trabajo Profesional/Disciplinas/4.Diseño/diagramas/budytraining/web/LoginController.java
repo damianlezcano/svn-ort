@@ -16,4 +16,9 @@ public class LoginController {
 	public boolean isRegistred(String email){
 		return false;
 	}
+	
+	public void changesPassword(String password, String newPassword){
+		
+	}
+	
 }

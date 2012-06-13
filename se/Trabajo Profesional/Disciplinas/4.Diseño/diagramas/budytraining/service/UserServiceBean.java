@@ -47,4 +47,8 @@ public class UserServiceBean {
 	public String generateNewPassword(){
 		return null;
 	}
+	
+	public void newPassword(String email, String password){
+				
+	}
 }
