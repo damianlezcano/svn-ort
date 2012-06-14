@@ -8,7 +8,7 @@
         <src>../Pantallas/assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="564" y="84" w="-1" h="-1" measuredW="37" measuredH="40" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="564" y="84" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="1" locked="false" isInGroup="-1"/>
     <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="601" y="99" w="190" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
@@ -90,7 +90,7 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="80" controlTypeID="__group__" x="1205" y="583" w="213" h="39" measuredW="213" measuredH="39" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="80" controlTypeID="__group__" x="1205" y="583" w="213" h="40" measuredW="213" measuredH="40" zOrder="11" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
         <control controlID="0" controlTypeID="com.balsamiq.mockups::Button" x="69" y="9" w="54" h="25" measuredW="54" measuredH="27" zOrder="0" locked="false" isInGroup="80">
           <controlProperties>
@@ -102,7 +102,7 @@
             <text>Cancel</text>
           </controlProperties>
         </control>
-        <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="175" y="0" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="2" locked="false" isInGroup="80">
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="175" y="0" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="2" locked="false" isInGroup="80">
           <controlProperties>
             <text>5</text>
           </controlProperties>
