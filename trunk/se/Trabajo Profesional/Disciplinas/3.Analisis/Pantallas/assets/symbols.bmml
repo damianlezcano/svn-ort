@@ -12,9 +12,9 @@
         </control>
         <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="15" y="236" w="275" h="491" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="0"/>
         <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="15" y="117" w="994" h="111" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="0"/>
-        <control controlID="3" controlTypeID="com.balsamiq.mockups::MenuBar" x="15" y="88" w="994" h="29" measuredW="529" measuredH="29" zOrder="3" locked="false" isInGroup="0">
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::MenuBar" x="15" y="88" w="994" h="29" measuredW="511" measuredH="29" zOrder="3" locked="false" isInGroup="0">
           <controlProperties>
-            <text>File%2C%20Edit%2C%20Sportman%2C%20TrainingPlan%2C%20TrainerAssistance%2C%20Resources%2C%20Help</text>
+            <text>File%2C%20Edit%2C%20Sportman%2C%20TrainingPlan%2C%20TrainerRoutine%2C%20Resources%2C%20Help</text>
           </controlProperties>
         </control>
         <control controlID="4" controlTypeID="com.balsamiq.mockups::IconLabel" x="30" y="137" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="4" locked="false" isInGroup="0">
