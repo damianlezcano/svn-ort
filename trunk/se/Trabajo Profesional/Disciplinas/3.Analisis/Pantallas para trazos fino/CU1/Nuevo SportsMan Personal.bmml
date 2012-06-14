@@ -18,20 +18,20 @@
         <override controlID="11" x="15" y="236" w="275" h="171"/>
         <override controlID="12" x="21" y="411" w="262" h="316"/>
         <override controlID="13" x="298" y="236" w="711" h="497"/>
-        <override controlID="11:3" x="109" y="57" w="-1" h="-1"/>
-        <override controlID="11:2" x="109" y="21" w="-1" h="-1"/>
-        <override controlID="11:6" x="212" y="56" w="-1" h="-1"/>
-        <override controlID="11:1" x="17" y="21" w="77" h="130"/>
-        <override controlID="11:0" x="0" y="0" w="275" h="171"/>
-        <override controlID="11:4" x="109" y="93" w="-1" h="-1"/>
         <override controlID="11:0:0" x="0" y="0" w="275" h="171"/>
+        <override controlID="11:4" x="109" y="93" w="-1" h="-1"/>
+        <override controlID="11:2" x="109" y="21" w="-1" h="-1"/>
+        <override controlID="11:3" x="109" y="57" w="-1" h="-1"/>
         <override controlID="11:7" x="212" y="92" w="-1" h="-1"/>
+        <override controlID="11:6" x="212" y="56" w="-1" h="-1"/>
         <override controlID="11:1:0" x="0" y="0" w="77" h="130"/>
+        <override controlID="11:1" x="17" y="21" w="77" h="130"/>
         <override controlID="11:5" x="202" y="20" w="-1" h="-1"/>
+        <override controlID="11:0" x="0" y="0" w="275" h="171"/>
         <src>../../Pantallas/assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="535" y="86" w="-1" h="-1" measuredW="37" measuredH="37" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="535" y="86" w="-1" h="-1" measuredW="37" measuredH="40" zOrder="1" locked="false" isInGroup="-1"/>
     <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="572" y="106" w="79" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
@@ -42,17 +42,17 @@
         <text>New%20Sportsman%0ADelete%20Sportsman%0AModify%20Sportsman%0ASearch%20Sportsman</text>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="533" y="171" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="126" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
     </control>
-    <control controlID="43" controlTypeID="com.balsamiq.mockups::Arrow" x="572" y="176" w="79" h="10" measuredW="150" measuredH="100" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Arrow" x="572" y="141" w="79" h="10" measuredW="150" measuredH="100" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="861" y="314" w="-1" h="-1" measuredW="38" measuredH="37" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="861" y="314" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>
