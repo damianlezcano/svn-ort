@@ -61,7 +61,7 @@
                 <text>11</text>
               </controlProperties>
             </control>
-            <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="58" y="133" w="-1" h="-1" measuredW="44" measuredH="37" zOrder="2" locked="false" isInGroup="3">
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="58" y="133" w="-1" h="-1" measuredW="44" measuredH="39" zOrder="2" locked="false" isInGroup="3">
               <controlProperties>
                 <text>12</text>
               </controlProperties>
@@ -73,6 +73,9 @@
     <control controlID="105" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1332" y="329" w="-1" h="303" measuredW="16" measuredH="100" zOrder="5" locked="false" isInGroup="-1"/>
     <control controlID="106" controlTypeID="com.balsamiq.mockups::Component" x="530" y="6" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
+        <override controlID="3">
+          <text>File%2C%20Edit%2C%20Sportsman%2C%20Group%2C%20Training%20Plan%2C%20Training%20Routine%2C%20Activity%2C%20Resources%2C%20Help</text>
+        </override>
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
