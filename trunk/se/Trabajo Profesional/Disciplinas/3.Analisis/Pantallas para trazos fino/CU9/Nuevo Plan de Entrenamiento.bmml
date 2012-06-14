@@ -1,6 +1,6 @@
-<mockup version="1.0" skin="sketch" measuredW="1554" measuredH="774" mockupW="1061" mockupH="768">
+<mockup version="1.0" skin="sketch" measuredW="1484" measuredH="774" mockupW="1024" mockupH="768">
   <controls>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="493" y="82" w="-1" h="-1" measuredW="37" measuredH="43" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="493" y="82" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="1" locked="false" isInGroup="-1"/>
     <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="530" y="104" w="190" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
@@ -11,7 +11,7 @@
         <text>New%20Training%20Plan%0AModify%20Training%20Plan%0ASearch%20Training%20Plan</text>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="493" y="125" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="493" y="125" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
@@ -31,7 +31,7 @@
         <text>General%0ATraining%20Routines</text>
       </controlProperties>
     </control>
-    <control controlID="60" controlTypeID="com.balsamiq.mockups::CallOut" x="870" y="310" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::CallOut" x="870" y="310" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>
@@ -53,7 +53,7 @@
             <text>Training%20Plan%20Description</text>
           </controlProperties>
         </control>
-        <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="359" y="27" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="2" locked="false" isInGroup="79">
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="359" y="27" w="-1" h="-1" measuredW="39" measuredH="43" zOrder="2" locked="false" isInGroup="79">
           <controlProperties>
             <text>4</text>
           </controlProperties>
@@ -82,7 +82,7 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="80" controlTypeID="__group__" x="1205" y="583" w="213" h="43" measuredW="213" measuredH="43" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="80" controlTypeID="__group__" x="1205" y="583" w="213" h="40" measuredW="213" measuredH="40" zOrder="11" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
         <control controlID="0" controlTypeID="com.balsamiq.mockups::Button" x="69" y="9" w="54" h="25" measuredW="54" measuredH="27" zOrder="0" locked="false" isInGroup="80">
           <controlProperties>
@@ -94,7 +94,7 @@
             <text>Cancel</text>
           </controlProperties>
         </control>
-        <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="175" y="0" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="2" locked="false" isInGroup="80">
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="175" y="0" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="2" locked="false" isInGroup="80">
           <controlProperties>
             <text>5</text>
           </controlProperties>
@@ -106,8 +106,11 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="81" controlTypeID="com.balsamiq.mockups::Component" x="530" y="6" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="81" controlTypeID="com.balsamiq.mockups::Component" x="460" y="6" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
+        <override controlID="3">
+          <text>File%2C%20Edit%2C%20Sportsman%2C%20Group%2C%20Training%20Plan%2C%20Training%20Routine%2C%20Activity%2C%20Resources%2C%20Help</text>
+        </override>
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>

@@ -1,6 +1,6 @@
 <mockup version="1.0" skin="sketch" measuredW="1554" measuredH="774" mockupW="1024" mockupH="768">
   <controls>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="535" y="86" w="-1" h="-1" measuredW="37" measuredH="37" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="535" y="86" w="-1" h="-1" measuredW="37" measuredH="40" zOrder="1" locked="false" isInGroup="-1"/>
     <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="572" y="106" w="79" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
@@ -11,17 +11,17 @@
         <text>New%20Sportsman%0ADelete%20Sportsman%0AModify%20Sportsman%0ASearch%20Sportsman</text>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="533" y="131" w="-1" h="-1" measuredW="39" measuredH="37" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="533" y="165" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
     </control>
-    <control controlID="43" controlTypeID="com.balsamiq.mockups::Arrow" x="572" y="140" w="79" h="10" measuredW="150" measuredH="100" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Arrow" x="572" y="174" w="79" h="10" measuredW="150" measuredH="100" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="869" y="341" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="869" y="341" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>4</text>
       </controlProperties>
