@@ -17,7 +17,7 @@ public class UserServiceBean {
 	 */
 	public void create(User user){
 		entityManager.create(user);
-		emailServiceBean.send(user);
+		emailServiceBean.send(user,"");
 	}
 
 	/**
