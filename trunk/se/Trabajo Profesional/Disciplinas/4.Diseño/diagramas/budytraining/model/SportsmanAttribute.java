@@ -15,6 +15,7 @@ public class SportsmanAttribute {
 	private List<Muscles> muscles;
 	
 	private float speed;
+	private float resistence;
 	
 	/**
 	 * Indice de masa corporal
@@ -23,6 +24,10 @@ public class SportsmanAttribute {
 		return 0f;
 	}
 
+	public Muscles getMuscle(String type){
+		return null;
+	}
+	
 	//----
 	public float getWeight() {
 		return weight;
@@ -70,6 +75,22 @@ public class SportsmanAttribute {
 
 	public void setMuscles(List<Muscles> muscles) {
 		this.muscles = muscles;
+	}
+
+	public float getSpeed() {
+		return speed;
+	}
+
+	public void setSpeed(float speed) {
+		this.speed = speed;
+	}
+
+	public float getResistence() {
+		return resistence;
+	}
+
+	public void setResistence(float resistence) {
+		this.resistence = resistence;
 	}
 	
 }

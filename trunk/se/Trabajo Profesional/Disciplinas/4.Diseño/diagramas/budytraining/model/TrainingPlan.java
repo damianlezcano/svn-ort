@@ -29,6 +29,9 @@ public class TrainingPlan {
 	//Registro de Actividades.
 	private List<TrainingLog> trainingLogs;
 	
+	//Cuando se empieza el plan de entrenamiento, se establece inicialmente los atributos para luego compararlos y generar una evolucion dentro del plan.
+	private SportsmanAttribute initialSportsmanAttribute;
+	
 	//---
 	public String getName() {
 		return name;
@@ -68,6 +71,14 @@ public class TrainingPlan {
 
 	public void setTrainingLogs(List<TrainingLog> trainingLogs) {
 		this.trainingLogs = trainingLogs;
+	}
+
+	public SportsmanAttribute getInitialSportsmanAttribute() {
+		return initialSportsmanAttribute;
+	}
+
+	public void setInitialSportsmanAttribute(SportsmanAttribute initialSportsmanAttribute) {
+		this.initialSportsmanAttribute = initialSportsmanAttribute;
 	}
 	
 	//-----

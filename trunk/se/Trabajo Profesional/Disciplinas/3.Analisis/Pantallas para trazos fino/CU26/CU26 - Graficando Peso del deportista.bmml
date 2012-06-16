@@ -1,0 +1,66 @@
+<mockup version="1.0" skin="sketch" measuredW="1554" measuredH="774" mockupW="1100" mockupH="768">
+  <controls>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="535" y="86" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="572" y="106" w="161" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="817" y="402" w="-1" h="-1" measuredW="38" measuredH="37" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>3</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::TitleWindow" x="855" y="264" w="665" h="458" measuredW="450" measuredH="400" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Sportsman</text>
+      </controlProperties>
+    </control>
+    <control controlID="54" controlTypeID="__group__" x="944" y="307" w="551" h="371" measuredW="551" measuredH="371" zOrder="6" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="551" h="371" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="54">
+          <controlProperties>
+            <text>Graphic</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="870" y="299" w="635" h="388" measuredW="200" measuredH="178" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Personal%0APhysical%0AMedical%0AGraphic</text>
+      </controlProperties>
+    </control>
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::Component" x="530" y="6" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="14">
+          <text>f%20Group%20Name%0AF%20Group%20Name%0A%20%5B+%5D%20Sportman%20of%20Group%0Af%20Group%20Name%0Af%20Group%20Name%0Af%20Group%20Name%0AF%20Group%20Name%0A%20%5B+%5D%20Sportman%20of%20Group</text>
+        </override>
+        <override controlID="3">
+          <text>File%2C%20Edit%2C%20Sportsman%2C%20Group%2C%20Training%20Plan%2C%20Training%20Routine%2C%20Activity%2C%20Resources%2C%20Help</text>
+        </override>
+        <src>../assets/symbols.bmml#template</src>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::CallOut" x="454" y="458" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>2</text>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::Arrow" x="493" y="472" w="86" h="10" measuredW="150" measuredH="100" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::CallOut" x="1117" y="357" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>4</text>
+      </controlProperties>
+    </control>
+    <control controlID="62" controlTypeID="com.balsamiq.mockups::TabBar" x="954" y="327" w="524" h="336" measuredW="338" measuredH="100" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Speed%2CResistance%2CWeight%2CForce%2CMuscles</text>
+      </controlProperties>
+    </control>
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::LineChart" x="972" y="411" w="490" h="229" measuredW="187" measuredH="175" zOrder="11" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>
