@@ -1,27 +1,7 @@
 <mockup version="1.0" skin="sketch" measuredW="1554" measuredH="774" mockupW="1024" mockupH="768">
   <controls>
-    <control controlID="47" controlTypeID="com.balsamiq.mockups::TitleWindow" x="908" y="261" w="-1" h="-1" measuredW="450" measuredH="400" zOrder="1" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>New%20Training%20Plan</text>
-      </controlProperties>
-    </control>
-    <control controlID="55" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="920" y="299" w="423" h="333" measuredW="200" measuredH="136" zOrder="2" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>General%0ATraining%20Routines</text>
-      </controlProperties>
-    </control>
-    <control controlID="78" controlTypeID="com.balsamiq.mockups::FieldSet" x="1025" y="292" w="324" h="340" measuredW="200" measuredH="170" zOrder="3" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Training%20Routines</text>
-      </controlProperties>
-    </control>
-    <control controlID="89" controlTypeID="com.balsamiq.mockups::DataGrid" x="1025" y="327" w="324" h="305" measuredW="114" measuredH="295" zOrder="4" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Training%20Routines%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20%0A%20</text>
-      </controlProperties>
-    </control>
-    <control controlID="103" controlTypeID="com.balsamiq.mockups::ModalScreen" x="530" y="78" w="1020" h="669" measuredW="320" measuredH="240" zOrder="6" locked="false" isInGroup="-1"/>
-    <control controlID="104" controlTypeID="__group__" x="893" y="366" w="308" h="191" measuredW="308" measuredH="191" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="103" controlTypeID="com.balsamiq.mockups::ModalScreen" x="530" y="75" w="1020" h="669" measuredW="320" measuredH="240" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="104" controlTypeID="__group__" x="893" y="366" w="308" h="191" measuredW="308" measuredH="191" zOrder="6" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
         <control controlID="0" controlTypeID="__group__" x="0" y="0" w="308" h="191" measuredW="308" measuredH="191" zOrder="0" locked="false" isInGroup="104">
           <controlProperties>
@@ -50,19 +30,18 @@
             </control>
           </groupChildrenDescriptors>
         </control>
-        <control controlID="1" controlTypeID="com.balsamiq.mockups::CallOut" x="172" y="1" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="1" locked="false" isInGroup="104">
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::CallOut" x="172" y="1" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="1" locked="false" isInGroup="104">
           <controlProperties>
             <text>6</text>
           </controlProperties>
         </control>
-        <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="32" y="90" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="2" locked="false" isInGroup="104">
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="32" y="90" w="-1" h="-1" measuredW="38" measuredH="37" zOrder="2" locked="false" isInGroup="104">
           <controlProperties>
             <text>7</text>
           </controlProperties>
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="105" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1332" y="329" w="-1" h="303" measuredW="16" measuredH="100" zOrder="5" locked="false" isInGroup="-1"/>
     <control controlID="106" controlTypeID="com.balsamiq.mockups::Component" x="530" y="6" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <override controlID="3">
@@ -70,6 +49,50 @@
         </override>
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
+    </control>
+    <control controlID="107" controlTypeID="com.balsamiq.mockups::TitleWindow" x="964" y="293" w="-1" h="-1" measuredW="450" measuredH="400" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Group</text>
+      </controlProperties>
+    </control>
+    <control controlID="108" controlTypeID="com.balsamiq.mockups::Button" x="1360" y="672" w="54" h="25" measuredW="54" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Save</text>
+      </controlProperties>
+    </control>
+    <control controlID="109" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="976" y="331" w="423" h="333" measuredW="200" measuredH="115" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>General</text>
+      </controlProperties>
+    </control>
+    <control controlID="110" controlTypeID="__group__" x="1029" y="326" w="364" h="341" measuredW="364" measuredH="341" zOrder="4" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="12" y="21" w="-1" h="-1" measuredW="40" measuredH="21" zOrder="1" locked="false" isInGroup="110">
+          <controlProperties>
+            <text>Name</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="364" h="341" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="110">
+          <controlProperties>
+            <text>Personal</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::TextInput" x="98" y="17" w="-1" h="-1" measuredW="79" measuredH="27" zOrder="2" locked="false" isInGroup="110">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::TextArea" x="98" y="71" w="-1" h="-1" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="110">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="14" y="71" w="-1" h="-1" measuredW="69" measuredH="21" zOrder="4" locked="false" isInGroup="110">
+          <controlProperties>
+            <text>Description</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
     </control>
   </controls>
 </mockup>
