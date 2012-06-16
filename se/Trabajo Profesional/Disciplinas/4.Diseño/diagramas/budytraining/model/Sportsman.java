@@ -16,5 +16,21 @@ public class Sportsman implements ITrainable {
 		return null;
 	}
 
+	//---
+	public List<TrainingPlan> getTrainingPlans() {
+		return trainingPlans;
+	}
+
+	public void setTrainingPlans(List<TrainingPlan> trainingPlans) {
+		this.trainingPlans = trainingPlans;
+	}
+
+	public SportsmanAttribute getSportsmanAttribute() {
+		return sportsmanAttribute;
+	}
+
+	public void setSportsmanAttribute(SportsmanAttribute sportsmanAttribute) {
+		this.sportsmanAttribute = sportsmanAttribute;
+	}	
 
 }

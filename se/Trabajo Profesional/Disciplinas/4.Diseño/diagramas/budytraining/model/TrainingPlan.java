@@ -1,7 +1,6 @@
 package model;
 
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -26,6 +25,50 @@ public class TrainingPlan {
 	 * Son las rutinas qeu se deben realizar
 	 */
 	private List<TrainingRoutine> routines;
+	
+	//Registro de Actividades.
+	private List<TrainingLog> trainingLogs;
+	
+	//---
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Date getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
+	}
+
+	public Date getEndDate() {
+		return endDate;
+	}
+
+	public void setEndDate(Date endDate) {
+		this.endDate = endDate;
+	}
+
+	public List<TrainingRoutine> getRoutines() {
+		return routines;
+	}
+
+	public void setRoutines(List<TrainingRoutine> routines) {
+		this.routines = routines;
+	}
+
+	public List<TrainingLog> getTrainingLogs() {
+		return trainingLogs;
+	}
+
+	public void setTrainingLogs(List<TrainingLog> trainingLogs) {
+		this.trainingLogs = trainingLogs;
+	}
 	
 	//-----
 
