@@ -51,4 +51,8 @@ public class UserServiceBean {
 	public void newPassword(String email, String password){
 				
 	}
+	
+	public void Routine(User user, String action){
+		
+	}
 }
