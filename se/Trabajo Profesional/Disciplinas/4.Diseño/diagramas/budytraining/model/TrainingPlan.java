@@ -12,6 +12,11 @@ public class TrainingPlan {
 	private String name;
 	
 	/**
+	 * Nombre del plan de entrenamiento
+	 */
+	private String description;
+	
+	/**
 	 * Fecha de inicio del plan (no debe ser inferior a la fecha de inicio del objetivo)
 	 */
 	private Date startDate;
@@ -24,7 +29,7 @@ public class TrainingPlan {
 	/**
 	 * Son las rutinas qeu se deben realizar
 	 */
-	private List<TrainingRoutine> routines;
+	private List<TrainerRoutine> routines;
 	
 	//Registro de Actividades.
 	private List<TrainingLog> trainingLogs;
@@ -37,8 +42,9 @@ public class TrainingPlan {
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name, String description) {
 		this.name = name;
+		this.description = description;
 	}
 
 	public Date getStartDate() {
@@ -57,12 +63,16 @@ public class TrainingPlan {
 		this.endDate = endDate;
 	}
 
-	public List<TrainingRoutine> getRoutines() {
+	public List<TrainerRoutine> getRoutines() {
 		return routines;
 	}
 
-	public void setRoutines(List<TrainingRoutine> routines) {
+	public void setRoutines(List<TrainerRoutine> routines) {
 		this.routines = routines;
+	}
+	
+	public void newRoutines(String name, String description) {
+		
 	}
 
 	public List<TrainingLog> getTrainingLogs() {
