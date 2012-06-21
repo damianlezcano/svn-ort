@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" measuredW="1488" measuredH="773" mockupW="1024" mockupH="768">
+<mockup version="1.0" skin="sketch" measuredW="1358" measuredH="661" mockupW="894" mockupH="656">
   <controls>
     <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="493" y="82" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="1" locked="false" isInGroup="-1"/>
     <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="530" y="104" w="286" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
@@ -11,7 +11,7 @@
         <text>New%20Routine%0AModify%20Routine%0ASearch%20Routine</text>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="493" y="125" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="493" y="125" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
@@ -31,7 +31,7 @@
         <text>General%0ATraining%20Routines</text>
       </controlProperties>
     </control>
-    <control controlID="60" controlTypeID="com.balsamiq.mockups::CallOut" x="793" y="314" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::CallOut" x="793" y="314" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>
@@ -53,7 +53,7 @@
             <text>Training%20Routine%20Description</text>
           </controlProperties>
         </control>
-        <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="0" y="86" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="2" locked="false" isInGroup="79">
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="0" y="86" w="-1" h="-1" measuredW="39" measuredH="37" zOrder="2" locked="false" isInGroup="79">
           <controlProperties>
             <text>4</text>
           </controlProperties>
@@ -82,7 +82,7 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="80" controlTypeID="__group__" x="801" y="317" w="521" h="298" measuredW="521" measuredH="298" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="80" controlTypeID="__group__" x="801" y="317" w="521" h="297" measuredW="521" measuredH="297" zOrder="11" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
         <control controlID="0" controlTypeID="com.balsamiq.mockups::Button" x="467" y="272" w="54" h="25" measuredW="54" measuredH="27" zOrder="0" locked="false" isInGroup="80">
           <controlProperties>
@@ -94,7 +94,7 @@
             <text>Cancel</text>
           </controlProperties>
         </control>
-        <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="0" y="258" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="2" locked="false" isInGroup="80">
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="0" y="258" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="2" locked="false" isInGroup="80">
           <controlProperties>
             <text>5</text>
           </controlProperties>
@@ -113,7 +113,7 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="81" controlTypeID="com.balsamiq.mockups::Component" x="464" y="5" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="81" controlTypeID="com.balsamiq.mockups::Component" x="464" y="5" w="150" h="150" measuredW="150" measuredH="150" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <override controlID="0">
           <text>http%3A//buddytraining.com</text>
