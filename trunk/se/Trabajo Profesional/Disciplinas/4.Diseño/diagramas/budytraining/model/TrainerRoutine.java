@@ -39,7 +39,9 @@ public class TrainerRoutine {
 	public void newRoutine (String name, String description, List<IActivity> activities){
 	}
 	
-	
+	public void editRoutine (String name, String description, List<IActivity> activities){
+	}
+		
 	public String getRoutine () {
 		return name;
 	}
