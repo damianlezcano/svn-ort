@@ -8,7 +8,7 @@
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
-    <control controlID="41" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="86" w="-1" h="-1" measuredW="37" measuredH="37" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="86" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="2" locked="false" isInGroup="-1"/>
     <control controlID="42" controlTypeID="com.balsamiq.mockups::Arrow" x="575" y="102" w="293" h="10" measuredW="150" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <rightArrow>false</rightArrow>
@@ -20,12 +20,12 @@
         <text>New%20Routine%0AModify%20Routine%0ASearch%20Routine</text>
       </controlProperties>
     </control>
-    <control controlID="44" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="159" w="-1" h="-1" measuredW="39" measuredH="37" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="135" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
     </control>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::Arrow" x="575" y="172" w="301" h="10" measuredW="150" measuredH="100" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Arrow" x="575" y="149" w="301" h="10" measuredW="150" measuredH="100" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <rightArrow>false</rightArrow>
         <text/>
@@ -73,12 +73,12 @@
         <text>3</text>
       </controlProperties>
     </control>
-    <control controlID="64" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="566" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="15" locked="false" isInGroup="-1">
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="566" w="-1" h="-1" measuredW="39" measuredH="43" zOrder="15" locked="false" isInGroup="-1">
       <controlProperties>
         <text>4</text>
       </controlProperties>
     </control>
-    <control controlID="65" controlTypeID="com.balsamiq.mockups::Arrow" x="575" y="590" w="817" h="10" measuredW="150" measuredH="100" zOrder="16" locked="false" isInGroup="-1">
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::Arrow" x="575" y="590" w="757" h="10" measuredW="150" measuredH="100" zOrder="16" locked="false" isInGroup="-1">
       <controlProperties>
         <rightArrow>false</rightArrow>
         <text/>
