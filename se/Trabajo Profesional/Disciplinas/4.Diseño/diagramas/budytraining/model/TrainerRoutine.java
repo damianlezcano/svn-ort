@@ -28,14 +28,21 @@ public class TrainerRoutine {
 	public void addActivity(IActivity element) {
 	}
 	
-	public List<IActivity> setActivity() {
+	public List<IActivity> getActivity() {
+		return activities;
+	}
+	
+	public List<IActivity> searchActivity() {
 		return activities;
 	}
 	
 	public void newRoutine (String name, String description, List<IActivity> activities){
-		
 	}
 	
+	
+	public String getRoutine () {
+		return name;
+	}
 	
 	
 }
