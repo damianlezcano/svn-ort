@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Rutina de Entrenamiento
  */
-public class TrainerRoutine {
+public class TrainingRoutine {
 	
 	/**
 	 * Nombre del plan de entrenamiento
@@ -44,6 +44,14 @@ public class TrainerRoutine {
 		
 	public String getRoutine () {
 		return name;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getDescription() {
+		return description;
 	}
 	
 	
