@@ -29,7 +29,7 @@ public class TrainingPlan {
 	/**
 	 * Son las rutinas qeu se deben realizar
 	 */
-	private List<TrainerRoutine> routines;
+	private List<TrainingRoutine> routines;
 	
 	//Registro de Actividades.
 	private List<TrainingLog> trainingLogs;
@@ -44,7 +44,7 @@ public class TrainingPlan {
 
 	public void setName(String name, String description) {
 		this.name = name;
-		this.description = description;
+		this.setDescription(description);
 	}
 
 	public Date getStartDate() {
@@ -63,11 +63,11 @@ public class TrainingPlan {
 		this.endDate = endDate;
 	}
 
-	public List<TrainerRoutine> getRoutines() {
+	public List<TrainingRoutine> getRoutines() {
 		return routines;
 	}
 
-	public void setRoutines(List<TrainerRoutine> routines) {
+	public void setRoutines(List<TrainingRoutine> routines) {
 		this.routines = routines;
 	}
 	
@@ -89,6 +89,14 @@ public class TrainingPlan {
 
 	public void setInitialSportsmanAttribute(SportsmanAttribute initialSportsmanAttribute) {
 		this.initialSportsmanAttribute = initialSportsmanAttribute;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getDescription() {
+		return description;
 	}
 	
 	//-----
