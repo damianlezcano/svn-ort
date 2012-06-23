@@ -12,4 +12,9 @@ public class Standard extends User {
 		return sporstman;
 	}
 
+	@Override
+	public String getRole() {
+		return "STANDARD";
+	}
+
 }
