@@ -5,7 +5,7 @@ import java.util.List;
 import model.Sportsman;
 import model.TrainingLog;
 
-public class GroupController {
+public class GraphicController {
 	
 	private List<TrainingLog> trainingLogs;
 	
