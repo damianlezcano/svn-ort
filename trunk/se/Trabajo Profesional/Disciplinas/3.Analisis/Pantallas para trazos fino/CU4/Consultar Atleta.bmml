@@ -1,6 +1,6 @@
 <mockup version="1.0" skin="sketch" measuredW="1554" measuredH="774" mockupW="1024" mockupH="768">
   <controls>
-    <control controlID="43" controlTypeID="com.balsamiq.mockups::TitleWindow" x="908" y="261" w="-1" h="-1" measuredW="450" measuredH="400" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::TitleWindow" x="905" y="261" w="-1" h="-1" measuredW="450" measuredH="400" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Search</text>
       </controlProperties>
@@ -15,12 +15,12 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="46" controlTypeID="com.balsamiq.mockups::DataGrid" x="923" y="390" w="415" h="236" measuredW="253" measuredH="25" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::DataGrid" x="923" y="390" w="415" h="236" measuredW="265" measuredH="25" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Id%2C%20Name%5Cr%20%5E%2C%20Last%20Name%2C%20Age%2C%20Select%0A%7B5L%2C%2040%2C%2025%2C%205L%2C%201L%7D</text>
       </controlProperties>
     </control>
-    <control controlID="47" controlTypeID="com.balsamiq.mockups::CallOut" x="542" y="86" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::CallOut" x="542" y="86" w="-1" h="-1" measuredW="37" measuredH="43" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text>1</text>
       </controlProperties>
@@ -30,7 +30,7 @@
         <text>2</text>
       </controlProperties>
     </control>
-    <control controlID="49" controlTypeID="com.balsamiq.mockups::CallOut" x="844" y="308" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::CallOut" x="844" y="308" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>
@@ -40,12 +40,12 @@
         <text>Send</text>
       </controlProperties>
     </control>
-    <control controlID="51" controlTypeID="com.balsamiq.mockups::CallOut" x="1447" y="298" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::CallOut" x="1447" y="298" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text>4</text>
       </controlProperties>
     </control>
-    <control controlID="52" controlTypeID="com.balsamiq.mockups::RadioButton" x="1301" y="422" w="22" h="10" measuredW="22" measuredH="5" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::RadioButton" x="1301" y="422" w="22" h="10" measuredW="22" measuredH="22" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
       </controlProperties>
@@ -55,7 +55,7 @@
         <text>Select</text>
       </controlProperties>
     </control>
-    <control controlID="57" controlTypeID="com.balsamiq.mockups::CallOut" x="1114" y="483" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::CallOut" x="1114" y="483" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <text>5</text>
       </controlProperties>
@@ -103,9 +103,9 @@
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
-    <control controlID="69" controlTypeID="com.balsamiq.mockups::List" x="651" y="125" w="124" h="92" measuredW="100" measuredH="126" zOrder="20" locked="false" isInGroup="-1">
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::List" x="651" y="125" w="211" h="55" measuredW="100" measuredH="126" zOrder="20" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>New%20Sportsman%0ADelete%20Sportsman%0AModify%20Sportsman%0ASearch%20Sportsman</text>
+        <text>New%20Sportsman%0AView%20/%20Modify%20Sportsman</text>
       </controlProperties>
     </control>
   </controls>
