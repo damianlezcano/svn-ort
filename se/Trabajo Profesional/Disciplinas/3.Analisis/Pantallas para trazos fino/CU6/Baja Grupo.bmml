@@ -11,7 +11,7 @@
         <text>New%20Group%0ADelete%20Group%0AModify%20Group%0ASearch%20Group</text>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="612" y="138" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="612" y="138" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
@@ -21,9 +21,9 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="1105" y="254" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="1105" y="254" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>3</text>
+        <text>5</text>
       </controlProperties>
     </control>
     <control controlID="47" controlTypeID="com.balsamiq.mockups::TitleWindow" x="908" y="261" w="-1" h="-1" measuredW="450" measuredH="400" zOrder="6" locked="false" isInGroup="-1">
@@ -38,7 +38,7 @@
     </control>
     <control controlID="54" controlTypeID="__group__" x="973" y="294" w="364" h="341" measuredW="364" measuredH="341" zOrder="9" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="12" y="21" w="-1" h="-1" measuredW="41" measuredH="21" zOrder="1" locked="false" isInGroup="54">
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="12" y="21" w="-1" h="-1" measuredW="40" measuredH="21" zOrder="1" locked="false" isInGroup="54">
           <controlProperties>
             <text>Name</text>
           </controlProperties>
@@ -78,14 +78,14 @@
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
-    <control controlID="57" controlTypeID="com.balsamiq.mockups::CallOut" x="1119" y="330" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::CallOut" x="1119" y="330" w="-1" h="-1" measuredW="38" measuredH="37" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>4</text>
+        <text>6</text>
       </controlProperties>
     </control>
     <control controlID="58" controlTypeID="com.balsamiq.mockups::CallOut" x="1281" y="632" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>5</text>
+        <text>7</text>
       </controlProperties>
     </control>
   </controls>

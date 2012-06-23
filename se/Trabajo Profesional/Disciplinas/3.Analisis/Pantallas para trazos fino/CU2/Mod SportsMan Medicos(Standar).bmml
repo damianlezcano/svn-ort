@@ -1,22 +1,22 @@
 <mockup version="1.0" skin="sketch" measuredW="1554" measuredH="774" mockupW="1024" mockupH="768">
   <controls>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="535" y="86" w="-1" h="-1" measuredW="37" measuredH="43" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="535" y="86" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="1" locked="false" isInGroup="-1"/>
     <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="572" y="106" w="79" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="125" w="-1" h="-1" measuredW="39" measuredH="43" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="535" y="160" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
     </control>
-    <control controlID="43" controlTypeID="com.balsamiq.mockups::Arrow" x="572" y="140" w="79" h="10" measuredW="150" measuredH="100" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Arrow" x="572" y="175" w="79" h="10" measuredW="150" measuredH="100" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="864" y="370" w="-1" h="-1" measuredW="38" measuredH="37" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="864" y="370" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text>5</text>
       </controlProperties>
@@ -70,7 +70,7 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="58" controlTypeID="com.balsamiq.mockups::CallOut" x="1276" y="632" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::CallOut" x="1276" y="632" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>6</text>
       </controlProperties>
