@@ -1,12 +1,12 @@
 <mockup version="1.0" skin="sketch" measuredW="1554" measuredH="774" mockupW="1024" mockupH="768">
   <controls>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="535" y="86" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="535" y="86" w="-1" h="-1" measuredW="37" measuredH="40" zOrder="1" locked="false" isInGroup="-1"/>
     <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="572" y="106" w="79" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="164" w="-1" h="-1" measuredW="39" measuredH="37" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="164" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
@@ -86,9 +86,9 @@
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
-    <control controlID="60" controlTypeID="com.balsamiq.mockups::List" x="651" y="125" w="127" h="75" measuredW="100" measuredH="126" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::List" x="651" y="125" w="127" h="75" measuredW="100" measuredH="126" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>New%20Sportsman%0ASearch%20Sportsman%0AModify%20Sportsman</text>
+        <text>New%20Sportsman%0A-Search%20Sportsman-%0AModify%20Sportsman</text>
       </controlProperties>
     </control>
   </controls>
