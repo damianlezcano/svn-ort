@@ -2,7 +2,7 @@
 <net.java.amateras.uml.sequencediagram.model.InteractionModel>
   <instances>
     <net.java.amateras.uml.sequencediagram.model.InstanceModel>
-      <name>trainingRoutine.jsf</name>
+      <name>generic.jsf</name>
       <lifeLine>
         <owner reference="../.."/>
         <constraint>

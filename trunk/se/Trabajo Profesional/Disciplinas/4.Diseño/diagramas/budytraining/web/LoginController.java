@@ -1,11 +1,18 @@
 package web;
 
 
+import service.UserServiceBean;
+import model.User;
+
+
 
 /**
  * Pagina de Login
  */
 public class LoginController {
+	
+	private User user;
+	private UserServiceBean userservicebean;
 
 	public void authenticated(String email, String password){
 	}
@@ -17,8 +24,18 @@ public class LoginController {
 		return false;
 	}
 	
-	public void changesPassword(String password, String newPassword){
+	public void changesPassword(){
+	}
+	
+	public void setPassword(String password, String newPassword){
 		
+	}
+	
+	public boolean validator(){
+		return true;
+	}
+	
+	public void save(){
 	}
 	
 }
