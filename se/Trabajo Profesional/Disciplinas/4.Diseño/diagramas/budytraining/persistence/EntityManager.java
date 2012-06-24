@@ -29,7 +29,7 @@ public class EntityManager {
 		return null;
 	}
 
-	public Query update(Object ... user) {
+	public Query update(Object ... item) {
 		System.out.println("Actualizo un dato");
 		return null;
 	}

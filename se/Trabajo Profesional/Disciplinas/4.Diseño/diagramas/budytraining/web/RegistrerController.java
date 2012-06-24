@@ -11,7 +11,7 @@ public class RegistrerController {
 	private User user;
 	
 	//Se elije el tipo de usuario a registrar
-	public void actionUserTypeListener(UserType type){
+	public void actionUserTypeListener(String type){
 //		switch (type) {
 //		case SPORTSMAN:
 //			user = new Sportsman();

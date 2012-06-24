@@ -45,10 +45,10 @@
       <stereoType></stereoType>
       <name>model.Group</name>
       <constraint>
+        <height>-1</height>
+        <width>-1</width>
         <x>2554</x>
         <y>1550</y>
-        <width>-1</width>
-        <height>-1</height>
       </constraint>
       <sourceConnections>
         <net.java.amateras.uml.classdiagram.model.RealizationModel>
@@ -89,10 +89,10 @@
             <stereoType></stereoType>
             <name>model.ITrainable</name>
             <constraint>
+              <height>-1</height>
+              <width>-1</width>
               <x>2325</x>
               <y>1650</y>
-              <width>-1</width>
-              <height>-1</height>
             </constraint>
             <sourceConnections>
               <net.java.amateras.uml.classdiagram.model.AggregationModel>
@@ -142,10 +142,10 @@
                   <stereoType></stereoType>
                   <name>model.Professional</name>
                   <constraint>
+                    <height>-1</height>
+                    <width>-1</width>
                     <x>2299</x>
                     <y>1716</y>
-                    <width>-1</width>
-                    <height>-1</height>
                   </constraint>
                   <sourceConnections>
                     <net.java.amateras.uml.classdiagram.model.GeneralizationModel>
@@ -192,10 +192,10 @@
                         <stereoType></stereoType>
                         <name>model.User</name>
                         <constraint>
+                          <height>-1</height>
+                          <width>-1</width>
                           <x>2055</x>
                           <y>1868</y>
-                          <width>-1</width>
-                          <height>-1</height>
                         </constraint>
                         <sourceConnections>
                           <net.java.amateras.uml.classdiagram.model.AggregationModel>
@@ -245,10 +245,10 @@
                               <stereoType></stereoType>
                               <name>web.ConsultationTeamController</name>
                               <constraint>
+                                <height>-1</height>
+                                <width>-1</width>
                                 <x>3064</x>
                                 <y>2128</y>
-                                <width>-1</width>
-                                <height>-1</height>
                               </constraint>
                               <sourceConnections/>
                               <targetConnections>
@@ -298,10 +298,10 @@
                                     <stereoType></stereoType>
                                     <name>service.UserServiceBean</name>
                                     <constraint>
+                                      <height>-1</height>
+                                      <width>-1</width>
                                       <x>1259</x>
                                       <y>1868</y>
-                                      <width>-1</width>
-                                      <height>-1</height>
                                     </constraint>
                                     <sourceConnections>
                                       <net.java.amateras.uml.classdiagram.model.AggregationModel>
@@ -351,10 +351,10 @@
                                           <stereoType></stereoType>
                                           <name>web.ConsultationSportmanController</name>
                                           <constraint>
+                                            <height>-1</height>
+                                            <width>-1</width>
                                             <x>347</x>
                                             <y>2128</y>
-                                            <width>-1</width>
-                                            <height>-1</height>
                                           </constraint>
                                           <sourceConnections/>
                                           <targetConnections>
@@ -405,10 +405,10 @@
                                                 <stereoType></stereoType>
                                                 <name>model.Sportsman</name>
                                                 <constraint>
+                                                  <height>-1</height>
+                                                  <width>-1</width>
                                                   <x>1188</x>
                                                   <y>954</y>
-                                                  <width>-1</width>
-                                                  <height>-1</height>
                                                 </constraint>
                                                 <sourceConnections>
                                                   <net.java.amateras.uml.classdiagram.model.AggregationModel>
@@ -491,10 +491,10 @@
                                                       <stereoType></stereoType>
                                                       <name>model.Standard</name>
                                                       <constraint>
+                                                        <height>-1</height>
+                                                        <width>-1</width>
                                                         <x>1701</x>
                                                         <y>1550</y>
-                                                        <width>-1</width>
-                                                        <height>-1</height>
                                                       </constraint>
                                                       <sourceConnections>
                                                         <net.java.amateras.uml.classdiagram.model.GeneralizationModel>
@@ -1613,10 +1613,10 @@
                                                             <stereoType></stereoType>
                                                             <name>model.IActivity</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>2793</x>
                                                               <y>186</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections>
                                                               <net.java.amateras.uml.classdiagram.model.AggregationModel>
@@ -1666,10 +1666,10 @@
                                                                   <stereoType></stereoType>
                                                                   <name>model.TrainerRoutine</name>
                                                                   <constraint>
+                                                                    <height>-1</height>
+                                                                    <width>-1</width>
                                                                     <x>2881</x>
                                                                     <y>716</y>
-                                                                    <width>-1</width>
-                                                                    <height>-1</height>
                                                                   </constraint>
                                                                   <sourceConnections>
                                                                     <net.java.amateras.uml.classdiagram.model.AggregationModel>
@@ -1719,10 +1719,10 @@
                                                                         <stereoType></stereoType>
                                                                         <name>model.TrainingPlan</name>
                                                                         <constraint>
+                                                                          <height>-1</height>
+                                                                          <width>-1</width>
                                                                           <x>2264</x>
                                                                           <y>940</y>
-                                                                          <width>-1</width>
-                                                                          <height>-1</height>
                                                                         </constraint>
                                                                         <sourceConnections>
                                                                           <net.java.amateras.uml.classdiagram.model.AggregationModel>
@@ -2926,10 +2926,10 @@
                                                                               <stereoType></stereoType>
                                                                               <name>model.TrainingLog</name>
                                                                               <constraint>
+                                                                                <height>-1</height>
+                                                                                <width>-1</width>
                                                                                 <x>2486</x>
                                                                                 <y>716</y>
-                                                                                <width>-1</width>
-                                                                                <height>-1</height>
                                                                               </constraint>
                                                                               <sourceConnections>
                                                                                 <net.java.amateras.uml.classdiagram.model.AggregationModel reference="../../.."/>
@@ -3304,10 +3304,10 @@
                                                                                     <stereoType></stereoType>
                                                                                     <name>web.GroupController</name>
                                                                                     <constraint>
-                                                                                      <x>2710</x>
-                                                                                      <y>940</y>
-                                                                                      <width>-1</width>
                                                                                       <height>-1</height>
+                                                                                      <width>-1</width>
+                                                                                      <x>2808</x>
+                                                                                      <y>1025</y>
                                                                                     </constraint>
                                                                                     <sourceConnections/>
                                                                                     <targetConnections>
@@ -4107,10 +4107,10 @@
                                                                                     <stereoType></stereoType>
                                                                                     <name>model.SportsmanAttribute</name>
                                                                                     <constraint>
+                                                                                      <height>-1</height>
+                                                                                      <width>-1</width>
                                                                                       <x>1860</x>
                                                                                       <y>186</y>
-                                                                                      <width>-1</width>
-                                                                                      <height>-1</height>
                                                                                     </constraint>
                                                                                     <sourceConnections>
                                                                                       <net.java.amateras.uml.classdiagram.model.AggregationModel>
@@ -5872,10 +5872,10 @@
                                                                                           <stereoType></stereoType>
                                                                                           <name>model.Muscles</name>
                                                                                           <constraint>
+                                                                                            <height>-1</height>
+                                                                                            <width>-1</width>
                                                                                             <x>1922</x>
                                                                                             <y>16</y>
-                                                                                            <width>-1</width>
-                                                                                            <height>-1</height>
                                                                                           </constraint>
                                                                                           <sourceConnections>
                                                                                             <net.java.amateras.uml.classdiagram.model.AggregationModel reference="../../.."/>
@@ -10006,10 +10006,10 @@
                                                                   <stereoType></stereoType>
                                                                   <name>model.Run</name>
                                                                   <constraint>
+                                                                    <height>-1</height>
+                                                                    <width>-1</width>
                                                                     <x>2793</x>
                                                                     <y>16</y>
-                                                                    <width>-1</width>
-                                                                    <height>-1</height>
                                                                   </constraint>
                                                                   <sourceConnections>
                                                                     <net.java.amateras.uml.classdiagram.model.RealizationModel reference="../../.."/>
@@ -10654,10 +10654,10 @@
                                                             <stereoType></stereoType>
                                                             <name>integration.Dispatcher</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>2096</x>
                                                               <y>16</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections/>
                                                             <targetConnections/>
@@ -10719,10 +10719,10 @@
                                                             <stereoType></stereoType>
                                                             <name>persistence.EntityManager</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>1129</x>
                                                               <y>1716</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections>
                                                               <net.java.amateras.uml.classdiagram.model.AggregationModel>
@@ -11191,10 +11191,10 @@
                                                             <stereoType></stereoType>
                                                             <name>persistence.EntityManager.Query</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>2308</x>
                                                               <y>16</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections/>
                                                             <targetConnections/>
@@ -11299,10 +11299,10 @@
                                                             <stereoType></stereoType>
                                                             <name>service.EmailServiceBean</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>1333</x>
                                                               <y>1716</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections>
                                                               <net.java.amateras.uml.classdiagram.model.AggregationModel>
@@ -11687,10 +11687,10 @@
                                                             <stereoType></stereoType>
                                                             <name>web.FacesContext</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>2575</x>
                                                               <y>16</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections/>
                                                             <targetConnections/>
@@ -11779,10 +11779,10 @@
                                                             <stereoType></stereoType>
                                                             <name>web.GraphItemView</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>2994</x>
                                                               <y>16</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections/>
                                                             <targetConnections/>
@@ -11978,10 +11978,10 @@
                                                             <stereoType></stereoType>
                                                             <name>web.LoginController</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>3207</x>
                                                               <y>16</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections/>
                                                             <targetConnections/>
@@ -12156,10 +12156,10 @@
                                                             <stereoType></stereoType>
                                                             <name>web.RegistrerController</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>1980</x>
                                                               <y>2128</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections/>
                                                             <targetConnections>
@@ -12541,10 +12541,10 @@
                                                             <stereoType></stereoType>
                                                             <name>web.RemoveSportmanController</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>542</x>
                                                               <y>1332</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections/>
                                                             <targetConnections>
@@ -13442,10 +13442,10 @@
                                                             <stereoType></stereoType>
                                                             <name>web.RemoveTeamController</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>2260</x>
                                                               <y>2128</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections/>
                                                             <targetConnections>
@@ -14343,10 +14343,10 @@
                                                             <stereoType></stereoType>
                                                             <name>web.RoutineController</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>3577</x>
                                                               <y>16</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections/>
                                                             <targetConnections/>
@@ -14439,10 +14439,10 @@
                                                             <stereoType></stereoType>
                                                             <name>web.SessionContextManager</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>3829</x>
                                                               <y>16</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections/>
                                                             <targetConnections/>
@@ -14531,10 +14531,10 @@
                                                             <stereoType></stereoType>
                                                             <name>web.SmookUtil</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>4034</x>
                                                               <y>16</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections/>
                                                             <targetConnections/>
@@ -14631,10 +14631,10 @@
                                                             <stereoType></stereoType>
                                                             <name>web.UpdateSportmanController</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>1267</x>
                                                               <y>1312</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections/>
                                                             <targetConnections>
@@ -15532,10 +15532,10 @@
                                                             <stereoType></stereoType>
                                                             <name>web.UpdateTeamController</name>
                                                             <constraint>
+                                                              <height>-1</height>
+                                                              <width>-1</width>
                                                               <x>2485</x>
                                                               <y>2128</y>
-                                                              <width>-1</width>
-                                                              <height>-1</height>
                                                             </constraint>
                                                             <sourceConnections/>
                                                             <targetConnections>
