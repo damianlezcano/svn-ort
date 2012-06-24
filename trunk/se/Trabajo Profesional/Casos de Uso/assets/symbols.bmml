@@ -1,0 +1,116 @@
+<mockup version="1.0" skin="sketch" measuredW="1084" measuredH="788" mockupW="1024" mockupH="768">
+  <controls>
+    <control controlID="0" controlTypeID="__group__" x="60" y="20" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>template</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="0" w="1024" h="768" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="0">
+          <controlProperties>
+            <text>http%3A//buddytraining.com</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="15" y="236" w="275" h="491" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="0"/>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="15" y="117" w="994" h="111" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="0"/>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::MenuBar" x="15" y="88" w="994" h="29" measuredW="569" measuredH="29" zOrder="12" locked="false" isInGroup="0">
+          <controlProperties>
+            <text>File%2C%20Edit%2C%20Sportman%2C%20Group%2C%20TrainingPlan%2C%20TrainerRoutine%2C%20Activity%2C%20Resources%2C%20Help</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::IconLabel" x="30" y="137" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="3" locked="false" isInGroup="0">
+          <controlProperties>
+            <text>User</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::IconLabel" x="93" y="137" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="4" locked="false" isInGroup="0">
+          <controlProperties>
+            <text>Goals</text>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::IconLabel" x="156" y="137" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="5" locked="false" isInGroup="0">
+          <controlProperties>
+            <text>Graphs</text>
+          </controlProperties>
+        </control>
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::IconLabel" x="227" y="137" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="6" locked="false" isInGroup="0">
+          <controlProperties>
+            <text>Media</text>
+          </controlProperties>
+        </control>
+        <control controlID="9" controlTypeID="com.balsamiq.mockups::IconLabel" x="283" y="137" w="-1" h="-1" measuredW="65" measuredH="69" zOrder="7" locked="false" isInGroup="0">
+          <controlProperties>
+            <text>Assistance</text>
+          </controlProperties>
+        </control>
+        <control controlID="10" controlTypeID="com.balsamiq.mockups::IconLabel" x="363" y="137" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="8" locked="false" isInGroup="0">
+          <controlProperties>
+            <text>Sync</text>
+          </controlProperties>
+        </control>
+        <control controlID="11" controlTypeID="__group__" x="15" y="236" w="275" h="171" measuredW="275" measuredH="171" zOrder="9" locked="false" isInGroup="0">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="275" h="171" measuredW="275" measuredH="171" zOrder="0" locked="false" isInGroup="11">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="275" h="171" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <borderStyle>roundedSolid</borderStyle>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="1" controlTypeID="__group__" x="17" y="21" w="77" h="130" measuredW="77" measuredH="130" zOrder="1" locked="false" isInGroup="11">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="77" h="130" measuredW="77" measuredH="79" zOrder="0" locked="false" isInGroup="1">
+                  <controlProperties>
+                    <text>User</text>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="109" y="21" w="-1" h="-1" measuredW="60" measuredH="21" zOrder="2" locked="false" isInGroup="11">
+              <controlProperties>
+                <text>Welcome</text>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="109" y="57" w="-1" h="-1" measuredW="57" measuredH="21" zOrder="3" locked="false" isInGroup="11">
+              <controlProperties>
+                <text>Message</text>
+              </controlProperties>
+            </control>
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="109" y="93" w="-1" h="-1" measuredW="82" measuredH="21" zOrder="4" locked="false" isInGroup="11">
+              <controlProperties>
+                <text>Task%20Pending</text>
+              </controlProperties>
+            </control>
+            <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="202" y="20" w="-1" h="-1" measuredW="68" measuredH="21" zOrder="5" locked="false" isInGroup="11">
+              <controlProperties>
+                <text>User%20name</text>
+              </controlProperties>
+            </control>
+            <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="212" y="56" w="-1" h="-1" measuredW="49" measuredH="21" zOrder="6" locked="false" isInGroup="11">
+              <controlProperties>
+                <text>number</text>
+              </controlProperties>
+            </control>
+            <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="212" y="92" w="-1" h="-1" measuredW="49" measuredH="21" zOrder="7" locked="false" isInGroup="11">
+              <controlProperties>
+                <text>number</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="13" controlTypeID="com.balsamiq.mockups::Canvas" x="298" y="236" w="711" h="497" measuredW="100" measuredH="70" zOrder="10" locked="false" isInGroup="0"/>
+        <control controlID="14" controlTypeID="com.balsamiq.mockups::Tree" x="15" y="407" w="268" h="311" measuredW="300" measuredH="225" zOrder="11" locked="false" isInGroup="0">
+          <controlProperties>
+            <text>f%20Group%20Name%0AF%20Group%20Name%0A%20%5B+%5D%20Sportman%20of%20Group%0Af%20Group%20Name%0Af%20Group%20Name%0Af%20Group%20Name%0AF%20Group%20Name%0A%20%5B+%5D%20Sportman%20of%20Group</text>
+          </controlProperties>
+        </control>
+        <control controlID="15" controlTypeID="com.balsamiq.mockups::IconLabel" x="946" y="137" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="13" locked="false" isInGroup="0">
+          <controlProperties>
+            <text>LogOut</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>
