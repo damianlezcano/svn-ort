@@ -12,7 +12,7 @@ public class SportsmanServiceBean {
 	/**
 	 * Permite dar de alta un Sportsman (Deportista)
 	 */
-	public void create(Sportsman sportsman){
+	public void create(User user, Sportsman sportsman){
 		entityManager.create(sportsman);
 	}
 
@@ -21,6 +21,11 @@ public class SportsmanServiceBean {
         return entityManager.find(sportsman).getListResult();
 	}
 
+	@SuppressWarnings("unchecked")
+	public List<User> find(User user) {
+        return entityManager.find(user).getListResult();
+	}
+	
 	public void update(Sportsman sportsman) {
 		entityManager.update(sportsman);
 	}
