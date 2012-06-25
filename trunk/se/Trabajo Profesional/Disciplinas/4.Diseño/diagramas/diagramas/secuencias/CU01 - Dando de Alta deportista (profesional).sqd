@@ -26,7 +26,7 @@
             <sourceConnections>
               <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
                 <order>3</order>
-                <oldOrder>4</oldOrder>
+                <oldOrder>3</oldOrder>
                 <name>setSportsman(sportsman)</name>
                 <direction>true</direction>
                 <source class="net.java.amateras.uml.sequencediagram.model.ActivationModel" reference="../../.."/>
@@ -174,8 +174,8 @@
                       <root reference="../../../../../../../../../../.."/>
                       <constraint>
                         <height>-1</height>
-                        <width>133</width>
-                        <x>279</x>
+                        <width>172</width>
+                        <x>209</x>
                         <y>20</y>
                       </constraint>
                       <sourceConnections/>
@@ -209,7 +209,7 @@
                     <constraint>
                       <height>437</height>
                       <width>5</width>
-                      <x>345</x>
+                      <x>294</x>
                       <y>20</y>
                     </constraint>
                     <sourceConnections/>
@@ -222,7 +222,7 @@
                         <constraint>
                           <height>64</height>
                           <width>10</width>
-                          <x>340</x>
+                          <x>289</x>
                           <y>353</y>
                         </constraint>
                         <sourceConnections>
@@ -242,7 +242,7 @@
                               <sourceConnections>
                                 <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
                                   <order>5</order>
-                                  <oldOrder>6</oldOrder>
+                                  <oldOrder>5</oldOrder>
                                   <name>save()</name>
                                   <direction>true</direction>
                                   <source class="net.java.amateras.uml.sequencediagram.model.ActivationModel" reference="../../.."/>
@@ -293,7 +293,7 @@
                           </net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
                           <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
                             <order>6</order>
-                            <oldOrder>7</oldOrder>
+                            <oldOrder>6</oldOrder>
                             <name>create(user,sportsman)</name>
                             <direction>true</direction>
                             <source class="net.java.amateras.uml.sequencediagram.model.ActivationModel" reference="../../.."/>
@@ -451,8 +451,8 @@
                                   <root reference="../../../../../../../../../../../../../../../../.."/>
                                   <constraint>
                                     <height>-1</height>
-                                    <width>141</width>
-                                    <x>617</x>
+                                    <width>193</width>
+                                    <x>414</x>
                                     <y>20</y>
                                   </constraint>
                                   <sourceConnections/>
@@ -478,7 +478,7 @@
                                 <constraint>
                                   <height>437</height>
                                   <width>5</width>
-                                  <x>687</x>
+                                  <x>510</x>
                                   <y>20</y>
                                 </constraint>
                                 <sourceConnections/>
@@ -505,7 +505,7 @@
                               <constraint>
                                 <height>46</height>
                                 <width>10</width>
-                                <x>682</x>
+                                <x>505</x>
                                 <y>361</y>
                               </constraint>
                               <sourceConnections>
@@ -528,7 +528,7 @@
                                 </net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
                                 <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
                                   <order>7</order>
-                                  <oldOrder>8</oldOrder>
+                                  <oldOrder>7</oldOrder>
                                   <name>create(user, sportsman)</name>
                                   <direction>true</direction>
                                   <source class="net.java.amateras.uml.sequencediagram.model.ActivationModel" reference="../../.."/>
@@ -710,8 +710,8 @@
                                         <root reference="../../../../../../../../../../../../../../../../../../../.."/>
                                         <constraint>
                                           <height>-1</height>
-                                          <width>100</width>
-                                          <x>841</x>
+                                          <width>176</width>
+                                          <x>613</x>
                                           <y>20</y>
                                         </constraint>
                                         <sourceConnections/>
@@ -737,7 +737,7 @@
                                       <constraint>
                                         <height>437</height>
                                         <width>5</width>
-                                        <x>891</x>
+                                        <x>700</x>
                                         <y>20</y>
                                       </constraint>
                                       <sourceConnections/>
@@ -764,7 +764,7 @@
                                     <constraint>
                                       <height>30</height>
                                       <width>10</width>
-                                      <x>886</x>
+                                      <x>695</x>
                                       <y>367</y>
                                     </constraint>
                                     <sourceConnections>
@@ -877,7 +877,7 @@
                         <constraint>
                           <height>63</height>
                           <width>10</width>
-                          <x>340</x>
+                          <x>289</x>
                           <y>104</y>
                         </constraint>
                         <sourceConnections>
@@ -996,7 +996,7 @@
                                   </net.java.amateras.uml.properties.BooleanPropertyDescriptor>
                                 </propertyDescriptors>
                                 <stereoType></stereoType>
-                                <name>model.Sportsman</name>
+                                <name>Sportsman</name>
                                 <sourceConnections/>
                                 <targetConnections/>
                                 <children>
@@ -1791,7 +1791,7 @@
                                 <constraint>
                                   <height>349</height>
                                   <width>5</width>
-                                  <x>518</x>
+                                  <x>439</x>
                                   <y>108</y>
                                 </constraint>
                                 <sourceConnections/>
@@ -1803,7 +1803,7 @@
                                     <constraint>
                                       <height>30</height>
                                       <width>10</width>
-                                      <x>513</x>
+                                      <x>434</x>
                                       <y>127</y>
                                     </constraint>
                                     <sourceConnections/>
@@ -1848,8 +1848,8 @@
                               <active reference="../lifeLine/children/net.java.amateras.uml.sequencediagram.model.ActivationModel"/>
                               <constraint>
                                 <height>-1</height>
-                                <width>100</width>
-                                <x>468</x>
+                                <width>119</width>
+                                <x>380</x>
                                 <y>108</y>
                               </constraint>
                               <sourceConnections/>
@@ -1912,7 +1912,7 @@
                         <constraint>
                           <height>30</height>
                           <width>10</width>
-                          <x>340</x>
+                          <x>289</x>
                           <y>277</y>
                         </constraint>
                         <sourceConnections>
@@ -1932,7 +1932,7 @@
                               <sourceConnections>
                                 <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
                                   <order>4</order>
-                                  <oldOrder>5</oldOrder>
+                                  <oldOrder>4</oldOrder>
                                   <name>validator()</name>
                                   <direction>true</direction>
                                   <source class="net.java.amateras.uml.sequencediagram.model.ActivationModel" reference="../../.."/>
@@ -2021,7 +2021,7 @@
                   <constraint>
                     <height>30</height>
                     <width>10</width>
-                    <x>340</x>
+                    <x>289</x>
                     <y>200</y>
                   </constraint>
                   <sourceConnections>
