@@ -2,14 +2,14 @@
 <net.java.amateras.uml.sequencediagram.model.InteractionModel>
   <instances>
     <net.java.amateras.uml.sequencediagram.model.InstanceModel>
-      <name>trainingPlan.jsf</name>
+      <name>generic.jsf</name>
       <lifeLine>
         <owner reference="../.."/>
         <constraint>
+          <height>435</height>
+          <width>5</width>
           <x>99</x>
           <y>20</y>
-          <width>5</width>
-          <height>435</height>
         </constraint>
         <sourceConnections/>
         <targetConnections/>
@@ -18,10 +18,10 @@
             <ownerLine reference="../../.."/>
             <movable>true</movable>
             <constraint>
+              <height>40</height>
+              <width>10</width>
               <x>94</x>
               <y>99</y>
-              <width>10</width>
-              <height>40</height>
             </constraint>
             <sourceConnections>
               <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
@@ -295,10 +295,10 @@
                       <lifeLine reference="../.."/>
                       <root reference="../../../../../../../../../../.."/>
                       <constraint>
-                        <x>228</x>
-                        <y>20</y>
-                        <width>144</width>
                         <height>-1</height>
+                        <width>176</width>
+                        <x>192</x>
+                        <y>20</y>
                       </constraint>
                       <sourceConnections/>
                       <targetConnections/>
@@ -329,10 +329,10 @@
                       </listeners>
                     </owner>
                     <constraint>
-                      <x>300</x>
-                      <y>20</y>
-                      <width>5</width>
                       <height>435</height>
+                      <width>5</width>
+                      <x>279</x>
+                      <y>20</y>
                     </constraint>
                     <sourceConnections/>
                     <targetConnections/>
@@ -342,10 +342,10 @@
                         <ownerLine reference="../../.."/>
                         <movable>true</movable>
                         <constraint>
-                          <x>295</x>
-                          <y>256</y>
-                          <width>10</width>
                           <height>64</height>
+                          <width>10</width>
+                          <x>274</x>
+                          <y>256</y>
                         </constraint>
                         <sourceConnections>
                           <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -356,10 +356,10 @@
                               <ownerLine reference="../../../../../../../../../../../.."/>
                               <movable>true</movable>
                               <constraint>
+                                <height>74</height>
+                                <width>10</width>
                                 <x>94</x>
                                 <y>256</y>
-                                <width>10</width>
-                                <height>74</height>
                               </constraint>
                               <sourceConnections>
                                 <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
@@ -507,10 +507,10 @@
                                   <lifeLine reference="../.."/>
                                   <root reference="../../../../../../../../../../../../../../../../.."/>
                                   <constraint>
-                                    <x>421</x>
-                                    <y>20</y>
-                                    <width>162</width>
                                     <height>-1</height>
+                                    <width>219</width>
+                                    <x>372</x>
+                                    <y>20</y>
                                   </constraint>
                                   <sourceConnections/>
                                   <targetConnections/>
@@ -533,10 +533,10 @@
                                   </listeners>
                                 </owner>
                                 <constraint>
-                                  <x>501</x>
-                                  <y>20</y>
-                                  <width>5</width>
                                   <height>435</height>
+                                  <width>5</width>
+                                  <x>480</x>
+                                  <y>20</y>
                                 </constraint>
                                 <sourceConnections/>
                                 <targetConnections/>
@@ -560,10 +560,10 @@
                               </ownerLine>
                               <movable>true</movable>
                               <constraint>
-                                <x>496</x>
-                                <y>262</y>
-                                <width>10</width>
                                 <height>48</height>
+                                <width>10</width>
+                                <x>475</x>
+                                <y>262</y>
                               </constraint>
                               <sourceConnections>
                                 <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -766,10 +766,10 @@
                                         <lifeLine reference="../.."/>
                                         <root reference="../../../../../../../../../../../../../../../../../../../.."/>
                                         <constraint>
-                                          <x>925</x>
-                                          <y>20</y>
-                                          <width>100</width>
                                           <height>-1</height>
+                                          <width>167</width>
+                                          <x>798</x>
+                                          <y>20</y>
                                         </constraint>
                                         <sourceConnections/>
                                         <targetConnections/>
@@ -792,10 +792,10 @@
                                         </listeners>
                                       </owner>
                                       <constraint>
-                                        <x>975</x>
-                                        <y>20</y>
-                                        <width>5</width>
                                         <height>435</height>
+                                        <width>5</width>
+                                        <x>881</x>
+                                        <y>20</y>
                                       </constraint>
                                       <sourceConnections/>
                                       <targetConnections/>
@@ -805,10 +805,10 @@
                                           <ownerLine reference="../../.."/>
                                           <movable>true</movable>
                                           <constraint>
-                                            <x>970</x>
-                                            <y>365</y>
-                                            <width>10</width>
                                             <height>30</height>
+                                            <width>10</width>
+                                            <x>876</x>
+                                            <y>365</y>
                                           </constraint>
                                           <sourceConnections>
                                             <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -920,10 +920,10 @@
                                                     <lifeLine reference="../.."/>
                                                     <root reference="../../../../../../../../../../../../../../../../../../../../../../../../../.."/>
                                                     <constraint>
-                                                      <x>678</x>
-                                                      <y>20</y>
-                                                      <width>131</width>
                                                       <height>-1</height>
+                                                      <width>200</width>
+                                                      <x>594</x>
+                                                      <y>20</y>
                                                     </constraint>
                                                     <sourceConnections/>
                                                     <targetConnections/>
@@ -946,10 +946,10 @@
                                                     </listeners>
                                                   </owner>
                                                   <constraint>
-                                                    <x>743</x>
-                                                    <y>20</y>
-                                                    <width>5</width>
                                                     <height>435</height>
+                                                    <width>5</width>
+                                                    <x>693</x>
+                                                    <y>20</y>
                                                   </constraint>
                                                   <sourceConnections/>
                                                   <targetConnections/>
@@ -973,10 +973,10 @@
                                                 </ownerLine>
                                                 <movable>true</movable>
                                                 <constraint>
-                                                  <x>738</x>
-                                                  <y>354</y>
-                                                  <width>10</width>
                                                   <height>51</height>
+                                                  <width>10</width>
+                                                  <x>688</x>
+                                                  <y>354</y>
                                                 </constraint>
                                                 <sourceConnections>
                                                   <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -987,10 +987,10 @@
                                                       <ownerLine reference="../../../../../../../../../../../../../../../../../.."/>
                                                       <movable>true</movable>
                                                       <constraint>
-                                                        <x>295</x>
-                                                        <y>345</y>
-                                                        <width>10</width>
                                                         <height>70</height>
+                                                        <width>10</width>
+                                                        <x>274</x>
+                                                        <y>345</y>
                                                       </constraint>
                                                       <sourceConnections>
                                                         <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -1001,10 +1001,10 @@
                                                             <ownerLine reference="../../../../../../../../../../../../../../../../../../../../../../../../../../.."/>
                                                             <movable>true</movable>
                                                             <constraint>
+                                                              <height>80</height>
+                                                              <width>10</width>
                                                               <x>94</x>
                                                               <y>345</y>
-                                                              <width>10</width>
-                                                              <height>80</height>
                                                             </constraint>
                                                             <sourceConnections>
                                                               <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
@@ -1112,7 +1112,7 @@
                                                   </net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
                                                   <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
                                                     <order>8</order>
-                                                    <oldOrder>0</oldOrder>
+                                                    <oldOrder>8</oldOrder>
                                                     <name>create(trainingPlan)</name>
                                                     <direction>true</direction>
                                                     <source class="net.java.amateras.uml.sequencediagram.model.ActivationModel" reference="../../.."/>
@@ -1200,10 +1200,10 @@
                                     </ownerLine>
                                     <movable>true</movable>
                                     <constraint>
-                                      <x>970</x>
-                                      <y>270</y>
-                                      <width>10</width>
                                       <height>30</height>
+                                      <width>10</width>
+                                      <x>876</x>
+                                      <y>270</y>
                                     </constraint>
                                     <sourceConnections>
                                       <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -1313,10 +1313,10 @@
                         <ownerLine reference="../../.."/>
                         <movable>true</movable>
                         <constraint>
-                          <x>295</x>
-                          <y>170</y>
-                          <width>10</width>
                           <height>30</height>
+                          <width>10</width>
+                          <x>274</x>
+                          <y>170</y>
                         </constraint>
                         <sourceConnections>
                           <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -1327,10 +1327,10 @@
                               <ownerLine reference="../../../../../../../../../../../.."/>
                               <movable>true</movable>
                               <constraint>
+                                <height>40</height>
+                                <width>10</width>
                                 <x>94</x>
                                 <y>170</y>
-                                <width>10</width>
-                                <height>40</height>
                               </constraint>
                               <sourceConnections>
                                 <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
@@ -1423,10 +1423,10 @@
                   </ownerLine>
                   <movable>true</movable>
                   <constraint>
-                    <x>295</x>
-                    <y>99</y>
-                    <width>10</width>
                     <height>30</height>
+                    <width>10</width>
+                    <x>274</x>
+                    <y>99</y>
                   </constraint>
                   <sourceConnections>
                     <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -1519,10 +1519,10 @@
       </lifeLine>
       <root reference="../../.."/>
       <constraint>
+        <height>-1</height>
+        <width>100</width>
         <x>49</x>
         <y>20</y>
-        <width>100</width>
-        <height>-1</height>
       </constraint>
       <sourceConnections/>
       <targetConnections/>
@@ -1844,10 +1844,10 @@
               <lifeLine>
                 <owner reference="../.."/>
                 <constraint>
+                  <height>340</height>
+                  <width>5</width>
                   <x>300</x>
                   <y>20</y>
-                  <width>5</width>
-                  <height>340</height>
                 </constraint>
                 <sourceConnections/>
                 <targetConnections/>
@@ -1856,10 +1856,10 @@
                     <ownerLine reference="../../.."/>
                     <movable>true</movable>
                     <constraint>
+                      <height>30</height>
+                      <width>10</width>
                       <x>295</x>
                       <y>99</y>
-                      <width>10</width>
-                      <height>30</height>
                     </constraint>
                     <sourceConnections>
                       <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -1870,10 +1870,10 @@
                           <ownerLine reference="../../../../../../../../../../.."/>
                           <movable>true</movable>
                           <constraint>
+                            <height>40</height>
+                            <width>10</width>
                             <x>94</x>
                             <y>99</y>
-                            <width>10</width>
-                            <height>40</height>
                           </constraint>
                           <sourceConnections>
                             <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
@@ -1959,10 +1959,10 @@
                     <ownerLine reference="../../.."/>
                     <movable>true</movable>
                     <constraint>
+                      <height>67</height>
+                      <width>10</width>
                       <x>295</x>
                       <y>162</y>
-                      <width>10</width>
-                      <height>67</height>
                     </constraint>
                     <sourceConnections>
                       <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -1973,10 +1973,10 @@
                           <ownerLine reference="../../../../../../../../../../.."/>
                           <movable>true</movable>
                           <constraint>
+                            <height>77</height>
+                            <width>10</width>
                             <x>94</x>
                             <y>162</y>
-                            <width>10</width>
-                            <height>77</height>
                           </constraint>
                           <sourceConnections>
                             <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
@@ -2041,10 +2041,10 @@
                           <ownerLine reference="../../../../../.."/>
                           <movable>true</movable>
                           <constraint>
+                            <height>30</height>
+                            <width>10</width>
                             <x>300</x>
                             <y>189</y>
-                            <width>10</width>
-                            <height>30</height>
                           </constraint>
                           <sourceConnections/>
                           <targetConnections>
@@ -2106,10 +2106,10 @@
                     <ownerLine reference="../../.."/>
                     <movable>true</movable>
                     <constraint>
+                      <height>64</height>
+                      <width>10</width>
                       <x>295</x>
                       <y>256</y>
-                      <width>10</width>
-                      <height>64</height>
                     </constraint>
                     <sourceConnections>
                       <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -2120,10 +2120,10 @@
                           <ownerLine reference="../../../../../../../../../../.."/>
                           <movable>true</movable>
                           <constraint>
+                            <height>74</height>
+                            <width>10</width>
                             <x>94</x>
                             <y>256</y>
-                            <width>10</width>
-                            <height>74</height>
                           </constraint>
                           <sourceConnections>
                             <net.java.amateras.uml.sequencediagram.model.SyncMessageModel>
@@ -2271,10 +2271,10 @@
                               <lifeLine reference="../.."/>
                               <root reference="../../../../../../../../../../.."/>
                               <constraint>
+                                <height>-1</height>
+                                <width>162</width>
                                 <x>421</x>
                                 <y>20</y>
-                                <width>162</width>
-                                <height>-1</height>
                               </constraint>
                               <sourceConnections/>
                               <targetConnections/>
@@ -2297,10 +2297,10 @@
                               </listeners>
                             </owner>
                             <constraint>
+                              <height>340</height>
+                              <width>5</width>
                               <x>501</x>
                               <y>20</y>
-                              <width>5</width>
-                              <height>340</height>
                             </constraint>
                             <sourceConnections/>
                             <targetConnections/>
@@ -2324,10 +2324,10 @@
                           </ownerLine>
                           <movable>true</movable>
                           <constraint>
+                            <height>48</height>
+                            <width>10</width>
                             <x>496</x>
                             <y>262</y>
-                            <width>10</width>
-                            <height>48</height>
                           </constraint>
                           <sourceConnections>
                             <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -2530,10 +2530,10 @@
                                     <lifeLine reference="../.."/>
                                     <root reference="../../../../../../../../../../../../../.."/>
                                     <constraint>
+                                      <height>-1</height>
+                                      <width>100</width>
                                       <x>665</x>
                                       <y>20</y>
-                                      <width>100</width>
-                                      <height>-1</height>
                                     </constraint>
                                     <sourceConnections/>
                                     <targetConnections/>
@@ -2556,10 +2556,10 @@
                                     </listeners>
                                   </owner>
                                   <constraint>
+                                    <height>340</height>
+                                    <width>5</width>
                                     <x>715</x>
                                     <y>20</y>
-                                    <width>5</width>
-                                    <height>340</height>
                                   </constraint>
                                   <sourceConnections/>
                                   <targetConnections/>
@@ -2583,10 +2583,10 @@
                                 </ownerLine>
                                 <movable>true</movable>
                                 <constraint>
+                                  <height>30</height>
+                                  <width>10</width>
                                   <x>710</x>
                                   <y>270</y>
-                                  <width>10</width>
-                                  <height>30</height>
                                 </constraint>
                                 <sourceConnections>
                                   <net.java.amateras.uml.sequencediagram.model.ReturnMessageModel>
@@ -2710,10 +2710,10 @@
               </lifeLine>
               <root reference="../../.."/>
               <constraint>
+                <height>-1</height>
+                <width>144</width>
                 <x>228</x>
                 <y>20</y>
-                <width>144</width>
-                <height>-1</height>
               </constraint>
               <sourceConnections/>
               <targetConnections/>
@@ -2792,10 +2792,10 @@
           </listeners>
         </root>
         <constraint>
+          <height>-1</height>
+          <width>100</width>
           <x>49</x>
           <y>20</y>
-          <width>100</width>
-          <height>-1</height>
         </constraint>
         <sourceConnections/>
         <targetConnections/>
@@ -2818,10 +2818,10 @@
         </listeners>
       </owner>
       <constraint>
+        <height>340</height>
+        <width>5</width>
         <x>99</x>
         <y>20</y>
-        <width>5</width>
-        <height>340</height>
       </constraint>
       <sourceConnections/>
       <targetConnections/>

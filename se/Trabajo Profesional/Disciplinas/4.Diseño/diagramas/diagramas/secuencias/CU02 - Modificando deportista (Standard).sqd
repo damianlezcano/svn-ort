@@ -212,8 +212,8 @@
                       <root reference="../../../../../../../../../../.."/>
                       <constraint>
                         <height>-1</height>
-                        <width>141</width>
-                        <x>217</x>
+                        <width>161</width>
+                        <x>182</x>
                         <y>20</y>
                       </constraint>
                       <sourceConnections/>
@@ -247,7 +247,7 @@
                     <constraint>
                       <height>423</height>
                       <width>5</width>
-                      <x>287</x>
+                      <x>261</x>
                       <y>20</y>
                     </constraint>
                     <sourceConnections/>
@@ -260,7 +260,7 @@
                         <constraint>
                           <height>30</height>
                           <width>10</width>
-                          <x>282</x>
+                          <x>256</x>
                           <y>224</y>
                         </constraint>
                         <sourceConnections>
@@ -355,7 +355,7 @@
                         <constraint>
                           <height>30</height>
                           <width>10</width>
-                          <x>282</x>
+                          <x>256</x>
                           <y>277</y>
                         </constraint>
                         <sourceConnections>
@@ -450,7 +450,7 @@
                         <constraint>
                           <height>68</height>
                           <width>10</width>
-                          <x>282</x>
+                          <x>256</x>
                           <y>335</y>
                         </constraint>
                         <sourceConnections>
@@ -683,8 +683,8 @@
                                   <root reference="../../../../../../../../../../../../../../../../.."/>
                                   <constraint>
                                     <height>-1</height>
-                                    <width>144</width>
-                                    <x>413</x>
+                                    <width>193</width>
+                                    <x>357</x>
                                     <y>20</y>
                                   </constraint>
                                   <sourceConnections/>
@@ -710,7 +710,7 @@
                                 <constraint>
                                   <height>423</height>
                                   <width>5</width>
-                                  <x>485</x>
+                                  <x>453</x>
                                   <y>20</y>
                                 </constraint>
                                 <sourceConnections/>
@@ -722,7 +722,7 @@
                                     <constraint>
                                       <height>48</height>
                                       <width>10</width>
-                                      <x>480</x>
+                                      <x>448</x>
                                       <y>123</y>
                                     </constraint>
                                     <sourceConnections>
@@ -927,8 +927,8 @@
                                               <root reference="../../../../../../../../../../../../../../../../../../../../../../.."/>
                                               <constraint>
                                                 <height>-1</height>
-                                                <width>100</width>
-                                                <x>618</x>
+                                                <width>172</width>
+                                                <x>560</x>
                                                 <y>20</y>
                                               </constraint>
                                               <sourceConnections/>
@@ -954,7 +954,7 @@
                                             <constraint>
                                               <height>423</height>
                                               <width>5</width>
-                                              <x>668</x>
+                                              <x>645</x>
                                               <y>20</y>
                                             </constraint>
                                             <sourceConnections/>
@@ -967,7 +967,7 @@
                                                 <constraint>
                                                   <height>30</height>
                                                   <width>10</width>
-                                                  <x>663</x>
+                                                  <x>640</x>
                                                   <y>353</y>
                                                 </constraint>
                                                 <sourceConnections>
@@ -1046,7 +1046,7 @@
                                           <constraint>
                                             <height>30</height>
                                             <width>10</width>
-                                            <x>663</x>
+                                            <x>640</x>
                                             <y>131</y>
                                           </constraint>
                                           <sourceConnections>
@@ -1159,7 +1159,7 @@
                               <constraint>
                                 <height>50</height>
                                 <width>10</width>
-                                <x>480</x>
+                                <x>448</x>
                                 <y>343</y>
                               </constraint>
                               <sourceConnections>
@@ -1255,7 +1255,7 @@
                   <constraint>
                     <height>67</height>
                     <width>10</width>
-                    <x>282</x>
+                    <x>256</x>
                     <y>114</y>
                   </constraint>
                   <sourceConnections>
