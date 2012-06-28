@@ -27,5 +27,8 @@ public class Group implements ITrainable {
 	public TrainingPlan getTrainingPlan() {
 		return trainingPlan;
 	}
+	public void addSportsmans(List<Sportsman> sportsmans) {
+		this.sportsmans.addAll(sportsmans);
+	}	
 	
 }

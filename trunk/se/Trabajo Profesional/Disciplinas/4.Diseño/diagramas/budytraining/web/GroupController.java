@@ -3,6 +3,7 @@ package web;
 import java.util.List;
 
 import model.Group;
+import model.Sportsman;
 
 import model.User;
 import service.GroupServiceBean;
@@ -38,6 +39,12 @@ public class GroupController {
 		return null;
 	}
 	public void selectGroup(Group group){
+		
+	}
+	public List<Sportsman> getSportsmanList(){
+		return group.getSportsmans();
+	}
+	public void associateSportsman (List<Sportsman> sportsmans){
 		
 	}
 	
