@@ -17,12 +17,12 @@ public class SportsmanServiceBean {
 	}
 
 	@SuppressWarnings("unchecked")
-	public List<User> find(Sportsman sportsman) {
+	public List<Sportsman> find(Sportsman sportsman) {
         return entityManager.find(sportsman).getListResult();
 	}
 
 	@SuppressWarnings("unchecked")
-	public List<User> find(User user) {
+	public List<Sportsman> find(User user) {
         return entityManager.find(user).getListResult();
 	}
 	
