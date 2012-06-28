@@ -10,6 +10,9 @@ public class TrainingLog {
 	
 	private SportsmanAttribute sportsmanAttribute;
 
+	
+	public void addActivity(IActivity activity){
+	}
 	//---
 	public Date getLogDate() {
 		return logDate;
