@@ -37,6 +37,9 @@ public class TrainingPlan {
 	//Cuando se empieza el plan de entrenamiento, se establece inicialmente los atributos para luego compararlos y generar una evolucion dentro del plan.
 	private SportsmanAttribute initialSportsmanAttribute;
 	
+	public void addTrainingLog(TrainingLog trainingLog){
+	}
+	
 	//---
 	public String getName() {
 		return name;
