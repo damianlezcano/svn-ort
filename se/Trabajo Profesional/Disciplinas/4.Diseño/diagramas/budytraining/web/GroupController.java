@@ -1,8 +1,10 @@
 package web;
 
 import model.Group;
+
 import model.User;
 import service.GroupServiceBean;
+import model.TrainingPlan;
 
 public class GroupController {
 
@@ -27,6 +29,8 @@ public class GroupController {
 	public void setGroup(Group group) {
 		this.group = group;
 	}
-	
+	public void setTrainingPlan (TrainingPlan trainingPlan) {
+		group.setTrainingPlan(trainingPlan);
+	}
 	
 }

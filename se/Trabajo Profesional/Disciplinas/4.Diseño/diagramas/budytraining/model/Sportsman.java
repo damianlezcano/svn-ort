@@ -39,6 +39,10 @@ public class Sportsman implements ITrainable {
 	public void setTrainingPlans(List<TrainingPlan> trainingPlans) {
 		this.trainingPlans = trainingPlans;
 	}
+	
+	public void addTrainingPlan(TrainingPlan trainigPlan) {
+		this.trainingPlans.add(trainigPlan);
+	}
 
 	public String getName() {
 		return name;
