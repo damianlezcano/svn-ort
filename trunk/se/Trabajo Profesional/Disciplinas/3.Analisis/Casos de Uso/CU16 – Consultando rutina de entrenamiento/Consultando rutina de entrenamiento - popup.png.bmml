@@ -30,47 +30,42 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="68" controlTypeID="com.balsamiq.mockups::TextArea" x="1217" y="430" w="211" h="145" measuredW="200" measuredH="140" zOrder="6" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text/>
-      </controlProperties>
-    </control>
-    <control controlID="69" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1428" y="433" w="-1" h="142" measuredW="16" measuredH="100" zOrder="7" locked="false" isInGroup="-1"/>
-    <control controlID="70" controlTypeID="com.balsamiq.mockups::Label" x="1038" y="323" w="-1" h="-1" measuredW="133" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::Label" x="1038" y="323" w="-1" h="-1" measuredW="133" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Training%20Routine%20Name</text>
       </controlProperties>
     </control>
-    <control controlID="71" controlTypeID="com.balsamiq.mockups::Label" x="1038" y="359" w="165" h="21" measuredW="162" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::Label" x="1038" y="359" w="165" h="21" measuredW="162" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Training%20Routine%20Description</text>
       </controlProperties>
     </control>
-    <control controlID="72" controlTypeID="com.balsamiq.mockups::Label" x="1038" y="430" w="165" h="20" measuredW="71" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::Label" x="1038" y="430" w="165" h="20" measuredW="71" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Activity%20List</text>
       </controlProperties>
     </control>
-    <control controlID="73" controlTypeID="com.balsamiq.mockups::Button" x="1339" y="583" w="-1" h="-1" measuredW="65" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::Button" x="1377" y="591" w="-1" h="-1" measuredW="66" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Accept</text>
       </controlProperties>
     </control>
-    <control controlID="74" controlTypeID="com.balsamiq.mockups::Button" x="1419" y="583" w="-1" h="-1" measuredW="60" measuredH="27" zOrder="12" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Modify</text>
-      </controlProperties>
-    </control>
-    <control controlID="75" controlTypeID="com.balsamiq.mockups::CallOut" x="888" y="575" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="13" locked="false" isInGroup="-1">
+    <control controlID="75" controlTypeID="com.balsamiq.mockups::CallOut" x="927" y="585" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>6</text>
       </controlProperties>
     </control>
-    <control controlID="76" controlTypeID="com.balsamiq.mockups::Arrow" x="941" y="591" w="383" h="10" measuredW="150" measuredH="100" zOrder="14" locked="false" isInGroup="-1">
+    <control controlID="76" controlTypeID="com.balsamiq.mockups::Arrow" x="981" y="599" w="383" h="10" measuredW="150" measuredH="100" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <rightArrow>false</rightArrow>
         <text/>
       </controlProperties>
     </control>
+    <control controlID="77" controlTypeID="com.balsamiq.mockups::DataGrid" x="1154" y="430" w="288" h="150" measuredW="177" measuredH="235" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Name%20%5E%2C%20Selected%0AFixed%20pull-ups%2C%20Yes%0ACrunch%2C%20No%0ABicicle%20Kicks%2C%20Yes%0AWalk%2C%20No%0ALong%20Jump%20w/%20ft%2C%20%0ALong%20Jump%2C%20%5B%5D%0AVertical%20Jump%20%5B%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="78" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1426" y="450" w="-1" h="125" measuredW="16" measuredH="100" zOrder="13" locked="false" isInGroup="-1"/>
   </controls>
 </mockup>
