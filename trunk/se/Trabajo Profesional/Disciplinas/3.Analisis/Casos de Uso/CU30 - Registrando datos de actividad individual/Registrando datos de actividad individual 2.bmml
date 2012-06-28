@@ -1,0 +1,89 @@
+<mockup version="1.0" skin="sketch" measuredW="1554" measuredH="774" mockupW="1169" mockupH="768">
+  <controls>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::Component" x="530" y="6" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="3">
+          <text>File%2C%20Edit%2C%20Sportsman%2C%20Group%2C%20Training%20Plan%2C%20Training%20Routine%2C%20Activity%2C%20Resources%2C%20Help</text>
+        </override>
+        <src>../assets/symbols.bmml#template</src>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::List" x="928" y="131" w="197" h="68" measuredW="100" measuredH="126" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Registering%20Group%20Activity%0ARegistering%20Individual%20Activity</text>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Arrow" x="488" y="106" w="504" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="424" y="86" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>1</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::CallOut" x="385" y="143" w="-1" h="-1" measuredW="39" measuredH="43" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>2</text>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Arrow" x="435" y="159" w="504" h="10" measuredW="150" measuredH="100" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Button" x="1461" y="679" w="-1" h="-1" measuredW="52" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Next</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::CallOut" x="1355" y="231" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>5</text>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::CallOut" x="1410" y="672" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>7</text>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::Label" x="844" y="273" w="160" h="21" measuredW="203" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Sportsman%20Name%3A%20Nestor%20Ortigoza</text>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::Label" x="1019" y="272" w="178" h="22" measuredW="171" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Training%20Plan%3A%20Bajar%20de%20Peso</text>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::Label" x="1218" y="272" w="-1" h="-1" measuredW="55" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Routine%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::DateChooser" x="1425" y="270" w="-1" h="-1" measuredW="90" measuredH="25" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20%20/%20%20/%20%20%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::CallOut" x="1162" y="489" w="-1" h="-1" measuredW="39" measuredH="37" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>6</text>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::ComboBox" x="1278" y="271" w="147" h="-1" measuredW="101" measuredH="78" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>High%20Impact%0ALow%20Impact%0ARutina%20de%20Resistencia%0ARutina%20de%20Velocidad</text>
+      </controlProperties>
+    </control>
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::DataGrid" x="844" y="378" w="676" h="273" measuredW="164" measuredH="277" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <rowHeight>36</rowHeight>
+        <text>Activity%20Name%2C%20Select%0AFixed%20pull-ups%2C%20%5B%5D%0ACrunch%2C%20%5B%5D%0ABicicle%20Kicks%2C%20%5B%5D%0AWalk%2C%20%5B%5D%0ALong%20Jump%20w/%20ft%2C%20%5B%5D%0ALong%20Jump%2C%20%5B%5D%0AVertical%20Jump%2C%20%5B%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1504" y="398" w="-1" h="253" measuredW="16" measuredH="100" zOrder="15" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>
