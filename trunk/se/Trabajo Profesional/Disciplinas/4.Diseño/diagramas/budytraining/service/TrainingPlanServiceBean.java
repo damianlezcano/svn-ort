@@ -12,5 +12,9 @@ public class TrainingPlanServiceBean {
 	public void create(TrainingPlan trainingPlan){
 		entityManager.create(trainingPlan);
 	}
+
+	public void update(TrainingPlan trainingPlan) {
+		entityManager.update(trainingPlan);
+	}
 	
 }
