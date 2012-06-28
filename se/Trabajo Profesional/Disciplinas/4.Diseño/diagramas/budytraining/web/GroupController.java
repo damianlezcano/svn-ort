@@ -1,5 +1,7 @@
 package web;
 
+import java.util.List;
+
 import model.Group;
 
 import model.User;
@@ -31,6 +33,12 @@ public class GroupController {
 	}
 	public void setTrainingPlan (TrainingPlan trainingPlan) {
 		group.setTrainingPlan(trainingPlan);
+	}
+	public List<Group> find (){
+		return null;
+	}
+	public void selectGroup(Group group){
+		
 	}
 	
 }
