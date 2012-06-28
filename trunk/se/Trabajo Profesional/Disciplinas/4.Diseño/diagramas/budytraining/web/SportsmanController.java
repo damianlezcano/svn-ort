@@ -1,6 +1,7 @@
 package web;
 
 import model.Sportsman;
+import model.TrainingPlan;
 import model.User;
 import service.SportsmanServiceBean;
 
@@ -35,6 +36,9 @@ public class SportsmanController {
 
 	public Sportsman getSportsman() {
 		return sportsman;
+	}
+	public void setTrainingPlan(TrainingPlan trainingPlan) {
+		sportsman.addTrainingPlan(trainingPlan);
 	}
 
 }
