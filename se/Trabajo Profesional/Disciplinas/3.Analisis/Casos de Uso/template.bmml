@@ -2,6 +2,15 @@
   <controls>
     <control controlID="38" controlTypeID="com.balsamiq.mockups::Component" x="530" y="6" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
+        <override controlID="8">
+          <text>-Media-</text>
+        </override>
+        <override controlID="9">
+          <text>-Assistance-</text>
+        </override>
+        <override controlID="10">
+          <text>-Sync-</text>
+        </override>
         <override controlID="3">
           <text>File%2C%20Edit%2C%20Sportsman%2C%20Group%2C%20Training%20Plan%2C%20Training%20Routine%2C%20Activity%2C%20Resources%2C%20Help</text>
         </override>
