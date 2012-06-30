@@ -1,12 +1,12 @@
 <mockup version="1.0" skin="sketch" measuredW="1554" measuredH="774" mockupW="1024" mockupH="768">
   <controls>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="535" y="86" w="-1" h="-1" measuredW="37" measuredH="37" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="535" y="86" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="1" locked="false" isInGroup="-1"/>
     <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="572" y="106" w="79" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="126" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="126" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
@@ -92,6 +92,23 @@
       <controlProperties>
         <text>New%20Sportsman%0ASearch%20Sportsman%0AModify%20Sportsman</text>
       </controlProperties>
+    </control>
+    <control controlID="61" controlTypeID="__group__" x="1461" y="6" w="92" h="768" measuredW="92" measuredH="768" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Usuario</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="741" w="-1" h="-1" measuredW="88" measuredH="27" zOrder="0" locked="false" isInGroup="61">
+          <controlProperties>
+            <text>CU_1%20PAN_1</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="15" y="0" w="77" h="-1" measuredW="69" measuredH="27" zOrder="1" locked="false" isInGroup="61">
+          <controlProperties>
+            <text>USR_Pro</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
     </control>
   </controls>
 </mockup>
