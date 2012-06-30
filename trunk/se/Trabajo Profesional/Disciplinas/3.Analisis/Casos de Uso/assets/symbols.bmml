@@ -12,7 +12,7 @@
         </control>
         <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="15" y="236" w="275" h="491" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="0"/>
         <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="15" y="117" w="994" h="111" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="0"/>
-        <control controlID="3" controlTypeID="com.balsamiq.mockups::MenuBar" x="15" y="88" w="994" h="29" measuredW="634" measuredH="29" zOrder="11" locked="false" isInGroup="0">
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::MenuBar" x="15" y="88" w="994" h="29" measuredW="648" measuredH="29" zOrder="11" locked="false" isInGroup="0">
           <controlProperties>
             <text>File%2C%20Edit%2C%20Sportman%2C%20Group%2C%20TrainingPlan%2C%20TrainerRoutine%2C%20Activity%2C%20Resources%2C%20Help</text>
           </controlProperties>
@@ -29,17 +29,17 @@
         </control>
         <control controlID="8" controlTypeID="com.balsamiq.mockups::IconLabel" x="167" y="137" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="5" locked="false" isInGroup="0">
           <controlProperties>
-            <text>Media</text>
+            <text>-Media-</text>
           </controlProperties>
         </control>
         <control controlID="9" controlTypeID="com.balsamiq.mockups::IconLabel" x="223" y="137" w="-1" h="-1" measuredW="65" measuredH="69" zOrder="6" locked="false" isInGroup="0">
           <controlProperties>
-            <text>Assistance</text>
+            <text>-Assistance-</text>
           </controlProperties>
         </control>
         <control controlID="10" controlTypeID="com.balsamiq.mockups::IconLabel" x="303" y="137" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="7" locked="false" isInGroup="0">
           <controlProperties>
-            <text>Sync</text>
+            <text>-Sync-</text>
           </controlProperties>
         </control>
         <control controlID="11" controlTypeID="__group__" x="15" y="236" w="275" h="171" measuredW="275" measuredH="171" zOrder="8" locked="false" isInGroup="0">
