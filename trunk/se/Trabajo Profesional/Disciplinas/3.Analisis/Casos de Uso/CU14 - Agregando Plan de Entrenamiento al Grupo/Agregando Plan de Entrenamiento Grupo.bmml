@@ -1,0 +1,61 @@
+<mockup version="1.0" skin="sketch" measuredW="1484" measuredH="774" mockupW="1024" mockupH="768">
+  <controls>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="493" y="82" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="530" y="104" w="190" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::List" x="720" y="125" w="209" h="113" measuredW="100" measuredH="126" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>New%20Training%20Plan%0AModify%20Training%20Plan%0ASearch%20Training%20Plan%0AAssign%20Training%20Plan%20to%20Group%0AAssign%20Training%20Plan%20to%20Sportsman</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="493" y="181" w="-1" h="-1" measuredW="39" measuredH="43" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>2</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Arrow" x="530" y="195" w="209" h="10" measuredW="150" measuredH="100" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="81" controlTypeID="com.balsamiq.mockups::Component" x="460" y="6" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="3">
+          <text>File%2C%20Edit%2C%20Sportsman%2C%20Group%2C%20Training%20Plan%2C%20Training%20Routine%2C%20Activity%2C%20Resources%2C%20Help</text>
+        </override>
+        <src>../assets/symbols.bmml#template</src>
+      </controlProperties>
+    </control>
+    <control controlID="82" controlTypeID="com.balsamiq.mockups::TitleWindow" x="792" y="273" w="646" h="424" measuredW="450" measuredH="400" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Groups%20list</text>
+      </controlProperties>
+    </control>
+    <control controlID="83" controlTypeID="com.balsamiq.mockups::Button" x="1384" y="672" w="54" h="25" measuredW="61" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Select</text>
+      </controlProperties>
+    </control>
+    <control controlID="84" controlTypeID="com.balsamiq.mockups::DataGrid" x="801" y="305" w="622" h="367" measuredW="425" measuredH="79" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hLines>false</hLines>
+        <rowHeight>27</rowHeight>
+        <selectedIndex>0</selectedIndex>
+        <text>Name%20%5E%2C%20Description%2C%20Sportsman%2C%20Sel%0ADefensores%2C%20Grupo%20de%20Defensores%20del%20Equipo%2C%205%2C%20%28o%29%0AMedicampo%2C%20Grupo%20de%20Mediocampistas%20del%20Equipo%20%2C4%2C%20%28%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="85" controlTypeID="com.balsamiq.mockups::CallOut" x="1400" y="325" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>3</text>
+      </controlProperties>
+    </control>
+    <control controlID="86" controlTypeID="com.balsamiq.mockups::CallOut" x="1369" y="624" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>4</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
