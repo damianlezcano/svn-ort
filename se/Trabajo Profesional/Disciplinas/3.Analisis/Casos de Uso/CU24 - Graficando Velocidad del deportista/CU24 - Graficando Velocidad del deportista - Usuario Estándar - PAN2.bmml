@@ -1,7 +1,7 @@
-<mockup version="1.0" skin="sketch" measuredW="1554" measuredH="774" mockupW="1024" mockupH="768">
+<mockup version="1.0" skin="sketch" measuredW="1564" measuredH="774" mockupW="1034" mockupH="768">
   <controls>
     <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="726" y="410" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="1" locked="false" isInGroup="-1"/>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="972" y="342" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="972" y="342" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>
@@ -27,11 +27,13 @@
     </control>
     <control controlID="56" controlTypeID="com.balsamiq.mockups::Component" x="530" y="6" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
+        <override controlID="0" x="0" y="0" w="1024" h="768"/>
         <override controlID="1" x="15" y="236" w="275" h="491"/>
         <override controlID="2" x="15" y="117" w="994" h="111"/>
         <override controlID="3" x="15" y="88" w="994" h="29">
           <text>File%2C%20Edit%2C%20Sportsman%2C%20Training%20Plan%2C%20Training%20Routine%2C%20Activity%2C%20Resources%2C%20Help</text>
         </override>
+        <override controlID="4" x="30" y="137" w="-1" h="-1"/>
         <override controlID="7" x="96" y="137" w="-1" h="-1"/>
         <override controlID="8" x="167" y="137" w="-1" h="-1">
           <text>-Media-</text>
@@ -43,27 +45,25 @@
           <text>-Sync-</text>
         </override>
         <override controlID="11" x="15" y="236" w="275" h="171"/>
-        <override controlID="4" x="30" y="137" w="-1" h="-1"/>
         <override controlID="13" x="298" y="236" w="711" h="497"/>
         <override controlID="14" x="15" y="407" w="268" h="311">
           <text>%5B+%5D%20Sportsman</text>
         </override>
-        <override controlID="0" x="0" y="0" w="1024" h="768"/>
         <override controlID="15" x="946" y="137" w="-1" h="-1"/>
-        <override controlID="11:5" x="202" y="20" w="-1" h="-1"/>
-        <override controlID="11:4" x="109" y="93" w="-1" h="-1"/>
-        <override controlID="11:1:0" x="0" y="0" w="77" h="130"/>
-        <override controlID="11:0:0" x="0" y="0" w="275" h="171"/>
-        <override controlID="11:1" x="17" y="21" w="77" h="130"/>
-        <override controlID="11:3" x="109" y="57" w="-1" h="-1"/>
+        <override controlID="11:7" x="212" y="92" w="-1" h="-1"/>
+        <override controlID="11:6" x="212" y="56" w="-1" h="-1"/>
         <override controlID="11:2" x="109" y="21" w="-1" h="-1"/>
         <override controlID="11:0" x="0" y="0" w="275" h="171"/>
-        <override controlID="11:6" x="212" y="56" w="-1" h="-1"/>
-        <override controlID="11:7" x="212" y="92" w="-1" h="-1"/>
+        <override controlID="11:5" x="202" y="20" w="-1" h="-1"/>
+        <override controlID="11:1:0" x="0" y="0" w="77" h="130"/>
+        <override controlID="11:4" x="109" y="93" w="-1" h="-1"/>
+        <override controlID="11:3" x="109" y="57" w="-1" h="-1"/>
+        <override controlID="11:1" x="17" y="21" w="77" h="130"/>
+        <override controlID="11:0:0" x="0" y="0" w="275" h="171"/>
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
-    <control controlID="57" controlTypeID="com.balsamiq.mockups::CallOut" x="846" y="411" w="39" h="39" measuredW="39" measuredH="39" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::CallOut" x="846" y="411" w="39" h="39" measuredW="39" measuredH="43" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
@@ -79,5 +79,22 @@
       </controlProperties>
     </control>
     <control controlID="63" controlTypeID="com.balsamiq.mockups::LineChart" x="972" y="411" w="490" h="229" measuredW="187" measuredH="175" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="64" controlTypeID="__group__" x="1462" y="6" w="102" h="768" measuredW="102" measuredH="768" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Usuario</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="741" w="-1" h="-1" measuredW="102" measuredH="27" zOrder="0" locked="false" isInGroup="64">
+          <controlProperties>
+            <text>CU_24%20PAN_2</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="15" y="0" w="77" h="-1" measuredW="68" measuredH="27" zOrder="1" locked="false" isInGroup="64">
+          <controlProperties>
+            <text>USR_Std</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
   </controls>
 </mockup>
