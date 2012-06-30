@@ -6,7 +6,7 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="157" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="157" w="-1" h="-1" measuredW="39" measuredH="37" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
@@ -16,7 +16,7 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="861" y="314" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="861" y="314" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>
@@ -82,6 +82,23 @@
       <controlProperties>
         <text>New%20Sportsman%0A-Search%20Sportsman-%0AModify%20Sportsman</text>
       </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="__group__" x="1461" y="6" w="92" h="768" measuredW="92" measuredH="768" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Usuario</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="741" w="-1" h="-1" measuredW="92" measuredH="27" zOrder="0" locked="false" isInGroup="59">
+          <controlProperties>
+            <text>CU_2%20PAN_1</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="0" w="92" h="-1" measuredW="92" measuredH="27" zOrder="1" locked="false" isInGroup="59">
+          <controlProperties>
+            <text>USR_Standar</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
     </control>
   </controls>
 </mockup>

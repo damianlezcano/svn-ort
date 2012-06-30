@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" measuredW="1554" measuredH="774" mockupW="1024" mockupH="768">
+<mockup version="1.0" skin="sketch" measuredW="1557" measuredH="774" mockupW="1027" mockupH="768">
   <controls>
     <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="535" y="86" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="1" locked="false" isInGroup="-1"/>
     <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="572" y="106" w="79" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
@@ -16,7 +16,7 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="869" y="341" w="-1" h="-1" measuredW="39" measuredH="43" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="869" y="341" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text>4</text>
       </controlProperties>
@@ -89,35 +89,35 @@
             </control>
           </groupChildrenDescriptors>
         </control>
-        <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="26" y="90" w="145" h="21" measuredW="142" measuredH="21" zOrder="1" locked="false" isInGroup="62">
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="26" y="90" w="145" h="21" measuredW="141" measuredH="21" zOrder="1" locked="false" isInGroup="62">
           <controlProperties>
             <text>Shoulder%20Size%20%28Deltoids%29</text>
           </controlProperties>
         </control>
-        <control controlID="10" controlTypeID="__group__" x="28" y="106" w="289" h="92" measuredW="289" measuredH="92" zOrder="2" locked="false" isInGroup="62">
+        <control controlID="10" controlTypeID="__group__" x="28" y="106" w="287" h="92" measuredW="287" measuredH="92" zOrder="2" locked="false" isInGroup="62">
           <groupChildrenDescriptors>
             <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="11" w="-1" h="-1" measuredW="129" measuredH="21" zOrder="0" locked="false" isInGroup="10">
               <controlProperties>
                 <text>Back%20Size%20%28Pectorals%29</text>
               </controlProperties>
             </control>
-            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="0" y="40" w="-1" h="-1" measuredW="74" measuredH="21" zOrder="1" locked="false" isInGroup="10">
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="0" y="40" w="-1" h="-1" measuredW="73" measuredH="21" zOrder="1" locked="false" isInGroup="10">
               <controlProperties>
                 <bold>false</bold>
                 <text>Biceps%20Size</text>
               </controlProperties>
             </control>
-            <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="0" y="71" w="-1" h="-1" measuredW="57" measuredH="21" zOrder="2" locked="false" isInGroup="10">
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="0" y="71" w="-1" h="-1" measuredW="56" measuredH="21" zOrder="2" locked="false" isInGroup="10">
               <controlProperties>
                 <text>Waistline</text>
               </controlProperties>
             </control>
-            <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="188" y="0" w="-1" h="-1" measuredW="85" measuredH="21" zOrder="3" locked="false" isInGroup="10">
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="188" y="0" w="-1" h="-1" measuredW="83" measuredH="21" zOrder="3" locked="false" isInGroup="10">
               <controlProperties>
                 <text>Buttocks%20Size</text>
               </controlProperties>
             </control>
-            <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="186" y="32" w="-1" h="-1" measuredW="103" measuredH="21" zOrder="4" locked="false" isInGroup="10">
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="186" y="32" w="-1" h="-1" measuredW="101" measuredH="21" zOrder="4" locked="false" isInGroup="10">
               <controlProperties>
                 <text>Quadriceps%20Size</text>
               </controlProperties>
@@ -145,6 +145,23 @@
       <controlProperties>
         <text>Time</text>
       </controlProperties>
+    </control>
+    <control controlID="66" controlTypeID="__group__" x="1461" y="6" w="96" h="768" measuredW="96" measuredH="768" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Usuario</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="741" w="-1" h="-1" measuredW="96" measuredH="27" zOrder="0" locked="false" isInGroup="66">
+          <controlProperties>
+            <text>CU_2%20PAN_2</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="0" w="92" h="-1" measuredW="92" measuredH="27" zOrder="1" locked="false" isInGroup="66">
+          <controlProperties>
+            <text>USR_Standar</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
     </control>
   </controls>
 </mockup>
