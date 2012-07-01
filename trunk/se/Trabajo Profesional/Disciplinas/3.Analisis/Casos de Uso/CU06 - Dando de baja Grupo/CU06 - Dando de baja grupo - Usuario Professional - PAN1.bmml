@@ -1,6 +1,6 @@
-<mockup version="1.0" skin="sketch" measuredW="1554" measuredH="774" mockupW="1024" mockupH="768">
+<mockup version="1.0" skin="sketch" measuredW="1557" measuredH="774" mockupW="1027" mockupH="768">
   <controls>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="617" y="82" w="-1" h="-1" measuredW="37" measuredH="43" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="617" y="82" w="-1" h="-1" measuredW="37" measuredH="37" zOrder="1" locked="false" isInGroup="-1"/>
     <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="654" y="102" w="79" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <text/>
@@ -11,7 +11,7 @@
         <text>New%20Group%0ADelete%20Group%0AModify%20Group%0ASearch%20Group</text>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="617" y="143" w="-1" h="-1" measuredW="39" measuredH="43" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="617" y="143" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
@@ -21,7 +21,7 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="1480" y="325" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::CallOut" x="1480" y="325" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>
@@ -31,7 +31,7 @@
         <text>Groups%20list</text>
       </controlProperties>
     </control>
-    <control controlID="48" controlTypeID="com.balsamiq.mockups::Button" x="1464" y="672" w="54" h="25" measuredW="63" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Button" x="1464" y="672" w="54" h="25" measuredW="64" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Delete</text>
       </controlProperties>
@@ -44,18 +44,35 @@
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
-    <control controlID="57" controlTypeID="com.balsamiq.mockups::CallOut" x="1449" y="624" w="-1" h="-1" measuredW="39" measuredH="37" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::CallOut" x="1449" y="624" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>4</text>
       </controlProperties>
     </control>
-    <control controlID="64" controlTypeID="com.balsamiq.mockups::DataGrid" x="881" y="305" w="622" h="367" measuredW="427" measuredH="79" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::DataGrid" x="881" y="305" w="622" h="367" measuredW="431" measuredH="79" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <hLines>false</hLines>
         <rowHeight>27</rowHeight>
         <selectedIndex>0</selectedIndex>
         <text>Name%20%5E%2C%20Description%2C%20Sportsman%2C%20Del%0ADefensores%2C%20Grupo%20de%20Defensores%20del%20Equipo%2C%200%2C%20%28o%29%0AMedicampo%2C%20Grupo%20de%20Mediocampistas%20del%20Equipo%20%2C0%2C%20%28%29</text>
       </controlProperties>
+    </control>
+    <control controlID="65" controlTypeID="__group__" x="1464" y="6" w="93" h="768" measuredW="93" measuredH="768" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Usuario</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="741" w="-1" h="-1" measuredW="93" measuredH="27" zOrder="0" locked="false" isInGroup="65">
+          <controlProperties>
+            <text>CU_6%20PAN_1</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="0" w="92" h="-1" measuredW="69" measuredH="27" zOrder="1" locked="false" isInGroup="65">
+          <controlProperties>
+            <text>USR_Pro</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
     </control>
   </controls>
 </mockup>
