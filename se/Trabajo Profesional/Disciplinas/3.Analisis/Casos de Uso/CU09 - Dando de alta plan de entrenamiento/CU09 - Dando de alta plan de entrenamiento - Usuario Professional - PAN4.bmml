@@ -21,11 +21,11 @@
       </controlProperties>
     </control>
     <control controlID="103" controlTypeID="com.balsamiq.mockups::ModalScreen" x="530" y="78" w="1020" h="669" measuredW="320" measuredH="240" zOrder="6" locked="false" isInGroup="-1"/>
-    <control controlID="104" controlTypeID="__group__" x="922" y="253" w="295" h="188" measuredW="295" measuredH="188" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="104" controlTypeID="__group__" x="922" y="238" w="295" h="203" measuredW="295" measuredH="203" zOrder="7" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
-        <control controlID="3" controlTypeID="__group__" x="0" y="0" w="295" h="188" measuredW="295" measuredH="188" zOrder="0" locked="false" isInGroup="104">
+        <control controlID="3" controlTypeID="__group__" x="0" y="0" w="295" h="203" measuredW="295" measuredH="203" zOrder="0" locked="false" isInGroup="104">
           <groupChildrenDescriptors>
-            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="295" h="188" measuredW="295" measuredH="188" zOrder="0" locked="false" isInGroup="3">
+            <control controlID="0" controlTypeID="__group__" x="0" y="15" w="295" h="188" measuredW="295" measuredH="188" zOrder="0" locked="false" isInGroup="3">
               <controlProperties>
                 <controlName>Popup</controlName>
               </controlProperties>
@@ -34,12 +34,12 @@
                   <groupChildrenDescriptors>
                     <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="0" y="0" w="295" h="188" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="4">
                       <controlProperties>
-                        <text>Training%20Plan</text>
+                        <text>Training%20Routines</text>
                       </controlProperties>
                     </control>
-                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="29" y="50" w="-1" h="-1" measuredW="241" measuredH="21" zOrder="1" locked="false" isInGroup="4">
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="29" y="50" w="-1" h="-1" measuredW="242" measuredH="21" zOrder="1" locked="false" isInGroup="4">
                       <controlProperties>
-                        <text>Do%20you%20want%20to%20create%20new%20Training%20Plan%3F</text>
+                        <text>Do%20you%20want%20to%20add%20more%20training%20routine%3F</text>
                       </controlProperties>
                     </control>
                     <control controlID="2" controlTypeID="com.balsamiq.mockups::Button" x="29" y="120" w="-1" h="-1" measuredW="40" measuredH="27" zOrder="2" locked="false" isInGroup="4">
@@ -52,19 +52,19 @@
                         <text>Yes</text>
                       </controlProperties>
                     </control>
-                    <control controlID="4" controlTypeID="com.balsamiq.mockups::CallOut" x="92" y="0" w="-1" h="-1" measuredW="45" measuredH="39" zOrder="4" locked="false" isInGroup="4">
-                      <controlProperties>
-                        <text>14</text>
-                      </controlProperties>
-                    </control>
-                    <control controlID="5" controlTypeID="com.balsamiq.mockups::CallOut" x="61" y="113" w="44" h="40" measuredW="44" measuredH="40" zOrder="5" locked="false" isInGroup="4">
-                      <controlProperties>
-                        <text>15</text>
-                      </controlProperties>
-                    </control>
                   </groupChildrenDescriptors>
                 </control>
               </groupChildrenDescriptors>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::CallOut" x="146" y="0" w="-1" h="-1" measuredW="42" measuredH="40" zOrder="1" locked="false" isInGroup="3">
+              <controlProperties>
+                <text>11</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="58" y="133" w="-1" h="-1" measuredW="44" measuredH="39" zOrder="2" locked="false" isInGroup="3">
+              <controlProperties>
+                <text>12</text>
+              </controlProperties>
             </control>
           </groupChildrenDescriptors>
         </control>
@@ -78,6 +78,23 @@
         </override>
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
+    </control>
+    <control controlID="107" controlTypeID="__group__" x="1458" y="6" w="94" h="768" measuredW="94" measuredH="768" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Usuario</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="741" w="-1" h="-1" measuredW="94" measuredH="27" zOrder="0" locked="false" isInGroup="107">
+          <controlProperties>
+            <text>CU_9%20PAN_4</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="0" w="92" h="-1" measuredW="69" measuredH="27" zOrder="1" locked="false" isInGroup="107">
+          <controlProperties>
+            <text>USR_Pro</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
     </control>
   </controls>
 </mockup>
