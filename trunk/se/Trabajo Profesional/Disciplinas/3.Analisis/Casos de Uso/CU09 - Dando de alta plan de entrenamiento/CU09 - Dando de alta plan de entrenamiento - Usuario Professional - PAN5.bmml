@@ -77,5 +77,22 @@
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
+    <control controlID="107" controlTypeID="__group__" x="1458" y="6" w="93" h="768" measuredW="93" measuredH="768" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Usuario</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="741" w="-1" h="-1" measuredW="93" measuredH="27" zOrder="0" locked="false" isInGroup="107">
+          <controlProperties>
+            <text>CU_9%20PAN_5</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="0" w="92" h="-1" measuredW="69" measuredH="27" zOrder="1" locked="false" isInGroup="107">
+          <controlProperties>
+            <text>USR_Pro</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
   </controls>
 </mockup>
