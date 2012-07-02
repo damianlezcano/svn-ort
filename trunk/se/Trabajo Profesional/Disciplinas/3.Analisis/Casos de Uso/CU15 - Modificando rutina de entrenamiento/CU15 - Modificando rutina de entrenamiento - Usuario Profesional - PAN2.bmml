@@ -35,22 +35,22 @@
         <text>Save</text>
       </controlProperties>
     </control>
-    <control controlID="64" controlTypeID="com.balsamiq.mockups::Button" x="1346" y="582" w="-1" h="-1" measuredW="65" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::Button" x="1346" y="582" w="-1" h="-1" measuredW="64" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Cancel</text>
       </controlProperties>
     </control>
-    <control controlID="65" controlTypeID="com.balsamiq.mockups::Label" x="1006" y="318" w="-1" h="-1" measuredW="141" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::Label" x="1006" y="318" w="-1" h="-1" measuredW="133" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Training%20Routine%20Name</text>
       </controlProperties>
     </control>
-    <control controlID="66" controlTypeID="com.balsamiq.mockups::Label" x="1006" y="354" w="165" h="21" measuredW="171" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::Label" x="1006" y="354" w="165" h="21" measuredW="162" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Training%20Routine%20Description</text>
       </controlProperties>
     </control>
-    <control controlID="68" controlTypeID="com.balsamiq.mockups::Label" x="1006" y="425" w="165" h="20" measuredW="73" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::Label" x="1006" y="425" w="165" h="20" measuredW="71" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Activity%20List</text>
       </controlProperties>
@@ -61,12 +61,12 @@
         <text>A%20paragraph%20of%20text.%0AA%20second%20row%20of%20text.</text>
       </controlProperties>
     </control>
-    <control controlID="70" controlTypeID="com.balsamiq.mockups::CallOut" x="898" y="370" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::CallOut" x="898" y="370" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <text>5</text>
       </controlProperties>
     </control>
-    <control controlID="71" controlTypeID="com.balsamiq.mockups::CallOut" x="907" y="576" w="-1" h="-1" measuredW="39" measuredH="43" zOrder="13" locked="false" isInGroup="-1">
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::CallOut" x="907" y="576" w="-1" h="-1" measuredW="38" measuredH="37" zOrder="13" locked="false" isInGroup="-1">
       <controlProperties>
         <text>6</text>
       </controlProperties>
@@ -77,25 +77,20 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="73" controlTypeID="com.balsamiq.mockups::DataGrid" x="1186" y="428" w="288" h="150" measuredW="179" measuredH="235" zOrder="15" locked="false" isInGroup="-1">
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::DataGrid" x="1186" y="428" w="288" h="150" measuredW="177" measuredH="235" zOrder="15" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Name%20%5E%2C%20Selected%0AFixed%20pull-ups%2C%20%5Bx%5D%0ACrunch%2C%20%5B%5D%0ABicicle%20Kicks%2C%20%5Bx%5D%0AWalk%2C%20%5B%5D%0ALong%20Jump%20w/%20ft%2C%20%5B%5D%0ALong%20Jump%2C%20%5B%5D%0AVertical%20Jump%20%5B%5D</text>
       </controlProperties>
     </control>
-    <control controlID="74" controlTypeID="com.balsamiq.mockups::ModalScreen" x="538" y="78" w="1024" h="670" measuredW="320" measuredH="240" zOrder="16" locked="false" isInGroup="-1"/>
-    <control controlID="75" controlTypeID="com.balsamiq.mockups::TitleWindow" x="874" y="264" w="352" h="200" measuredW="450" measuredH="400" zOrder="17" locked="false" isInGroup="-1">
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1458" y="451" w="-1" h="125" measuredW="16" measuredH="100" zOrder="16" locked="false" isInGroup="-1"/>
+    <control controlID="75" controlTypeID="com.balsamiq.mockups::TextInput" x="1485" y="6" w="77" h="-1" measuredW="69" measuredH="27" zOrder="17" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Sucess</text>
+        <text>USR_Pro</text>
       </controlProperties>
     </control>
-    <control controlID="76" controlTypeID="com.balsamiq.mockups::Label" x="966" y="317" w="-1" h="-1" measuredW="156" measuredH="21" zOrder="18" locked="false" isInGroup="-1">
+    <control controlID="76" controlTypeID="com.balsamiq.mockups::TextInput" x="1463" y="747" w="-1" h="-1" measuredW="99" measuredH="27" zOrder="18" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>successfully%20stored%20routine</text>
-      </controlProperties>
-    </control>
-    <control controlID="77" controlTypeID="com.balsamiq.mockups::Button" x="1024" y="368" w="-1" h="-1" measuredW="40" measuredH="27" zOrder="19" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Ok</text>
+        <text>CU_15%20PAN_2</text>
       </controlProperties>
     </control>
   </controls>
