@@ -1,11 +1,11 @@
-<mockup version="1.0" skin="sketch" measuredW="1562" measuredH="774" mockupW="1033" mockupH="768">
+<mockup version="1.0" skin="sketch" measuredW="1570" measuredH="774" mockupW="1041" mockupH="768">
   <controls>
     <control controlID="38" controlTypeID="com.balsamiq.mockups::Component" x="538" y="6" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
-    <control controlID="41" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="86" w="-1" h="-1" measuredW="37" measuredH="37" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="86" w="-1" h="-1" measuredW="37" measuredH="40" zOrder="2" locked="false" isInGroup="-1"/>
     <control controlID="42" controlTypeID="com.balsamiq.mockups::Arrow" x="575" y="102" w="293" h="10" measuredW="150" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <rightArrow>false</rightArrow>
@@ -84,12 +84,12 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="69" controlTypeID="com.balsamiq.mockups::CallOut" x="895" y="370" w="-1" h="-1" measuredW="38" measuredH="37" zOrder="17" locked="false" isInGroup="-1">
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::CallOut" x="895" y="370" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="17" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>
     </control>
-    <control controlID="70" controlTypeID="com.balsamiq.mockups::CallOut" x="1479" y="582" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="18" locked="false" isInGroup="-1">
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::CallOut" x="1479" y="582" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="18" locked="false" isInGroup="-1">
       <controlProperties>
         <text>5</text>
       </controlProperties>
@@ -103,6 +103,16 @@
     <control controlID="74" controlTypeID="com.balsamiq.mockups::CallOut" x="1399" y="488" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="21" locked="false" isInGroup="-1">
       <controlProperties>
         <text>4</text>
+      </controlProperties>
+    </control>
+    <control controlID="75" controlTypeID="com.balsamiq.mockups::TextInput" x="1485" y="6" w="77" h="-1" measuredW="69" measuredH="27" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>USR_Pro</text>
+      </controlProperties>
+    </control>
+    <control controlID="76" controlTypeID="com.balsamiq.mockups::TextInput" x="1474" y="747" w="-1" h="-1" measuredW="96" measuredH="27" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>CU_13%20PAN_1</text>
       </controlProperties>
     </control>
   </controls>

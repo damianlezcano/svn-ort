@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" measuredW="1562" measuredH="774" mockupW="1032" mockupH="768">
+<mockup version="1.0" skin="sketch" measuredW="1571" measuredH="774" mockupW="1041" mockupH="768">
   <controls>
     <control controlID="38" controlTypeID="com.balsamiq.mockups::Component" x="538" y="6" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
@@ -8,7 +8,7 @@
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
-    <control controlID="41" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="86" w="-1" h="-1" measuredW="37" measuredH="37" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="86" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="2" locked="false" isInGroup="-1"/>
     <control controlID="42" controlTypeID="com.balsamiq.mockups::Arrow" x="575" y="102" w="293" h="10" measuredW="150" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <rightArrow>false</rightArrow>
@@ -51,7 +51,7 @@
         <text>3</text>
       </controlProperties>
     </control>
-    <control controlID="64" controlTypeID="com.balsamiq.mockups::CallOut" x="883" y="575" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::CallOut" x="883" y="575" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text>4</text>
       </controlProperties>
@@ -62,9 +62,19 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="66" controlTypeID="com.balsamiq.mockups::DataGrid" x="981" y="291" w="515" h="284" measuredW="182" measuredH="85" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::DataGrid" x="981" y="291" w="515" h="284" measuredW="178" measuredH="85" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Routine%20Name%20%5E%2C%20Select%0ACorrer%20en%20parque%2C%20%28o%29%0ACorrer%20en%20gimnasio%2C%20%28%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::TextInput" x="1447" y="6" w="115" h="-1" measuredW="69" measuredH="27" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>USR_Pro</text>
+      </controlProperties>
+    </control>
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::TextInput" x="1474" y="747" w="-1" h="-1" measuredW="97" measuredH="27" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>CU_16%20PAN_1</text>
       </controlProperties>
     </control>
   </controls>

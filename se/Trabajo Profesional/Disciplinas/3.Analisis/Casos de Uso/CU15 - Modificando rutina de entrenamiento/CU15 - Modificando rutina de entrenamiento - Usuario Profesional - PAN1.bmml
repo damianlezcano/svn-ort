@@ -8,7 +8,7 @@
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
-    <control controlID="41" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="86" w="-1" h="-1" measuredW="37" measuredH="43" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="86" w="-1" h="-1" measuredW="37" measuredH="40" zOrder="2" locked="false" isInGroup="-1"/>
     <control controlID="42" controlTypeID="com.balsamiq.mockups::Arrow" x="575" y="102" w="293" h="10" measuredW="150" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <rightArrow>false</rightArrow>
@@ -20,7 +20,7 @@
         <text>New%20Routine%0AModify%20Routine%0ASearch%20Routine</text>
       </controlProperties>
     </control>
-    <control controlID="44" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="135" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="135" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
@@ -41,12 +41,12 @@
         <value>0</value>
       </controlProperties>
     </control>
-    <control controlID="60" controlTypeID="com.balsamiq.mockups::Button" x="1398" y="582" w="-1" h="-1" measuredW="53" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::Button" x="1398" y="582" w="-1" h="-1" measuredW="52" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <text>View</text>
       </controlProperties>
     </control>
-    <control controlID="61" controlTypeID="com.balsamiq.mockups::Button" x="1337" y="582" w="-1" h="-1" measuredW="45" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::Button" x="1337" y="582" w="-1" h="-1" measuredW="46" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Edit</text>
       </controlProperties>
@@ -57,12 +57,12 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="63" controlTypeID="com.balsamiq.mockups::CallOut" x="532" y="301" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::CallOut" x="532" y="301" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>
     </control>
-    <control controlID="64" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="566" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::CallOut" x="530" y="566" w="-1" h="-1" measuredW="39" measuredH="37" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <text>4</text>
       </controlProperties>
@@ -73,9 +73,19 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="66" controlTypeID="com.balsamiq.mockups::DataGrid" x="981" y="291" w="515" h="284" measuredW="179" measuredH="85" zOrder="13" locked="false" isInGroup="-1">
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::DataGrid" x="981" y="291" w="515" h="284" measuredW="178" measuredH="85" zOrder="13" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Routine%20Name%20%5E%2C%20Select%0ACorrer%20en%20parque%2C%20%28o%29%0ACorrer%20en%20gimnasio%2C%20%28%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::TextInput" x="1485" y="6" w="77" h="-1" measuredW="69" measuredH="27" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>USR_Pro</text>
+      </controlProperties>
+    </control>
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::TextInput" x="1466" y="747" w="-1" h="-1" measuredW="96" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>CU_15%20PAN_1</text>
       </controlProperties>
     </control>
   </controls>
