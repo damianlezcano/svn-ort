@@ -1,0 +1,81 @@
+<mockup version="1.0" skin="sketch" measuredW="1554" measuredH="774" mockupW="1024" mockupH="768">
+  <controls>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::Component" x="530" y="6" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="3">
+          <text>File%2C%20Edit%2C%20Sportsman%2C%20Group%2C%20Training%20Plan%2C%20Training%20Routine%2C%20Activity%2C%20Resources%2C%20Help</text>
+        </override>
+        <src>../assets/symbols.bmml#template</src>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::DataGrid" x="844" y="349" w="676" h="325" measuredW="690" measuredH="97" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <rowHeight>36</rowHeight>
+        <text>Sportsman%20Name%20%5E%2C%20Fixed%20pull-ups%2C%20Crunch%2C%20Bicicle%20Kicks%2C%20Walk%2C%20Long%20Jump%20w/%20ft%2C%20Long%20Jump%2C%20Vertical%20Jump%20%0AJuan%20Carlos%20Perez%2C%20%5B%5D%2C%20%5B%5D%2C%20%5Bx%5D%2C%20%5B%5D%2C%20%5B%5D%2C%20%5Bx%5D%2C%20%5B%5D%0APedro%20Gomez%2C%20%5B%5D%2C%20%5B%5D%2C%20%5B%5D%2C%20%5Bx%5D%2C%20%5B%5D%2C%20%5Bx%5D%2C%20%5Bx%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Button" x="1461" y="679" w="-1" h="-1" measuredW="51" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Next</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::CallOut" x="1355" y="231" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>5</text>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::CallOut" x="1410" y="672" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>7</text>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::Label" x="844" y="273" w="160" h="21" measuredW="154" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Group%20Name%3A%20Defensores</text>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::Label" x="1019" y="272" w="178" h="22" measuredW="166" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Training%20Plan%3A%20Bajar%20de%20Peso</text>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::Label" x="1218" y="272" w="-1" h="-1" measuredW="52" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Routine%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::HorizontalScrollBar" x="844" y="658" w="676" h="-1" measuredW="100" measuredH="16" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::DateChooser" x="1425" y="270" w="-1" h="-1" measuredW="90" measuredH="25" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20%20/%20%20/%20%20%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::CallOut" x="1171" y="445" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>6</text>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::ComboBox" x="1278" y="271" w="147" h="-1" measuredW="99" measuredH="78" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>High%20Impact%0ALow%20Impact%0ARutina%20de%20Resistencia%0ARutina%20de%20Velocidad</text>
+      </controlProperties>
+    </control>
+    <control controlID="70" controlTypeID="__group__" x="1452" y="6" w="102" h="768" measuredW="102" measuredH="768" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Usuario</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="741" w="-1" h="-1" measuredW="102" measuredH="27" zOrder="0" locked="false" isInGroup="70">
+          <controlProperties>
+            <text>CU_29%20PAN_2</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="15" y="0" w="77" h="-1" measuredW="69" measuredH="27" zOrder="1" locked="false" isInGroup="70">
+          <controlProperties>
+            <text>USR_Pro</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>
