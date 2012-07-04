@@ -13,7 +13,7 @@
     </control>
     <control controlID="39" controlTypeID="com.balsamiq.mockups::List" x="928" y="131" w="197" h="68" measuredW="100" measuredH="126" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Registering%20Group%20Activity%0ARegistering%20Individual%20Activity</text>
+        <text>-Registering%20Group%20Activity-%0ARegistering%20Individual%20Activity</text>
       </controlProperties>
     </control>
     <control controlID="41" controlTypeID="com.balsamiq.mockups::Arrow" x="579" y="106" w="413" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
@@ -21,7 +21,7 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="542" y="91" w="-1" h="-1" measuredW="37" measuredH="40" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="542" y="91" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <text>1</text>
       </controlProperties>
@@ -51,7 +51,7 @@
         <text>3</text>
       </controlProperties>
     </control>
-    <control controlID="48" controlTypeID="com.balsamiq.mockups::CallOut" x="1492" y="674" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::CallOut" x="1492" y="674" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text>4</text>
       </controlProperties>
