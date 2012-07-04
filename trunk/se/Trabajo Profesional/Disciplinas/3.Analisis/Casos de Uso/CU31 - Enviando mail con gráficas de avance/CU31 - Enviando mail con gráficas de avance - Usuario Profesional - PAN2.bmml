@@ -39,7 +39,6 @@
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
-    <control controlID="63" controlTypeID="com.balsamiq.mockups::LineChart" x="972" y="411" w="490" h="229" measuredW="187" measuredH="175" zOrder="5" locked="false" isInGroup="-1"/>
     <control controlID="64" controlTypeID="__group__" x="1454" y="6" w="100" h="768" measuredW="100" measuredH="768" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <controlName>Usuario</controlName>
@@ -62,21 +61,37 @@
         <text>Speed%2CResistance%2CWeight%2CForce%2CMuscles</text>
       </controlProperties>
     </control>
-    <control controlID="66" controlTypeID="com.balsamiq.mockups::ModalScreen" x="530" y="7" w="1017" h="766" measuredW="320" measuredH="240" zOrder="6" locked="false" isInGroup="-1"/>
-    <control controlID="71" controlTypeID="__group__" x="944" y="299" w="170" h="107" measuredW="170" measuredH="107" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::ModalScreen" x="530" y="8" w="1017" h="766" measuredW="320" measuredH="240" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="71" controlTypeID="__group__" x="944" y="276" w="170" h="151" measuredW="170" measuredH="151" zOrder="9" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="170" h="107" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="71"/>
-        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="55" y="60" w="-1" h="-1" measuredW="59" measuredH="27" zOrder="1" locked="false" isInGroup="71">
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="23" w="170" h="107" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="71"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="65" y="83" w="-1" h="-1" measuredW="40" measuredH="27" zOrder="2" locked="false" isInGroup="71">
           <controlProperties>
-            <text>Button</text>
+            <text>Ok</text>
           </controlProperties>
         </control>
-        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="57" y="24" w="-1" h="-1" measuredW="55" measuredH="21" zOrder="2" locked="false" isInGroup="71">
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="57" y="47" w="-1" h="-1" measuredW="55" measuredH="21" zOrder="3" locked="false" isInGroup="71">
           <controlProperties>
             <text>Success</text>
           </controlProperties>
         </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::TitleWindow" x="0" y="0" w="170" h="151" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="71">
+          <controlProperties>
+            <text>Send%20Mail</text>
+          </controlProperties>
+        </control>
       </groupChildrenDescriptors>
+    </control>
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::Button" x="1332" y="622" w="-1" h="-1" measuredW="133" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Send%20evolution%20mail</text>
+      </controlProperties>
+    </control>
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::LineChart" x="972" y="411" w="490" h="195" measuredW="187" measuredH="175" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::CallOut" x="1009" y="256" w="-1" h="-1" measuredW="39" measuredH="43" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>2</text>
+      </controlProperties>
     </control>
   </controls>
 </mockup>
