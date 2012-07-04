@@ -1,5 +1,6 @@
 package web;
 
+import java.io.File;
 import java.util.Date;
 
 public class GraphItemView {
@@ -19,6 +20,9 @@ public class GraphItemView {
 	}
 	public void setDate(Date date) {
 		this.date = date;
+	}
+	public File getImageGraph() {
+		return null;
 	}
 
 }
