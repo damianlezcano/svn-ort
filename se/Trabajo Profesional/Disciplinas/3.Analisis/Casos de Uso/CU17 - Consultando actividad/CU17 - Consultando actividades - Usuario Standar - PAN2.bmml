@@ -1,16 +1,22 @@
-<mockup version="1.0" skin="sketch" measuredW="1562" measuredH="774" mockupW="1089" mockupH="768">
+<mockup version="1.0" skin="sketch" measuredW="1562" measuredH="774" mockupW="1032" mockupH="768">
   <controls>
     <control controlID="38" controlTypeID="com.balsamiq.mockups::Component" x="530" y="6" w="1024" h="768" measuredW="1024" measuredH="768" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
+        <override controlID="14">
+          <text>F%20Buddy%20Training%0A%20%5B+%5D%20Sportsman</text>
+        </override>
+        <override controlID="3">
+          <text>File%2C%20Edit%2C%20Sportman%2C%20-Group-%2C%20TrainingPlan%2C%20TrainerRoutine%2C%20Activity%2C%20Resources%2C%20Help</text>
+        </override>
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="473" y="87" w="-1" h="-1" measuredW="37" measuredH="40" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="575" y="88" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
         <text>1</text>
       </controlProperties>
     </control>
-    <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="510" y="102" w="469" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="612" y="102" w="367" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <rightArrow>false</rightArrow>
         <text/>
@@ -31,5 +37,11 @@
         <text>CU_17%20PAN2</text>
       </controlProperties>
     </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::DataGrid" x="912" y="364" w="450" h="179" measuredW="110" measuredH="235" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Name%0AFixed%20pull-ups%0ACrunch%0ABicicle%20Kicks%0AWalk%0ALong%20Jump%20w/%20ft%0ALong%20Jump%0AVertical%20Jump</text>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1346" y="364" w="-1" h="179" measuredW="16" measuredH="100" zOrder="7" locked="false" isInGroup="-1"/>
   </controls>
 </mockup>
