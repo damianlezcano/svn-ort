@@ -19,16 +19,16 @@
           <text>F%20Buddy%20Training%0A%20%5B+%5D%20Sportsman</text>
         </override>
         <override controlID="15" x="946" y="137" w="-1" h="-1"/>
-        <override controlID="11:1:0" x="0" y="0" w="77" h="130"/>
+        <override controlID="11:1" x="17" y="21" w="77" h="130"/>
         <override controlID="11:7" x="212" y="92" w="-1" h="-1"/>
+        <override controlID="11:5" x="202" y="20" w="-1" h="-1"/>
+        <override controlID="11:3" x="109" y="57" w="-1" h="-1"/>
+        <override controlID="11:1:0" x="0" y="0" w="77" h="130"/>
+        <override controlID="11:6" x="212" y="56" w="-1" h="-1"/>
         <override controlID="11:0" x="0" y="0" w="275" h="171"/>
         <override controlID="11:0:0" x="0" y="0" w="275" h="171"/>
         <override controlID="11:2" x="109" y="21" w="-1" h="-1"/>
-        <override controlID="11:6" x="212" y="56" w="-1" h="-1"/>
-        <override controlID="11:1" x="17" y="21" w="77" h="130"/>
         <override controlID="11:4" x="109" y="93" w="-1" h="-1"/>
-        <override controlID="11:5" x="202" y="20" w="-1" h="-1"/>
-        <override controlID="11:3" x="109" y="57" w="-1" h="-1"/>
         <src>../assets/symbols.bmml#template</src>
       </controlProperties>
     </control>
@@ -68,13 +68,12 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="63" controlTypeID="com.balsamiq.mockups::CallOut" x="846" y="423" w="39" h="39" measuredW="39" measuredH="40" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::CallOut" x="846" y="423" w="39" h="39" measuredW="39" measuredH="43" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
     </control>
-    <control controlID="65" controlTypeID="com.balsamiq.mockups::LineChart" x="972" y="423" w="490" h="229" measuredW="187" measuredH="175" zOrder="10" locked="false" isInGroup="-1"/>
-    <control controlID="66" controlTypeID="com.balsamiq.mockups::CallOut" x="1206" y="356" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::CallOut" x="1206" y="356" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>
@@ -88,6 +87,12 @@
     <control controlID="69" controlTypeID="com.balsamiq.mockups::TabBar" x="954" y="341" w="524" h="336" measuredW="373" measuredH="100" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Speed%2CResistance%2CWeight%2CForce%2CMuscles</text>
+      </controlProperties>
+    </control>
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::LineChart" x="972" y="411" w="490" h="195" measuredW="187" measuredH="175" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::Button" x="1332" y="622" w="-1" h="-1" measuredW="133" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Send%20evolution%20mail</text>
       </controlProperties>
     </control>
   </controls>
