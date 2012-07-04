@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" measuredW="1484" measuredH="774" mockupW="1024" mockupH="768">
+<mockup version="1.0" skin="sketch" measuredW="1485" measuredH="774" mockupW="1025" mockupH="768">
   <controls>
     <control controlID="39" controlTypeID="com.balsamiq.mockups::CallOut" x="493" y="82" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="1" locked="false" isInGroup="-1"/>
     <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="530" y="104" w="190" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="-1">
@@ -11,7 +11,7 @@
         <text>-New%20Training%20Plan-%0A-Modify%20Training%20Plan-%0ASearch%20Training%20Plan</text>
       </controlProperties>
     </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="485" y="159" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::CallOut" x="485" y="159" w="-1" h="-1" measuredW="39" measuredH="43" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
@@ -47,7 +47,7 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="85" controlTypeID="com.balsamiq.mockups::DataGrid" x="858" y="364" w="481" h="236" measuredW="472" measuredH="115" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="85" controlTypeID="com.balsamiq.mockups::DataGrid" x="858" y="364" w="481" h="236" measuredW="474" measuredH="115" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Id%2C%20Training%20Plan%20Name%5Cr%20%5E%2C%20Created%20Date%2C%20Active%2C%20Sportsman%20Associated%0A1%2C%20Bajar%20de%20Peso%2C%2014/05/2012%2C%20%5Bx%5D%2C%205%0A2%2C%20Entrenamiento%20Liviano%2C%2010/05/2012%2C%20%5B%5D%2C%200%0A3%2C%20Ganar%20Fuerza%2C%2010/04/2012%2C%20%5B%5D%2C%200</text>
       </controlProperties>
@@ -62,7 +62,7 @@
         <text>Send</text>
       </controlProperties>
     </control>
-    <control controlID="88" controlTypeID="com.balsamiq.mockups::CallOut" x="1433" y="304" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="88" controlTypeID="com.balsamiq.mockups::CallOut" x="1433" y="304" w="-1" h="-1" measuredW="39" measuredH="43" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <text>4</text>
       </controlProperties>
@@ -82,14 +82,14 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="95" controlTypeID="__group__" x="1377" y="6" w="105" h="768" measuredW="105" measuredH="768" zOrder="16" locked="false" isInGroup="-1">
+    <control controlID="95" controlTypeID="__group__" x="1377" y="6" w="108" h="768" measuredW="108" measuredH="768" zOrder="16" locked="false" isInGroup="-1">
       <controlProperties>
         <controlName>Usuario</controlName>
       </controlProperties>
       <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="8" y="741" w="-1" h="-1" measuredW="97" measuredH="27" zOrder="0" locked="false" isInGroup="95">
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="8" y="741" w="-1" h="-1" measuredW="100" measuredH="27" zOrder="0" locked="false" isInGroup="95">
           <controlProperties>
-            <text>CU_12%20PAN_1</text>
+            <text>CU_12%20PAN_2</text>
           </controlProperties>
         </control>
         <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="0" w="100" h="-1" measuredW="95" measuredH="27" zOrder="1" locked="false" isInGroup="95">
