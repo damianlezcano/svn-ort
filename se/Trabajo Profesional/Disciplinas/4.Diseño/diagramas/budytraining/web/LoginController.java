@@ -14,10 +14,10 @@ public class LoginController {
 	private User user;
 	private UserServiceBean userservicebean;
 
-	public void authenticated(String email, String password){
+	public void authenticated(String email, String password) {
 	}
 
-	public void rememberMail(String email){
+	public void rememberMail(String email) {
 	}
 	
 	public boolean isRegistred(String email){
@@ -38,4 +38,15 @@ public class LoginController {
 	public void save(){
 	}
 	
+	public User getUser() {
+		return user;
+	}
+
+	public UserServiceBean getUserservicebean() {
+		return userservicebean;
+	}
+
+	public void setUserservicebean(UserServiceBean userservicebean) {
+		this.userservicebean = userservicebean;
+	}	
 }
