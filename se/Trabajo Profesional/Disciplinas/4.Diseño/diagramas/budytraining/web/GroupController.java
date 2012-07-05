@@ -4,10 +4,9 @@ import java.util.List;
 
 import model.Group;
 import model.Sportsman;
-
+import model.TrainingPlan;
 import model.User;
 import service.GroupServiceBean;
-import model.TrainingPlan;
 
 public class GroupController {
 
