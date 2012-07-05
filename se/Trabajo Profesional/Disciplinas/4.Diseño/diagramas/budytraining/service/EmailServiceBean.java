@@ -1,14 +1,14 @@
 package service;
 
-import model.Email;
+import model.Sportsman;
 import model.User;
 
 public class EmailServiceBean {
 
-	public void send(User user, String body) {
+	public void send(User user, Object message) {
 	}
-	public void send(Email email) {
-		
+	
+	public void send(Sportsman sportsman, Object message) {
 	}
 	
 }
