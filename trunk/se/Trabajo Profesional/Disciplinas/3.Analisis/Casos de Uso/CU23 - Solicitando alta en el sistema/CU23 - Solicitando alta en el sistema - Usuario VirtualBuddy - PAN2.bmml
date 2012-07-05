@@ -48,17 +48,17 @@
         <text>Our%20sales%20team%20will%20contact%20you%20by%20email%20and%20explain%20the%20steps%20to%20pay%20the%20license.%20Thank%20you%20for%20choosing%20%20@BUDDYTRAINING</text>
       </controlProperties>
     </control>
-    <control controlID="19" controlTypeID="com.balsamiq.mockups::CallOut" x="543" y="368" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::CallOut" x="543" y="368" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
     </control>
-    <control controlID="20" controlTypeID="com.balsamiq.mockups::CallOut" x="545" y="519" w="38" h="30" measuredW="38" measuredH="43" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::CallOut" x="545" y="519" w="38" h="30" measuredW="38" measuredH="39" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>
     </control>
-    <control controlID="21" controlTypeID="com.balsamiq.mockups::CallOut" x="543" y="562" w="39" h="31" measuredW="39" measuredH="39" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::CallOut" x="543" y="562" w="39" h="31" measuredW="39" measuredH="40" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <text>4</text>
       </controlProperties>
@@ -86,9 +86,9 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="26" controlTypeID="com.balsamiq.mockups::TextInput" x="1335" y="3" w="77" h="-1" measuredW="69" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::TextInput" x="1291" y="3" w="121" h="-1" measuredW="117" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>USR_Pro</text>
+        <text>USR_VirtualBuddy</text>
       </controlProperties>
     </control>
     <control controlID="27" controlTypeID="com.balsamiq.mockups::TextInput" x="1312" y="744" w="-1" h="-1" measuredW="102" measuredH="27" zOrder="17" locked="false" isInGroup="-1">
