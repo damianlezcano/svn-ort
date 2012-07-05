@@ -1,16 +1,21 @@
 package web;
 
+import java.io.File;
 import java.util.List;
 
 import model.Sportsman;
 import model.TrainingLog;
+import model.User;
+import service.EmailServiceBean;
 
 public class GraphicController {
 	
+	private User user;
 	private List<TrainingLog> trainingLogs;
+	private EmailServiceBean emailServiceBean;
+	private UIGraph linegraph;
 	
 	public void selectSportsman(Sportsman sportsman){
-		
 	}
 	
 	public List<GraphItemView> generateSpeedRegisters(){
@@ -45,6 +50,18 @@ public class GraphicController {
 
 	public void setTrainingLogs(List<TrainingLog> trainingLogs) {
 		this.trainingLogs = trainingLogs;
+	}
+	
+	private File generateImage(){
+		//return lineGraph.getImageView()
+		return null;
+	}
+	
+	public void sendMail(Sportsman sportsman){
+		//el segundo parametro contiene un mapa con el mensaje a enviar junto con las imagenes como archhivos adjuntos.
+		//map.put("attach", lineGraph.getImageView());
+		//map.put("subject", "Evnio de grafica al usuario seleccionado")
+		emailServiceBean.send(sportsman, null);
 	}
 	
 }
